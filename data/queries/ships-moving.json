@@ -1,0 +1,856 @@
+{
+  "id": "ships-moving",
+  "category": "activity",
+  "query": "在海上运行船只",
+  "en": "Vessels moving at sea",
+  "elapsed_ms": 245.89,
+  "parsed_query": {
+    "semantic_query": "在海上运行船只 ; ships ; sea",
+    "filters": {
+      "area_category": [],
+      "facility": [
+        "ships"
+      ],
+      "land_cover": [],
+      "natural_entity": [
+        "sea"
+      ],
+      "terrain": []
+    },
+    "relations": [
+      {
+        "predicate": "moving_in",
+        "relation_type": "dynamic_activity",
+        "relation_category": "dynamic_activity",
+        "anchors": [
+          {
+            "field": "facility",
+            "value": "ships",
+            "entity_type": "mobile_object",
+            "entity_supertype": "mobile_agent"
+          },
+          {
+            "field": "natural_entity",
+            "value": "sea",
+            "entity_type": "natural_waterbody",
+            "entity_supertype": "natural_feature"
+          }
+        ],
+        "source": "query_rule",
+        "matched_keywords": [
+          "运行"
+        ]
+      },
+      {
+        "predicate": "navigating_in",
+        "relation_type": "dynamic_activity",
+        "relation_category": "dynamic_activity",
+        "anchors": [
+          {
+            "field": "facility",
+            "value": "ships",
+            "entity_type": "mobile_object",
+            "entity_supertype": "mobile_agent"
+          },
+          {
+            "field": "natural_entity",
+            "value": "sea",
+            "entity_type": "natural_waterbody",
+            "entity_supertype": "natural_feature"
+          }
+        ],
+        "source": "query_rule",
+        "matched_keywords": [
+          "在海上运行",
+          "海上运行"
+        ]
+      }
+    ],
+    "relation_constraints": [
+      {
+        "subject": "ships",
+        "subject_type": "mobile_object",
+        "subject_supertype": "mobile_agent",
+        "relation": "moving_in",
+        "relation_category": "dynamic_activity",
+        "relation_state": "dynamic",
+        "object": "sea",
+        "object_type": "natural_waterbody",
+        "object_supertype": "natural_feature",
+        "doc_type": "relation"
+      },
+      {
+        "subject": "ships",
+        "subject_type": "mobile_object",
+        "subject_supertype": "mobile_agent",
+        "relation": "navigating_in",
+        "relation_category": "dynamic_activity",
+        "relation_state": "dynamic",
+        "object": "sea",
+        "object_type": "natural_waterbody",
+        "object_supertype": "natural_feature",
+        "doc_type": "relation"
+      }
+    ],
+    "quantity_intent": {
+      "enabled": false,
+      "facilities": []
+    }
+  },
+  "requirements": {
+    "entities": [
+      {
+        "field": "facility",
+        "value": "ships"
+      },
+      {
+        "field": "natural_entity",
+        "value": "sea"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "ships",
+        "relation": "moving_in",
+        "object": "sea",
+        "category": "dynamic_activity",
+        "state": "dynamic"
+      },
+      {
+        "subject": "ships",
+        "relation": "navigating_in",
+        "object": "sea",
+        "category": "dynamic_activity",
+        "state": "dynamic"
+      }
+    ]
+  },
+  "query_profile": "dynamic_activity",
+  "strict_result_count": 6,
+  "answer_zh": "查询：在海上运行船只\n查询类型：dynamic_activity\n结构化条件：实体条件：facility=ships、natural_entity=sea；关系条件：ships moving_in sea、ships navigating_in sea\n检索结论：返回 8 个候选结果，其中 8 个具备中等以上证据。\n\nRank 1: 6156.tif（强匹配，Final=0.9839）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea\n场景类别：Port、Industrial Zone、Storage Area、Transportation\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [vessels moving_in sea] Multiple vessels can be seen moving across the sea, leaving visible wakes.\n\nRank 2: 1729.tif（强匹配，Final=0.9448）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea\n场景类别：Port、Transportation\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [vessels moving_in sea] In the upper right area, a large vessel with a green deck is visible moving through the water, while smaller vessels can be seen scattered across the sea surface.\n\nRank 3: 0698.png（强匹配，Final=0.9442）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、ships::moving_in::sea、vessels::moving_in::sea\n场景类别：Port、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、ships::moving_in::sea、vessels::moving_in::sea；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [ships moving_in sea] The transportation infrastructure includes the shipping lanes in the sea where multiple vessels can be seen moving, as well as the road network within the urban area that facilitates land-based transportation.\n- [ships moored_at sea] Several ships are docked at the wharves, while additional vessels navigate the shipping lanes in the sea.\n\nRank 4: 1151.tif（强匹配，Final=0.9442）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea\n场景类别：Port、Transportation\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [vessels moving_in sea] The right side of the image shows the expansive sea with a few smaller vessels moving through the water, indicating active maritime transportation.\n- [ships moored_at wharves] Several large cargo ships are docked along the wharves, while additional vessels navigate the shipping lanes in the open water.\n\nRank 5: 0244.png（强匹配，Final=0.9434）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、ships::moving_in::sea\n场景类别：Port、Transportation、Commercial/Residential Area、Utility Infrastructure\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、ships::moving_in::sea；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [ships moving_in sea] The water body is active with various vessels, including speedboats and larger ships, moving across the sea.\n- [ships along sea] The port area is located along the coastline, with wharves, container stacks, and numerous ships docked or anchored.\n\nRank 6: 961.tif（强匹配，Final=0.9108）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships]、navigating_in[facility=ships]、moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]\n场景类别：Port、Transportation\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships]、navigating_in[facility=ships]、moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations. The shipping lanes are clearly visible, with vessels navigating near the port area. The overall scene reflects a busy industrial port environment with significant maritime activity and well-organized logistics infrastructure.\n- [ships moving_in port] In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations.\n\nRank 7: 10844.tif（强匹配，Final=0.8701）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships]、navigating_in[facility=ships]\n场景类别：Transportation\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships]、navigating_in[facility=ships]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- [vessels moving_in transportation] There are at least four visible vessels, including a larger cargo ship with a red deck and a narrower hull, moving through the water and leaving a visible wake behind it.\n- [vessels moving_in transportation] Other smaller vessels are scattered across the scene, some appearing stationary and others in motion.\n\nRank 8: 641.tif（强匹配，Final=0.8697）\n命中实体/关键词：ships、sea\n命中关系：moving_in[facility=ships]、navigating_in[facility=ships]\n场景类别：Port、Transportation\n判断依据：命中查询实体或关键词：ships、sea；命中空间关系或活动关系：moving_in[facility=ships]、navigating_in[facility=ships]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- [ships navigating_in transportation] In the water, several vessels are navigating, with one ship in the upper right leaving a visible wake, indicating movement.\n\n说明：以上回答只基于结构化检索证据包生成，未额外编造图像内容。",
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "6156.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9838633985046388,
+        "semantic": 0.6349364519119263,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 0.8933,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 1.0
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships, natural_entity=sea]",
+          "navigating_in[facility=ships, natural_entity=sea]",
+          "vessels::moving_in::sea"
+        ],
+        "area_categories": [
+          "Port",
+          "Industrial Zone",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "ships",
+          "storage tanks",
+          "factory buildings",
+          "warehouses",
+          "container yards",
+          "roads",
+          "vessels"
+        ]
+      },
+      "description": "The image depicts a coastal industrial port area situated on a plain terrain. The dominant land cover consists of built-up areas including industrial facilities, storage zones, and port infrastructure, alongside a large water body representing the sea. A man-made rectangular reservoir with green water is visible in the upper central part of the image, surrounded by unpaved surfaces. In the lower and left portions of the image, extensive port facilities are present, including wharves extending into the sea and several ships docked or navigating the waters. Multiple vessels can be seen moving across the sea, leaving visible wakes. To the right side, there is a cluster of large cylindrical storage tanks, likely for industrial purposes, along with what appears to be an under-construction cooling tower structure. The upper left area contains warehouse-like structures and container yards, indicating storage and logistics operations. Roads and transportation infrastructure connect these various facilities throughout the scene. The overall layout suggests a heavily industrialized coastal zone with integrated port, storage, and manufacturing capabilities.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "6156.tif::rel::vessels::moving_in::sea::4",
+          "doc_type": "relation",
+          "relation": "vessels moving_in sea",
+          "evidence": "Multiple vessels can be seen moving across the sea, leaving visible wakes.",
+          "score": 0.9339,
+          "relation_score": 0.8933,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 4,
+        "storage tanks": 8
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/3ec503b2abeab6ba495c-thumbnail.webp",
+      "preview": "assets/images/3ec503b2abeab6ba495c-preview.webp",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "rank": 2,
+      "image_name": "1729.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9447899404815675,
+        "semantic": 0.6469038724899292,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 0.8933,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.58
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships, natural_entity=sea]",
+          "navigating_in[facility=ships, natural_entity=sea]",
+          "vessels::moving_in::sea"
+        ],
+        "area_categories": [
+          "Port",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "ships",
+          "vessels"
+        ]
+      },
+      "description": "The image shows a coastal port area situated on a plain terrain, with the sea occupying the majority of the upper and left portions of the image. The land cover consists primarily of water bodies and bare land areas near the port infrastructure. A prominent port facility is visible in the lower right section, featuring concrete wharves extending into the water, several gantry cranes positioned along the dock, and multiple ships moored at the berths. In the upper right area, a large vessel with a green deck is visible moving through the water, while smaller vessels can be seen scattered across the sea surface. The port area includes paved roads and some vegetation patches on the landward side, with rectangular water basins visible in the lower portion of the image.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1729.tif::rel::vessels::moving_in::sea::3",
+          "doc_type": "relation",
+          "relation": "vessels moving_in sea",
+          "evidence": "In the upper right area, a large vessel with a green deck is visible moving through the water, while smaller vessels can be seen scattered across the sea surface.",
+          "score": 0.8948,
+          "relation_score": 0.8933,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Water Body",
+        "Bare Land"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 5
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/0e1527415070dbe53fde-thumbnail.webp",
+      "preview": "assets/images/0e1527415070dbe53fde-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 3,
+      "image_name": "0698.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.944211241369629,
+        "semantic": 0.6381337642669678,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 0.8933,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.58
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships, natural_entity=sea]",
+          "navigating_in[facility=ships, natural_entity=sea]",
+          "ships::moving_in::sea",
+          "vessels::moving_in::sea"
+        ],
+        "area_categories": [
+          "Port",
+          "Commercial/Residential Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "breakwaters",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "residential blocks",
+          "urban roads",
+          "vessels",
+          "shipping lanes"
+        ]
+      },
+      "description": "The image depicts a coastal plain terrain dominated by a large port facility and adjacent urban development, with the sea occupying the left and lower portions of the scene. The land cover consists primarily of built-up areas including dense residential blocks and extensive port infrastructure, while the natural geographic entity is the sea which forms the boundary of the port. The port area is extensive, featuring multiple wharves with gantry cranes positioned along the edges for cargo handling. Large container stacks are visible in organized rows across the port terminals, indicating active container shipping operations. Several ships are docked at the wharves, while additional vessels navigate the shipping lanes in the sea. Breakwaters extend into the sea to protect the harbor area. Adjacent to the port on the right side of the image is a dense commercial and residential area characterized by tightly packed residential blocks with colorful rooftops. Urban roads form a grid pattern through this area, connecting different sections of the city. The transportation infrastructure includes the shipping lanes in the sea where multiple vessels can be seen moving, as well as the road network within the urban area that facilitates land-based transportation.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、ships::moving_in::sea、vessels::moving_in::sea",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0698.png::rel::ships::moving_in::sea::8",
+          "doc_type": "relation",
+          "relation": "ships moving_in sea",
+          "evidence": "The transportation infrastructure includes the shipping lanes in the sea where multiple vessels can be seen moving, as well as the road network within the urban area that facilitates land-based transportation.",
+          "score": 0.8942,
+          "relation_score": 0.8933,
+          "evidence_score": 0.96
+        },
+        {
+          "doc_id": "0698.png::rel::ships::moored_at::sea::4",
+          "doc_type": "relation",
+          "relation": "ships moored_at sea",
+          "evidence": "Several ships are docked at the wharves, while additional vessels navigate the shipping lanes in the sea.",
+          "score": 0.7785,
+          "relation_score": 0.4921,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 49,
+        "gantry cranes": 14,
+        "container stacks": 27
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/aeece3cddd2f9144bd4f-thumbnail.webp",
+      "preview": "assets/images/aeece3cddd2f9144bd4f-preview.webp",
+      "width": 6024,
+      "height": 5456
+    },
+    {
+      "rank": 4,
+      "image_name": "1151.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9441771379760743,
+        "semantic": 0.6377785205841064,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 0.8933,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.58
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships, natural_entity=sea]",
+          "navigating_in[facility=ships, natural_entity=sea]",
+          "vessels::moving_in::sea"
+        ],
+        "area_categories": [
+          "Port",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "vessels",
+          "shipping lanes"
+        ]
+      },
+      "description": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up infrastructure adjacent to a large water body, likely a sea or harbor. The left side of the image is dominated by a busy port facility featuring multiple wharves lined with gantry cranes and densely packed container stacks. Several large cargo ships are docked along the wharves, while additional vessels navigate the shipping lanes in the open water. The right side of the image shows the expansive sea with a few smaller vessels moving through the water, indicating active maritime transportation. The overall scene highlights a major industrial port with significant cargo handling and shipping activities.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、vessels::moving_in::sea",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1151.tif::rel::vessels::moving_in::sea::3",
+          "doc_type": "relation",
+          "relation": "vessels moving_in sea",
+          "evidence": "The right side of the image shows the expansive sea with a few smaller vessels moving through the water, indicating active maritime transportation.",
+          "score": 0.8942,
+          "relation_score": 0.8933,
+          "evidence_score": 0.89
+        },
+        {
+          "doc_id": "1151.tif::rel::ships::moored_at::wharves::2",
+          "doc_type": "relation",
+          "relation": "ships moored_at wharves",
+          "evidence": "Several large cargo ships are docked along the wharves, while additional vessels navigate the shipping lanes in the open water.",
+          "score": 0.713,
+          "relation_score": 0.2671,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 1
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/d14cde06dab358de1728-thumbnail.webp",
+      "preview": "assets/images/d14cde06dab358de1728-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 5,
+      "image_name": "0244.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9433636289886477,
+        "semantic": 0.6399895548820496,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 0.8933,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.58
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships, natural_entity=sea]",
+          "navigating_in[facility=ships, natural_entity=sea]",
+          "ships::moving_in::sea"
+        ],
+        "area_categories": [
+          "Port",
+          "Transportation",
+          "Commercial/Residential Area",
+          "Utility Infrastructure"
+        ],
+        "facilities": [
+          "wharves",
+          "container stacks",
+          "ships",
+          "highways",
+          "vessels",
+          "high-rise buildings",
+          "residential blocks",
+          "urban roads",
+          "power plants",
+          "bridges"
+        ]
+      },
+      "description": "The image depicts a coastal urban area characterized by a mix of built-up land, forested regions, and extensive water bodies. The terrain is predominantly flat, with a large sea area occupying the lower and central parts of the image. The coastline is irregular, with several inlets and peninsulas. The upper part of the image shows dense urban development, including high-rise buildings and residential blocks, while the left side features a large forested area. A major highway interchange is visible in the upper central part, connecting various parts of the city. The port area is located along the coastline, with wharves, container stacks, and numerous ships docked or anchored. The water body is active with various vessels, including speedboats and larger ships, moving across the sea. The overall scene suggests a bustling port city with significant maritime and urban infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]、ships::moving_in::sea",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0244.png::rel::ships::moving_in::sea::6",
+          "doc_type": "relation",
+          "relation": "ships moving_in sea",
+          "evidence": "The water body is active with various vessels, including speedboats and larger ships, moving across the sea.",
+          "score": 0.8934,
+          "relation_score": 0.8933,
+          "evidence_score": 0.96
+        },
+        {
+          "doc_id": "0244.png::rel::ships::along::sea::5",
+          "doc_type": "relation",
+          "relation": "ships along sea",
+          "evidence": "The port area is located along the coastline, with wharves, container stacks, and numerous ships docked or anchored.",
+          "score": 0.7044,
+          "relation_score": 0.516,
+          "evidence_score": 0.84
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body",
+        "Forest"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 176,
+        "bridges": 4
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/c364c433238ff0576b28-thumbnail.webp",
+      "preview": "assets/images/c364c433238ff0576b28-preview.webp",
+      "width": 3134,
+      "height": 3599
+    },
+    {
+      "rank": 6,
+      "image_name": "961.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9108,
+        "semantic": 0.6356698274612427,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 1.0
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships]",
+          "navigating_in[facility=ships]",
+          "moving_in[facility=ships, natural_entity=sea]",
+          "navigating_in[facility=ships, natural_entity=sea]"
+        ],
+        "area_categories": [
+          "Port",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "vessels",
+          "shipping lanes"
+        ]
+      },
+      "description": "The image depicts a coastal port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of sea water. The port infrastructure dominates the left side of the image, featuring multiple wharves extending into the water, numerous gantry cranes positioned along the docks, and dense container stacks organized in rows. Several buildings with distinct red roofs are visible near the waterfront, indicating administrative or operational facilities. In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations. The shipping lanes are clearly visible, with vessels navigating near the port area. The overall scene reflects a busy industrial port environment with significant maritime activity and well-organized logistics infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships]、navigating_in[facility=ships]、moving_in[facility=ships, natural_entity=sea]、navigating_in[facility=ships, natural_entity=sea]",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "961.tif::area::transportation::1",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations. The shipping lanes are clearly visible, with vessels navigating near the port area. The overall scene reflects a busy industrial port environment with significant maritime activity and well-organized logistics infrastructure.",
+          "score": 0.99,
+          "relation_score": 1.0,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "961.tif::rel::ships::moving_in::port::3",
+          "doc_type": "relation",
+          "relation": "ships moving_in port",
+          "evidence": "In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations.",
+          "score": 0.8693,
+          "relation_score": 0.6683,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 5
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/f0a25682eb207e2c734e-thumbnail.webp",
+      "preview": "assets/images/f0a25682eb207e2c734e-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 7,
+      "image_name": "10844.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8700636121276855,
+        "semantic": 0.6415959596633911,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 0.6683,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 1.0
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships]",
+          "navigating_in[facility=ships]"
+        ],
+        "area_categories": [
+          "Transportation"
+        ],
+        "facilities": [
+          "vessels",
+          "shipping lanes",
+          "ships"
+        ]
+      },
+      "description": "The image depicts a vast expanse of water, likely a sea or large water body, characterized by a deep green hue. The terrain is flat, consistent with a plain or open water surface. There are no visible land cover types such as forests, grasslands, or built-up areas within the main frame, except for a small portion of land visible in the upper right corner, which appears to be a shoreline or coastal area. The primary natural geographic entity is the sea, dominating the scene. In the lower left corner, a concrete structure, possibly a pier or breakwater, extends into the water. This structure is light gray and contrasts with the dark green water. The main focus of the image is the presence of several vessels navigating the water. There are at least four visible vessels, including a larger cargo ship with a red deck and a narrower hull, moving through the water and leaving a visible wake behind it. Other smaller vessels are scattered across the scene, some appearing stationary and others in motion. The vessels are distributed across the water, with some closer to the concrete structure and others further out in the open water. The shipping lanes are implied by the movement and positioning of the vessels, suggesting active maritime traffic in this area.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships]、navigating_in[facility=ships]",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "10844.tif::rel::vessels::moving_in::transportation::7",
+          "doc_type": "relation",
+          "relation": "vessels moving_in transportation",
+          "evidence": "There are at least four visible vessels, including a larger cargo ship with a red deck and a narrower hull, moving through the water and leaving a visible wake behind it.",
+          "score": 0.8701,
+          "relation_score": 0.6683,
+          "evidence_score": 0.96
+        },
+        {
+          "doc_id": "10844.tif::rel::vessels::moving_in::transportation::8",
+          "doc_type": "relation",
+          "relation": "vessels moving_in transportation",
+          "evidence": "Other smaller vessels are scattered across the scene, some appearing stationary and others in motion.",
+          "score": 0.8695,
+          "relation_score": 0.6683,
+          "evidence_score": 0.82
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "ships",
+            "relation": "moving_in",
+            "object": "sea",
+            "category": "dynamic_activity",
+            "state": "dynamic"
+          },
+          {
+            "subject": "ships",
+            "relation": "navigating_in",
+            "object": "sea",
+            "category": "dynamic_activity",
+            "state": "dynamic"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 3
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/79040480f228f32448cc-thumbnail.webp",
+      "preview": "assets/images/79040480f228f32448cc-preview.webp",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "rank": 8,
+      "image_name": "641.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8697412950042726,
+        "semantic": 0.6382384896278381,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 0.6683,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 1.0
+      },
+      "matched": {
+        "keywords": [
+          "ships",
+          "sea"
+        ],
+        "relations": [
+          "moving_in[facility=ships]",
+          "navigating_in[facility=ships]"
+        ],
+        "area_categories": [
+          "Port",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "ships",
+          "container stacks",
+          "vessels",
+          "shipping lanes"
+        ]
+      },
+      "description": "The image depicts a coastal port area situated on a plain terrain, dominated by a large water body (sea) and built-up areas along the shoreline. The scene features extensive port infrastructure, including wharves where multiple large cargo ships are docked. Gantry cranes are visible along the docks, indicating active loading and unloading operations. Container stacks are present in the upper left section, suggesting a container terminal. In the water, several vessels are navigating, with one ship in the upper right leaving a visible wake, indicating movement. The port facilities are concentrated along the lower and left edges of the image, with the open sea occupying the majority of the central and upper right areas. The overall layout shows a well-developed maritime transportation hub with clear shipping lanes and docking areas.",
+      "reasons": [
+        "命中查询实体或关键词：ships、sea",
+        "命中空间关系或活动关系：moving_in[facility=ships]、navigating_in[facility=ships]",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "641.tif::rel::ships::navigating_in::transportation::4",
+          "doc_type": "relation",
+          "relation": "ships navigating_in transportation",
+          "evidence": "In the water, several vessels are navigating, with one ship in the upper right leaving a visible wake, indicating movement.",
+          "score": 0.8697,
+          "relation_score": 0.6683,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "ships",
+            "relation": "moving_in",
+            "object": "sea",
+            "category": "dynamic_activity",
+            "state": "dynamic"
+          },
+          {
+            "subject": "ships",
+            "relation": "navigating_in",
+            "object": "sea",
+            "category": "dynamic_activity",
+            "state": "dynamic"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Water Body",
+        "Built-up Area"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 12
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/db521b70edb2fa1b33a9-thumbnail.webp",
+      "preview": "assets/images/db521b70edb2fa1b33a9-preview.webp",
+      "width": 1500,
+      "height": 1500
+    }
+  ]
+}

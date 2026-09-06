@@ -1,0 +1,639 @@
+{
+  "id": "port",
+  "category": "entity",
+  "query": "检索港口影像",
+  "en": "Port scenes",
+  "elapsed_ms": 95.42,
+  "parsed_query": {
+    "semantic_query": "检索港口影像 ; port",
+    "filters": {
+      "area_category": [
+        "port"
+      ],
+      "facility": [],
+      "land_cover": [],
+      "natural_entity": [],
+      "terrain": []
+    },
+    "relations": [],
+    "relation_constraints": [],
+    "quantity_intent": {
+      "enabled": false,
+      "facilities": []
+    }
+  },
+  "requirements": {
+    "entities": [
+      {
+        "field": "area_category",
+        "value": "port"
+      }
+    ],
+    "relations": []
+  },
+  "query_profile": "entity",
+  "strict_result_count": 8,
+  "answer_zh": "查询：检索港口影像\n查询类型：entity\n结构化条件：实体条件：area_category=port\n检索结论：返回 8 个候选结果，其中 8 个具备中等以上证据。\n\nRank 1: 3432.tif（强匹配，Final=0.7878）\n命中实体/关键词：port\n场景类别：Port、Storage Area、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of water, likely a sea or ocean. The port area is densely packed with container stacks, gantry cranes, and wharves where several large cargo ships are docked. Multiple vessels are visible, including large cargo ships and smaller boats navigating the water. The storage areas within the port contain numerous container yards and warehouses, indicating active storage and logistics operations. Roads and transportation infrastructure connect different parts of the port, facilitating the movement of goods and vehicles. The overall scene suggests a busy and well-developed port complex with significant maritime and land-based transportation activities.\n\nRank 2: 701.tif（强匹配，Final=0.7874）\n命中实体/关键词：port\n场景类别：Port、Storage Area、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a coastal port area situated on a plain terrain, dominated by a large water body (sea) and built-up areas. The upper part of the image shows a container terminal with multiple gantry cranes, container stacks, and docked container ships. A pier bridge extends into the water in the top-right section. The lower part of the image features a lower dock area with several large cargo ships moored along the wharves. Adjacent to the docks are storage areas containing stockpiles and container yards. The water body shows visible shipping lanes with multiple vessels navigating or anchored. The scene is primarily industrial, focused on port operations and maritime transportation.\n\nRank 3: 1570.tif（强匹配，Final=0.7874）\n命中实体/关键词：port\n场景类别：Port、Storage Area、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up areas and a large water body representing the sea. The scene is dominated by port infrastructure, including wharves where a large cruise ship is docked. Adjacent to the port, there are storage areas with container yards visible, indicating active cargo handling operations. The transportation network is well-developed, with roads and railways running parallel to the coastline, facilitating the movement of goods and passengers. The overall layout suggests a busy and functional port environment, with clear spatial organization of facilities and infrastructure.\n\nRank 4: 3707.tif（强匹配，Final=0.7867）\n命中实体/关键词：port\n场景类别：Port、Industrial Zone、Storage Area、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large port and industrial complex situated on a plain terrain, bordered by a sea body. The land cover is predominantly built-up areas with extensive infrastructure, including warehouses, storage tanks, and container yards. The sea occupies the lower portion of the image, with several vessels docked at the wharves and others navigating the waters. The port area features multiple gantry cranes, container stacks, and ships moored along the wharves. Adjacent to the port, there is an industrial zone with factory buildings, storage tanks, and railway sidings. The storage area includes warehouses and container yards, organized in a grid-like pattern. Transportation infrastructure, such as roads and railways, connects the various facilities, facilitating the movement of goods and materials. The overall scene is a bustling hub of maritime and industrial activity, with a clear focus on logistics and trade.\n\nRank 5: 4992.tif（强匹配，Final=0.7862）\n命中实体/关键词：port\n场景类别：Port、Storage Area、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and a significant water body representing the sea. The port is divided into two main sections by a wide shipping lane, with wharves and gantry cranes lining both sides. On the left side, there are multiple container stacks and several ships docked at the wharves, while the right side also features container yards and gantry cranes. In the center of the water body, a large container ship is visible, moving through the shipping lane. The overall scene is dominated by industrial port infrastructure, with organized container storage areas and active maritime transportation.\n\nRank 6: 15920.tif（强匹配，Final=0.7854）\n命中实体/关键词：port\n场景类别：Port、Storage Area、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a sea body. The port area is densely packed with container stacks and gantry cranes along the wharves, with multiple ships docked and one large cargo ship navigating the waters. To the left of the port, there is a storage area with container yards and warehouses, as well as an industrial zone featuring factory buildings and storage tanks. A network of roads connects these areas, facilitating the transportation of goods and vehicles, with visible traffic on the main highway. A small trapezoidal green belt area with trees is present, serving a landscaping function, and is surrounded by paved surfaces. The overall scene is urban, with the port being the dominant feature, and the infrastructure supports heavy industrial and commercial activities.\n\nRank 7: 961.tif（强匹配，Final=0.7853）\n命中实体/关键词：port\n场景类别：Port、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a coastal port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of sea water. The port infrastructure dominates the left side of the image, featuring multiple wharves extending into the water, numerous gantry cranes positioned along the docks, and dense container stacks organized in rows. Several buildings with distinct red roofs are visible near the waterfront, indicating administrative or operational facilities. In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations. The shipping lanes are clearly visible, with vessels navigating near the port area. The overall scene reflects a busy industrial port environment with significant maritime activity and well-organized logistics infrastructure.\n\nRank 8: 4498.tif（强匹配，Final=0.7852）\n命中实体/关键词：port\n场景类别：Port、Storage Area、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：port；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of water, likely the sea. The port area is densely packed with container stacks, gantry cranes, and wharves where several ships are docked. To the left of the port, there is a significant storage area with numerous container yards and warehouses. Further inland, an industrial zone is visible with factory buildings and additional warehouses. The transportation network includes roads connecting the various facilities, and multiple vessels can be seen in the water near the port. The overall scene is dominated by the port infrastructure, with the sea occupying the right side of the image and the industrial and storage areas extending towards the left.\n\n说明：以上回答只基于结构化检索证据包生成，未额外编造图像内容。",
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "3432.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7878159066915512,
+        "semantic": 0.6242730021476746,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "container yards",
+          "warehouses",
+          "roads",
+          "vessels"
+        ]
+      },
+      "description": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of water, likely a sea or ocean. The port area is densely packed with container stacks, gantry cranes, and wharves where several large cargo ships are docked. Multiple vessels are visible, including large cargo ships and smaller boats navigating the water. The storage areas within the port contain numerous container yards and warehouses, indicating active storage and logistics operations. Roads and transportation infrastructure connect different parts of the port, facilitating the movement of goods and vehicles. The overall scene suggests a busy and well-developed port complex with significant maritime and land-based transportation activities.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "3432.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of water, likely a sea or ocean. The port area is densely packed with container stacks, gantry cranes, and wharves where several large cargo ships are docked. Multiple vessels are visible, including large cargo ships and smaller boats navigating the water. The storage areas within the port contain numerous container yards and warehouses, indicating active storage and logistics operations. Roads and transportation infrastructure connect different parts of the port, facilitating the movement of goods and vehicles. The overall scene suggests a busy and well-developed port complex with significant maritime and land-based transportation activities.",
+          "score": 0.7878,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 3
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/b8ce6bdef396b758f8f4-thumbnail.webp",
+      "preview": "assets/images/b8ce6bdef396b758f8f4-preview.webp",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "rank": 2,
+      "image_name": "701.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7874451613903046,
+        "semantic": 0.6231216192245483,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "stockpiles",
+          "container yards",
+          "vessels",
+          "shipping lanes"
+        ]
+      },
+      "description": "The image depicts a coastal port area situated on a plain terrain, dominated by a large water body (sea) and built-up areas. The upper part of the image shows a container terminal with multiple gantry cranes, container stacks, and docked container ships. A pier bridge extends into the water in the top-right section. The lower part of the image features a lower dock area with several large cargo ships moored along the wharves. Adjacent to the docks are storage areas containing stockpiles and container yards. The water body shows visible shipping lanes with multiple vessels navigating or anchored. The scene is primarily industrial, focused on port operations and maritime transportation.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "701.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, dominated by a large water body (sea) and built-up areas. The upper part of the image shows a container terminal with multiple gantry cranes, container stacks, and docked container ships. A pier bridge extends into the water in the top-right section. The lower part of the image features a lower dock area with several large cargo ships moored along the wharves. Adjacent to the docks are storage areas containing stockpiles and container yards. The water body shows visible shipping lanes with multiple vessels navigating or anchored. The scene is primarily industrial, focused on port operations and maritime transportation.",
+          "score": 0.7874,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Water Body",
+        "Built-up Area"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 12,
+        "container stacks": 3
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/c387275618ed8c6f315b-thumbnail.webp",
+      "preview": "assets/images/c387275618ed8c6f315b-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 3,
+      "image_name": "1570.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7873595619678497,
+        "semantic": 0.6228557825088501,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "ships",
+          "container yards",
+          "roads",
+          "railways",
+          "storage tanks"
+        ]
+      },
+      "description": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up areas and a large water body representing the sea. The scene is dominated by port infrastructure, including wharves where a large cruise ship is docked. Adjacent to the port, there are storage areas with container yards visible, indicating active cargo handling operations. The transportation network is well-developed, with roads and railways running parallel to the coastline, facilitating the movement of goods and passengers. The overall layout suggests a busy and functional port environment, with clear spatial organization of facilities and infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1570.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up areas and a large water body representing the sea. The scene is dominated by port infrastructure, including wharves where a large cruise ship is docked. Adjacent to the port, there are storage areas with container yards visible, indicating active cargo handling operations. The transportation network is well-developed, with roads and railways running parallel to the coastline, facilitating the movement of goods and passengers. The overall layout suggests a busy and functional port environment, with clear spatial organization of facilities and infrastructure.",
+          "score": 0.7874,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 3,
+        "storage tanks": 6
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/2145fef0146912e71cba-thumbnail.webp",
+      "preview": "assets/images/2145fef0146912e71cba-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 4,
+      "image_name": "3707.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7867395995140076,
+        "semantic": 0.6209304332733154,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Industrial Zone",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "factory buildings",
+          "storage tanks",
+          "warehouses",
+          "railway sidings",
+          "container yards",
+          "roads",
+          "railways",
+          "vessels"
+        ]
+      },
+      "description": "The image depicts a large port and industrial complex situated on a plain terrain, bordered by a sea body. The land cover is predominantly built-up areas with extensive infrastructure, including warehouses, storage tanks, and container yards. The sea occupies the lower portion of the image, with several vessels docked at the wharves and others navigating the waters. The port area features multiple gantry cranes, container stacks, and ships moored along the wharves. Adjacent to the port, there is an industrial zone with factory buildings, storage tanks, and railway sidings. The storage area includes warehouses and container yards, organized in a grid-like pattern. Transportation infrastructure, such as roads and railways, connects the various facilities, facilitating the movement of goods and materials. The overall scene is a bustling hub of maritime and industrial activity, with a clear focus on logistics and trade.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "3707.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a large port and industrial complex situated on a plain terrain, bordered by a sea body. The land cover is predominantly built-up areas with extensive infrastructure, including warehouses, storage tanks, and container yards. The sea occupies the lower portion of the image, with several vessels docked at the wharves and others navigating the waters. The port area features multiple gantry cranes, container stacks, and ships moored along the wharves. Adjacent to the port, there is an industrial zone with factory buildings, storage tanks, and railway sidings. The storage area includes warehouses and container yards, organized in a grid-like pattern. Transportation infrastructure, such as roads and railways, connects the various facilities, facilitating the movement of goods and materials. The overall scene is a bustling hub of maritime and industrial activity, with a clear focus on logistics and trade.",
+          "score": 0.7867,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 20
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/d8a5cb7f949cab31731d-thumbnail.webp",
+      "preview": "assets/images/d8a5cb7f949cab31731d-preview.webp",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "rank": 5,
+      "image_name": "4992.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7862145833253861,
+        "semantic": 0.6192999482154846,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "container yards",
+          "vessels",
+          "shipping lanes"
+        ]
+      },
+      "description": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and a significant water body representing the sea. The port is divided into two main sections by a wide shipping lane, with wharves and gantry cranes lining both sides. On the left side, there are multiple container stacks and several ships docked at the wharves, while the right side also features container yards and gantry cranes. In the center of the water body, a large container ship is visible, moving through the shipping lane. The overall scene is dominated by industrial port infrastructure, with organized container storage areas and active maritime transportation.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "4992.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and a significant water body representing the sea. The port is divided into two main sections by a wide shipping lane, with wharves and gantry cranes lining both sides. On the left side, there are multiple container stacks and several ships docked at the wharves, while the right side also features container yards and gantry cranes. In the center of the water body, a large container ship is visible, moving through the shipping lane. The overall scene is dominated by industrial port infrastructure, with organized container storage areas and active maritime transportation.",
+          "score": 0.7862,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 6
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/5a638149c4421bf4aac2-thumbnail.webp",
+      "preview": "assets/images/5a638149c4421bf4aac2-preview.webp",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "rank": 6,
+      "image_name": "15920.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7853727725028992,
+        "semantic": 0.6166856288909912,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Storage Area",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "container yards",
+          "warehouses",
+          "factory buildings",
+          "storage tanks",
+          "roads",
+          "vessels"
+        ]
+      },
+      "description": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a sea body. The port area is densely packed with container stacks and gantry cranes along the wharves, with multiple ships docked and one large cargo ship navigating the waters. To the left of the port, there is a storage area with container yards and warehouses, as well as an industrial zone featuring factory buildings and storage tanks. A network of roads connects these areas, facilitating the transportation of goods and vehicles, with visible traffic on the main highway. A small trapezoidal green belt area with trees is present, serving a landscaping function, and is surrounded by paved surfaces. The overall scene is urban, with the port being the dominant feature, and the infrastructure supports heavy industrial and commercial activities.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "15920.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a sea body. The port area is densely packed with container stacks and gantry cranes along the wharves, with multiple ships docked and one large cargo ship navigating the waters. To the left of the port, there is a storage area with container yards and warehouses, as well as an industrial zone featuring factory buildings and storage tanks. A network of roads connects these areas, facilitating the transportation of goods and vehicles, with visible traffic on the main highway. A small trapezoidal green belt area with trees is present, serving a landscaping function, and is surrounded by paved surfaces. The overall scene is urban, with the port being the dominant feature, and the infrastructure supports heavy industrial and commercial activities.",
+          "score": 0.7854,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 3,
+        "storage tanks": 21
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/432eb8576f5689002170-thumbnail.webp",
+      "preview": "assets/images/432eb8576f5689002170-preview.webp",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "rank": 7,
+      "image_name": "961.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.785284831571579,
+        "semantic": 0.6164125204086304,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "vessels",
+          "shipping lanes"
+        ]
+      },
+      "description": "The image depicts a coastal port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of sea water. The port infrastructure dominates the left side of the image, featuring multiple wharves extending into the water, numerous gantry cranes positioned along the docks, and dense container stacks organized in rows. Several buildings with distinct red roofs are visible near the waterfront, indicating administrative or operational facilities. In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations. The shipping lanes are clearly visible, with vessels navigating near the port area. The overall scene reflects a busy industrial port environment with significant maritime activity and well-organized logistics infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "961.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a coastal port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of sea water. The port infrastructure dominates the left side of the image, featuring multiple wharves extending into the water, numerous gantry cranes positioned along the docks, and dense container stacks organized in rows. Several buildings with distinct red roofs are visible near the waterfront, indicating administrative or operational facilities. In the lower part of the image, a large cargo ship is moving through the water, accompanied by a smaller tugboat, suggesting active maritime operations. The shipping lanes are clearly visible, with vessels navigating near the port area. The overall scene reflects a busy industrial port environment with significant maritime activity and well-organized logistics infrastructure.",
+          "score": 0.7853,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 5
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/f0a25682eb207e2c734e-thumbnail.webp",
+      "preview": "assets/images/f0a25682eb207e2c734e-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 8,
+      "image_name": "4498.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7852176571369172,
+        "semantic": 0.6162039041519165,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Port",
+          "Storage Area",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "container yards",
+          "warehouses",
+          "factory buildings",
+          "roads",
+          "vessels"
+        ]
+      },
+      "description": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of water, likely the sea. The port area is densely packed with container stacks, gantry cranes, and wharves where several ships are docked. To the left of the port, there is a significant storage area with numerous container yards and warehouses. Further inland, an industrial zone is visible with factory buildings and additional warehouses. The transportation network includes roads connecting the various facilities, and multiple vessels can be seen in the water near the port. The overall scene is dominated by the port infrastructure, with the sea occupying the right side of the image and the industrial and storage areas extending towards the left.",
+      "reasons": [
+        "命中查询实体或关键词：port",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "4498.tif::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a large port facility situated on a plain terrain, characterized by extensive built-up areas and adjacent to a large body of water, likely the sea. The port area is densely packed with container stacks, gantry cranes, and wharves where several ships are docked. To the left of the port, there is a significant storage area with numerous container yards and warehouses. Further inland, an industrial zone is visible with factory buildings and additional warehouses. The transportation network includes roads connecting the various facilities, and multiple vessels can be seen in the water near the port. The overall scene is dominated by the port infrastructure, with the sea occupying the right side of the image and the industrial and storage areas extending towards the left.",
+          "score": 0.7852,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 5,
+        "gantry cranes": 5
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/ce51d35cfe572a654eb9-thumbnail.webp",
+      "preview": "assets/images/ce51d35cfe572a654eb9-preview.webp",
+      "width": 2000,
+      "height": 2000
+    }
+  ]
+}

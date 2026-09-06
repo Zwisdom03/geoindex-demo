@@ -1,0 +1,901 @@
+{
+  "id": "road-industrial",
+  "category": "spatial",
+  "query": "道路穿过工业区",
+  "en": "Roads traversing industrial areas",
+  "elapsed_ms": 224.76,
+  "parsed_query": {
+    "semantic_query": "道路穿过工业区 ; industrial zone ; roads",
+    "filters": {
+      "area_category": [
+        "industrial zone"
+      ],
+      "facility": [
+        "roads"
+      ],
+      "land_cover": [],
+      "natural_entity": [],
+      "terrain": []
+    },
+    "relations": [
+      {
+        "predicate": "traverses",
+        "relation_type": "geometry_orientation",
+        "relation_category": "geometry_orientation",
+        "anchors": [
+          {
+            "field": "facility",
+            "value": "roads",
+            "entity_type": "transport_corridor",
+            "entity_supertype": "linear_infrastructure"
+          },
+          {
+            "field": "area_category",
+            "value": "industrial zone",
+            "entity_type": "area_industrial",
+            "entity_supertype": "functional_area"
+          }
+        ],
+        "source": "query_rule",
+        "matched_keywords": [
+          "穿过"
+        ]
+      }
+    ],
+    "relation_constraints": [
+      {
+        "subject": "roads",
+        "subject_type": "transport_corridor",
+        "subject_supertype": "linear_infrastructure",
+        "relation": "traverses",
+        "relation_category": "geometry_orientation",
+        "relation_state": "spatial",
+        "object": "industrial zone",
+        "object_type": "area_industrial",
+        "object_supertype": "functional_area",
+        "doc_type": "relation"
+      }
+    ],
+    "quantity_intent": {
+      "enabled": false,
+      "facilities": []
+    }
+  },
+  "requirements": {
+    "entities": [
+      {
+        "field": "area_category",
+        "value": "industrial zone"
+      },
+      {
+        "field": "facility",
+        "value": "roads"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "roads",
+        "relation": "traverses",
+        "object": "industrial zone",
+        "category": "geometry_orientation",
+        "state": "spatial"
+      }
+    ]
+  },
+  "query_profile": "relation",
+  "strict_result_count": 1,
+  "answer_zh": "查询：道路穿过工业区\n查询类型：relation\n结构化条件：实体条件：area_category=industrial zone、facility=roads；关系条件：roads traverses industrial zone\n检索结论：返回 8 个候选结果，其中 8 个具备中等以上证据。\n\nRank 1: test-1112.png（强匹配，Final=0.8426）\n命中实体/关键词：industrial zone、roads\n命中关系：traverses[facility=roads, area_category=industrial zone]、roads::crosses::industrial zone、traverses[area_category=industrial zone]\n场景类别：Agricultural Land、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：industrial zone、roads；命中空间关系或活动关系：traverses[facility=roads, area_category=industrial zone]、roads::crosses::industrial zone、traverses[area_category=industrial zone]；关系匹配证据较强；存在一定支撑证据；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a flat plain terrain characterized by a mix of agricultural land, built-up areas, and water bodies. The left side of the image is dominated by extensive cropland with rectangular fields and greenhouses, while the right side features a dense industrial zone with numerous factory buildings, warehouses, and storage tanks. Two major rivers run through the scene, one along the left edge and another along the right edge, with smaller water channels visible within the agricultural area. The agricultural land area on the left contains multiple fields with varying crop colors and several greenhouse structures. The industrial zone on the right includes large factory buildings with dark roofs, warehouses, and storage tanks, along with visible pipelines connecting different facilities. A highway runs along the bottom left corner, with several bridges crossing the rivers and smaller roads connecting the industrial buildings. The scene shows a clear division between rural agricultural areas and industrial development, with the rivers serving as natural boundaries. The industrial zone appears to be well-developed with multiple large buildings and infrastructure, while the agricultural area maintains a more traditional layout with organized fields and greenhouses. The transportation network includes both major highways and local roads, facilitating movement between the different areas.\n- [roads crosses industrial zone] A highway runs along the bottom left corner, with several bridges crossing the rivers and smaller roads connecting the industrial buildings.\n\nRank 2: 0824.png（强匹配，Final=0.7857）\n命中实体/关键词：industrial zone、roads\n命中关系：traverses[facility=roads]\n场景类别：Commercial/Residential Area、Transportation、Industrial Zone\n判断依据：命中查询实体或关键词：industrial zone、roads；命中空间关系或活动关系：traverses[facility=roads]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- This transportation area includes bridges crossing over smaller water bodies and roads. Adjacent to the transportation corridor and near the river, there is an industrial zone with multiple factory buildings and warehouses, some with blue and red roofs. The industrial facilities are organized in a grid-like pattern with internal roads and small green spaces.\n- [roads crosses bridges] This transportation area includes bridges crossing over smaller water bodies and roads.\n\nRank 3: test-485.png（证据较强，Final=0.7258）\n命中实体/关键词：industrial zone、roads\n场景类别：Agricultural Land、Industrial Zone、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：industrial zone、roads；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- A major road runs vertically through the center, intersecting the river via a large multi-lane bridge that carries moving vehicles. In the lower right portion, an industrial zone is visible with several large factory buildings and warehouses featuring light-colored roofs, surrounded by open spaces and access roads. Residential blocks with varied roof colors are distributed along smaller roads and waterways, particularly in the upper sections.\n- [industrial zone enclosed_layout factory buildings] In the lower right portion, an industrial zone is visible with several large factory buildings and warehouses featuring light-colored roofs, surrounded by open spaces and access roads.\n\nRank 4: test-477.png（证据较强，Final=0.7235）\n命中实体/关键词：industrial zone、roads\n命中关系：traverses[area_category=industrial zone]\n场景类别：Commercial/Residential Area、Industrial Zone、Transportation、Utility Infrastructure\n判断依据：命中查询实体或关键词：industrial zone、roads；命中空间关系或活动关系：traverses[area_category=industrial zone]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- A major highway runs vertically through the center, crossed by several bridges over the river. To the upper right, large industrial zone facilities are visible, including factory buildings and warehouses with expansive roofs. Solar panel installations can be seen on many rooftops throughout the residential areas, indicating utility infrastructure integration.\n- [industrial zone contains factory buildings] To the upper right, large industrial zone facilities are visible, including factory buildings and warehouses with expansive roofs.\n\nRank 5: test-162.png（证据较强，Final=0.7227）\n命中实体/关键词：industrial zone、roads\n场景类别：Commercial/Residential Area、Industrial Zone、Transportation、Agricultural Land\n判断依据：命中查询实体或关键词：industrial zone、roads；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- [industrial zone within factory buildings] An industrial zone is visible, marked by factory buildings, warehouses, and railway sidings, primarily located in the lower right section.\n\nRank 6: test-585.png（证据较强，Final=0.7223）\n命中实体/关键词：industrial zone、roads\n场景类别：Industrial Zone、Commercial/Residential Area、Agricultural Land、Transportation\n判断依据：命中查询实体或关键词：industrial zone、roads；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- The industrial zone occupies a significant portion of the central and right-central areas, characterized by large factory buildings with blue and white rooftops, warehouses, and storage tanks arranged in dense blocks. Adjacent to the industrial area are commercial and residential zones featuring residential blocks, commercial buildings, urban roads, and parking lots. Agricultural land is widespread across the northern, western, and southwestern regions, consisting of fields and greenhouses organized in grid-like patterns. Transportation infrastructure includes a network of roads, highways, and bridges connecting the various zones, with major highways running through the center and along the edges of the image.\n- [industrial zone touches commercial/residential area] Adjacent to the industrial area are commercial and residential zones featuring residential blocks, commercial buildings, urban roads, and parking lots.\n\nRank 7: test-950.png（证据较强，Final=0.7221）\n命中实体/关键词：industrial zone、roads\n场景类别：Agricultural Land、Commercial/Residential Area、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：industrial zone、roads；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- These developed zones feature numerous buildings with varying roof colors, including blue and red, indicating different types of structures. Industrial zones are present, particularly in the upper right and lower left sections, with factory buildings and warehouses identifiable by their large rectangular footprints and blue roofs. Transportation infrastructure is well-developed throughout the area. A major highway runs diagonally from the upper left to the lower right, with several interchanges and bridges crossing the river. Additional roads form a grid pattern in the developed areas, connecting the various residential, commercial, and industrial zones. The river itself is crossed by multiple bridges, facilitating movement between the different parts of the landscape.\n- [industrial zone contains commercial/residential area] These developed zones feature numerous buildings with varying roof colors, including blue and red, indicating different types of structures.\n\nRank 8: test-531.png（证据较强，Final=0.7220）\n命中实体/关键词：industrial zone、roads\n命中关系：traverses[area_category=industrial zone]\n场景类别：Industrial Zone、Transportation、Agricultural Land、Commercial/Residential Area\n判断依据：命中查询实体或关键词：industrial zone、roads；命中空间关系或活动关系：traverses[area_category=industrial zone]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- The scene is characterized by a mix of agricultural fields, greenhouses, and residential blocks, alongside industrial facilities and transportation infrastructure. In the left part of the image, there is a large industrial zone featuring two prominent beige warehouse-type buildings with flat roofs, surrounded by empty yards. Adjacent to this industrial area is a major highway running vertically, with a bridge crossing over it in the lower part of the image. The highway is flanked by green vegetation and smaller roads.\n- [industrial zone touches highways] Adjacent to this industrial area is a major highway running vertically, with a bridge crossing over it in the lower part of the image.\n\n说明：以上回答只基于结构化检索证据包生成，未额外编造图像内容。",
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "test-1112.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8426499444458009,
+        "semantic": 0.6614079475402832,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.89395,
+        "quantity": 0.0,
+        "evidence_layer": 0.72,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [
+          "traverses[facility=roads, area_category=industrial zone]",
+          "roads::crosses::industrial zone",
+          "traverses[area_category=industrial zone]"
+        ],
+        "area_categories": [
+          "Agricultural Land",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "fields",
+          "greenhouses",
+          "factory buildings",
+          "warehouses",
+          "storage tanks",
+          "pipelines",
+          "bridges",
+          "roads",
+          "highways"
+        ]
+      },
+      "description": "The image depicts a flat plain terrain characterized by a mix of agricultural land, built-up areas, and water bodies. The left side of the image is dominated by extensive cropland with rectangular fields and greenhouses, while the right side features a dense industrial zone with numerous factory buildings, warehouses, and storage tanks. Two major rivers run through the scene, one along the left edge and another along the right edge, with smaller water channels visible within the agricultural area. The agricultural land area on the left contains multiple fields with varying crop colors and several greenhouse structures. The industrial zone on the right includes large factory buildings with dark roofs, warehouses, and storage tanks, along with visible pipelines connecting different facilities. A highway runs along the bottom left corner, with several bridges crossing the rivers and smaller roads connecting the industrial buildings. The scene shows a clear division between rural agricultural areas and industrial development, with the rivers serving as natural boundaries. The industrial zone appears to be well-developed with multiple large buildings and infrastructure, while the agricultural area maintains a more traditional layout with organized fields and greenhouses. The transportation network includes both major highways and local roads, facilitating movement between the different areas.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "命中空间关系或活动关系：traverses[facility=roads, area_category=industrial zone]、roads::crosses::industrial zone、traverses[area_category=industrial zone]",
+        "关系匹配证据较强",
+        "存在一定支撑证据",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-1112.png::area::industrial_zone::1",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image depicts a flat plain terrain characterized by a mix of agricultural land, built-up areas, and water bodies. The left side of the image is dominated by extensive cropland with rectangular fields and greenhouses, while the right side features a dense industrial zone with numerous factory buildings, warehouses, and storage tanks. Two major rivers run through the scene, one along the left edge and another along the right edge, with smaller water channels visible within the agricultural area. The agricultural land area on the left contains multiple fields with varying crop colors and several greenhouse structures. The industrial zone on the right includes large factory buildings with dark roofs, warehouses, and storage tanks, along with visible pipelines connecting different facilities. A highway runs along the bottom left corner, with several bridges crossing the rivers and smaller roads connecting the industrial buildings. The scene shows a clear division between rural agricultural areas and industrial development, with the rivers serving as natural boundaries. The industrial zone appears to be well-developed with multiple large buildings and infrastructure, while the agricultural area maintains a more traditional layout with organized fields and greenhouses. The transportation network includes both major highways and local roads, facilitating movement between the different areas.",
+          "score": 0.5649,
+          "relation_score": 0.675,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "test-1112.png::rel::roads::crosses::industrial_zone::5",
+          "doc_type": "relation",
+          "relation": "roads crosses industrial zone",
+          "evidence": "A highway runs along the bottom left corner, with several bridges crossing the rivers and smaller roads connecting the industrial buildings.",
+          "score": 0.8426,
+          "relation_score": 0.894,
+          "evidence_score": 0.82
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Cropland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "bridges": 5
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/456cf6708679872b52d5-thumbnail.webp",
+      "preview": "assets/images/456cf6708679872b52d5-preview.webp",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "rank": 2,
+      "image_name": "0824.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.7856670004913331,
+        "semantic": 0.6635032296180725,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.56895,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [
+          "traverses[facility=roads]"
+        ],
+        "area_categories": [
+          "Commercial/Residential Area",
+          "Transportation",
+          "Industrial Zone"
+        ],
+        "facilities": [
+          "residential blocks",
+          "urban roads",
+          "parking lots",
+          "bridges",
+          "roads",
+          "highways",
+          "railways",
+          "factory buildings",
+          "warehouses",
+          "storage tanks"
+        ]
+      },
+      "description": "The image depicts a flat urban plain characterized by extensive built-up areas and a river flowing along the right side. The terrain is predominantly covered by residential blocks, urban roads, and various industrial structures. A major river runs vertically along the right edge of the scene, bordered by green vegetation and some industrial facilities. In the upper-left and central parts of the image, there is a large commercial and residential area featuring numerous residential blocks with red and grey roofs, interspersed with urban roads and parking lots. Several sports fields, including a large running track and basketball courts, are visible within this area. To the right of the residential zone, a major transportation corridor runs diagonally, consisting of a multi-lane highway and parallel railway tracks. This transportation area includes bridges crossing over smaller water bodies and roads. Adjacent to the transportation corridor and near the river, there is an industrial zone with multiple factory buildings and warehouses, some with blue and red roofs. The industrial facilities are organized in a grid-like pattern with internal roads and small green spaces. The overall scene shows a well-developed urban area with a mix of residential, transportation, and industrial land uses, all situated on flat terrain near a river.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "命中空间关系或活动关系：traverses[facility=roads]",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0824.png::area::industrial_zone::2",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "This transportation area includes bridges crossing over smaller water bodies and roads. Adjacent to the transportation corridor and near the river, there is an industrial zone with multiple factory buildings and warehouses, some with blue and red roofs. The industrial facilities are organized in a grid-like pattern with internal roads and small green spaces.",
+          "score": 0.4147,
+          "relation_score": 0.325,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "0824.png::rel::roads::crosses::bridges::6",
+          "doc_type": "relation",
+          "relation": "roads crosses bridges",
+          "evidence": "This transportation area includes bridges crossing over smaller water bodies and roads.",
+          "score": 0.7857,
+          "relation_score": 0.5689,
+          "evidence_score": 0.89
+        },
+        {
+          "doc_id": "0824.png::rel::industrial_zone::touches::factory_buildings::7",
+          "doc_type": "relation",
+          "relation": "industrial zone touches factory buildings",
+          "evidence": "Adjacent to the transportation corridor and near the river, there is an industrial zone with multiple factory buildings and warehouses, some with blue and red roofs.",
+          "score": 0.7235,
+          "relation_score": 0.3785,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "roads",
+            "relation": "traverses",
+            "object": "industrial zone",
+            "category": "geometry_orientation",
+            "state": "spatial"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "storage tanks": 1,
+        "bridges": 4
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/69f2b9074b65b302e71c-thumbnail.webp",
+      "preview": "assets/images/69f2b9074b65b302e71c-preview.webp",
+      "width": 6824,
+      "height": 4640
+    },
+    {
+      "rank": 3,
+      "image_name": "test-485.png",
+      "confidence": "medium",
+      "scores": {
+        "final": 0.725772917300415,
+        "semantic": 0.6558768153190613,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.39045,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Agricultural Land",
+          "Industrial Zone",
+          "Commercial/Residential Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "fields",
+          "greenhouses",
+          "irrigation canals",
+          "factory buildings",
+          "warehouses",
+          "residential blocks",
+          "urban roads",
+          "bridges",
+          "roads"
+        ]
+      },
+      "description": "The image depicts a flat plain terrain dominated by extensive cropland arranged in rectangular plots of varying green and brown hues, interspersed with water bodies including a prominent river running horizontally across the middle. Built-up areas appear as scattered clusters of structures among the fields. A major road runs vertically through the center, intersecting the river via a large multi-lane bridge that carries moving vehicles. In the lower right portion, an industrial zone is visible with several large factory buildings and warehouses featuring light-colored roofs, surrounded by open spaces and access roads. Residential blocks with varied roof colors are distributed along smaller roads and waterways, particularly in the upper sections. Irrigation canals and smaller water channels divide the agricultural plots, supporting the cultivation activities evident across the landscape.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-485.png::area::industrial_zone::1",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "A major road runs vertically through the center, intersecting the river via a large multi-lane bridge that carries moving vehicles. In the lower right portion, an industrial zone is visible with several large factory buildings and warehouses featuring light-colored roofs, surrounded by open spaces and access roads. Residential blocks with varied roof colors are distributed along smaller roads and waterways, particularly in the upper sections.",
+          "score": 0.4136,
+          "relation_score": 0.325,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "test-485.png::rel::industrial_zone::enclosed_layout::factory_buildings::3",
+          "doc_type": "relation",
+          "relation": "industrial zone enclosed_layout factory buildings",
+          "evidence": "In the lower right portion, an industrial zone is visible with several large factory buildings and warehouses featuring light-colored roofs, surrounded by open spaces and access roads.",
+          "score": 0.7258,
+          "relation_score": 0.3905,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "roads",
+            "relation": "traverses",
+            "object": "industrial zone",
+            "category": "geometry_orientation",
+            "state": "spatial"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Cropland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "bridges": 5
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/7ea1dd1e4ab5d84436d8-thumbnail.webp",
+      "preview": "assets/images/7ea1dd1e4ab5d84436d8-preview.webp",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "rank": 4,
+      "image_name": "test-477.png",
+      "confidence": "medium",
+      "scores": {
+        "final": 0.7234776213195802,
+        "semantic": 0.6630890369415283,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.675,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [
+          "traverses[area_category=industrial zone]"
+        ],
+        "area_categories": [
+          "Commercial/Residential Area",
+          "Industrial Zone",
+          "Transportation",
+          "Utility Infrastructure"
+        ],
+        "facilities": [
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "factory buildings",
+          "warehouses",
+          "bridges",
+          "roads",
+          "highways",
+          "solar farms"
+        ]
+      },
+      "description": "The image depicts a flat plain terrain characterized by a mix of built-up areas, water bodies, forest patches, and grassland. A river runs through the scene, dividing different land use zones. The landscape is predominantly urban with extensive residential and commercial development. In the central and lower parts of the image, there are dense residential blocks with uniform housing structures, many featuring blue rooftops. Commercial buildings are interspersed among the residential areas, connected by a network of urban roads and parking lots. A major highway runs vertically through the center, crossed by several bridges over the river. To the upper right, large industrial zone facilities are visible, including factory buildings and warehouses with expansive roofs. Solar panel installations can be seen on many rooftops throughout the residential areas, indicating utility infrastructure integration. A sports field with a purple running track is located in the lower central area, surrounded by green space.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "命中空间关系或活动关系：traverses[area_category=industrial zone]",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-477.png::area::industrial_zone::1",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "A major highway runs vertically through the center, crossed by several bridges over the river. To the upper right, large industrial zone facilities are visible, including factory buildings and warehouses with expansive roofs. Solar panel installations can be seen on many rooftops throughout the residential areas, indicating utility infrastructure integration.",
+          "score": 0.5656,
+          "relation_score": 0.675,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "test-477.png::rel::industrial_zone::contains::factory_buildings::6",
+          "doc_type": "relation",
+          "relation": "industrial zone contains factory buildings",
+          "evidence": "To the upper right, large industrial zone facilities are visible, including factory buildings and warehouses with expansive roofs.",
+          "score": 0.7235,
+          "relation_score": 0.3785,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "roads",
+            "relation": "traverses",
+            "object": "industrial zone",
+            "category": "geometry_orientation",
+            "state": "spatial"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body",
+        "Forest",
+        "Grassland"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "bridges": 5
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/f842e7687dba165b0d10-thumbnail.webp",
+      "preview": "assets/images/f842e7687dba165b0d10-preview.webp",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "rank": 5,
+      "image_name": "test-162.png",
+      "confidence": "medium",
+      "scores": {
+        "final": 0.7226579554107667,
+        "semantic": 0.6573969125747681,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.37855,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Commercial/Residential Area",
+          "Industrial Zone",
+          "Transportation",
+          "Agricultural Land"
+        ],
+        "facilities": [
+          "residential blocks",
+          "urban roads",
+          "parking lots",
+          "factory buildings",
+          "warehouses",
+          "railway sidings",
+          "roads",
+          "highways",
+          "railways",
+          "bridges",
+          "fields",
+          "storage tanks"
+        ]
+      },
+      "description": "The image depicts a predominantly urban landscape situated on a plain, characterized by extensive built-up areas interspersed with patches of forest, grassland, and cropland. A river meanders through the scene, providing a natural geographic feature amidst the developed environment. The terrain is relatively flat, supporting a dense network of urban infrastructure. Key areas include extensive commercial and residential zones, featuring numerous residential blocks, urban roads, and parking lots, particularly concentrated in the central and upper portions of the image. An industrial zone is visible, marked by factory buildings, warehouses, and railway sidings, primarily located in the lower right section. Transportation infrastructure is prominent, with a complex network of roads, highways, railways, and bridges connecting various parts of the urban area. Additionally, agricultural land with fields can be observed in the peripheral regions, indicating a mix of urban and rural land use. The scene appears to be captured during the summer season, as evidenced by the lush green vegetation and the overall vibrant appearance of the landscape. The river's water appears dark, and there are no visible boats on the right-side river section. An athletics track and field stadium with a red oval running track is also present in the upper part of the image.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-162.png::rel::industrial_zone::within::factory_buildings::4",
+          "doc_type": "relation",
+          "relation": "industrial zone within factory buildings",
+          "evidence": "An industrial zone is visible, marked by factory buildings, warehouses, and railway sidings, primarily located in the lower right section.",
+          "score": 0.7227,
+          "relation_score": 0.3785,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "roads",
+            "relation": "traverses",
+            "object": "industrial zone",
+            "category": "geometry_orientation",
+            "state": "spatial"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Forest",
+        "Grassland",
+        "Cropland",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "storage tanks": 2,
+        "bridges": 27
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/08594d2306e9f4522e5b-thumbnail.webp",
+      "preview": "assets/images/08594d2306e9f4522e5b-preview.webp",
+      "width": 8192,
+      "height": 8192
+    },
+    {
+      "rank": 6,
+      "image_name": "test-585.png",
+      "confidence": "medium",
+      "scores": {
+        "final": 0.7222612459686281,
+        "semantic": 0.6587764024734497,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.37855,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Industrial Zone",
+          "Commercial/Residential Area",
+          "Agricultural Land",
+          "Transportation"
+        ],
+        "facilities": [
+          "factory buildings",
+          "warehouses",
+          "storage tanks",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "fields",
+          "greenhouses",
+          "roads",
+          "highways",
+          "bridges"
+        ]
+      },
+      "description": "The image displays a mixed landscape dominated by a large industrial complex in the central and eastern portions, surrounded by extensive agricultural fields and forested areas. The terrain is primarily flat with some hilly regions visible in the western and southern parts. Land cover includes dense forest patches, numerous rectangular cropland plots, built-up urban and industrial areas, and several water bodies such as lakes and a river. Natural geographic entities include mountains in the background, a winding river cutting through the landscape, and multiple lakes scattered throughout the scene. The industrial zone occupies a significant portion of the central and right-central areas, characterized by large factory buildings with blue and white rooftops, warehouses, and storage tanks arranged in dense blocks. Adjacent to the industrial area are commercial and residential zones featuring residential blocks, commercial buildings, urban roads, and parking lots. Agricultural land is widespread across the northern, western, and southwestern regions, consisting of fields and greenhouses organized in grid-like patterns. Transportation infrastructure includes a network of roads, highways, and bridges connecting the various zones, with major highways running through the center and along the edges of the image.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-585.png::area::transportation::3",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The industrial zone occupies a significant portion of the central and right-central areas, characterized by large factory buildings with blue and white rooftops, warehouses, and storage tanks arranged in dense blocks. Adjacent to the industrial area are commercial and residential zones featuring residential blocks, commercial buildings, urban roads, and parking lots. Agricultural land is widespread across the northern, western, and southwestern regions, consisting of fields and greenhouses organized in grid-like patterns. Transportation infrastructure includes a network of roads, highways, and bridges connecting the various zones, with major highways running through the center and along the edges of the image.",
+          "score": 0.3973,
+          "relation_score": 0.325,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "test-585.png::rel::industrial_zone::touches::commercial_residential_area::5",
+          "doc_type": "relation",
+          "relation": "industrial zone touches commercial/residential area",
+          "evidence": "Adjacent to the industrial area are commercial and residential zones featuring residential blocks, commercial buildings, urban roads, and parking lots.",
+          "score": 0.7223,
+          "relation_score": 0.3785,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "roads",
+            "relation": "traverses",
+            "object": "industrial zone",
+            "category": "geometry_orientation",
+            "state": "spatial"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Forest",
+        "Cropland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Mountain",
+        "River",
+        "Lake"
+      ],
+      "detections": {
+        "storage tanks": 18,
+        "bridges": 48
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/ebb1b902118cbd13fbe4-thumbnail.webp",
+      "preview": "assets/images/ebb1b902118cbd13fbe4-preview.webp",
+      "width": 8192,
+      "height": 8192
+    },
+    {
+      "rank": 7,
+      "image_name": "test-950.png",
+      "confidence": "medium",
+      "scores": {
+        "final": 0.7220538961914061,
+        "semantic": 0.6659074425697327,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.37855,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Agricultural Land",
+          "Commercial/Residential Area",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "fields",
+          "residential blocks",
+          "urban roads",
+          "factory buildings",
+          "warehouses",
+          "bridges",
+          "roads",
+          "highways",
+          "storage tanks"
+        ]
+      },
+      "description": "The image depicts a flat plain terrain dominated by extensive cropland and built-up areas, with a prominent river winding through the landscape. The river flows from the upper right towards the lower left, creating a natural boundary between different land uses. Agricultural fields are widespread, particularly in the lower half of the image, showing a patchwork of cultivated plots in various stages of growth. Multiple key areas are visible across the scene. In the upper left and central regions, there are dense commercial and residential areas characterized by organized residential blocks and a network of urban roads. These developed zones feature numerous buildings with varying roof colors, including blue and red, indicating different types of structures. Industrial zones are present, particularly in the upper right and lower left sections, with factory buildings and warehouses identifiable by their large rectangular footprints and blue roofs. Transportation infrastructure is well-developed throughout the area. A major highway runs diagonally from the upper left to the lower right, with several interchanges and bridges crossing the river. Additional roads form a grid pattern in the developed areas, connecting the various residential, commercial, and industrial zones. The river itself is crossed by multiple bridges, facilitating movement between the different parts of the landscape. The overall scene shows a mixed-use area where agricultural land coexists with urban development and industrial facilities.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-950.png::area::industrial_zone::2",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "These developed zones feature numerous buildings with varying roof colors, including blue and red, indicating different types of structures. Industrial zones are present, particularly in the upper right and lower left sections, with factory buildings and warehouses identifiable by their large rectangular footprints and blue roofs. Transportation infrastructure is well-developed throughout the area. A major highway runs diagonally from the upper left to the lower right, with several interchanges and bridges crossing the river. Additional roads form a grid pattern in the developed areas, connecting the various residential, commercial, and industrial zones. The river itself is crossed by multiple bridges, facilitating movement between the different parts of the landscape.",
+          "score": 0.4151,
+          "relation_score": 0.325,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "test-950.png::rel::industrial_zone::contains::commercial_residential_area::5",
+          "doc_type": "relation",
+          "relation": "industrial zone contains commercial/residential area",
+          "evidence": "These developed zones feature numerous buildings with varying roof colors, including blue and red, indicating different types of structures.",
+          "score": 0.7221,
+          "relation_score": 0.3785,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "roads",
+            "relation": "traverses",
+            "object": "industrial zone",
+            "category": "geometry_orientation",
+            "state": "spatial"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Cropland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "storage tanks": 1,
+        "bridges": 47
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/cf88bed4e7f707d8c037-thumbnail.webp",
+      "preview": "assets/images/cf88bed4e7f707d8c037-preview.webp",
+      "width": 8192,
+      "height": 8192
+    },
+    {
+      "rank": 8,
+      "image_name": "test-531.png",
+      "confidence": "medium",
+      "scores": {
+        "final": 0.7220432703521729,
+        "semantic": 0.6567387580871582,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.675,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "industrial zone",
+          "roads"
+        ],
+        "relations": [
+          "traverses[area_category=industrial zone]"
+        ],
+        "area_categories": [
+          "Industrial Zone",
+          "Transportation",
+          "Agricultural Land",
+          "Commercial/Residential Area"
+        ],
+        "facilities": [
+          "factory buildings",
+          "warehouses",
+          "bridges",
+          "roads",
+          "highways",
+          "fields",
+          "greenhouses",
+          "residential blocks",
+          "urban roads"
+        ]
+      },
+      "description": "The image depicts a flat plain terrain dominated by extensive cropland and built-up areas, with a river network weaving through the landscape. The scene is characterized by a mix of agricultural fields, greenhouses, and residential blocks, alongside industrial facilities and transportation infrastructure. In the left part of the image, there is a large industrial zone featuring two prominent beige warehouse-type buildings with flat roofs, surrounded by empty yards. Adjacent to this industrial area is a major highway running vertically, with a bridge crossing over it in the lower part of the image. The highway is flanked by green vegetation and smaller roads. The central and right parts of the image are primarily agricultural land, with numerous rectangular fields and greenhouses arranged in a grid-like pattern. Interspersed among the fields are clusters of residential blocks with blue and red roofs, connected by a network of urban roads. A river or canal runs through the agricultural area, providing irrigation and drainage. In the upper left corner, there is a parking lot with several vehicles, including buses and cars, indicating some level of activity in the area.",
+      "reasons": [
+        "命中查询实体或关键词：industrial zone、roads",
+        "命中空间关系或活动关系：traverses[area_category=industrial zone]",
+        "存在部分关系匹配证据",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-531.png::area::industrial_zone::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The scene is characterized by a mix of agricultural fields, greenhouses, and residential blocks, alongside industrial facilities and transportation infrastructure. In the left part of the image, there is a large industrial zone featuring two prominent beige warehouse-type buildings with flat roofs, surrounded by empty yards. Adjacent to this industrial area is a major highway running vertically, with a bridge crossing over it in the lower part of the image. The highway is flanked by green vegetation and smaller roads.",
+          "score": 0.565,
+          "relation_score": 0.675,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "test-531.png::rel::industrial_zone::touches::highways::3",
+          "doc_type": "relation",
+          "relation": "industrial zone touches highways",
+          "evidence": "Adjacent to this industrial area is a major highway running vertically, with a bridge crossing over it in the lower part of the image.",
+          "score": 0.722,
+          "relation_score": 0.3785,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": false,
+        "missing_entities": [],
+        "missing_relations": [
+          {
+            "subject": "roads",
+            "relation": "traverses",
+            "object": "industrial zone",
+            "category": "geometry_orientation",
+            "state": "spatial"
+          }
+        ],
+        "score_reasons": [
+          "relation_score_below_0.75"
+        ]
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Cropland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "bridges": 2
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/04893c333dc5063d39ec-thumbnail.webp",
+      "preview": "assets/images/04893c333dc5063d39ec-preview.webp",
+      "width": 2048,
+      "height": 2048
+    }
+  ]
+}

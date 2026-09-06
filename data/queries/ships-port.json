@@ -1,0 +1,774 @@
+{
+  "id": "ships-port",
+  "category": "spatial",
+  "query": "港口附近的船只",
+  "en": "Vessels near a port",
+  "elapsed_ms": 216.61,
+  "parsed_query": {
+    "semantic_query": "港口附近的船只 ; port ; ships",
+    "filters": {
+      "area_category": [
+        "port"
+      ],
+      "facility": [
+        "ships"
+      ],
+      "land_cover": [],
+      "natural_entity": [],
+      "terrain": []
+    },
+    "relations": [
+      {
+        "predicate": "near",
+        "relation_type": "distance",
+        "relation_category": "distance",
+        "anchors": [
+          {
+            "field": "area_category",
+            "value": "port",
+            "entity_type": "area_port",
+            "entity_supertype": "functional_area"
+          },
+          {
+            "field": "facility",
+            "value": "ships",
+            "entity_type": "mobile_object",
+            "entity_supertype": "mobile_agent"
+          }
+        ],
+        "source": "query_rule",
+        "matched_keywords": [
+          "附近"
+        ]
+      }
+    ],
+    "relation_constraints": [
+      {
+        "subject": "port",
+        "subject_type": "area_port",
+        "subject_supertype": "functional_area",
+        "relation": "near",
+        "relation_category": "distance",
+        "relation_state": "spatial",
+        "object": "ships",
+        "object_type": "mobile_object",
+        "object_supertype": "mobile_agent",
+        "doc_type": "relation"
+      }
+    ],
+    "quantity_intent": {
+      "enabled": false,
+      "facilities": []
+    }
+  },
+  "requirements": {
+    "entities": [
+      {
+        "field": "area_category",
+        "value": "port"
+      },
+      {
+        "field": "facility",
+        "value": "ships"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "port",
+        "relation": "near",
+        "object": "ships",
+        "category": "distance",
+        "state": "spatial"
+      }
+    ]
+  },
+  "query_profile": "relation",
+  "strict_result_count": 8,
+  "answer_zh": "查询：港口附近的船只\n查询类型：relation\n结构化条件：实体条件：area_category=port、facility=ships；关系条件：port near ships\n检索结论：返回 8 个候选结果，其中 8 个具备中等以上证据。\n\nRank 1: 10079.tif（强匹配，Final=0.9804）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]、port::near::ships、near[facility=ships]、transportation::near::ships、wharves::near::ships\n场景类别：Port、Industrial Zone、Storage Area、Transportation\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]、port::near::ships、near[facility=ships]、transportation::near::ships、wharves::near::ships；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [port near ships] A few ships are docked at the wharves, and additional vessels are visible in the water nearby.\n\nRank 2: 1494.tif（强匹配，Final=0.9803）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]、port::near::ships\n场景类别：Port、Storage Area、Agricultural Land\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]、port::near::ships；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [port near ships] Multiple ships are docked at the wharves, and additional vessels can be seen in the water nearby.\n\nRank 3: 1442.tif（强匹配，Final=0.9301）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]\n场景类别：Port、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [ships moored_at port] Several ships are docked at the wharves, indicating active maritime operations.\n\nRank 4: 1630.tif（强匹配，Final=0.9297）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]、near[facility=ships]\n场景类别：Port、Storage Area\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]、near[facility=ships]；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [ships near port] Some are positioned near the center, while others are closer to the left side.\n\nRank 5: 0686.png（强匹配，Final=0.9296）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]\n场景类别：Port、Commercial/Residential Area、Transportation、Industrial Zone\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [ships moored_at port] Several ships are docked at the wharves, and shipping lanes are visible in the harbor.\n\nRank 6: test-421.png（强匹配，Final=0.9294）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]\n场景类别：Agricultural Land、Port、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [ships moored_at port] Several vessels, including a large cargo ship, are docked or anchored near the wharves.\n\nRank 7: test-7.png（强匹配，Final=0.9257）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]、port::near::ships\n场景类别：Port、Industrial Zone、Agricultural Land、Transportation、Commercial/Residential Area\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]、port::near::ships；关系匹配证据较强；存在一定支撑证据；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [port near ships] A major port facility is located along the river in the upper left, featuring wharves, container stacks, and several ships docked or anchored nearby.\n\nRank 8: 1666.tif（强匹配，Final=0.8965）\n命中实体/关键词：port、ships\n命中关系：near[area_category=port, facility=ships]、near[facility=ships]\n场景类别：Port、Transportation\n判断依据：命中查询实体或关键词：port、ships；命中空间关系或活动关系：near[area_category=port, facility=ships]、near[facility=ships]；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [ships moored_at port] Multiple ships are docked at the wharves, indicating active maritime operations.\n\n说明：以上回答只基于结构化检索证据包生成，未额外编造图像内容。",
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "10079.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9803594158172607,
+        "semantic": 0.649718165397644,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]",
+          "port::near::ships",
+          "near[facility=ships]",
+          "transportation::near::ships",
+          "wharves::near::ships"
+        ],
+        "area_categories": [
+          "Port",
+          "Industrial Zone",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "factory buildings",
+          "storage tanks",
+          "warehouses",
+          "railway sidings",
+          "container yards",
+          "roads",
+          "railways",
+          "vessels"
+        ]
+      },
+      "description": "The image depicts a flat coastal plain dominated by built-up areas and a large water body, likely a sea or harbor, occupying the left and upper portions. The terrain is entirely flat, typical of a port and industrial zone. The water body is extensive, with several vessels docked along the wharves. The land cover is primarily built-up, with dense industrial and port infrastructure. There are no significant natural geographic entities other than the sea. In the upper left, a large port area is visible, featuring multiple wharves extending into the water. Several gantry cranes are positioned along the wharves, with their booms extended over the water. Adjacent to the wharves are extensive container stacks, organized in straight rows, with a mix of red and blue containers. A few ships are docked at the wharves, and additional vessels are visible in the water nearby. The port area is connected to the land by roads and possibly railway sidings. To the right of the port, a large industrial zone is present, characterized by numerous factory buildings, warehouses, and storage tanks. The buildings vary in size and shape, with some having blue or white roofs. Railway sidings run through the industrial zone, connecting to the port area. Several roads intersect the zone, providing access to the various facilities. In the lower part of the image, additional storage areas and container yards are visible, with more warehouses and container stacks. The overall scene is a busy port and industrial complex, with significant infrastructure for cargo handling and storage.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]、port::near::ships、near[facility=ships]、transportation::near::ships、wharves::near::ships",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "10079.tif::rel::port::near::ships::8",
+          "doc_type": "relation",
+          "relation": "port near ships",
+          "evidence": "A few ships are docked at the wharves, and additional vessels are visible in the water nearby.",
+          "score": 0.93,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 4,
+        "storage tanks": 32,
+        "container stacks": 2
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/2991e00932fe155e7387-thumbnail.webp",
+      "preview": "assets/images/2991e00932fe155e7387-preview.webp",
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "rank": 2,
+      "image_name": "1494.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9803468330383301,
+        "semantic": 0.6496307849884033,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]",
+          "port::near::ships"
+        ],
+        "area_categories": [
+          "Port",
+          "Storage Area",
+          "Agricultural Land"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "warehouses",
+          "container yards",
+          "fields",
+          "storage tanks"
+        ]
+      },
+      "description": "The image shows a flat terrain dominated by a large water body, likely a sea or harbor, occupying the upper and right portions. The lower left section features a mix of built-up areas and some grassy fields. A prominent port facility is visible along the waterfront, characterized by long wharves extending into the water. Several gantry cranes are positioned along the wharves, indicating active cargo handling operations. Multiple ships are docked at the wharves, and additional vessels can be seen in the water nearby. Adjacent to the port area, there are extensive container yards with numerous stacked containers, as well as several warehouse buildings with flat roofs. A yellow-roofed building, likely a warehouse, is situated near the port entrance. To the left of the port facilities, there is an undeveloped grassy area with no visible vehicles or structures. The overall scene depicts a busy industrial port with associated storage and logistics infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]、port::near::ships",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1494.tif::rel::port::near::ships::4",
+          "doc_type": "relation",
+          "relation": "port near ships",
+          "evidence": "Multiple ships are docked at the wharves, and additional vessels can be seen in the water nearby.",
+          "score": 0.9299,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 5,
+        "storage tanks": 3
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/50f6291ba2984220c974-thumbnail.webp",
+      "preview": "assets/images/50f6291ba2984220c974-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 3,
+      "image_name": "1442.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9300535066604614,
+        "semantic": 0.6475937962532043,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]"
+        ],
+        "area_categories": [
+          "Port",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "ships",
+          "factory buildings",
+          "warehouses",
+          "storage tanks",
+          "roads"
+        ]
+      },
+      "description": "The image depicts a coastal industrial and port area situated on a plain terrain. The land cover is dominated by built-up areas, bare land, and water bodies, with the sea visible along the left and bottom edges. The scene features a grid-like road network dividing the land into rectangular plots, some of which are undeveloped or under construction. In the upper left part of the image, there is a port area with wharves extending into the sea. Several ships are docked at the wharves, indicating active maritime operations. Adjacent to the port, there is an industrial zone with various factory buildings, warehouses, and storage tanks. The industrial facilities are concentrated near the port, suggesting a logistics or manufacturing hub. The transportation infrastructure includes a network of roads that connect the different areas within the scene. The roads form a grid pattern, facilitating movement between the port, industrial zone, and other parts of the area. The overall layout suggests a planned development, with designated zones for different functions.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1442.tif::rel::ships::moored_at::port::4",
+          "doc_type": "relation",
+          "relation": "ships moored_at port",
+          "evidence": "Several ships are docked at the wharves, indicating active maritime operations.",
+          "score": 0.9301,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Bare Land",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 4
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/4c950c84814460d15c86-thumbnail.webp",
+      "preview": "assets/images/4c950c84814460d15c86-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 4,
+      "image_name": "1630.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9297004421234131,
+        "semantic": 0.6451419591903687,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]",
+          "near[facility=ships]"
+        ],
+        "area_categories": [
+          "Port",
+          "Storage Area"
+        ],
+        "facilities": [
+          "wharves",
+          "ships",
+          "warehouses",
+          "stockpiles"
+        ]
+      },
+      "description": "The image depicts a coastal port area situated on a plain terrain, dominated by a large expanse of sea water. The water body occupies the majority of the upper and left portions of the image, with several vessels visible. The built-up area is concentrated along the right and bottom edges, featuring port infrastructure and storage facilities. In the water, approximately five large ships are visible, scattered across the sea. Some are positioned near the center, while others are closer to the left side. The port facilities are located along the right side of the image, including wharves where several smaller vessels are docked. A large warehouse with a light blue roof is prominent in the lower center of the image, adjacent to a parking lot and road. To the bottom-left, there is a rectangular sand storage area with an uneven, light brown surface, likely used for material stockpiling. The port area also includes various industrial structures and storage tanks near the wharves.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]、near[facility=ships]",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1630.tif::rel::ships::near::port::4",
+          "doc_type": "relation",
+          "relation": "ships near port",
+          "evidence": "Some are positioned near the center, while others are closer to the left side.",
+          "score": 0.9297,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Water Body",
+        "Built-up Area"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 23
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/eb0200148d296d2740ef-thumbnail.webp",
+      "preview": "assets/images/eb0200148d296d2740ef-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 5,
+      "image_name": "0686.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9295650356292725,
+        "semantic": 0.6442016363143921,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]"
+        ],
+        "area_categories": [
+          "Port",
+          "Commercial/Residential Area",
+          "Transportation",
+          "Industrial Zone"
+        ],
+        "facilities": [
+          "wharves",
+          "breakwaters",
+          "container stacks",
+          "ships",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "roads",
+          "highways",
+          "railways",
+          "vessels",
+          "factory buildings",
+          "warehouses",
+          "railway sidings",
+          "storage tanks",
+          "gantry cranes",
+          "bridges"
+        ]
+      },
+      "description": "The image depicts a coastal plain terrain dominated by a large port facility and adjacent urban development. The upper portion of the image shows the sea, with breakwaters extending into the water to protect the harbor. The central and lower parts of the image feature extensive built-up areas, including residential blocks, commercial buildings, and industrial zones. The port area is characterized by multiple wharves, container stacks, and gantry cranes, indicating active cargo handling operations. Several ships are docked at the wharves, and shipping lanes are visible in the harbor. The urban area includes a dense network of roads, highways, and railways connecting the port to the city. Industrial facilities such as warehouses, storage tanks, and factory buildings are present near the port. The overall scene represents a major maritime trade and shipping hub integrated with urban infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0686.png::rel::ships::moored_at::port::4",
+          "doc_type": "relation",
+          "relation": "ships moored_at port",
+          "evidence": "Several ships are docked at the wharves, and shipping lanes are visible in the harbor.",
+          "score": 0.9296,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 55,
+        "storage tanks": 22,
+        "gantry cranes": 4,
+        "container stacks": 21,
+        "bridges": 2
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/cab04912ce3005227620-thumbnail.webp",
+      "preview": "assets/images/cab04912ce3005227620-preview.webp",
+      "width": 8672,
+      "height": 5696
+    },
+    {
+      "rank": 6,
+      "image_name": "test-421.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9294087036132812,
+        "semantic": 0.6431159973144531,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]"
+        ],
+        "area_categories": [
+          "Agricultural Land",
+          "Port",
+          "Commercial/Residential Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "fields",
+          "irrigation canals",
+          "wharves",
+          "ships",
+          "residential blocks",
+          "urban roads",
+          "roads",
+          "vessels",
+          "storage tanks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a coastal plain area characterized by a mix of forest, cropland, and water bodies, with the sea visible along the coastline. The terrain is predominantly flat, with extensive agricultural fields and wetlands occupying the upper and central parts of the image. Dense forest covers the lower and right portions, interspersed with scattered residential buildings and roads. In the upper part of the image, large rectangular agricultural fields are visible, some filled with water, indicating irrigation canals and possibly aquaculture or salt pans. These fields are separated by narrow roads or embankments. A road runs along the edge of the agricultural area, connecting to a small residential cluster in the upper right. In the lower left, a small port area is visible with wharves extending into the sea. Several vessels, including a large cargo ship, are docked or anchored near the wharves. The sea is clear and blue, with shallow areas visible near the coast. The coastline features sandy beaches and rocky outcrops, with forested hills rising inland. Scattered residential buildings are present throughout the forested areas, particularly in the lower right and central parts of the image. These buildings are connected by a network of roads, some of which run parallel to the coastline. The overall scene suggests a rural coastal area with a mix of agricultural, residential, and maritime activities.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-421.png::rel::ships::moored_at::port::7",
+          "doc_type": "relation",
+          "relation": "ships moored_at port",
+          "evidence": "Several vessels, including a large cargo ship, are docked or anchored near the wharves.",
+          "score": 0.9294,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Forest",
+        "Cropland",
+        "Water Body",
+        "Wetland"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "ships": 7,
+        "storage tanks": 3,
+        "bridges": 14,
+        "transmission towers": 1
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/e25f3c1c6a958b29f4bc-thumbnail.webp",
+      "preview": "assets/images/e25f3c1c6a958b29f4bc-preview.webp",
+      "width": 12800,
+      "height": 12800
+    },
+    {
+      "rank": 7,
+      "image_name": "test-7.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.9256648912811279,
+        "semantic": 0.6432284116744995,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 0.72,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]",
+          "port::near::ships"
+        ],
+        "area_categories": [
+          "Port",
+          "Industrial Zone",
+          "Agricultural Land",
+          "Transportation",
+          "Commercial/Residential Area"
+        ],
+        "facilities": [
+          "wharves",
+          "container stacks",
+          "ships",
+          "factory buildings",
+          "storage tanks",
+          "warehouses",
+          "fields",
+          "roads",
+          "highways",
+          "residential blocks",
+          "commercial buildings",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The scene is a flat plain dominated by a large river running diagonally from the upper left to the lower right, with extensive cropland and forest areas visible in the lower and right portions of the image. Built-up areas are concentrated along the riverbanks, particularly in the upper and central regions. A major port facility is located along the river in the upper left, featuring wharves, container stacks, and several ships docked or anchored nearby. Adjacent to the port is an industrial zone with numerous factory buildings, warehouses, and a cluster of large white storage tanks. A highway interchange with curved ramps is visible in the lower left, connecting to roads that traverse the agricultural fields. The central area contains a mix of commercial and residential buildings, with organized street grids and parking lots. The lower right quadrant is primarily covered by forest and agricultural fields, with some cleared land showing patterns of cultivation. The overall scene depicts a mixed-use landscape with significant industrial and transportation infrastructure alongside agricultural and natural areas.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]、port::near::ships",
+        "关系匹配证据较强",
+        "存在一定支撑证据",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "test-7.png::rel::port::near::ships::2",
+          "doc_type": "relation",
+          "relation": "port near ships",
+          "evidence": "A major port facility is located along the river in the upper left, featuring wharves, container stacks, and several ships docked or anchored nearby.",
+          "score": 0.8757,
+          "relation_score": 1.0,
+          "evidence_score": 0.82
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Cropland",
+        "Built-up Area",
+        "Water Body",
+        "Forest"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "ships": 18,
+        "storage tanks": 8,
+        "container stacks": 3,
+        "bridges": 5,
+        "transmission towers": 1
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/ad6d3e290995b20b528f-thumbnail.webp",
+      "preview": "assets/images/ad6d3e290995b20b528f-preview.webp",
+      "width": 8192,
+      "height": 8192
+    },
+    {
+      "rank": 8,
+      "image_name": "1666.tif",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8965273366165162,
+        "semantic": 0.6597731709480286,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.895,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "port",
+          "ships"
+        ],
+        "relations": [
+          "near[area_category=port, facility=ships]",
+          "near[facility=ships]"
+        ],
+        "area_categories": [
+          "Port",
+          "Transportation"
+        ],
+        "facilities": [
+          "wharves",
+          "gantry cranes",
+          "container stacks",
+          "ships",
+          "roads",
+          "vessels"
+        ]
+      },
+      "description": "The image depicts a large port facility situated on a plain terrain, surrounded by water bodies. The area is characterized by extensive built-up structures, including numerous container stacks and gantry cranes. The port is located adjacent to the sea, with wharves extending into the water. Multiple ships are docked at the wharves, indicating active maritime operations. The facility also includes roads for transportation, with vehicles visible on the roads. The overall scene suggests a busy and well-organized port area, with clear spatial relationships between the different facilities and the surrounding water bodies.",
+      "reasons": [
+        "命中查询实体或关键词：port、ships",
+        "命中空间关系或活动关系：near[area_category=port, facility=ships]、near[facility=ships]",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1666.tif::rel::ships::moored_at::port::3",
+          "doc_type": "relation",
+          "relation": "ships moored_at port",
+          "evidence": "Multiple ships are docked at the wharves, indicating active maritime operations.",
+          "score": 0.8965,
+          "relation_score": 0.895,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "container stacks": 2
+      },
+      "query_profile": "relation",
+      "thumbnail": "assets/images/6cd83d01eb39638c0ae0-thumbnail.webp",
+      "preview": "assets/images/6cd83d01eb39638c0ae0-preview.webp",
+      "width": 1500,
+      "height": 1500
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "id": "many-aircraft",
+  "category": "quantity",
+  "query": "有大量飞机的机场",
+  "en": "Airports with many aircraft",
+  "elapsed_ms": 94.94,
+  "parsed_query": {
+    "semantic_query": "有大量飞机的机场 ; airport ; aircraft",
+    "filters": {
+      "area_category": [
+        "airport"
+      ],
+      "facility": [
+        "aircraft"
+      ],
+      "land_cover": [],
+      "natural_entity": [],
+      "terrain": []
+    },
+    "relations": [],
+    "relation_constraints": [],
+    "quantity_intent": {
+      "enabled": true,
+      "facilities": [
+        "aircraft"
+      ]
+    }
+  },
+  "requirements": {
+    "entities": [
+      {
+        "field": "area_category",
+        "value": "airport"
+      },
+      {
+        "field": "facility",
+        "value": "aircraft"
+      }
+    ],
+    "relations": []
+  },
+  "query_profile": "entity",
+  "strict_result_count": 8,
+  "answer_zh": "查询：有大量飞机的机场\n查询类型：entity\n结构化条件：实体条件：area_category=airport、facility=aircraft\n检索结论：返回 8 个候选结果，其中 8 个具备中等以上证据。\n\nRank 1: 0102.png（强匹配，Final=0.8897）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Transportation\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image displays a large airport complex situated on reclaimed land surrounded by sea. The terrain is flat, characterized by extensive built-up areas including runways, taxiways, and aprons. Multiple aircraft are visible parked at the gates and on the aprons. The airport features several terminal buildings with linear concourses extending towards the aircraft parking areas. To the right of the airport, there is a bridge connecting the airport to the mainland, with roads and vehicles visible. Numerous vessels are scattered in the surrounding sea, particularly in the upper left and right portions of the image. The airport appears to be in active use, with aircraft positioned at various gates and on taxiways. The overall layout suggests a major international airport with significant infrastructure for passenger and cargo operations.\n\nRank 2: 0185.png（强匹配，Final=0.8893）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large airport complex situated on a plain terrain, characterized by extensive grassland areas and built-up infrastructure. Several lakes are visible, particularly in the upper and right sections of the image, surrounded by dense vegetation. The airport features multiple runways, taxiways, and aprons, with two main terminal buildings equipped with jet bridges. Numerous aircraft are parked near the terminals. Surrounding the airport are residential blocks, commercial buildings, and a network of urban roads and highways. Parking lots are visible near the commercial areas and terminals. The overall scene is a mix of aviation infrastructure and urban development, with natural water bodies integrated into the landscape.\n\nRank 3: 1022.png（强匹配，Final=0.8876）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Commercial/Residential Area、Transportation、Storage Area\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and several lakes. The airport features multiple runways, taxiways, and aprons, with terminal buildings and hangars visible. Several aircraft are parked on the aprons and taxiways. To the north and west of the airport, there are residential blocks and commercial buildings, connected by urban roads and parking lots. A major highway runs along the northern edge of the scene, with several interchanges and bridges. To the east and south, there are large forested areas with some cleared land and small lakes. Several warehouses and container yards are located near the airport, likely for cargo handling. The overall scene suggests a busy transportation hub with significant infrastructure development.\n\nRank 4: 0467.png（强匹配，Final=0.8833）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Commercial/Residential Area、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large airport complex situated on a plain terrain, surrounded by grassland and forested areas. The airport features multiple runways, taxiways, and aprons with numerous aircraft parked at the gates. Terminal buildings, control towers, and hangars are visible within the airport grounds. Adjacent to the airport, there are commercial and residential areas with high-rise buildings, residential blocks, and commercial structures. Urban roads and parking lots connect these areas. Industrial zones with factory buildings and warehouses are also present near the airport. The overall scene shows a mix of aviation infrastructure, urban development, and natural landscapes.\n\nRank 5: 0214.png（强匹配，Final=0.8827）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Industrial Zone、Transportation、Commercial/Residential Area\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and a man-made lake. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. Adjacent to the airport, there are industrial zones with factory buildings and warehouses, as well as transportation infrastructure including roads and highways. Residential blocks and parking lots are visible in the surrounding areas, indicating a mix of urban and rural land use.\n- The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and a man-made lake. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. Adjacent to the airport, there are industrial zones with factory buildings and warehouses, as well as transportation infrastructure including roads and highways. Residential blocks and parking lots are visible in the surrounding areas, indicating a mix of urban and rural land use. The scene appears to be captured during autumn, as evidenced by the fall foliage in the forested regions.\n\nRank 6: 0431.png（强匹配，Final=0.8826）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Storage Area、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image shows a large airport complex situated on a plain terrain, surrounded by patches of bare land, grassland, and forested areas, with a few small water bodies visible in the upper right. The airport features multiple long parallel runways, extensive taxiway networks, and large apron areas for aircraft parking. A central terminal building with branching concourses is located in the lower center, connected to numerous gates where multiple aircraft are parked. Surrounding the airport are various support facilities, including hangars, maintenance buildings, and a cluster of circular storage tanks in the upper left, likely for fuel storage. Additional industrial buildings and warehouses are scattered around the perimeter, connected by a network of roads and highways that provide access to the airport complex.\n\nRank 7: 1027.png（强匹配，Final=0.8801）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Commercial/Residential Area、Storage Area、Transportation\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large airport complex situated on a flat plain, surrounded by grassland and some built-up areas. The airport features multiple runways, taxiways, and aprons, with several aircraft visible on the tarmac. Terminal buildings and hangars are located near the center of the airport. To the north and east of the airport, there are residential blocks and commercial buildings, connected by a network of urban roads and parking lots. A cluster of large white storage tanks is visible in the eastern part of the image, likely used for storing liquids. Highways and roads run along the periphery of the airport, providing access to the surrounding areas. The scene appears to be in the fall season, with some trees showing autumn colors. The overall area is predominantly rural, with the airport and nearby developments being the main built-up features.\n\nRank 8: 0474.png（强匹配，Final=0.8788）\n命中实体/关键词：airport、aircraft\n场景类别：Airport、Transportation、Commercial/Residential Area、Industrial Zone\n判断依据：命中查询实体或关键词：airport、aircraft；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- The image depicts a large airport complex situated on a plain terrain, surrounded by grassland and forested areas. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. To the left of the airport, there is a highway interchange with curved ramps connecting different roads, facilitating traffic flow. The surrounding area includes residential blocks, commercial buildings, and industrial zones with factory buildings and warehouses. The scene appears to be in spring, with green vegetation visible throughout the landscape. The airport is the dominant feature, with its extensive infrastructure and aircraft clearly visible across the image.\n\n说明：以上回答只基于结构化检索证据包生成，未额外编造图像内容。",
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "0102.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8897038886785507,
+        "semantic": 0.6870695948600769,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 1.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "aircraft",
+          "bridges",
+          "roads",
+          "vessels",
+          "ships",
+          "storage tanks"
+        ]
+      },
+      "description": "The image displays a large airport complex situated on reclaimed land surrounded by sea. The terrain is flat, characterized by extensive built-up areas including runways, taxiways, and aprons. Multiple aircraft are visible parked at the gates and on the aprons. The airport features several terminal buildings with linear concourses extending towards the aircraft parking areas. To the right of the airport, there is a bridge connecting the airport to the mainland, with roads and vehicles visible. Numerous vessels are scattered in the surrounding sea, particularly in the upper left and right portions of the image. The airport appears to be in active use, with aircraft positioned at various gates and on taxiways. The overall layout suggests a major international airport with significant infrastructure for passenger and cargo operations.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0102.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image displays a large airport complex situated on reclaimed land surrounded by sea. The terrain is flat, characterized by extensive built-up areas including runways, taxiways, and aprons. Multiple aircraft are visible parked at the gates and on the aprons. The airport features several terminal buildings with linear concourses extending towards the aircraft parking areas. To the right of the airport, there is a bridge connecting the airport to the mainland, with roads and vehicles visible. Numerous vessels are scattered in the surrounding sea, particularly in the upper left and right portions of the image. The airport appears to be in active use, with aircraft positioned at various gates and on taxiways. The overall layout suggests a major international airport with significant infrastructure for passenger and cargo operations.",
+          "score": 0.8529,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Sea"
+      ],
+      "detections": {
+        "aircraft": 190,
+        "ships": 50,
+        "storage tanks": 12,
+        "bridges": 1
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/3b83a9f9f672b64827a1-thumbnail.webp",
+      "preview": "assets/images/3b83a9f9f672b64827a1-preview.webp",
+      "width": 6144,
+      "height": 3840
+    },
+    {
+      "rank": 2,
+      "image_name": "0185.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.889279295527935,
+        "semantic": 0.6716660857200623,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 1.0,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Commercial/Residential Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "aircraft",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "roads",
+          "highways",
+          "storage tanks",
+          "bridges"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, characterized by extensive grassland areas and built-up infrastructure. Several lakes are visible, particularly in the upper and right sections of the image, surrounded by dense vegetation. The airport features multiple runways, taxiways, and aprons, with two main terminal buildings equipped with jet bridges. Numerous aircraft are parked near the terminals. Surrounding the airport are residential blocks, commercial buildings, and a network of urban roads and highways. Parking lots are visible near the commercial areas and terminals. The overall scene is a mix of aviation infrastructure and urban development, with natural water bodies integrated into the landscape.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0185.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image depicts a large airport complex situated on a plain terrain, characterized by extensive grassland areas and built-up infrastructure. Several lakes are visible, particularly in the upper and right sections of the image, surrounded by dense vegetation. The airport features multiple runways, taxiways, and aprons, with two main terminal buildings equipped with jet bridges. Numerous aircraft are parked near the terminals. Surrounding the airport are residential blocks, commercial buildings, and a network of urban roads and highways. Parking lots are visible near the commercial areas and terminals. The overall scene is a mix of aviation infrastructure and urban development, with natural water bodies integrated into the landscape.",
+          "score": 0.8524,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Grassland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Lake"
+      ],
+      "detections": {
+        "aircraft": 120,
+        "storage tanks": 6,
+        "bridges": 3
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/f253c18168f038f5cce9-thumbnail.webp",
+      "preview": "assets/images/f253c18168f038f5cce9-preview.webp",
+      "width": 7457,
+      "height": 7208
+    },
+    {
+      "rank": 3,
+      "image_name": "1022.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8875592246448637,
+        "semantic": 0.6753821969032288,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.9943107085039692,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Commercial/Residential Area",
+          "Transportation",
+          "Storage Area"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "roads",
+          "highways",
+          "warehouses",
+          "container yards",
+          "ships",
+          "storage tanks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and several lakes. The airport features multiple runways, taxiways, and aprons, with terminal buildings and hangars visible. Several aircraft are parked on the aprons and taxiways. To the north and west of the airport, there are residential blocks and commercial buildings, connected by urban roads and parking lots. A major highway runs along the northern edge of the scene, with several interchanges and bridges. To the east and south, there are large forested areas with some cleared land and small lakes. Several warehouses and container yards are located near the airport, likely for cargo handling. The overall scene suggests a busy transportation hub with significant infrastructure development.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1022.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and several lakes. The airport features multiple runways, taxiways, and aprons, with terminal buildings and hangars visible. Several aircraft are parked on the aprons and taxiways. To the north and west of the airport, there are residential blocks and commercial buildings, connected by urban roads and parking lots. A major highway runs along the northern edge of the scene, with several interchanges and bridges. To the east and south, there are large forested areas with some cleared land and small lakes. Several warehouses and container yards are located near the airport, likely for cargo handling. The overall scene suggests a busy transportation hub with significant infrastructure development.",
+          "score": 0.852,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Forest",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Lake"
+      ],
+      "detections": {
+        "aircraft": 78,
+        "ships": 3,
+        "storage tanks": 9,
+        "hangars": 4,
+        "bridges": 12,
+        "transmission towers": 6
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/c303f12131348d5f6b1e-thumbnail.webp",
+      "preview": "assets/images/c303f12131348d5f6b1e-preview.webp",
+      "width": 17920,
+      "height": 13728
+    },
+    {
+      "rank": 4,
+      "image_name": "0467.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8832512950897217,
+        "semantic": 0.676459550857544,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 1.0,
+        "evidence_layer": 0.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Commercial/Residential Area",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "control towers",
+          "hangars",
+          "aircraft",
+          "high-rise buildings",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "factory buildings",
+          "warehouses",
+          "roads",
+          "highways",
+          "storage tanks",
+          "bridges"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, surrounded by grassland and forested areas. The airport features multiple runways, taxiways, and aprons with numerous aircraft parked at the gates. Terminal buildings, control towers, and hangars are visible within the airport grounds. Adjacent to the airport, there are commercial and residential areas with high-rise buildings, residential blocks, and commercial structures. Urban roads and parking lots connect these areas. Industrial zones with factory buildings and warehouses are also present near the airport. The overall scene shows a mix of aviation infrastructure, urban development, and natural landscapes.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0467.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image depicts a large airport complex situated on a plain terrain, surrounded by grassland and forested areas. The airport features multiple runways, taxiways, and aprons with numerous aircraft parked at the gates. Terminal buildings, control towers, and hangars are visible within the airport grounds. Adjacent to the airport, there are commercial and residential areas with high-rise buildings, residential blocks, and commercial structures. Urban roads and parking lots connect these areas. Industrial zones with factory buildings and warehouses are also present near the airport. The overall scene shows a mix of aviation infrastructure, urban development, and natural landscapes.",
+          "score": 0.8443,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Grassland",
+        "Built-up Area",
+        "Forest"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 102,
+        "storage tanks": 2,
+        "bridges": 2
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/457d9ad84c899d212626-thumbnail.webp",
+      "preview": "assets/images/457d9ad84c899d212626-preview.webp",
+      "width": 6498,
+      "height": 6208
+    },
+    {
+      "rank": 5,
+      "image_name": "0214.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8827158628252155,
+        "semantic": 0.6934125423431396,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.9700146086589673,
+        "evidence_layer": 0.0,
+        "scene": 0.6
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Industrial Zone",
+          "Transportation",
+          "Commercial/Residential Area"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "factory buildings",
+          "warehouses",
+          "roads",
+          "highways",
+          "residential blocks",
+          "parking lots",
+          "storage tanks",
+          "bridges"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and a man-made lake. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. Adjacent to the airport, there are industrial zones with factory buildings and warehouses, as well as transportation infrastructure including roads and highways. Residential blocks and parking lots are visible in the surrounding areas, indicating a mix of urban and rural land use. The scene appears to be captured during autumn, as evidenced by the fall foliage in the forested regions.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0214.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and a man-made lake. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. Adjacent to the airport, there are industrial zones with factory buildings and warehouses, as well as transportation infrastructure including roads and highways. Residential blocks and parking lots are visible in the surrounding areas, indicating a mix of urban and rural land use.",
+          "score": 0.8536,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        },
+        {
+          "doc_id": "0214.png::image",
+          "doc_type": "image",
+          "relation": "",
+          "evidence": "The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and a man-made lake. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. Adjacent to the airport, there are industrial zones with factory buildings and warehouses, as well as transportation infrastructure including roads and highways. Residential blocks and parking lots are visible in the surrounding areas, indicating a mix of urban and rural land use. The scene appears to be captured during autumn, as evidenced by the fall foliage in the forested regions.",
+          "score": 0.8342,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Forest",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Lake"
+      ],
+      "detections": {
+        "aircraft": 70,
+        "storage tanks": 6,
+        "hangars": 4,
+        "bridges": 1
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/3ca2d1767fc08535053b-thumbnail.webp",
+      "preview": "assets/images/3ca2d1767fc08535053b-preview.webp",
+      "width": 4880,
+      "height": 6044
+    },
+    {
+      "rank": 6,
+      "image_name": "0431.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8826016415357592,
+        "semantic": 0.6722702980041504,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 1.0,
+        "evidence_layer": 0.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Storage Area",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "control towers",
+          "hangars",
+          "aircraft",
+          "storage tanks",
+          "factory buildings",
+          "warehouses",
+          "roads",
+          "highways",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image shows a large airport complex situated on a plain terrain, surrounded by patches of bare land, grassland, and forested areas, with a few small water bodies visible in the upper right. The airport features multiple long parallel runways, extensive taxiway networks, and large apron areas for aircraft parking. A central terminal building with branching concourses is located in the lower center, connected to numerous gates where multiple aircraft are parked. Surrounding the airport are various support facilities, including hangars, maintenance buildings, and a cluster of circular storage tanks in the upper left, likely for fuel storage. Additional industrial buildings and warehouses are scattered around the perimeter, connected by a network of roads and highways that provide access to the airport complex.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0431.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image shows a large airport complex situated on a plain terrain, surrounded by patches of bare land, grassland, and forested areas, with a few small water bodies visible in the upper right. The airport features multiple long parallel runways, extensive taxiway networks, and large apron areas for aircraft parking. A central terminal building with branching concourses is located in the lower center, connected to numerous gates where multiple aircraft are parked. Surrounding the airport are various support facilities, including hangars, maintenance buildings, and a cluster of circular storage tanks in the upper left, likely for fuel storage. Additional industrial buildings and warehouses are scattered around the perimeter, connected by a network of roads and highways that provide access to the airport complex.",
+          "score": 0.8435,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Bare Land",
+        "Grassland",
+        "Forest",
+        "Water Body"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 137,
+        "storage tanks": 11,
+        "hangars": 5,
+        "bridges": 2,
+        "transmission towers": 1
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/8b9aa4ce1102d29d07b1-thumbnail.webp",
+      "preview": "assets/images/8b9aa4ce1102d29d07b1-preview.webp",
+      "width": 7660,
+      "height": 8569
+    },
+    {
+      "rank": 7,
+      "image_name": "1027.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8800787822659931,
+        "semantic": 0.6811066269874573,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.9914118182610624,
+        "evidence_layer": 0.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Commercial/Residential Area",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "storage tanks",
+          "roads",
+          "highways",
+          "ships",
+          "smokestacks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a flat plain, surrounded by grassland and some built-up areas. The airport features multiple runways, taxiways, and aprons, with several aircraft visible on the tarmac. Terminal buildings and hangars are located near the center of the airport. To the north and east of the airport, there are residential blocks and commercial buildings, connected by a network of urban roads and parking lots. A cluster of large white storage tanks is visible in the eastern part of the image, likely used for storing liquids. Highways and roads run along the periphery of the airport, providing access to the surrounding areas. The scene appears to be in the fall season, with some trees showing autumn colors. The overall area is predominantly rural, with the airport and nearby developments being the main built-up features.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1027.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image depicts a large airport complex situated on a flat plain, surrounded by grassland and some built-up areas. The airport features multiple runways, taxiways, and aprons, with several aircraft visible on the tarmac. Terminal buildings and hangars are located near the center of the airport. To the north and east of the airport, there are residential blocks and commercial buildings, connected by a network of urban roads and parking lots. A cluster of large white storage tanks is visible in the eastern part of the image, likely used for storing liquids. Highways and roads run along the periphery of the airport, providing access to the surrounding areas. The scene appears to be in the fall season, with some trees showing autumn colors. The overall area is predominantly rural, with the airport and nearby developments being the main built-up features.",
+          "score": 0.843,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Grassland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 77,
+        "ships": 4,
+        "storage tanks": 17,
+        "smokestacks": 1,
+        "hangars": 5,
+        "bridges": 10,
+        "transmission towers": 16
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/15779ba84d8b448e99dc-thumbnail.webp",
+      "preview": "assets/images/15779ba84d8b448e99dc-preview.webp",
+      "width": 17856,
+      "height": 22432
+    },
+    {
+      "rank": 8,
+      "image_name": "0474.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 0.8788356266832478,
+        "semantic": 0.6883100271224976,
+        "keyword": 1.0,
+        "category": 1.0,
+        "relation": 0.0,
+        "quantity": 0.9884755219513901,
+        "evidence_layer": 0.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "aircraft"
+        ],
+        "relations": [],
+        "area_categories": [
+          "Airport",
+          "Transportation",
+          "Commercial/Residential Area",
+          "Industrial Zone"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "highways",
+          "roads",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "factory buildings",
+          "warehouses",
+          "storage tanks",
+          "bridges"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, surrounded by grassland and forested areas. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. To the left of the airport, there is a highway interchange with curved ramps connecting different roads, facilitating traffic flow. The surrounding area includes residential blocks, commercial buildings, and industrial zones with factory buildings and warehouses. The scene appears to be in spring, with green vegetation visible throughout the landscape. The airport is the dominant feature, with its extensive infrastructure and aircraft clearly visible across the image.",
+      "reasons": [
+        "命中查询实体或关键词：airport、aircraft",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0474.png::area::airport::0",
+          "doc_type": "area",
+          "relation": "",
+          "evidence": "The image depicts a large airport complex situated on a plain terrain, surrounded by grassland and forested areas. The airport features multiple runways, taxiways, aprons, terminal buildings, hangars, and numerous aircraft parked on the tarmac. To the left of the airport, there is a highway interchange with curved ramps connecting different roads, facilitating traffic flow. The surrounding area includes residential blocks, commercial buildings, and industrial zones with factory buildings and warehouses. The scene appears to be in spring, with green vegetation visible throughout the landscape. The airport is the dominant feature, with its extensive infrastructure and aircraft clearly visible across the image.",
+          "score": 0.8423,
+          "relation_score": 0.0,
+          "evidence_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Grassland",
+        "Built-up Area",
+        "Forest"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 76,
+        "storage tanks": 9,
+        "bridges": 2
+      },
+      "query_profile": "entity",
+      "thumbnail": "assets/images/d7591f2e6e977a0f314c-thumbnail.webp",
+      "preview": "assets/images/d7591f2e6e977a0f314c-preview.webp",
+      "width": 4993,
+      "height": 5129
+    }
+  ]
+}

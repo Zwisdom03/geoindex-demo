@@ -1,0 +1,861 @@
+{
+  "id": "aircraft-parked",
+  "category": "activity",
+  "query": "停放在停机坪的飞机",
+  "en": "Aircraft parked on aprons",
+  "elapsed_ms": 232.76,
+  "parsed_query": {
+    "semantic_query": "停放在停机坪的飞机 ; aircraft ; aprons",
+    "filters": {
+      "area_category": [],
+      "facility": [
+        "aircraft",
+        "aprons"
+      ],
+      "land_cover": [],
+      "natural_entity": [],
+      "terrain": []
+    },
+    "relations": [
+      {
+        "predicate": "parked_at",
+        "relation_type": "dynamic_activity",
+        "relation_category": "dynamic_activity",
+        "anchors": [
+          {
+            "field": "facility",
+            "value": "aircraft",
+            "entity_type": "mobile_object",
+            "entity_supertype": "mobile_agent"
+          },
+          {
+            "field": "facility",
+            "value": "aprons",
+            "entity_type": "operational_space",
+            "entity_supertype": "built_feature"
+          }
+        ],
+        "source": "query_rule",
+        "matched_keywords": [
+          "停放"
+        ]
+      }
+    ],
+    "relation_constraints": [
+      {
+        "subject": "aircraft",
+        "subject_type": "mobile_object",
+        "subject_supertype": "mobile_agent",
+        "relation": "parked_at",
+        "relation_category": "dynamic_activity",
+        "relation_state": "dynamic",
+        "object": "aprons",
+        "object_type": "operational_space",
+        "object_supertype": "built_feature",
+        "doc_type": "relation"
+      }
+    ],
+    "quantity_intent": {
+      "enabled": false,
+      "facilities": []
+    }
+  },
+  "requirements": {
+    "entities": [
+      {
+        "field": "facility",
+        "value": "aircraft"
+      },
+      {
+        "field": "facility",
+        "value": "aprons"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "aircraft",
+        "relation": "parked_at",
+        "object": "aprons",
+        "category": "dynamic_activity",
+        "state": "dynamic"
+      }
+    ]
+  },
+  "query_profile": "dynamic_activity",
+  "strict_result_count": 8,
+  "answer_zh": "查询：停放在停机坪的飞机\n查询类型：dynamic_activity\n结构化条件：实体条件：facility=aircraft、facility=aprons；关系条件：aircraft parked_at aprons\n检索结论：返回 8 个候选结果，其中 8 个具备中等以上证据。\n\nRank 1: 1060.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Commercial/Residential Area、Utility Infrastructure、Transportation\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] The airport features multiple runways, taxiways, and aprons, with numerous aircraft parked on the aprons.\n\nRank 2: 1174.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Industrial Zone、Storage Area、Transportation\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] Multiple hangars and terminal buildings are visible near the runways, with several aircraft parked on the aprons.\n\nRank 3: 1039.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] Numerous aircraft are parked on the aprons, particularly in the lower right section of the image.\n\nRank 4: 1086.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Industrial Zone、Transportation\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] There are also a few aircraft parked on the aprons.\n\nRank 5: 1029.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Agricultural Land、Industrial Zone、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] Several aircraft are parked on the aprons and near the hangars.\n\nRank 6: 1017.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Transportation、Industrial Zone、Utility Infrastructure\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] Numerous aircraft are parked on the aprons.\n\nRank 7: 1087.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Industrial Zone、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] Numerous aircraft are parked on the aprons and near the hangars.\n\nRank 8: 1022.png（强匹配，Final=1.0000）\n命中实体/关键词：aircraft、aprons\n命中关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons\n场景类别：Airport、Commercial/Residential Area、Transportation、Storage Area\n判断依据：命中查询实体或关键词：aircraft、aprons；命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [aircraft parked_at aprons] Several aircraft are parked on the aprons and taxiways.\n\n说明：以上回答只基于结构化检索证据包生成，未额外编造图像内容。",
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "1060.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.6896088123321533,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Commercial/Residential Area",
+          "Utility Infrastructure",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "water treatment plants",
+          "roads",
+          "ships",
+          "storage tanks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, surrounded by grassland, forest, and water bodies. The airport features multiple runways, taxiways, and aprons, with numerous aircraft parked on the aprons. Terminal buildings and hangars are visible near the aprons. Surrounding the airport are residential blocks, commercial buildings, and urban roads with parking lots. A water treatment plant is also visible in the vicinity. The area is characterized by a mix of built-up areas and natural landscapes, including forests and lakes.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1060.png::rel::aircraft::parked_at::aprons::1",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "The airport features multiple runways, taxiways, and aprons, with numerous aircraft parked on the aprons.",
+          "score": 0.9606,
+          "relation_score": 1.0,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Grassland",
+        "Built-up Area",
+        "Forest",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Lake"
+      ],
+      "detections": {
+        "aircraft": 49,
+        "ships": 1,
+        "storage tanks": 22,
+        "bridges": 4,
+        "transmission towers": 1
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/a796e0c63e13b11d9f36-thumbnail.webp",
+      "preview": "assets/images/a796e0c63e13b11d9f36-preview.webp",
+      "width": 18287,
+      "height": 13935
+    },
+    {
+      "rank": 2,
+      "image_name": "1174.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.689071774482727,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Industrial Zone",
+          "Storage Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "factory buildings",
+          "warehouses",
+          "railway sidings",
+          "container yards",
+          "roads",
+          "railways",
+          "ships",
+          "storage tanks",
+          "smokestacks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a rural airport complex situated on a plain terrain, surrounded by extensive forest and grassland areas. The central feature is a large airport with two intersecting runways, taxiways, and aprons. Multiple hangars and terminal buildings are visible near the runways, with several aircraft parked on the aprons. To the left of the airport, there is a large industrial zone with factory buildings and warehouses, some with white roofs. A storage area with container yards is also present near the industrial zone. The surrounding area is dominated by dense forest and grassland, with a few small water bodies visible. Roads and railway sidings connect the airport and industrial areas to the surrounding infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1174.png::rel::aircraft::parked_at::aprons::2",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "Multiple hangars and terminal buildings are visible near the runways, with several aircraft parked on the aprons.",
+          "score": 0.9606,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Forest",
+        "Grassland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 42,
+        "ships": 14,
+        "storage tanks": 8,
+        "smokestacks": 2,
+        "hangars": 1,
+        "bridges": 4,
+        "transmission towers": 4
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/966351be9c50ab59bf87-thumbnail.webp",
+      "preview": "assets/images/966351be9c50ab59bf87-preview.webp",
+      "width": 16848,
+      "height": 11128
+    },
+    {
+      "rank": 3,
+      "image_name": "1039.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.6885234117507935,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Commercial/Residential Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "roads",
+          "ships",
+          "storage tanks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a flat plain, surrounded by grassland and agricultural fields. The terrain is predominantly flat with minimal elevation changes. The land cover consists mainly of grassland, with built-up areas concentrated around the airport infrastructure. Several small water bodies, likely artificial reservoirs or ponds, are scattered throughout the surrounding landscape. The central feature is a major airport with multiple intersecting runways and extensive taxiway networks. The runways are clearly marked with white stripes and numbers. Numerous aircraft are parked on the aprons, particularly in the lower right section of the image. Several terminal buildings with white roofs are visible, including a large passenger terminal in the lower left area with multiple jet bridges connected to it. Hangars of various sizes are distributed around the airfield, particularly in the upper right and central areas. Surrounding the airport are commercial and residential areas with parking lots filled with vehicles, particularly noticeable in the lower left and upper right sections. Roads connect the airport to the surrounding areas, with a major road running along the right side of the image. The overall scene suggests a busy regional airport with both commercial and possibly military or cargo operations, set in a rural landscape with scattered trees and small water bodies.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1039.png::rel::aircraft::parked_at::aprons::6",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "Numerous aircraft are parked on the aprons, particularly in the lower right section of the image.",
+          "score": 0.9605,
+          "relation_score": 1.0,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Grassland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 56,
+        "ships": 3,
+        "storage tanks": 7,
+        "hangars": 10,
+        "bridges": 3,
+        "transmission towers": 3
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/abc7bea40ca679983483-thumbnail.webp",
+      "preview": "assets/images/abc7bea40ca679983483-preview.webp",
+      "width": 12736,
+      "height": 11552
+    },
+    {
+      "rank": 4,
+      "image_name": "1086.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.6871673464775085,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Industrial Zone",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "factory buildings",
+          "warehouses",
+          "roads",
+          "ships",
+          "storage tanks",
+          "smokestacks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, surrounded by extensive forest and grassland areas. The airport features multiple runways, taxiways, and aprons, with several terminal buildings and hangars visible. There are also a few aircraft parked on the aprons. To the right of the airport, there is an industrial zone with factory buildings and warehouses. The area is connected by a network of roads, and there are small water bodies scattered throughout the surrounding landscape.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1086.png::rel::aircraft::parked_at::aprons::2",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "There are also a few aircraft parked on the aprons.",
+          "score": 0.9604,
+          "relation_score": 1.0,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Forest",
+        "Grassland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 12,
+        "ships": 1,
+        "storage tanks": 6,
+        "smokestacks": 1,
+        "bridges": 4,
+        "transmission towers": 1
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/84c8c68688bd439231fd-thumbnail.webp",
+      "preview": "assets/images/84c8c68688bd439231fd-preview.webp",
+      "width": 13615,
+      "height": 8759
+    },
+    {
+      "rank": 5,
+      "image_name": "1029.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.6858086585998535,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Agricultural Land",
+          "Industrial Zone",
+          "Commercial/Residential Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "fields",
+          "factory buildings",
+          "warehouses",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "roads",
+          "highways",
+          "ships",
+          "storage tanks",
+          "container stacks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a large rural airport complex situated on a plain, surrounded by extensive agricultural fields and grasslands. The terrain is flat, with a mix of cultivated cropland and green grassy areas. Several small water bodies and drainage ditches are visible within the fields. The central feature is a major airport facility with multiple runways, including a prominent black asphalt runway with white markings. The airport infrastructure includes extensive taxiways, aprons, and numerous hangars. Several aircraft are parked on the aprons and near the hangars. Terminal buildings and other airport support structures are clustered around the main operational areas. Surrounding the airport are large tracts of agricultural land, characterized by rectangular fields in various stages of cultivation, some appearing brown and fallow while others are green. To the east and south of the airport, there are industrial zones with factory buildings, warehouses, and storage areas. Further to the east, a residential area with houses and urban roads is visible. A highway runs along the eastern edge of the scene, connecting the various areas. The overall scene is a mix of aviation infrastructure, agriculture, and light industrial and residential development in a rural setting.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1029.png::rel::aircraft::parked_at::aprons::5",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "Several aircraft are parked on the aprons and near the hangars.",
+          "score": 0.9602,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Cropland",
+        "Grassland",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [],
+      "detections": {
+        "aircraft": 47,
+        "ships": 3,
+        "storage tanks": 7,
+        "container stacks": 3,
+        "hangars": 12,
+        "bridges": 9,
+        "transmission towers": 12
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/3bac72bffa6aa9d26c3f-thumbnail.webp",
+      "preview": "assets/images/3bac72bffa6aa9d26c3f-preview.webp",
+      "width": 16800,
+      "height": 18560
+    },
+    {
+      "rank": 6,
+      "image_name": "1017.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.6835005283355713,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Transportation",
+          "Industrial Zone",
+          "Utility Infrastructure"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "roads",
+          "highways",
+          "railways",
+          "factory buildings",
+          "storage tanks",
+          "warehouses",
+          "solar farms",
+          "water treatment plants",
+          "ships",
+          "bridges"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, bordered by a river to the north and a sea to the south. The land cover is dominated by built-up areas including the airport infrastructure, with patches of grassland and wetlands visible in the surrounding areas. The airport features multiple runways, taxiways, and aprons, with a large terminal building and several hangars. Numerous aircraft are parked on the aprons. To the north of the airport, there is a complex highway interchange with multiple roads and highways, as well as a railway line running parallel to the highway. Industrial zones with factory buildings, storage tanks, and warehouses are visible to the east and west of the airport. Additionally, there are utility infrastructure facilities including solar farms and water treatment plants located near the industrial zones. The southern part of the image shows the coastline with the sea, and a few vessels can be seen in the water.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1017.png::rel::aircraft::parked_at::aprons::3",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "Numerous aircraft are parked on the aprons.",
+          "score": 0.96,
+          "relation_score": 1.0,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Built-up Area",
+        "Grassland",
+        "Water Body",
+        "Wetland"
+      ],
+      "natural_entities": [
+        "River",
+        "Sea"
+      ],
+      "detections": {
+        "aircraft": 94,
+        "ships": 4,
+        "storage tanks": 23,
+        "bridges": 3
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/1c0fe7c1f32d2aed6b92-thumbnail.webp",
+      "preview": "assets/images/1c0fe7c1f32d2aed6b92-preview.webp",
+      "width": 13160,
+      "height": 6648
+    },
+    {
+      "rank": 7,
+      "image_name": "1087.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.681759774684906,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Industrial Zone",
+          "Commercial/Residential Area",
+          "Transportation"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "factory buildings",
+          "warehouses",
+          "railway sidings",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "roads",
+          "highways",
+          "railways",
+          "ships",
+          "storage tanks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The scene is situated on a plain terrain, characterized by extensive grassland areas surrounding the central infrastructure. Built-up areas are prominent, featuring various industrial and commercial structures. Dense forest patches are visible, particularly along the riverbank on the right side of the image. A river flows along the eastern edge, bordered by lush vegetation. The central focus is a large airport facility, occupying a significant portion of the image. It features multiple runways, taxiways, and aprons. Several terminal buildings and hangars are scattered throughout the airport grounds. Numerous aircraft are parked on the aprons and near the hangars. To the north and west of the airport, there is an industrial zone with factory buildings, warehouses, and railway sidings. Adjacent to the industrial zone, a commercial and residential area is visible, with residential blocks, commercial buildings, urban roads, and parking lots. A network of roads and highways connects these areas, with a major highway running parallel to the railway tracks. The overall layout suggests a well-developed transportation and industrial hub integrated with the airport infrastructure.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1087.png::rel::aircraft::parked_at::aprons::7",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "Numerous aircraft are parked on the aprons and near the hangars.",
+          "score": 0.9598,
+          "relation_score": 1.0,
+          "evidence_score": 0.96
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Grassland",
+        "Built-up Area",
+        "Forest",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "River"
+      ],
+      "detections": {
+        "aircraft": 46,
+        "ships": 54,
+        "storage tanks": 2,
+        "hangars": 1,
+        "bridges": 2,
+        "transmission towers": 2
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/9c3eec534e5f9a9a6720-thumbnail.webp",
+      "preview": "assets/images/9c3eec534e5f9a9a6720-preview.webp",
+      "width": 7904,
+      "height": 8352
+    },
+    {
+      "rank": 8,
+      "image_name": "1022.png",
+      "confidence": "strong",
+      "scores": {
+        "final": 1.0,
+        "semantic": 0.6805627346038818,
+        "keyword": 1.0,
+        "category": 0.0,
+        "relation": 1.0,
+        "quantity": 0.0,
+        "evidence_layer": 1.0,
+        "scene": 0.5
+      },
+      "matched": {
+        "keywords": [
+          "aircraft",
+          "aprons"
+        ],
+        "relations": [
+          "parked_at[facility=aircraft, facility=aprons]",
+          "aircraft::parked_at::aprons"
+        ],
+        "area_categories": [
+          "Airport",
+          "Commercial/Residential Area",
+          "Transportation",
+          "Storage Area"
+        ],
+        "facilities": [
+          "runways",
+          "taxiways",
+          "aprons",
+          "terminal buildings",
+          "hangars",
+          "aircraft",
+          "residential blocks",
+          "commercial buildings",
+          "urban roads",
+          "parking lots",
+          "roads",
+          "highways",
+          "warehouses",
+          "container yards",
+          "ships",
+          "storage tanks",
+          "bridges",
+          "transmission towers"
+        ]
+      },
+      "description": "The image depicts a large airport complex situated on a plain terrain, surrounded by forested areas and several lakes. The airport features multiple runways, taxiways, and aprons, with terminal buildings and hangars visible. Several aircraft are parked on the aprons and taxiways. To the north and west of the airport, there are residential blocks and commercial buildings, connected by urban roads and parking lots. A major highway runs along the northern edge of the scene, with several interchanges and bridges. To the east and south, there are large forested areas with some cleared land and small lakes. Several warehouses and container yards are located near the airport, likely for cargo handling. The overall scene suggests a busy transportation hub with significant infrastructure development.",
+      "reasons": [
+        "命中查询实体或关键词：aircraft、aprons",
+        "命中空间关系或活动关系：parked_at[facility=aircraft, facility=aprons]、aircraft::parked_at::aprons",
+        "关系匹配证据较强",
+        "支撑证据层得分较高",
+        "场景上下文与查询较一致"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1022.png::rel::aircraft::parked_at::aprons::2",
+          "doc_type": "relation",
+          "relation": "aircraft parked_at aprons",
+          "evidence": "Several aircraft are parked on the aprons and taxiways.",
+          "score": 0.9597,
+          "relation_score": 1.0,
+          "evidence_score": 0.89
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "Plain",
+      "land_cover": [
+        "Forest",
+        "Built-up Area",
+        "Water Body"
+      ],
+      "natural_entities": [
+        "Lake"
+      ],
+      "detections": {
+        "aircraft": 78,
+        "ships": 3,
+        "storage tanks": 9,
+        "hangars": 4,
+        "bridges": 12,
+        "transmission towers": 6
+      },
+      "query_profile": "dynamic_activity",
+      "thumbnail": "assets/images/c303f12131348d5f6b1e-thumbnail.webp",
+      "preview": "assets/images/c303f12131348d5f6b1e-preview.webp",
+      "width": 17920,
+      "height": 13728
+    }
+  ]
+}

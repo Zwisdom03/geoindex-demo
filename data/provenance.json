@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "mode": "precomputed",
+  "generated_at": "2026-09-06T09:36:12.168407+00:00",
+  "model": "BAAI/bge-m3 (local checkpoint)",
+  "vector_backend": "sentence_transformers",
+  "index_type": "FAISS IndexFlatIP",
+  "image_count": 1224,
+  "document_count": 37025,
+  "query_count": 13,
+  "unique_result_images": 89,
+  "images_complete": true,
+  "top_k": 8,
+  "top_m": 100,
+  "query_language": "zh",
+  "english_labels": "Display translations only; all queries were executed in Chinese.",
+  "timing": "One local run per query, excluding model startup and image export; not a benchmark or browser latency.",
+  "score_note": "GeoIndex ranking scores, not calibrated probabilities. Scores are not modified for display.",
+  "matching": "soft keyword matching; top-k candidates retain partial matches; strict_match is a rule-based diagnostic, not human ground truth.",
+  "images": "RGB WebP derivatives: thumbnail <=640px; preview <=1600px; source aspect ratio retained; embedded metadata omitted.",
+  "environment_image_id": "sha256:c590966647a4525a4c6c3da32b4e4e9cba4f4de0ca7d099bfc566b90b29b0f40",
+  "device": "cuda:0",
+  "python": "3.10.12",
+  "torch": "2.5.1+cu121",
+  "sentence_transformers": "5.6.0",
+  "faiss": "1.14.3",
+  "index_sha256": {
+    "config.json": "408de802ca95f1b24117173341cdb2a65f5706907416dff8ae388c186b2dc342",
+    "faiss.index": "1f83938550ea48dbe5bd371abddeef152bc003b49d41f1f7456140903544bcfd",
+    "metadata.json": "41500230c51031b70a67281d1a6d66b292e53f68b1b352765197a62a42caadbb",
+    "inverted_index.json": "3f6bc341f77fcd2d9340223a0fa3592499826148eb7d05a155e12c961758c797",
+    "doc_id_mapping.json": "173fbc70b75a35aa113caf37cf1045f314c4a083e71b50f27ef38b47288a37c3"
+  },
+  "code_sha256": {
+    "online_search.py": "8a5e865a2fa41337a47051ae8a5a4941f75a3554936b45170aff6fedf8092a6a",
+    "entity_type_system.py": "1f9b0195e79cc3ba5435070a0a846ad0e5937b2f9f237210b3088a1204fb3f6d",
+    "rag_evidence_builder.py": "4b8e6a6fc1372a79d3a42d6965b30a715a661b55102ee386f241073dfde27795",
+    "rag_answer_generator.py": "ea4ed568d7f679c874c706787d94e6036040e90491c25ce8128a202896cee8c9",
+    "tools/export_pages_demo.py": "09f00446d721a3942044d98dae82c981fd63c5ce662281cbd1ccbb97fa74edea",
+    "tools/pages_queries.json": "f882f4e6c39ce137f5f30076fd4c983faec6a71ff432a3a56c8751ab43327d6e"
+  },
+  "image_exporter_sha256": "45affad2182590d426d4ce5e89dd5725fa1c701b32ea76558012e659e53cf773"
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore precomputed GeoIndex remote-sensing retrieval examples, original ranking scores, and structured evidence.">
+  <meta name="color-scheme" content="dark">
+  <title>GeoIndex · Retrieval Showcase</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="data/dataset.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#results">Skip to results</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="GeoIndex home"><span class="brand-mark" aria-hidden="true">G</span>Geo<span>Index</span><small data-i18n="showcase">RETRIEVAL SHOWCASE</small></a>
+    <nav aria-label="Main navigation"><a href="#method" data-i18n="methodLink">About this demo</a><button id="language" class="language" type="button">中文</button></nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <div class="intro-copy"><p class="eyebrow"><span class="status-dot"></span><span data-i18n="badge">PRECOMPUTED RESEARCH DEMO</span></p>
+      <h1 id="title" data-i18n="title">Explore scenes.<br>Inspect the evidence.</h1>
+      <p class="subtitle" data-i18n="subtitle">Remote-sensing retrieval through entities, spatial relationships, and activities. Select an example to explore its saved results.</p>
+      <p class="notice" data-i18n="notice">These results were computed offline with GeoIndex. This page does not run live searches.</p></div>
+      <div class="hero-image"><img id="hero-image" alt="Remote-sensing scene from the saved retrieval results"><div class="hero-caption"><span data-i18n="collection">LRS-GRO · RETRIEVAL COLLECTION</span><span id="hero-name"></span></div></div>
+    </section>
+    <div class="collection-strip" id="collection-strip" aria-label="Collection details"></div>
+    <section class="workspace" aria-label="Query explorer">
+      <aside class="examples">
+        <div class="section-label"><span data-i18n="examples">01 / EXAMPLE QUERIES</span><span id="example-count"></span></div>
+        <label for="query-filter" class="sr-only" data-i18n="filterLabel">Filter saved examples</label><input id="query-filter" type="search" placeholder="Filter saved examples…" autocomplete="off">
+        <div class="categories" id="categories" aria-label="Query categories"></div>
+        <div id="query-list" class="query-list"></div>
+        <p class="sidebar-note" data-i18n="sidebarNote">English titles are translations for navigation. Every retrieval query was executed in Chinese.</p>
+      </aside>
+      <section id="results" class="results" tabindex="-1" aria-labelledby="query-title">
+        <div class="section-label"><span data-i18n="resultsLabel">02 / SAVED RETRIEVAL RESULTS</span><span id="query-category" class="category-text"></span></div>
+        <div class="results-title"><div><h2 id="query-title"></h2><p id="query-original" class="original-query"></p></div><a id="query-download" class="button secondary" download data-i18n="downloadQuery">Query JSON ↗</a></div>
+        <div id="query-summary" class="query-summary"></div>
+        <div id="query-conditions" class="conditions"></div>
+        <div class="results-toolbar"><p id="results-status" role="status" aria-live="polite"></p><span data-i18n="scoreNote">Ranking score ≠ probability</span></div>
+        <div id="result-grid" class="result-grid"></div>
+        <details class="query-inspector"><summary data-i18n="parsedQuery">Inspect the parsed query</summary><pre id="parsed-query"></pre></details>
+      </section>
+    </section>
+    <section id="method" class="method" aria-labelledby="method-title"><div class="section-label" data-i18n="methodLabel">03 / DATA & REPRODUCIBILITY</div><h2 id="method-title" data-i18n="methodTitle">A transparent snapshot of retrieval.</h2><div class="method-columns"><div><h3 data-i18n="methodA">What you are viewing</h3><p data-i18n="methodAText">Selected queries run against the existing BGE-M3 and FAISS index, with structured entity, relationship, and evidence scoring. The original top-ranked candidates are retained, including partial matches.</p></div><div><h3 data-i18n="methodB">How to read the results</h3><p data-i18n="methodBText">Scores are ranking signals, not calibrated confidence. The strict-match indicator is a rule-based diagnostic, not human validation. Explanations summarize retrieved metadata and evidence; they are not new image annotations.</p></div><div><h3 data-i18n="methodC">Scope of this demonstration</h3><p data-i18n="methodCText">This is a curated demonstration, not an aggregate evaluation. Images are resized RGB previews. Selecting examples is local to your browser and does not contact a retrieval server.</p></div></div><div class="method-footer"><p id="provenance-summary"></p><div><a class="button secondary" href="data/dataset.json" download data-i18n="downloadAll">Download all results</a><a class="button secondary" href="data/provenance.json" download data-i18n="provenance">Export provenance</a></div></div></section>
+  </main>
+  <footer><span>GeoIndex <span class="footer-dot">/</span> <span data-i18n="footer">Evidence-aware remote-sensing retrieval</span></span><span data-i18n="offline">Static demonstration · No live inference</span></footer>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><div><span class="eyebrow" data-i18n="detailLabel">RESULT INSPECTOR</span><h2 id="detail-title"></h2></div><button id="close-dialog" type="button" class="close-button" aria-label="Close result details">×</button></div><div id="detail-content"></div></dialog>
+  <noscript><div class="noscript">Enable JavaScript to select saved queries. You can also <a href="data/dataset.json">download the complete result dataset</a>.</div></noscript>
+</body>
+</html>
