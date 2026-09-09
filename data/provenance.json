@@ -7,8 +7,8 @@
   "index_type": "FAISS IndexFlatIP",
   "image_count": 1224,
   "document_count": 37025,
-  "query_count": 13,
-  "unique_result_images": 89,
+  "query_count": 11,
+  "unique_result_images": 75,
   "images_complete": true,
   "top_k": 8,
   "top_m": 100,
@@ -39,5 +39,7 @@
     "tools/export_pages_demo.py": "09f00446d721a3942044d98dae82c981fd63c5ce662281cbd1ccbb97fa74edea",
     "tools/pages_queries.json": "f882f4e6c39ce137f5f30076fd4c983faec6a71ff432a3a56c8751ab43327d6e"
   },
-  "image_exporter_sha256": "45affad2182590d426d4ce5e89dd5725fa1c701b32ea76558012e659e53cf773"
+  "image_exporter_sha256": "45affad2182590d426d4ce5e89dd5725fa1c701b32ea76558012e659e53cf773",
+  "display_updated_at": "2026-09-09T09:36:52.041980+00:00",
+  "selection_manifest_sha256": "e7be92992822ba0e89863599f5bda50e6797072952ae2521f390178bd99d73af"
 }

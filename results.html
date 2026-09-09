@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="View GeoIndex retrieval images, ranking scores, and supporting evidence for your selected query.">
+  <meta name="color-scheme" content="dark">
+  <title>GeoIndex · Results</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css?v=2">
+  <script defer src="data/dataset.js?v=2"></script>
+  <script defer src="assets/app.js?v=2"></script>
+</head>
+<body data-page="results">
+  <header class="topbar"><a class="brand" href="index.html" aria-label="GeoIndex home"><span class="brand-mark" aria-hidden="true">G</span>Geo<span>Index</span></a><button id="language" type="button" class="language">中文</button></header>
+  <main class="results-page">
+    <a id="back-link" class="back-link" href="index.html"><span aria-hidden="true">←</span> <span data-i18n="back">Choose another query</span></a>
+    <section aria-labelledby="query-title">
+      <div class="results-heading"><p class="eyebrow" data-i18n="resultsLabel">RETRIEVAL RESULTS</p><h1 id="query-title"></h1><p id="query-original" class="query-original"></p><p id="results-status" class="results-status" role="status" aria-live="polite"></p></div>
+      <div id="result-grid" class="result-grid"></div>
+      <p id="result-note" class="result-note" data-i18n="resultNote">Saved results in their original order. Scores are ranking signals, not probabilities.</p>
+    </section>
+    <noscript><p>Please enable JavaScript to view the saved results. 请启用 JavaScript 后查看结果。</p></noscript>
+  </main>
+  <footer><span>GeoIndex</span><span data-i18n="precomputed">Precomputed examples · No live search</span></footer>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><h2 id="detail-title"></h2><button id="close-dialog" class="close-button" type="button" aria-label="Close details">×</button></div><div id="detail-content"></div></dialog>
+</body>
+</html>
