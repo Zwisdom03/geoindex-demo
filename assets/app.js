@@ -18,13 +18,13 @@
     title:['Choose a scene to explore.','选择检索词条'],
     intro:['Select a query, then view its saved retrieval results.','从下拉栏选择一个词条，确认后查看对应的影像结果。'],
     selectLabel:['Retrieval query','检索词条'],placeholder:['Select a query…','请选择检索词条…'],confirm:['View results','确认并查看结果'],
-    precomputed:['Precomputed examples · No live search','预计算示例 · 非实时检索'],
+    precomputed:['GeoIndex v2 · LRS-GRO · Precomputed','GeoIndex v2 · LRS-GRO · 预计算结果'],
     footer:['Remote-sensing retrieval, with evidence.','遥感影像检索与证据展示'],
     back:['Choose another query','返回选择词条'],resultsLabel:['RETRIEVAL RESULTS','检索结果'],
-    resultNote:['Saved results in their original order. Scores are ranking signals, not probabilities.','结果按原始检索顺序展示。评分用于排序，不代表概率。']
+    resultNote:['GeoIndex v2 results in retrieval order. Scores are ranking signals, not probabilities.','GeoIndex v2 结果按检索顺序展示。评分用于排序，不代表概率。']
   };
   const categories = {entity:['Entities','实体'],combination:['Combinations','实体组合'],spatial:['Spatial relations','空间关系'],activity:['Activities','动态活动'],quantity:['Quantity','数量意图']};
-  const scoreNames = {final:['Final ranking','最终排序'],semantic:['Semantic','语义'],keyword:['Keyword','关键词'],category:['Category','类别'],relation:['Relation','关系'],evidence_layer:['Evidence layer','证据层'],scene:['Scene context','场景上下文'],quantity:['Quantity','数量']};
+  const scoreNames = {final:['Final ranking','最终排序'],semantic:['Semantic','语义'],semantic_base:['Semantic base','语义基础分'],structure:['Structure','结构'],structure_delta:['Structure evidence','结构证据增量'],relation:['Relation','关系'],relation_delta:['Relation evidence','关系证据增量'],keyword:['Keyword','关键词'],category:['Category','类别'],evidence_layer:['Evidence layer','证据层'],scene:['Scene context','场景上下文'],quantity:['Quantity','数量']};
 
   function homeUrl() {
     const p = new URLSearchParams({lang});
@@ -77,6 +77,7 @@
   }
   function reasonsFor(r) {
     if (lang === 'zh') return r.reasons;
+    if (r.reasons_en?.length) return r.reasons_en;
     const reasons = [];
     if (r.matched.keywords.length) reasons.push(`Matched entities or keywords: ${r.matched.keywords.join(', ')}.`);
     if (r.matched.relations.length) reasons.push(`Matched relationships: ${r.matched.relations.join(', ')}.`);

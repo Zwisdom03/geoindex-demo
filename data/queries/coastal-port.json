@@ -3,885 +3,651 @@
   "category": "spatial",
   "query": "靠近海岸的港口",
   "en": "Ports near the coast",
-  "elapsed_ms": 233.0,
+  "elapsed_ms": 429.43,
   "parsed_query": {
-    "semantic_query": "靠近海岸的港口 ; port ; sea",
-    "filters": {
-      "area_category": [
-        "port"
-      ],
-      "facility": [],
-      "land_cover": [],
-      "natural_entity": [
-        "sea"
-      ],
-      "terrain": []
+    "environment": [
+      "sea"
+    ],
+    "areas": [
+      "port"
+    ],
+    "area_constraints": [
+      {
+        "value": "port",
+        "source": "alias",
+        "confidence": 1.0,
+        "hard": true
+      }
+    ],
+    "facilities": [],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [
+      "岸的"
+    ],
+    "semantic_text": "靠近海岸的港口"
+  },
+  "parameters": {
+    "top_k": 8,
+    "structured_top_k": 100,
+    "dense_top_k": 100,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "structured": 100,
+    "dense": 100,
+    "union": 164,
+    "overlap": 36
+  },
+  "query_profile": {
+    "method": "semantic_base_plus_signed_evidence_v1",
+    "base": "semantic_cosine",
+    "lambdas": {
+      "structure": 0.05,
+      "relation": 0.05
     },
-    "relations": [
-      {
-        "predicate": "near",
-        "relation_type": "distance",
-        "relation_category": "distance",
-        "anchors": [
-          {
-            "field": "area_category",
-            "value": "port",
-            "entity_type": "area_port",
-            "entity_supertype": "functional_area"
-          },
-          {
-            "field": "natural_entity",
-            "value": "sea",
-            "entity_type": "natural_waterbody",
-            "entity_supertype": "natural_feature"
-          }
-        ],
-        "source": "query_rule",
-        "matched_keywords": [
-          "靠近"
-        ]
-      }
-    ],
-    "relation_constraints": [
-      {
-        "subject": "port",
-        "subject_type": "area_port",
-        "subject_supertype": "functional_area",
-        "relation": "near",
-        "relation_category": "distance",
-        "relation_state": "spatial",
-        "object": "sea",
-        "object_type": "natural_waterbody",
-        "object_supertype": "natural_feature",
-        "doc_type": "relation"
-      }
-    ],
-    "quantity_intent": {
-      "enabled": false,
-      "facilities": []
-    }
+    "signals": {
+      "structured_constraint_count": 2,
+      "hard_area_count": 1,
+      "soft_area_count": 0,
+      "quantity_count": 0,
+      "relation_count": 0,
+      "unmapped_concept_count": 1,
+      "query_token_count": 7,
+      "raw_structure_signal": 2.6,
+      "raw_semantic_signal": 1.9,
+      "raw_relation_signal": 0.0
+    },
+    "unknown_evidence_policy": "neutral",
+    "hard_constraint_policy": "verified_quantity_only"
   },
-  "requirements": {
-    "entities": [
-      {
-        "field": "area_category",
-        "value": "port"
-      },
-      {
-        "field": "natural_entity",
-        "value": "sea"
-      }
-    ],
-    "relations": [
-      {
-        "subject": "port",
-        "relation": "near",
-        "object": "sea",
-        "category": "distance",
-        "state": "spatial"
-      }
-    ]
+  "scoring_counts": {
+    "candidate_union": 164,
+    "eligible": 164,
+    "hard_rejected": 0,
+    "returned": 8
   },
-  "query_profile": "relation",
-  "strict_result_count": 3,
-  "answer_zh": "查询：靠近海岸的港口\n查询类型：relation\n结构化条件：实体条件：area_category=port、natural_entity=sea；关系条件：port near sea\n检索结论：返回 8 个候选结果，其中 8 个具备中等以上证据。\n\nRank 1: 1666.tif（强匹配，Final=0.8853）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port, natural_entity=sea]、port::touches::sea、near[area_category=port]、near[natural_entity=sea]\n场景类别：Port、Transportation\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port, natural_entity=sea]、port::touches::sea、near[area_category=port]、near[natural_entity=sea]；关系匹配证据较强；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [port touches sea] The port is located adjacent to the sea, with wharves extending into the water.\n- [ships moored_at port] Multiple ships are docked at the wharves, indicating active maritime operations.\n\nRank 2: 12150.tif（强匹配，Final=0.8735）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port, natural_entity=sea]\n场景类别：Port、Transportation、Commercial/Residential Area\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port, natural_entity=sea]；关系匹配证据较强；存在一定支撑证据；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [port along sea] Multiple port facilities are visible along the coastline.\n\nRank 3: 8457.tif（强匹配，Final=0.8385）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port, natural_entity=sea]\n场景类别：Airport、Port、Industrial Zone、Utility Infrastructure\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port, natural_entity=sea]；关系匹配证据较强；存在一定支撑证据；场景上下文与查询较一致\n严格匹配：通过\n支撑证据：\n- [port along sea] Along the coastline, a port area is present with wharves extending into the sea, although no ships are clearly docked at the bottom-right pier area.\n\nRank 4: 0687.png（强匹配，Final=0.8201）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port]、near[natural_entity=sea]\n场景类别：Port、Industrial Zone、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port]、near[natural_entity=sea]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- Container stacks are visible in the port area, along with several ships docked at the piers and others anchored offshore. Adjacent to the port, there is an industrial zone with factory buildings, warehouses, and large storage tanks. The transportation network includes urban roads connecting the various areas, and vessels are visible in the water near the port entrance.\n- [port near commercial/residential area] The transportation network includes urban roads connecting the various areas, and vessels are visible in the water near the port entrance.\n\nRank 5: 1991.tif（强匹配，Final=0.8194）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port]\n场景类别：Port、Industrial Zone、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- [port near commercial/residential area] A soccer field is located near the center-right, surrounded by open spaces and smaller buildings.\n- [port touches warehouses] Adjacent to the port, there are industrial zones with factory buildings and warehouses, characterized by large rectangular structures and storage areas.\n\nRank 6: 0295.png（强匹配，Final=0.8190）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port]\n场景类别：Port、Commercial/Residential Area、Industrial Zone、Transportation、Utility Infrastructure\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- [port near commercial/residential area] A marina with numerous small vessels is located near the urban area.\n\nRank 7: test-421.png（强匹配，Final=0.8189）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port]\n场景类别：Agricultural Land、Port、Commercial/Residential Area、Transportation\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- [port near ships] Several vessels, including a large cargo ship, are docked or anchored near the wharves.\n\nRank 8: 0381.png（强匹配，Final=0.8188）\n命中实体/关键词：port、sea\n命中关系：near[area_category=port]\n场景类别：Port、Industrial Zone、Commercial/Residential Area、Transportation、Utility Infrastructure\n判断依据：命中查询实体或关键词：port、sea；命中空间关系或活动关系：near[area_category=port]；存在部分关系匹配证据；支撑证据层得分较高；场景上下文与查询较一致\n严格匹配：未通过（缺少关系条件、证据分不足）\n支撑证据：\n- [port near utility infrastructure] In the lower right, near the port, there appears to be a water treatment plant or similar utility infrastructure.\n\n说明：以上回答只基于结构化检索证据包生成，未额外编造图像内容。",
+  "strict_result_count": 8,
   "results": [
     {
       "rank": 1,
-      "image_name": "1666.tif",
+      "image_name": "6254.tif",
       "confidence": "strong",
       "scores": {
-        "final": 0.8853278659347533,
-        "semantic": 0.6399824023246765,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 0.87015,
-        "quantity": 0.0,
-        "evidence_layer": 1.0,
-        "scene": 0.6
+        "semantic_base": 0.5517395734786987,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.6017395734786988
       },
       "matched": {
         "keywords": [
-          "port",
-          "sea"
+          "sea",
+          "port"
         ],
-        "relations": [
-          "near[area_category=port, natural_entity=sea]",
-          "port::touches::sea",
-          "near[area_category=port]",
-          "near[natural_entity=sea]"
-        ],
+        "relations": [],
         "area_categories": [
-          "Port",
-          "Transportation"
+          "commercial_residential_area",
+          "port",
+          "transportation_area"
         ],
         "facilities": [
-          "wharves",
-          "gantry cranes",
-          "container stacks",
-          "ships",
-          "roads",
-          "vessels"
+          "breakwater",
+          "commercial_building",
+          "parking_lot",
+          "road",
+          "urban_road",
+          "wharf"
         ]
       },
-      "description": "The image depicts a large port facility situated on a plain terrain, surrounded by water bodies. The area is characterized by extensive built-up structures, including numerous container stacks and gantry cranes. The port is located adjacent to the sea, with wharves extending into the water. Multiple ships are docked at the wharves, indicating active maritime operations. The facility also includes roads for transportation, with vehicles visible on the roads. The overall scene suggests a busy and well-organized port area, with clear spatial relationships between the different facilities and the surrounding water bodies.",
+      "description": "The image depicts a coastal port area situated on a plain terrain, characterized by a large expanse of sea water and built-up areas along the shoreline. The scene includes a prominent port facility with multiple wharves extending into the water, protected by breakwaters. Several ships are docked at the wharves, and a vessel is visible moving in the open water. Adjacent to the port, there is a commercial/residential area with various buildings, parking lots, and urban roads. A soccer field is also visible in the lower right part of the image, surrounded by buildings and roads. The overall scene suggests a well-developed coastal infrastructure with active maritime and land-based activities.",
       "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port, natural_entity=sea]、port::touches::sea、near[area_category=port]、near[natural_entity=sea]",
-        "关系匹配证据较强",
-        "支撑证据层得分较高",
-        "场景上下文与查询较一致"
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5517"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5517."
       ],
       "evidence": [
         {
-          "doc_id": "1666.tif::rel::port::touches::sea::2",
-          "doc_type": "relation",
-          "relation": "port touches sea",
-          "evidence": "The port is located adjacent to the sea, with wharves extending into the water.",
-          "score": 0.8853,
-          "relation_score": 0.8701,
-          "evidence_score": 0.96
-        },
-        {
-          "doc_id": "1666.tif::rel::ships::moored_at::port::3",
-          "doc_type": "relation",
-          "relation": "ships moored_at port",
-          "evidence": "Multiple ships are docked at the wharves, indicating active maritime operations.",
-          "score": 0.784,
-          "relation_score": 0.57,
-          "evidence_score": 0.96
-        }
-      ],
-      "strict_match": {
-        "passed": true,
-        "missing_entities": [],
-        "missing_relations": [],
-        "score_reasons": []
-      },
-      "terrain": "Plain",
-      "land_cover": [
-        "Built-up Area",
-        "Water Body"
-      ],
-      "natural_entities": [
-        "Sea"
-      ],
-      "detections": {
-        "container stacks": 2
-      },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/6cd83d01eb39638c0ae0-thumbnail.webp",
-      "preview": "assets/images/6cd83d01eb39638c0ae0-preview.webp",
-      "width": 1500,
-      "height": 1500
-    },
-    {
-      "rank": 2,
-      "image_name": "12150.tif",
-      "confidence": "strong",
-      "scores": {
-        "final": 0.8735152273559571,
-        "semantic": 0.6283001899719238,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 1.0,
-        "quantity": 0.0,
-        "evidence_layer": 0.72,
-        "scene": 0.6
-      },
-      "matched": {
-        "keywords": [
-          "port",
-          "sea"
-        ],
-        "relations": [
-          "near[area_category=port, natural_entity=sea]"
-        ],
-        "area_categories": [
-          "Port",
-          "Transportation",
-          "Commercial/Residential Area"
-        ],
-        "facilities": [
-          "wharves",
-          "breakwaters",
-          "ships",
-          "vessels",
-          "shipping lanes",
-          "residential blocks",
-          "urban roads",
-          "storage tanks"
-        ]
-      },
-      "description": "The scene depicts a coastal area characterized by a mix of forested land and built-up areas adjacent to a large body of water, likely a sea or bay. The terrain is predominantly flat, with dense green vegetation covering significant portions of the landmass. The water body is expansive, with visible sediment patterns indicating shallow areas near the shore. Multiple port facilities are visible along the coastline. On the right side of the image, there is a large port area with wharves extending into the water, where several ships are docked. Breakwaters are present, protecting the harbor area from waves. Numerous vessels are scattered throughout the water, some anchored and others possibly in transit, indicating active shipping lanes. In the upper left and upper right corners, there are clusters of buildings, suggesting residential or commercial areas. These built-up areas are connected by roads that run along the coastline and inland. The overall scene suggests a rural coastal area with significant maritime activity, including port operations and shipping.",
-      "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port, natural_entity=sea]",
-        "关系匹配证据较强",
-        "存在一定支撑证据",
-        "场景上下文与查询较一致"
-      ],
-      "evidence": [
-        {
-          "doc_id": "12150.tif::rel::port::along::sea::3",
-          "doc_type": "relation",
-          "relation": "port along sea",
-          "evidence": "Multiple port facilities are visible along the coastline.",
-          "score": 0.8735,
-          "relation_score": 1.0,
-          "evidence_score": 0.84
-        }
-      ],
-      "strict_match": {
-        "passed": true,
-        "missing_entities": [],
-        "missing_relations": [],
-        "score_reasons": []
-      },
-      "terrain": "Plain",
-      "land_cover": [
-        "Forest",
-        "Built-up Area",
-        "Water Body"
-      ],
-      "natural_entities": [
-        "Sea"
-      ],
-      "detections": {
-        "ships": 45,
-        "storage tanks": 7
-      },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/ce50ed86d9078a17d583-thumbnail.webp",
-      "preview": "assets/images/ce50ed86d9078a17d583-preview.webp",
-      "width": 6000,
-      "height": 6000
-    },
-    {
-      "rank": 3,
-      "image_name": "8457.tif",
-      "confidence": "strong",
-      "scores": {
-        "final": 0.8385457627868652,
-        "semantic": 0.6304566860198975,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 0.895,
-        "quantity": 0.0,
-        "evidence_layer": 0.72,
-        "scene": 0.6
-      },
-      "matched": {
-        "keywords": [
-          "port",
-          "sea"
-        ],
-        "relations": [
-          "near[area_category=port, natural_entity=sea]"
-        ],
-        "area_categories": [
-          "Airport",
-          "Port",
-          "Industrial Zone",
-          "Utility Infrastructure"
-        ],
-        "facilities": [
-          "runways",
-          "taxiways",
-          "aprons",
-          "terminal buildings",
-          "aircraft",
-          "wharves",
-          "factory buildings",
-          "storage tanks",
-          "warehouses",
-          "solar farms",
-          "ships"
-        ]
-      },
-      "description": "The image depicts a coastal plain area characterized by extensive built-up infrastructure, grassland patches, and a large sea body along the right side. The terrain is flat, typical of an airport and industrial zone setting. The left and central parts of the image are dominated by an airport complex, featuring multiple runways, taxiways, and aprons. Numerous aircraft are parked on the aprons, and terminal buildings are visible adjacent to the aircraft parking areas. To the right of the airport, there is an industrial zone with various factory buildings, warehouses, and a cluster of storage tanks. A solar farm is also visible within the airport vicinity, indicating utility infrastructure. Along the coastline, a port area is present with wharves extending into the sea, although no ships are clearly docked at the bottom-right pier area. The overall scene represents a mixed-use coastal area with significant aviation, industrial, and maritime infrastructure.",
-      "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port, natural_entity=sea]",
-        "关系匹配证据较强",
-        "存在一定支撑证据",
-        "场景上下文与查询较一致"
-      ],
-      "evidence": [
-        {
-          "doc_id": "8457.tif::rel::port::along::sea::6",
-          "doc_type": "relation",
-          "relation": "port along sea",
-          "evidence": "Along the coastline, a port area is present with wharves extending into the sea, although no ships are clearly docked at the bottom-right pier area.",
-          "score": 0.8385,
-          "relation_score": 0.895,
-          "evidence_score": 0.84
-        }
-      ],
-      "strict_match": {
-        "passed": true,
-        "missing_entities": [],
-        "missing_relations": [],
-        "score_reasons": []
-      },
-      "terrain": "Plain",
-      "land_cover": [
-        "Built-up Area",
-        "Grassland",
-        "Water Body"
-      ],
-      "natural_entities": [
-        "Sea"
-      ],
-      "detections": {
-        "aircraft": 20,
-        "ships": 2,
-        "storage tanks": 18
-      },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/a61145bfabe85e45c106-thumbnail.webp",
-      "preview": "assets/images/a61145bfabe85e45c106-preview.webp",
-      "width": 4000,
-      "height": 4000
-    },
-    {
-      "rank": 4,
-      "image_name": "0687.png",
-      "confidence": "strong",
-      "scores": {
-        "final": 0.8201258769989014,
-        "semantic": 0.6425408124923706,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 0.675,
-        "quantity": 0.0,
-        "evidence_layer": 1.0,
-        "scene": 0.6
-      },
-      "matched": {
-        "keywords": [
-          "port",
-          "sea"
-        ],
-        "relations": [
-          "near[area_category=port]",
-          "near[natural_entity=sea]"
-        ],
-        "area_categories": [
-          "Port",
-          "Industrial Zone",
-          "Commercial/Residential Area",
-          "Transportation"
-        ],
-        "facilities": [
-          "wharves",
-          "breakwaters",
-          "gantry cranes",
-          "container stacks",
-          "ships",
-          "factory buildings",
-          "storage tanks",
-          "warehouses",
-          "residential blocks",
-          "commercial buildings",
-          "urban roads",
-          "roads",
-          "vessels",
-          "transmission towers"
-        ]
-      },
-      "description": "The image depicts a coastal urban area situated on a plain, characterized by a mix of built-up areas and a large water body representing the sea. The coastline curves along the bottom and right edges, with waves breaking near the shore. Inland, a dense grid of streets and buildings indicates significant urban development, including residential blocks and commercial structures. The dominant feature is a large port facility extending into the ocean, equipped with multiple wharves, breakwaters, and gantry cranes. Container stacks are visible in the port area, along with several ships docked at the piers and others anchored offshore. Adjacent to the port, there is an industrial zone with factory buildings, warehouses, and large storage tanks. The transportation network includes urban roads connecting the various areas, and vessels are visible in the water near the port entrance. The overall scene highlights a bustling maritime hub integrated with urban and industrial infrastructure.",
-      "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port]、near[natural_entity=sea]",
-        "存在部分关系匹配证据",
-        "支撑证据层得分较高",
-        "场景上下文与查询较一致"
-      ],
-      "evidence": [
-        {
-          "doc_id": "0687.png::area::industrial_zone::1",
-          "doc_type": "area",
+          "doc_id": "6254.tif::description",
+          "doc_type": "description",
           "relation": "",
-          "evidence": "Container stacks are visible in the port area, along with several ships docked at the piers and others anchored offshore. Adjacent to the port, there is an industrial zone with factory buildings, warehouses, and large storage tanks. The transportation network includes urban roads connecting the various areas, and vessels are visible in the water near the port entrance.",
-          "score": 0.5444,
-          "relation_score": 0.675,
-          "evidence_score": 0.0
-        },
-        {
-          "doc_id": "0687.png::rel::port::near::commercial_residential_area::6",
-          "doc_type": "relation",
-          "relation": "port near commercial/residential area",
-          "evidence": "The transportation network includes urban roads connecting the various areas, and vessels are visible in the water near the port entrance.",
-          "score": 0.8201,
-          "relation_score": 0.675,
-          "evidence_score": 0.96
-        },
-        {
-          "doc_id": "0687.png::rel::ships::moored_at::port::4",
-          "doc_type": "relation",
-          "relation": "ships moored_at port",
-          "evidence": "Container stacks are visible in the port area, along with several ships docked at the piers and others anchored offshore.",
-          "score": 0.8183,
-          "relation_score": 0.675,
-          "evidence_score": 0.89
-        },
-        {
-          "doc_id": "0687.png::rel::port::touches::factory_buildings::5",
-          "doc_type": "relation",
-          "relation": "port touches factory buildings",
-          "evidence": "Adjacent to the port, there is an industrial zone with factory buildings, warehouses, and large storage tanks.",
-          "score": 0.776,
-          "relation_score": 0.5452,
-          "evidence_score": 0.96
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, characterized by a large expanse of sea water and built-up areas along the shoreline. The scene includes a prominent port facility with multiple wharves extending into the water, protected by breakwaters. Several ships are docked at the wharves, and a vessel is visible moving in the open water. Adjacent to the port, there is a commercial/residential area with various buildings, parking lots, and urban roads. A soccer field is also visible in the lower right part of the image, surrounded by buildings and roads. The overall scene suggests a well-developed coastal infrastructure with active maritime and land-based activities.",
+          "score": 0.5517395734786987,
+          "relation_score": null
         }
       ],
       "strict_match": {
-        "passed": false,
+        "passed": true,
         "missing_entities": [],
-        "missing_relations": [
-          {
-            "subject": "port",
-            "relation": "near",
-            "object": "sea",
-            "category": "distance",
-            "state": "spatial"
-          }
-        ],
-        "score_reasons": [
-          "relation_score_below_0.75"
-        ]
+        "missing_relations": [],
+        "score_reasons": []
       },
-      "terrain": "Plain",
+      "terrain": "plain",
       "land_cover": [
-        "Built-up Area",
-        "Water Body"
+        "built_up",
+        "water"
       ],
       "natural_entities": [
-        "Sea"
+        "sea"
       ],
-      "detections": {
-        "ships": 14,
-        "storage tanks": 35,
-        "container stacks": 1,
-        "transmission towers": 1
-      },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/aee4b8b23883de78f2fb-thumbnail.webp",
-      "preview": "assets/images/aee4b8b23883de78f2fb-preview.webp",
-      "width": 7072,
-      "height": 3600
-    },
-    {
-      "rank": 5,
-      "image_name": "1991.tif",
-      "confidence": "strong",
-      "scores": {
-        "final": 0.8194023500442504,
-        "semantic": 0.6421879529953003,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 0.675,
-        "quantity": 0.0,
-        "evidence_layer": 1.0,
-        "scene": 0.6
-      },
-      "matched": {
-        "keywords": [
-          "port",
-          "sea"
-        ],
-        "relations": [
-          "near[area_category=port]"
-        ],
-        "area_categories": [
-          "Port",
-          "Industrial Zone",
-          "Commercial/Residential Area",
-          "Transportation"
-        ],
-        "facilities": [
-          "wharves",
-          "breakwaters",
-          "ships",
-          "factory buildings",
-          "warehouses",
-          "residential blocks",
-          "urban roads",
-          "roads",
-          "vessels",
-          "bridges"
-        ]
-      },
-      "description": "The image depicts a coastal plain area where the sea occupies the left and lower portions, bordered by a developed shoreline. The land cover is dominated by built-up areas, including dense clusters of buildings and infrastructure, with forested hills visible in the upper right. The natural geographic entity is the sea, which extends across the majority of the left side of the image. In the lower part of the image, a port area is visible, featuring wharves and breakwaters extending into the water. Several ships are docked at the piers, and a fast-moving motorboat can be seen in the open water, leaving a wake behind it. Adjacent to the port, there are industrial zones with factory buildings and warehouses, characterized by large rectangular structures and storage areas. To the right of the port and industrial zones, a commercial and residential area is present, with residential blocks and urban roads forming a grid-like pattern. A soccer field is located near the center-right, surrounded by open spaces and smaller buildings. The transportation network includes roads connecting the various areas, and vessels are visible in the sea, indicating active maritime activity. The overall scene suggests a bustling coastal urban environment with a mix of industrial, residential, and recreational facilities.",
-      "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port]",
-        "存在部分关系匹配证据",
-        "支撑证据层得分较高",
-        "场景上下文与查询较一致"
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
       ],
-      "evidence": [
-        {
-          "doc_id": "1991.tif::rel::port::near::commercial_residential_area::7",
-          "doc_type": "relation",
-          "relation": "port near commercial/residential area",
-          "evidence": "A soccer field is located near the center-right, surrounded by open spaces and smaller buildings.",
-          "score": 0.8194,
-          "relation_score": 0.675,
-          "evidence_score": 0.89
-        },
-        {
-          "doc_id": "1991.tif::rel::port::touches::warehouses::5",
-          "doc_type": "relation",
-          "relation": "port touches warehouses",
-          "evidence": "Adjacent to the port, there are industrial zones with factory buildings and warehouses, characterized by large rectangular structures and storage areas.",
-          "score": 0.7764,
-          "relation_score": 0.5452,
-          "evidence_score": 0.96
-        }
-      ],
-      "strict_match": {
-        "passed": false,
-        "missing_entities": [],
-        "missing_relations": [
-          {
-            "subject": "port",
-            "relation": "near",
-            "object": "sea",
-            "category": "distance",
-            "state": "spatial"
-          }
-        ],
-        "score_reasons": [
-          "relation_score_below_0.75"
-        ]
-      },
-      "terrain": "Plain",
-      "land_cover": [
-        "Built-up Area",
-        "Water Body",
-        "Forest"
-      ],
-      "natural_entities": [
-        "Sea"
-      ],
-      "detections": {
-        "ships": 6,
-        "bridges": 2
-      },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/5933628dae8b2777b527-thumbnail.webp",
-      "preview": "assets/images/5933628dae8b2777b527-preview.webp",
+      "effective_weights": {},
+      "thumbnail": "assets/images/2b8367d6d3d4b04f3744-thumbnail.webp",
+      "preview": "assets/images/2b8367d6d3d4b04f3744-preview.webp",
       "width": 2000,
       "height": 2000
     },
     {
-      "rank": 6,
-      "image_name": "0295.png",
+      "rank": 2,
+      "image_name": "1630.tif",
       "confidence": "strong",
       "scores": {
-        "final": 0.8190228839874267,
-        "semantic": 0.6348811388015747,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 0.675,
-        "quantity": 0.0,
-        "evidence_layer": 1.0,
-        "scene": 0.6
+        "semantic_base": 0.5505449175834656,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.6005449175834656
       },
       "matched": {
         "keywords": [
-          "port",
-          "sea"
+          "sea",
+          "port"
         ],
-        "relations": [
-          "near[area_category=port]"
-        ],
+        "relations": [],
         "area_categories": [
-          "Port",
-          "Commercial/Residential Area",
-          "Industrial Zone",
-          "Transportation",
-          "Utility Infrastructure"
+          "port",
+          "storage_area"
         ],
         "facilities": [
-          "wharves",
-          "breakwaters",
-          "gantry cranes",
-          "container stacks",
-          "ships",
-          "residential blocks",
-          "commercial buildings",
-          "urban roads",
-          "factory buildings",
-          "storage tanks",
-          "warehouses",
-          "roads",
-          "highways",
-          "vessels",
-          "water treatment plants",
-          "bridges"
+          "stockpile",
+          "warehouse",
+          "wharf"
         ]
       },
-      "description": "The image depicts a coastal plain terrain dominated by a large port facility and adjacent urban development, bordered by the sea to the north and west. The land cover consists primarily of built-up areas with dense urban structures, bare land in undeveloped zones, and water bodies including the harbor and open sea. Several small islands are visible in the northwest portion of the sea. The port area occupies the central and eastern sections, featuring two large breakwaters extending into the sea, multiple wharves with gantry cranes, container stacks, and several ships docked or anchored. A marina with numerous small vessels is located near the urban area. The commercial and residential area is concentrated in the western part, characterized by dense residential blocks, commercial buildings, and a network of urban roads. Industrial zones are present in the eastern section, with factory buildings, storage tanks, and warehouses visible. Transportation infrastructure includes highways and roads connecting the various areas, with vessels visible in the harbor and sea. A water treatment plant with circular tanks is located in the eastern industrial zone.",
+      "description": "The image depicts a coastal port area situated on a plain terrain, dominated by a large expanse of sea water. The water body occupies the majority of the upper and left portions of the image, with several vessels visible. The built-up area is concentrated along the right and bottom edges, featuring port infrastructure and storage facilities. In the water, approximately five large ships are visible, scattered across the sea. Some are positioned near the center, while others are closer to the left side. The port facilities are located along the right side of the image, including wharves where several smaller vessels are docked. A large warehouse with a light blue roof is prominent in the lower center of the image, adjacent to a parking lot and road. To the bottom-left, there is a rectangular sand storage area with an uneven, light brown surface, likely used for material stockpiling. The port area also includes various industrial structures and storage tanks near the wharves.",
       "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port]",
-        "存在部分关系匹配证据",
-        "支撑证据层得分较高",
-        "场景上下文与查询较一致"
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5505"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5505."
       ],
       "evidence": [
         {
-          "doc_id": "0295.png::rel::port::near::commercial_residential_area::4",
-          "doc_type": "relation",
-          "relation": "port near commercial/residential area",
-          "evidence": "A marina with numerous small vessels is located near the urban area.",
-          "score": 0.819,
-          "relation_score": 0.675,
-          "evidence_score": 0.89
+          "doc_id": "1630.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, dominated by a large expanse of sea water. The water body occupies the majority of the upper and left portions of the image, with several vessels visible. The built-up area is concentrated along the right and bottom edges, featuring port infrastructure and storage facilities. In the water, approximately five large ships are visible, scattered across the sea. Some are positioned near the center, while others are closer to the left side. The port facilities are located along the right side of the image, including wharves where several smaller vessels are docked. A large warehouse with a light blue roof is prominent in the lower center of the image, adjacent to a parking lot and road. To the bottom-left, there is a rectangular sand storage area with an uneven, light brown surface, likely used for material stockpiling. The port area also includes various industrial structures and storage tanks near the wharves.",
+          "score": 0.5505449175834656,
+          "relation_score": null
         }
       ],
       "strict_match": {
-        "passed": false,
+        "passed": true,
         "missing_entities": [],
-        "missing_relations": [
-          {
-            "subject": "port",
-            "relation": "near",
-            "object": "sea",
-            "category": "distance",
-            "state": "spatial"
-          }
-        ],
-        "score_reasons": [
-          "relation_score_below_0.75"
-        ]
+        "missing_relations": [],
+        "score_reasons": []
       },
-      "terrain": "Plain",
+      "terrain": "plain",
       "land_cover": [
-        "Built-up Area",
-        "Bare Land",
-        "Water Body"
+        "water",
+        "built_up"
       ],
       "natural_entities": [
-        "Sea"
+        "sea"
       ],
-      "detections": {
-        "ships": 34,
-        "storage tanks": 18,
-        "gantry cranes": 2,
-        "bridges": 6
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/eb0200148d296d2740ef-thumbnail.webp",
+      "preview": "assets/images/eb0200148d296d2740ef-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 3,
+      "image_name": "1092.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5483506321907043,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5983506321907044
       },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/73545129eee3382840fe-thumbnail.webp",
-      "preview": "assets/images/73545129eee3382840fe-preview.webp",
-      "width": 5181,
-      "height": 3759
+      "matched": {
+        "keywords": [
+          "sea",
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "port",
+          "storage_area"
+        ],
+        "facilities": [
+          "container_stack",
+          "container_yard",
+          "factory_building",
+          "gantry_crane",
+          "warehouse",
+          "wharf"
+        ]
+      },
+      "description": "The image shows a coastal port area situated on a plain terrain, characterized by extensive built-up areas and water bodies. The sea occupies a significant portion of the scene, with multiple piers extending into the water. The port facilities include several wharves where ships are docked, gantry cranes for cargo handling, and large container stacks organized in rows. There are also warehouse structures and storage areas visible along the waterfront. The industrial zone adjacent to the port contains factory buildings and additional warehouses, indicating a busy commercial and logistics hub. The overall layout suggests a well-developed maritime infrastructure with clear separation between different functional areas.",
+      "reasons": [
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5484"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5484."
+      ],
+      "evidence": [
+        {
+          "doc_id": "1092.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image shows a coastal port area situated on a plain terrain, characterized by extensive built-up areas and water bodies. The sea occupies a significant portion of the scene, with multiple piers extending into the water. The port facilities include several wharves where ships are docked, gantry cranes for cargo handling, and large container stacks organized in rows. There are also warehouse structures and storage areas visible along the waterfront. The industrial zone adjacent to the port contains factory buildings and additional warehouses, indicating a busy commercial and logistics hub. The overall layout suggests a well-developed maritime infrastructure with clear separation between different functional areas.",
+          "score": 0.5483506321907043,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/fa9ec6b37e1d96aedace-thumbnail.webp",
+      "preview": "assets/images/fa9ec6b37e1d96aedace-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 4,
+      "image_name": "0739.png",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5470691919326782,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5970691919326783
+      },
+      "matched": {
+        "keywords": [
+          "sea",
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "industrial_area",
+          "port",
+          "transportation_area"
+        ],
+        "facilities": [
+          "breakwater",
+          "container_stack",
+          "factory_building",
+          "gantry_crane",
+          "residential_block",
+          "road",
+          "storage_tank",
+          "urban_road",
+          "warehouse",
+          "wharf"
+        ]
+      },
+      "description": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up areas and a large water body representing the sea. The scene is dominated by port facilities, including multiple wharves, breakwaters, gantry cranes, and container stacks, with numerous ships docked or navigating the waters. Adjacent to the port, there is an industrial zone featuring factory buildings, storage tanks, and warehouses. To the south of the industrial zone, a dense commercial and residential area is visible, consisting of residential blocks and urban roads. Transportation infrastructure, including roads and vessels, connects the various areas, facilitating the movement of goods and people.",
+      "reasons": [
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5471"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5471."
+      ],
+      "evidence": [
+        {
+          "doc_id": "0739.png::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up areas and a large water body representing the sea. The scene is dominated by port facilities, including multiple wharves, breakwaters, gantry cranes, and container stacks, with numerous ships docked or navigating the waters. Adjacent to the port, there is an industrial zone featuring factory buildings, storage tanks, and warehouses. To the south of the industrial zone, a dense commercial and residential area is visible, consisting of residential blocks and urban roads. Transportation infrastructure, including roads and vessels, connects the various areas, facilitating the movement of goods and people.",
+          "score": 0.5470691919326782,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/c004da2eff6f9130b213-thumbnail.webp",
+      "preview": "assets/images/c004da2eff6f9130b213-preview.webp",
+      "width": 6800,
+      "height": 5768
+    },
+    {
+      "rank": 5,
+      "image_name": "1151.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5469131469726562,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5969131469726563
+      },
+      "matched": {
+        "keywords": [
+          "sea",
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "port",
+          "transportation_area"
+        ],
+        "facilities": [
+          "container_stack",
+          "gantry_crane",
+          "shipping_lane",
+          "wharf"
+        ]
+      },
+      "description": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up infrastructure adjacent to a large water body, likely a sea or harbor. The left side of the image is dominated by a busy port facility featuring multiple wharves lined with gantry cranes and densely packed container stacks. Several large cargo ships are docked along the wharves, while additional vessels navigate the shipping lanes in the open water. The right side of the image shows the expansive sea with a few smaller vessels moving through the water, indicating active maritime transportation. The overall scene highlights a major industrial port with significant cargo handling and shipping activities.",
+      "reasons": [
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5469"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5469."
+      ],
+      "evidence": [
+        {
+          "doc_id": "1151.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up infrastructure adjacent to a large water body, likely a sea or harbor. The left side of the image is dominated by a busy port facility featuring multiple wharves lined with gantry cranes and densely packed container stacks. Several large cargo ships are docked along the wharves, while additional vessels navigate the shipping lanes in the open water. The right side of the image shows the expansive sea with a few smaller vessels moving through the water, indicating active maritime transportation. The overall scene highlights a major industrial port with significant cargo handling and shipping activities.",
+          "score": 0.5469131469726562,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/d14cde06dab358de1728-thumbnail.webp",
+      "preview": "assets/images/d14cde06dab358de1728-preview.webp",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "rank": 6,
+      "image_name": "1308.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5465179681777954,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5965179681777955
+      },
+      "matched": {
+        "keywords": [
+          "sea",
+          "port"
+        ],
+        "relations": [],
+        "area_categories": [
+          "port",
+          "transportation_area"
+        ],
+        "facilities": [
+          "container_stack",
+          "shipping_lane",
+          "wharf"
+        ]
+      },
+      "description": "The image depicts a coastal port scene situated on a plain terrain, dominated by a large water body representing the sea. The right side of the image features a developed built-up area consisting of port infrastructure. A long wharf extends from the land into the water, connecting to a docking area where a large cargo ship is moored. Adjacent to the wharf on the land is a container storage area with multiple rows of stacked shipping containers, indicating active cargo handling operations. In the lower part of the image, a container ship is visible moving through the water, leaving a wake behind it, suggesting active maritime transportation. The overall scene highlights the interface between land-based port facilities and maritime shipping activities.",
+      "reasons": [
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5465"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5465."
+      ],
+      "evidence": [
+        {
+          "doc_id": "1308.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a coastal port scene situated on a plain terrain, dominated by a large water body representing the sea. The right side of the image features a developed built-up area consisting of port infrastructure. A long wharf extends from the land into the water, connecting to a docking area where a large cargo ship is moored. Adjacent to the wharf on the land is a container storage area with multiple rows of stacked shipping containers, indicating active cargo handling operations. In the lower part of the image, a container ship is visible moving through the water, leaving a wake behind it, suggesting active maritime transportation. The overall scene highlights the interface between land-based port facilities and maritime shipping activities.",
+          "score": 0.5465179681777954,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/ea62bcca70ed0dc50dc6-thumbnail.webp",
+      "preview": "assets/images/ea62bcca70ed0dc50dc6-preview.webp",
+      "width": 1500,
+      "height": 1500
     },
     {
       "rank": 7,
-      "image_name": "test-421.png",
+      "image_name": "8631.tif",
       "confidence": "strong",
       "scores": {
-        "final": 0.8189344612121582,
-        "semantic": 0.6342670917510986,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 0.675,
-        "quantity": 0.0,
-        "evidence_layer": 1.0,
-        "scene": 0.6
+        "semantic_base": 0.546032190322876,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.596032190322876
       },
       "matched": {
         "keywords": [
-          "port",
-          "sea"
+          "sea",
+          "port"
         ],
-        "relations": [
-          "near[area_category=port]"
-        ],
+        "relations": [],
         "area_categories": [
-          "Agricultural Land",
-          "Port",
-          "Commercial/Residential Area",
-          "Transportation"
+          "port",
+          "transportation_area"
         ],
         "facilities": [
-          "fields",
-          "irrigation canals",
-          "wharves",
-          "ships",
-          "residential blocks",
-          "urban roads",
-          "roads",
-          "vessels",
-          "storage tanks",
-          "bridges",
-          "transmission towers"
+          "container_stack",
+          "gantry_crane",
+          "shipping_lane",
+          "wharf"
         ]
       },
-      "description": "The image depicts a coastal plain area characterized by a mix of forest, cropland, and water bodies, with the sea visible along the coastline. The terrain is predominantly flat, with extensive agricultural fields and wetlands occupying the upper and central parts of the image. Dense forest covers the lower and right portions, interspersed with scattered residential buildings and roads. In the upper part of the image, large rectangular agricultural fields are visible, some filled with water, indicating irrigation canals and possibly aquaculture or salt pans. These fields are separated by narrow roads or embankments. A road runs along the edge of the agricultural area, connecting to a small residential cluster in the upper right. In the lower left, a small port area is visible with wharves extending into the sea. Several vessels, including a large cargo ship, are docked or anchored near the wharves. The sea is clear and blue, with shallow areas visible near the coast. The coastline features sandy beaches and rocky outcrops, with forested hills rising inland. Scattered residential buildings are present throughout the forested areas, particularly in the lower right and central parts of the image. These buildings are connected by a network of roads, some of which run parallel to the coastline. The overall scene suggests a rural coastal area with a mix of agricultural, residential, and maritime activities.",
+      "description": "The image depicts a coastal port area situated on a plain terrain, dominated by a large water body representing the sea. The scene features extensive port infrastructure along the right and bottom edges, including wharves equipped with gantry cranes and container stacks. Multiple vessels are visible, including a large container ship docked at the wharf on the right side and another vessel moving through the shipping lanes in the center-left area. The port facilities are well-organized, with clear demarcation between the water and built-up areas. The overall scene shows active maritime transportation and cargo handling operations.",
       "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port]",
-        "存在部分关系匹配证据",
-        "支撑证据层得分较高",
-        "场景上下文与查询较一致"
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5460"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5460."
       ],
       "evidence": [
         {
-          "doc_id": "test-421.png::rel::port::near::ships::7",
-          "doc_type": "relation",
-          "relation": "port near ships",
-          "evidence": "Several vessels, including a large cargo ship, are docked or anchored near the wharves.",
-          "score": 0.8189,
-          "relation_score": 0.675,
-          "evidence_score": 0.89
+          "doc_id": "8631.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, dominated by a large water body representing the sea. The scene features extensive port infrastructure along the right and bottom edges, including wharves equipped with gantry cranes and container stacks. Multiple vessels are visible, including a large container ship docked at the wharf on the right side and another vessel moving through the shipping lanes in the center-left area. The port facilities are well-organized, with clear demarcation between the water and built-up areas. The overall scene shows active maritime transportation and cargo handling operations.",
+          "score": 0.546032190322876,
+          "relation_score": null
         }
       ],
       "strict_match": {
-        "passed": false,
+        "passed": true,
         "missing_entities": [],
-        "missing_relations": [
-          {
-            "subject": "port",
-            "relation": "near",
-            "object": "sea",
-            "category": "distance",
-            "state": "spatial"
-          }
-        ],
-        "score_reasons": [
-          "relation_score_below_0.75"
-        ]
+        "missing_relations": [],
+        "score_reasons": []
       },
-      "terrain": "Plain",
+      "terrain": "plain",
       "land_cover": [
-        "Forest",
-        "Cropland",
-        "Water Body",
-        "Wetland"
+        "water",
+        "built_up"
       ],
       "natural_entities": [
-        "Sea"
+        "sea"
       ],
-      "detections": {
-        "ships": 7,
-        "storage tanks": 3,
-        "bridges": 14,
-        "transmission towers": 1
-      },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/e25f3c1c6a958b29f4bc-thumbnail.webp",
-      "preview": "assets/images/e25f3c1c6a958b29f4bc-preview.webp",
-      "width": 12800,
-      "height": 12800
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/817e05320be588d5778c-thumbnail.webp",
+      "preview": "assets/images/817e05320be588d5778c-preview.webp",
+      "width": 2000,
+      "height": 2000
     },
     {
       "rank": 8,
-      "image_name": "0381.png",
+      "image_name": "1570.tif",
       "confidence": "strong",
       "scores": {
-        "final": 0.8187825580596924,
-        "semantic": 0.6332122087478638,
-        "keyword": 1.0,
-        "category": 1.0,
-        "relation": 0.675,
-        "quantity": 0.0,
-        "evidence_layer": 1.0,
-        "scene": 0.6
+        "semantic_base": 0.5456098914146423,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5956098914146424
       },
       "matched": {
         "keywords": [
-          "port",
-          "sea"
+          "sea",
+          "port"
         ],
-        "relations": [
-          "near[area_category=port]"
-        ],
+        "relations": [],
         "area_categories": [
-          "Port",
-          "Industrial Zone",
-          "Commercial/Residential Area",
-          "Transportation",
-          "Utility Infrastructure"
+          "port",
+          "storage_area",
+          "transportation_area"
         ],
         "facilities": [
-          "wharves",
-          "gantry cranes",
-          "container stacks",
-          "ships",
-          "factory buildings",
-          "warehouses",
-          "storage tanks",
-          "residential blocks",
-          "urban roads",
-          "parking lots",
-          "roads",
-          "highways",
-          "railways",
-          "water treatment plants",
-          "bridges"
+          "container_yard",
+          "railway",
+          "road",
+          "wharf"
         ]
       },
-      "description": "The image depicts a large coastal port facility situated on a plain terrain, bordered by a sea to the left and bottom. The land cover is dominated by built-up areas including extensive container yards, industrial buildings, and residential zones, with patches of grassland visible in the upper and lower left regions. The port area occupies the central and lower portions of the image, featuring multiple wharves along the waterfront, numerous gantry cranes, and vast container stacks organized in rows. Several container ships are docked at the wharves, particularly visible in the lower right section. Adjacent to the port, in the upper and central parts, lies an industrial zone with factory buildings, warehouses, and storage tanks. To the upper right, a dense commercial and residential area is visible, characterized by residential blocks, urban roads, and parking lots. A network of roads and highways connects these areas, with railways running parallel to the port facilities. In the lower right, near the port, there appears to be a water treatment plant or similar utility infrastructure. The bottom left corner shows a rural road area with some vegetation and grassland, curving through the landscape.",
+      "description": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up areas and a large water body representing the sea. The scene is dominated by port infrastructure, including wharves where a large cruise ship is docked. Adjacent to the port, there are storage areas with container yards visible, indicating active cargo handling operations. The transportation network is well-developed, with roads and railways running parallel to the coastline, facilitating the movement of goods and passengers. The overall layout suggests a busy and functional port environment, with clear spatial organization of facilities and infrastructure.",
       "reasons": [
-        "命中查询实体或关键词：port、sea",
-        "命中空间关系或活动关系：near[area_category=port]",
-        "存在部分关系匹配证据",
-        "支撑证据层得分较高",
-        "场景上下文与查询较一致"
+        "v2 结构化证据命中：sea、port",
+        "Qwen 描述向量语义相似度为 0.5456"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: sea, port.",
+        "Qwen description-vector semantic similarity is 0.5456."
       ],
       "evidence": [
         {
-          "doc_id": "0381.png::rel::port::near::utility_infrastructure::7",
-          "doc_type": "relation",
-          "relation": "port near utility infrastructure",
-          "evidence": "In the lower right, near the port, there appears to be a water treatment plant or similar utility infrastructure.",
-          "score": 0.8188,
-          "relation_score": 0.675,
-          "evidence_score": 0.89
+          "doc_id": "1570.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a coastal port area situated on a plain terrain, characterized by extensive built-up areas and a large water body representing the sea. The scene is dominated by port infrastructure, including wharves where a large cruise ship is docked. Adjacent to the port, there are storage areas with container yards visible, indicating active cargo handling operations. The transportation network is well-developed, with roads and railways running parallel to the coastline, facilitating the movement of goods and passengers. The overall layout suggests a busy and functional port environment, with clear spatial organization of facilities and infrastructure.",
+          "score": 0.5456098914146423,
+          "relation_score": null
         }
       ],
       "strict_match": {
-        "passed": false,
+        "passed": true,
         "missing_entities": [],
-        "missing_relations": [
-          {
-            "subject": "port",
-            "relation": "near",
-            "object": "sea",
-            "category": "distance",
-            "state": "spatial"
-          }
-        ],
-        "score_reasons": [
-          "relation_score_below_0.75"
-        ]
+        "missing_relations": [],
+        "score_reasons": []
       },
-      "terrain": "Plain",
+      "terrain": "plain",
       "land_cover": [
-        "Built-up Area",
-        "Water Body",
-        "Grassland"
+        "built_up",
+        "water"
       ],
       "natural_entities": [
-        "Sea"
+        "sea"
       ],
-      "detections": {
-        "ships": 2,
-        "storage tanks": 11,
-        "gantry cranes": 3,
-        "container stacks": 4,
-        "bridges": 1
-      },
-      "query_profile": "relation",
-      "thumbnail": "assets/images/7c55c62f6f9ecf2cbb7e-thumbnail.webp",
-      "preview": "assets/images/7c55c62f6f9ecf2cbb7e-preview.webp",
-      "width": 4048,
-      "height": 3457
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/2145fef0146912e71cba-thumbnail.webp",
+      "preview": "assets/images/2145fef0146912e71cba-preview.webp",
+      "width": 1500,
+      "height": 1500
     }
   ]
 }
