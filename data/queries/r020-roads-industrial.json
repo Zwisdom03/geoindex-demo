@@ -1,0 +1,949 @@
+{
+  "id": "r020-roads-industrial",
+  "source_query_id": "R020",
+  "category": "spatial_relation",
+  "official_query": "roads near industrial area",
+  "query": "工业区附近的道路",
+  "en": "Roads near industrial area",
+  "parsed_query": {
+    "environment": [],
+    "areas": [
+      "industrial_area"
+    ],
+    "area_constraints": [
+      {
+        "value": "industrial_area",
+        "source": "exact",
+        "confidence": 1.0,
+        "hard": true
+      }
+    ],
+    "facilities": [
+      "road"
+    ],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [
+      {
+        "subject": "road",
+        "predicate": "near",
+        "object": "industrial_area"
+      }
+    ],
+    "unmapped_concepts": [],
+    "semantic_text": "roads near industrial area"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "scope": "full_indexed_gallery"
+  },
+  "scoring_counts": {
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "industrial_157.tif"
+  ],
+  "relevant_in_top_k": 1,
+  "selection_metrics": {
+    "precision_at_1": 1.0,
+    "recall_at_10": 1.0,
+    "reciprocal_rank": 1.0,
+    "average_precision_at_10": 1.0,
+    "ndcg_at_10": 1.0
+  },
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "industrial_157.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5430176854133606,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5930176854133606
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "agricultural_area",
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "field",
+          "road",
+          "warehouse"
+        ]
+      },
+      "description": "The scene is situated on a flat plain characterized by a mix of built-up industrial surfaces and agricultural land. No natural geographic entities such as rivers or mountains are visible in the immediate vicinity. The terrain is level, supporting extensive infrastructure development alongside cultivated plots.\n\nAn industrial zone dominates the center and upper-right sections, featuring numerous factory buildings with varied roof colors including blue, white, and rust, alongside large warehouse structures. Adjacent to these facilities, particularly in the upper-left and lower-left corners, are rectangular agricultural fields. A network of paved roads borders the industrial complex and separates the different land use zones, facilitating access to the site.\n\nThe layout exhibits a clear juxtaposition between heavy industry and agriculture, with roads acting as dividing lines. The industrial facilities are densely packed in the central region, while the fields appear more fragmented at the periphery. The road network connects the various factory units and provides external connectivity, highlighting the functional integration of transport infrastructure within this mixed-use landscape.",
+      "reasons": [
+        "冻结语义基础分为 0.5430",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.5430.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_157.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a flat plain characterized by a mix of built-up industrial surfaces and agricultural land. No natural geographic entities such as rivers or mountains are visible in the immediate vicinity. The terrain is level, supporting extensive infrastructure development alongside cultivated plots.\n\nAn industrial zone dominates the center and upper-right sections, featuring numerous factory buildings with varied roof colors including blue, white, and rust, alongside large warehouse structures. Adjacent to these facilities, particularly in the upper-left and lower-left corners, are rectangular agricultural fields. A network of paved roads borders the industrial complex and separates the different land use zones, facilitating access to the site.\n\nThe layout exhibits a clear juxtaposition between heavy industry and agriculture, with roads acting as dividing lines. The industrial facilities are densely packed in the central region, while the fields appear more fragmented at the periphery. The road network connects the various factory units and provides external connectivity, highlighting the functional integration of transport infrastructure within this mixed-use landscape.",
+          "score": 0.5430176854133606,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "cropland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/b1b752059e360d88f872-thumbnail.webp",
+      "preview": "assets/images/b1b752059e360d88f872-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 2,
+      "image_name": "industrial_160.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.532279372215271,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.582279372215271
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "factory_building",
+          "road",
+          "warehouse"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by a mix of built-up industrial areas and agricultural land. A narrow river flows vertically through the center of the image, separating distinct land use zones. Green cropland and grassland patches are visible on the left side, contrasting with the dense infrastructure on the right.\n\nAn extensive industrial zone dominates the right side and lower center, featuring numerous white factory buildings and warehouses arranged in organized blocks. These structures exhibit large rectangular footprints typical of manufacturing or storage facilities. The density of these built-up areas is high, forming a continuous industrial corridor along the eastern bank of the central waterway.\n\nA network of roads connects the industrial facilities, with at least one bridge crossing the river to link the western agricultural lands with the eastern industrial zone. The spatial layout shows a clear division between rural land use on the left and intensive industrial development on the right. The river acts as a natural boundary, while transportation infrastructure facilitates access to the clustered factory buildings.",
+      "reasons": [
+        "冻结语义基础分为 0.5323",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.5323.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_160.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by a mix of built-up industrial areas and agricultural land. A narrow river flows vertically through the center of the image, separating distinct land use zones. Green cropland and grassland patches are visible on the left side, contrasting with the dense infrastructure on the right.\n\nAn extensive industrial zone dominates the right side and lower center, featuring numerous white factory buildings and warehouses arranged in organized blocks. These structures exhibit large rectangular footprints typical of manufacturing or storage facilities. The density of these built-up areas is high, forming a continuous industrial corridor along the eastern bank of the central waterway.\n\nA network of roads connects the industrial facilities, with at least one bridge crossing the river to link the western agricultural lands with the eastern industrial zone. The spatial layout shows a clear division between rural land use on the left and intensive industrial development on the right. The river acts as a natural boundary, while transportation infrastructure facilitates access to the clustered factory buildings.",
+          "score": 0.532279372215271,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "cropland",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/44193716d68776e413e5-thumbnail.webp",
+      "preview": "assets/images/44193716d68776e413e5-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 3,
+      "image_name": "industrial_167.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5220641493797302,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5720641493797303
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "factory_building",
+          "railway",
+          "railway_siding",
+          "road",
+          "storage_tank",
+          "warehouse"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up areas associated with heavy industry. A distinct river flows horizontally across the upper-middle section of the image, serving as a natural boundary within the developed landscape. The environment is characterized by dense industrial infrastructure interspersed with water features, indicating a manufacturing zone situated along a waterway.\n\nA large industrial zone occupies the majority of the frame, featuring numerous rectangular factory buildings and long warehouses with varying roof textures. In the lower-left quadrant, a cluster of white circular storage tanks is visible near the facility structures. Parallel railway sidings run through the central and lower sections, connecting different parts of the complex. Transportation infrastructure includes a bridge crossing the river in the upper-right area and a network of roads weaving between the industrial blocks.\n\nSpatially, the industrial facilities are densely packed, creating a continuous built-up surface interrupted only by the river and transport corridors. The river acts as a dividing line, with infrastructure extending to both banks. The layout suggests a highly organized industrial park where logistics networks, including railways and roads, are integrated directly with production sites. The high density of structures indicates significant economic activity concentrated in this specific geographic location.",
+      "reasons": [
+        "冻结语义基础分为 0.5221",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.5221.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_167.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up areas associated with heavy industry. A distinct river flows horizontally across the upper-middle section of the image, serving as a natural boundary within the developed landscape. The environment is characterized by dense industrial infrastructure interspersed with water features, indicating a manufacturing zone situated along a waterway.\n\nA large industrial zone occupies the majority of the frame, featuring numerous rectangular factory buildings and long warehouses with varying roof textures. In the lower-left quadrant, a cluster of white circular storage tanks is visible near the facility structures. Parallel railway sidings run through the central and lower sections, connecting different parts of the complex. Transportation infrastructure includes a bridge crossing the river in the upper-right area and a network of roads weaving between the industrial blocks.\n\nSpatially, the industrial facilities are densely packed, creating a continuous built-up surface interrupted only by the river and transport corridors. The river acts as a dividing line, with infrastructure extending to both banks. The layout suggests a highly organized industrial park where logistics networks, including railways and roads, are integrated directly with production sites. The high density of structures indicates significant economic activity concentrated in this specific geographic location.",
+          "score": 0.5220641493797302,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/9ca0a209386c8ae2d5b9-thumbnail.webp",
+      "preview": "assets/images/9ca0a209386c8ae2d5b9-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 4,
+      "image_name": "industrial_158.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5143168568611145,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5643168568611145
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "road",
+          "warehouse"
+        ]
+      },
+      "description": "The scene is situated on a plain terrain dominated by built-up area land cover. No natural geographic entities are visible in the image. The environment consists entirely of artificial surfaces and industrial infrastructure.\n\nAn industrial zone occupies the majority of the frame, featuring numerous factory buildings with grey corrugated roofs and skylights in the upper-left and center. Warehouses with flat concrete roofs are located in the lower-right and upper-right sections. A paved road runs vertically along the right side of the image, separating the main industrial complex from adjacent structures.\n\nFactory buildings are densely packed in the central and left regions, forming a continuous manufacturing block. The road on the right provides access to the facility, with small vehicles visible on the surface. Green vegetation buffers appear as narrow strips between building perimeters and the roadway, contrasting with the extensive grey industrial surfaces.",
+      "reasons": [
+        "冻结语义基础分为 0.5143",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.5143.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_158.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a plain terrain dominated by built-up area land cover. No natural geographic entities are visible in the image. The environment consists entirely of artificial surfaces and industrial infrastructure.\n\nAn industrial zone occupies the majority of the frame, featuring numerous factory buildings with grey corrugated roofs and skylights in the upper-left and center. Warehouses with flat concrete roofs are located in the lower-right and upper-right sections. A paved road runs vertically along the right side of the image, separating the main industrial complex from adjacent structures.\n\nFactory buildings are densely packed in the central and left regions, forming a continuous manufacturing block. The road on the right provides access to the facility, with small vehicles visible on the surface. Green vegetation buffers appear as narrow strips between building perimeters and the roadway, contrasting with the extensive grey industrial surfaces.",
+          "score": 0.5143168568611145,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/646343193069409d29ef-thumbnail.webp",
+      "preview": "assets/images/646343193069409d29ef-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 5,
+      "image_name": "industrial_156.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5109124779701233,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5609124779701233
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "railway",
+          "road",
+          "warehouse"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up areas. The landscape is characterized by industrial infrastructure and transportation networks, with no significant natural geographic entities like mountains or water bodies visible in the immediate vicinity.\n\nA large industrial zone occupies the center and lower-left portions of the image, featuring multiple large factory buildings and warehouses with distinct grey and white roofs. These structures are arranged in a dense cluster. Surrounding this industrial core, particularly along the upper and right edges, is a transportation network consisting of paved roads and parallel railway tracks that define the boundaries of the developed area.\n\nThe industrial facilities are situated within a triangular plot of land formed by the intersection of the surrounding road and rail infrastructure. The layout shows a clear separation between the heavy industrial structures in the center and the transport corridors on the periphery. Several vehicles are visible parked near the buildings and along the access roads, indicating active logistical operations within this confined industrial triangle.",
+      "reasons": [
+        "冻结语义基础分为 0.5109",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.5109.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_156.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up areas. The landscape is characterized by industrial infrastructure and transportation networks, with no significant natural geographic entities like mountains or water bodies visible in the immediate vicinity.\n\nA large industrial zone occupies the center and lower-left portions of the image, featuring multiple large factory buildings and warehouses with distinct grey and white roofs. These structures are arranged in a dense cluster. Surrounding this industrial core, particularly along the upper and right edges, is a transportation network consisting of paved roads and parallel railway tracks that define the boundaries of the developed area.\n\nThe industrial facilities are situated within a triangular plot of land formed by the intersection of the surrounding road and rail infrastructure. The layout shows a clear separation between the heavy industrial structures in the center and the transport corridors on the periphery. Several vehicles are visible parked near the buildings and along the access roads, indicating active logistical operations within this confined industrial triangle.",
+          "score": 0.5109124779701233,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/55de9b28655f8a117d1d-thumbnail.webp",
+      "preview": "assets/images/55de9b28655f8a117d1d-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 6,
+      "image_name": "industrial_154.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5105377435684204,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5605377435684205
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "road",
+          "warehouse"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up areas associated with industrial activity. Patches of bare land are visible along the periphery, particularly in the upper-right and lower-left corners. No natural geographic entities such as rivers or mountains are present within the immediate frame.\n\nA large industrial zone occupies the central and right portions of the image, characterized by multiple factory buildings and warehouses with distinct blue roofs. These structures are arranged in a clustered layout with varying rectangular footprints. A paved road runs diagonally across the lower-left section, providing access to the facility complex.\n\nThe industrial facilities are densely packed, forming a continuous built environment surrounded by open ground. The road network connects directly to the main entrance areas of the factories. The spatial arrangement suggests a functional manufacturing or storage district situated on level ground.",
+      "reasons": [
+        "冻结语义基础分为 0.5105",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.5105.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_154.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up areas associated with industrial activity. Patches of bare land are visible along the periphery, particularly in the upper-right and lower-left corners. No natural geographic entities such as rivers or mountains are present within the immediate frame.\n\nA large industrial zone occupies the central and right portions of the image, characterized by multiple factory buildings and warehouses with distinct blue roofs. These structures are arranged in a clustered layout with varying rectangular footprints. A paved road runs diagonally across the lower-left section, providing access to the facility complex.\n\nThe industrial facilities are densely packed, forming a continuous built environment surrounded by open ground. The road network connects directly to the main entrance areas of the factories. The spatial arrangement suggests a functional manufacturing or storage district situated on level ground.",
+          "score": 0.5105377435684204,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/eed42eabf1bf274c3f3e-thumbnail.webp",
+      "preview": "assets/images/eed42eabf1bf274c3f3e-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 7,
+      "image_name": "industrial_165.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4948120415210724,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5448120415210724
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "road",
+          "storage_tank",
+          "warehouse"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up areas and patches of bare land. The environment is characterized by a dense industrial layout with minimal natural vegetation, consisting primarily of constructed facilities and exposed earth surfaces typical of a developed manufacturing district.\n\nMultiple factory buildings with varying roof colors, including red and blue, are distributed throughout the center and right side of the image. Several large warehouses and cylindrical storage tanks are visible within the industrial complexes. A network of paved roads runs vertically and horizontally, separating the distinct industrial blocks and facilitating access to the facilities.\n\nThe industrial zones are arranged in a grid-like pattern defined by the road infrastructure. High-density construction occupies the central and right portions, while the left side shows a mix of operational factories and undeveloped bare land. The layout suggests a organized industrial park where transportation routes provide direct connectivity between different manufacturing units.",
+      "reasons": [
+        "冻结语义基础分为 0.4948",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4948.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_165.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up areas and patches of bare land. The environment is characterized by a dense industrial layout with minimal natural vegetation, consisting primarily of constructed facilities and exposed earth surfaces typical of a developed manufacturing district.\n\nMultiple factory buildings with varying roof colors, including red and blue, are distributed throughout the center and right side of the image. Several large warehouses and cylindrical storage tanks are visible within the industrial complexes. A network of paved roads runs vertically and horizontally, separating the distinct industrial blocks and facilitating access to the facilities.\n\nThe industrial zones are arranged in a grid-like pattern defined by the road infrastructure. High-density construction occupies the central and right portions, while the left side shows a mix of operational factories and undeveloped bare land. The layout suggests a organized industrial park where transportation routes provide direct connectivity between different manufacturing units.",
+          "score": 0.4948120415210724,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/22410f99d40f63329c83-thumbnail.webp",
+      "preview": "assets/images/22410f99d40f63329c83-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 8,
+      "image_name": "industrial_171.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4857834577560425,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5357834577560425
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "agricultural_area",
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "field",
+          "road",
+          "warehouse"
+        ]
+      },
+      "description": "The scene is situated on a flat plain characterized by a mix of built-up industrial infrastructure and agricultural land. The terrain is level with no significant elevation changes, supporting extensive development. Large rectangular structures dominate the central and upper portions of the image, surrounded by paved surfaces and interspersed with patches of green vegetation.\n\nAn industrial zone occupies the center and right side, featuring numerous large factory buildings and warehouses with white roofs arranged in an orderly grid. These structures are connected by a network of internal roads visible throughout the complex. In the lower-left corner and along the bottom edge, distinct agricultural fields appear as uniform green patches, contrasting with the grey and white tones of the industrial facilities.\n\nThe layout demonstrates a clear separation between land uses, with the industrial park densely packed in the upper and central regions while farmland borders the periphery. Roads provide access to the individual warehouse units, facilitating logistics within the zone. The arrangement of buildings is regular and systematic, indicating planned development adjacent to active agricultural areas.",
+      "reasons": [
+        "冻结语义基础分为 0.4858",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4858.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_171.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a flat plain characterized by a mix of built-up industrial infrastructure and agricultural land. The terrain is level with no significant elevation changes, supporting extensive development. Large rectangular structures dominate the central and upper portions of the image, surrounded by paved surfaces and interspersed with patches of green vegetation.\n\nAn industrial zone occupies the center and right side, featuring numerous large factory buildings and warehouses with white roofs arranged in an orderly grid. These structures are connected by a network of internal roads visible throughout the complex. In the lower-left corner and along the bottom edge, distinct agricultural fields appear as uniform green patches, contrasting with the grey and white tones of the industrial facilities.\n\nThe layout demonstrates a clear separation between land uses, with the industrial park densely packed in the upper and central regions while farmland borders the periphery. Roads provide access to the individual warehouse units, facilitating logistics within the zone. The arrangement of buildings is regular and systematic, indicating planned development adjacent to active agricultural areas.",
+          "score": 0.4857834577560425,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "cropland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/d6b8b1f96c29ea66b9fc-thumbnail.webp",
+      "preview": "assets/images/d6b8b1f96c29ea66b9fc-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 9,
+      "image_name": "industrial_155.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4828255772590637,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5328255772590638
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "parking_lot",
+          "residential_block",
+          "road",
+          "warehouse"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment characterized by extensive built-up areas interspersed with natural features. A river flows horizontally across the upper section, bordered by a dense forest belt. The landscape is dominated by industrial and residential infrastructure situated on level terrain, with no significant elevation changes visible.\n\nThe central and right portions of the image feature a large industrial zone containing multiple white and grey factory buildings and warehouses arranged in organized rows. Adjacent to these structures are open storage yards and parking lots filled with vehicles. In the lower-left corner, a distinct residential area consists of small, densely packed housing blocks with reddish roofs. A network of paved roads connects these facilities, separating the industrial complex from the residential zone and running parallel to the riverbank.\n\nSpatially, the river and the accompanying tree line act as a natural boundary at the top of the frame, isolating the industrial development from the land beyond. The road network serves as a primary divider between the heavy industrial facilities in the center and the residential blocks in the lower left. The layout demonstrates a clear functional zoning pattern, with high-density commercial structures concentrated centrally and lower-density housing positioned peripherally.",
+      "reasons": [
+        "冻结语义基础分为 0.4828",
+        "2 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4828.",
+        "2 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "industrial_155.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment characterized by extensive built-up areas interspersed with natural features. A river flows horizontally across the upper section, bordered by a dense forest belt. The landscape is dominated by industrial and residential infrastructure situated on level terrain, with no significant elevation changes visible.\n\nThe central and right portions of the image feature a large industrial zone containing multiple white and grey factory buildings and warehouses arranged in organized rows. Adjacent to these structures are open storage yards and parking lots filled with vehicles. In the lower-left corner, a distinct residential area consists of small, densely packed housing blocks with reddish roofs. A network of paved roads connects these facilities, separating the industrial complex from the residential zone and running parallel to the riverbank.\n\nSpatially, the river and the accompanying tree line act as a natural boundary at the top of the frame, isolating the industrial development from the land beyond. The road network serves as a primary divider between the heavy industrial facilities in the center and the residential blocks in the lower left. The layout demonstrates a clear functional zoning pattern, with high-density commercial structures concentrated centrally and lower-density housing positioned peripherally.",
+          "score": 0.4828255772590637,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "forest",
+        "water"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 2,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 5.300396510292003,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/24fb5e682fc15d1ca244-thumbnail.webp",
+      "preview": "assets/images/24fb5e682fc15d1ca244-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "storagetanks_411.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4987136125564575,
+        "structure_delta": 0.5994168381684859,
+        "relation_delta": 0.0,
+        "final": 0.5286844544648818
+      },
+      "matched": {
+        "keywords": [
+          "industrial_area"
+        ],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "pipeline",
+          "railway",
+          "storage_tank"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by an industrial complex situated adjacent to a river visible along the right side of the image. Land cover is dominated by built-up areas containing infrastructure and bare land surfaces, interspersed with patches of grassland vegetation near the river and facility perimeters.\n\nAn industrial zone occupies the central and lower-left portions of the image, featuring two large white circular storage tanks in the upper section and a cluster of smaller tanks amidst factory buildings and pipelines in the center. A railway line traverses the scene horizontally across the middle, carrying a long freight train composed of numerous dark wagons, while additional railway tracks curve through the lower right area near the riverbank.\n\nSpatially, the large storage tanks are isolated in the upper left, separated from the dense processing facilities below by internal roads and bare ground. The railway acts as a dividing element between the upper tank farm and the lower industrial processing units. The river borders the entire right edge of the scene, running parallel to the curved track section, establishing a clear boundary for the industrial development.",
+      "reasons": [
+        "冻结语义基础分为 0.4987",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4987.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "storagetanks_411.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by an industrial complex situated adjacent to a river visible along the right side of the image. Land cover is dominated by built-up areas containing infrastructure and bare land surfaces, interspersed with patches of grassland vegetation near the river and facility perimeters.\n\nAn industrial zone occupies the central and lower-left portions of the image, featuring two large white circular storage tanks in the upper section and a cluster of smaller tanks amidst factory buildings and pipelines in the center. A railway line traverses the scene horizontally across the middle, carrying a long freight train composed of numerous dark wagons, while additional railway tracks curve through the lower right area near the riverbank.\n\nSpatially, the large storage tanks are isolated in the upper left, separated from the dense processing facilities below by internal roads and bare ground. The railway acts as a dividing element between the upper tank farm and the lower industrial processing units. The river borders the entire right edge of the scene, running parallel to the curved track section, establishing a clear boundary for the industrial development.",
+          "score": 0.4987136125564575,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 3.177146917238509,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 5.300396510292003
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/35c72e339b3a8fa31520-thumbnail.webp",
+      "preview": "assets/images/35c72e339b3a8fa31520-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}

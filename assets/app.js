@@ -16,7 +16,7 @@
   const words = {
     eyebrow:['REMOTE-SENSING RETRIEVAL','遥感影像检索'],
     title:['Choose an official RSITMD query.','选择 RSITMD 官方查询'],
-    intro:['Explore frozen GeoIndex v2 results for four RSITMD benchmark query types.','从四类 RSITMD 基准查询中选择一项，查看 GeoIndex v2 冻结检索结果。'],
+    intro:['Explore eight high-performing frozen results, with two official queries from each RSITMD benchmark type.','展示 8 条高质量冻结结果，每类 RSITMD 基准查询精选 2 条。'],
     selectLabel:['Retrieval query','检索词条'],placeholder:['Select a query…','请选择检索词条…'],confirm:['View results','确认并查看结果'],
     precomputed:['GeoIndex v2 · RSITMD-Lite v1.0 · Frozen results','GeoIndex v2 · RSITMD-Lite v1.0 · 冻结结果'],
     footer:['RSITMD benchmark retrieval, with evidence.','RSITMD 基准检索与证据展示'],
@@ -72,7 +72,12 @@
     }
     $('query-title').textContent = titleFor(current);
     $('query-original').textContent = choose([`Official query ${current.source_query_id}: ${current.official_query}`,`官方查询 ${current.source_query_id}：${current.official_query}`]);
-    $('results-status').textContent = choose([`${current.results.length} saved results · Select an image for details`,`${current.results.length} 条预计算结果 · 点击影像查看详情`]);
+    const metrics = current.selection_metrics;
+    const performance = metrics ? choose([
+      `P@1 ${(metrics.precision_at_1*100).toFixed(0)}% · R@10 ${(metrics.recall_at_10*100).toFixed(0)}% · AP@10 ${(metrics.average_precision_at_10*100).toFixed(1)}%`,
+      `P@1 ${(metrics.precision_at_1*100).toFixed(0)}% · R@10 ${(metrics.recall_at_10*100).toFixed(0)}% · AP@10 ${(metrics.average_precision_at_10*100).toFixed(1)}%`
+    ]) : '';
+    $('results-status').textContent = choose([`${current.results.length} frozen results · ${performance} · Select an image for details`,`${current.results.length} 条冻结结果 · ${performance} · 点击影像查看详情`]);
     $('result-grid').innerHTML = current.results.map(r=>`<article class="result-card"><button type="button" class="image-button" data-image="${esc(r.image_name)}" aria-label="${esc(choose(['View details for ','查看影像详情：'])+r.image_name)}"><img src="${esc(r.thumbnail)}" alt="${esc(r.image_name)}" loading="lazy" width="640" height="640"><span class="rank">#${r.rank}</span></button><div class="card-content"><div class="card-heading"><h2>${esc(r.image_name)}</h2><span class="score" title="${esc(String(r.scores.final))}"><span class="score-label">${choose(['Score','评分'])}</span><span class="score-number">${score(r.scores.final)}</span></span></div><p class="card-description">${esc(r.description)}</p><button type="button" class="detail-button" data-image="${esc(r.image_name)}">${choose(['View details','查看详情'])} →</button></div></article>`).join('');
   }
   function reasonsFor(r) {

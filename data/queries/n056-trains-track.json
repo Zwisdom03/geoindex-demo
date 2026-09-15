@@ -1,0 +1,877 @@
+{
+  "id": "n056-trains-track",
+  "source_query_id": "N056",
+  "category": "natural_language",
+  "official_query": "White and black trains were parked side by side on the curved track.",
+  "query": "白色和黑色列车并排停在弯曲的轨道上。",
+  "en": "White and black trains were parked side by side on the curved track.",
+  "parsed_query": {
+    "environment": [],
+    "areas": [],
+    "area_constraints": [],
+    "facilities": [],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [
+      "white",
+      "black",
+      "were",
+      "side by side",
+      "curved",
+      "on",
+      "were parked side by side on the curved"
+    ],
+    "semantic_text": "White and black trains were parked side by side on the curved track."
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "scope": "full_indexed_gallery"
+  },
+  "scoring_counts": {
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "railwaystation_294.tif"
+  ],
+  "relevant_in_top_k": 1,
+  "selection_metrics": {
+    "precision_at_1": 1.0,
+    "recall_at_10": 1.0,
+    "reciprocal_rank": 1.0,
+    "average_precision_at_10": 1.0,
+    "ndcg_at_10": 1.0
+  },
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "railwaystation_294.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.48151499032974243,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.48151499032974243
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "railway",
+          "warehouse"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up areas and bare land surfaces. The environment is characterized by a dense railway network situated within an industrial or urban setting, lacking significant natural geographic entities like mountains or water bodies.\n\nA large transportation hub occupies the central and diagonal axis of the image, featuring numerous parallel curved railways. Multiple white and black trains are parked side-by-side on these tracks, occupying most of the available lines. Surrounding the rail yard, particularly in the upper-left and lower-right corners, are clusters of factory buildings and warehouses with varying roof colors.\n\nThe railway lines form a distinct arc shape stretching from the upper-left to the lower-right, creating a high-density storage layout for rolling stock. The industrial structures border the transportation infrastructure closely, indicating a integrated logistics or manufacturing zone. The spatial arrangement highlights the scale of the rail facility relative to the adjacent built-up blocks.",
+      "reasons": [
+        "冻结语义基础分为 0.4815"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4815."
+      ],
+      "evidence": [
+        {
+          "doc_id": "railwaystation_294.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up areas and bare land surfaces. The environment is characterized by a dense railway network situated within an industrial or urban setting, lacking significant natural geographic entities like mountains or water bodies.\n\nA large transportation hub occupies the central and diagonal axis of the image, featuring numerous parallel curved railways. Multiple white and black trains are parked side-by-side on these tracks, occupying most of the available lines. Surrounding the rail yard, particularly in the upper-left and lower-right corners, are clusters of factory buildings and warehouses with varying roof colors.\n\nThe railway lines form a distinct arc shape stretching from the upper-left to the lower-right, creating a high-density storage layout for rolling stock. The industrial structures border the transportation infrastructure closely, indicating a integrated logistics or manufacturing zone. The spatial arrangement highlights the scale of the rail facility relative to the adjacent built-up blocks.",
+          "score": 0.48151499032974243,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/565e78f18519b4354293-thumbnail.webp",
+      "preview": "assets/images/565e78f18519b4354293-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 2,
+      "image_name": "storagetanks_411.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4698837697505951,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4698837697505951
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "industrial_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "factory_building",
+          "pipeline",
+          "railway",
+          "storage_tank"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by an industrial complex situated adjacent to a river visible along the right side of the image. Land cover is dominated by built-up areas containing infrastructure and bare land surfaces, interspersed with patches of grassland vegetation near the river and facility perimeters.\n\nAn industrial zone occupies the central and lower-left portions of the image, featuring two large white circular storage tanks in the upper section and a cluster of smaller tanks amidst factory buildings and pipelines in the center. A railway line traverses the scene horizontally across the middle, carrying a long freight train composed of numerous dark wagons, while additional railway tracks curve through the lower right area near the riverbank.\n\nSpatially, the large storage tanks are isolated in the upper left, separated from the dense processing facilities below by internal roads and bare ground. The railway acts as a dividing element between the upper tank farm and the lower industrial processing units. The river borders the entire right edge of the scene, running parallel to the curved track section, establishing a clear boundary for the industrial development.",
+      "reasons": [
+        "冻结语义基础分为 0.4699"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4699."
+      ],
+      "evidence": [
+        {
+          "doc_id": "storagetanks_411.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by an industrial complex situated adjacent to a river visible along the right side of the image. Land cover is dominated by built-up areas containing infrastructure and bare land surfaces, interspersed with patches of grassland vegetation near the river and facility perimeters.\n\nAn industrial zone occupies the central and lower-left portions of the image, featuring two large white circular storage tanks in the upper section and a cluster of smaller tanks amidst factory buildings and pipelines in the center. A railway line traverses the scene horizontally across the middle, carrying a long freight train composed of numerous dark wagons, while additional railway tracks curve through the lower right area near the riverbank.\n\nSpatially, the large storage tanks are isolated in the upper left, separated from the dense processing facilities below by internal roads and bare ground. The railway acts as a dividing element between the upper tank farm and the lower industrial processing units. The river borders the entire right edge of the scene, running parallel to the curved track section, establishing a clear boundary for the industrial development.",
+          "score": 0.4698837697505951,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/35c72e339b3a8fa31520-thumbnail.webp",
+      "preview": "assets/images/35c72e339b3a8fa31520-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 3,
+      "image_name": "railwaystation_293.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.44556766748428345,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.44556766748428345
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "railway",
+          "residential_block",
+          "urban_road"
+        ]
+      },
+      "description": "The scene is situated on a flat plain characterized primarily by built-up areas and interspersed patches of grassland. The terrain lacks significant relief, supporting extensive infrastructure development. No major natural geographic entities such as rivers or mountains are visible within the frame, indicating an inland urban or industrial setting dominated by anthropogenic land cover.\n\nA large transportation hub dominates the center and upper-right portion of the image, featuring a dense array of parallel railways. Numerous long freight trains are stationary on these tracks, arranged in a spindle-like formation that occupies the majority of the central area. To the lower-left and periphery, residential blocks and urban roads form a structured neighborhood layout, with distinct building footprints and street networks visible adjacent to the rail yard.\n\nThe railway facility acts as the primary spatial anchor, separating the surrounding residential zones. The high density of parked freight trains suggests a major logistics or marshalling function rather than a passenger terminal. The layout shows a clear dichotomy between the linear, repetitive geometry of the rail infrastructure and the blocky, grid-like pattern of the nearby urban development.",
+      "reasons": [
+        "冻结语义基础分为 0.4456"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4456."
+      ],
+      "evidence": [
+        {
+          "doc_id": "railwaystation_293.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a flat plain characterized primarily by built-up areas and interspersed patches of grassland. The terrain lacks significant relief, supporting extensive infrastructure development. No major natural geographic entities such as rivers or mountains are visible within the frame, indicating an inland urban or industrial setting dominated by anthropogenic land cover.\n\nA large transportation hub dominates the center and upper-right portion of the image, featuring a dense array of parallel railways. Numerous long freight trains are stationary on these tracks, arranged in a spindle-like formation that occupies the majority of the central area. To the lower-left and periphery, residential blocks and urban roads form a structured neighborhood layout, with distinct building footprints and street networks visible adjacent to the rail yard.\n\nThe railway facility acts as the primary spatial anchor, separating the surrounding residential zones. The high density of parked freight trains suggests a major logistics or marshalling function rather than a passenger terminal. The layout shows a clear dichotomy between the linear, repetitive geometry of the rail infrastructure and the blocky, grid-like pattern of the nearby urban development.",
+          "score": 0.44556766748428345,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/87b3b47ae91f47ac7356-thumbnail.webp",
+      "preview": "assets/images/87b3b47ae91f47ac7356-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 4,
+      "image_name": "bridge_45.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.43301886320114136,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.43301886320114136
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road",
+          "shipping_lane"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide, dark blue river flowing through the center. The surrounding land cover consists primarily of built-up areas along the banks and patches of green grassland. No significant elevation changes are visible, confirming the plain terrain type.\n\nA prominent curved bridge spans the river, connecting the left and right banks via a multi-lane road with visible vehicular traffic. Along the riverbanks, particularly on the lower-right and upper-left sides, numerous white boats are moored in organized rows, indicating active shipping lanes. A large white rectangular structure is situated on the left bank near the water's edge.\n\nThe bridge creates a distinct arc across the water, separating the upstream and downstream sections. The moored vessels line the edges of the river parallel to the flow, contrasting with the dynamic movement of vehicles on the bridge. The spatial arrangement highlights the integration of water transport infrastructure with road networks in this riverside setting.",
+      "reasons": [
+        "冻结语义基础分为 0.4330"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4330."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_45.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide, dark blue river flowing through the center. The surrounding land cover consists primarily of built-up areas along the banks and patches of green grassland. No significant elevation changes are visible, confirming the plain terrain type.\n\nA prominent curved bridge spans the river, connecting the left and right banks via a multi-lane road with visible vehicular traffic. Along the riverbanks, particularly on the lower-right and upper-left sides, numerous white boats are moored in organized rows, indicating active shipping lanes. A large white rectangular structure is situated on the left bank near the water's edge.\n\nThe bridge creates a distinct arc across the water, separating the upstream and downstream sections. The moored vessels line the edges of the river parallel to the flow, contrasting with the dynamic movement of vehicles on the bridge. The spatial arrangement highlights the integration of water transport infrastructure with road networks in this riverside setting.",
+          "score": 0.43301886320114136,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/6409d79a464e499d9622-thumbnail.webp",
+      "preview": "assets/images/6409d79a464e499d9622-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 5,
+      "image_name": "railwaystation_299.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4289538860321045,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4289538860321045
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "railway",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by extensive built-up areas and patches of grassland. No natural geographic entities such as mountains or water bodies are visible in the immediate vicinity. The environment is dominated by large-scale infrastructure development situated on level ground, surrounded by urbanized zones and vegetated open spaces.\n\nA massive transportation hub occupies the center of the image, featuring a prominent station building with an expansive roof structure flanked by approximately twenty parallel railway lines extending horizontally. Dense commercial buildings and a grid of urban roads are visible in the upper part of the image, forming a developed urban block. Green grassland areas border the railway tracks on the left and right sides, separating the transport infrastructure from the surrounding city fabric.\n\nThe railway station acts as the central anchor, with tracks radiating outward to connect with the broader network. The layout demonstrates a clear separation between the high-density transport corridor and the adjacent commercial districts located to the north. The symmetrical arrangement of the platforms and the linear progression of the tracks highlight the organized spatial planning of this intelligent railway facility within the urban landscape.",
+      "reasons": [
+        "冻结语义基础分为 0.4290"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4290."
+      ],
+      "evidence": [
+        {
+          "doc_id": "railwaystation_299.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by extensive built-up areas and patches of grassland. No natural geographic entities such as mountains or water bodies are visible in the immediate vicinity. The environment is dominated by large-scale infrastructure development situated on level ground, surrounded by urbanized zones and vegetated open spaces.\n\nA massive transportation hub occupies the center of the image, featuring a prominent station building with an expansive roof structure flanked by approximately twenty parallel railway lines extending horizontally. Dense commercial buildings and a grid of urban roads are visible in the upper part of the image, forming a developed urban block. Green grassland areas border the railway tracks on the left and right sides, separating the transport infrastructure from the surrounding city fabric.\n\nThe railway station acts as the central anchor, with tracks radiating outward to connect with the broader network. The layout demonstrates a clear separation between the high-density transport corridor and the adjacent commercial districts located to the north. The symmetrical arrangement of the platforms and the linear progression of the tracks highlight the organized spatial planning of this intelligent railway facility within the urban landscape.",
+          "score": 0.4289538860321045,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/7449f0e7ab87f633f642-thumbnail.webp",
+      "preview": "assets/images/7449f0e7ab87f633f642-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 6,
+      "image_name": "railwaystation_298.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.42568710446357727,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.42568710446357727
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "railway",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat urban environment characterized predominantly by built-up areas. The terrain is level with no visible natural geographic entities such as mountains or water bodies. The landscape is densely developed with infrastructure and artificial surfaces, indicating a highly modified anthropogenic setting typical of a city center or major transport hub.\n\nA massive railway station complex dominates the center and lower-right portion of the image, featuring a large rectangular roof structure and an extensive array of parallel railway tracks extending towards the convergence area. Numerous trains are visible stationed on the tracks. Surrounding the transportation hub, particularly in the upper-left and right sections, are dense clusters of commercial buildings and residential blocks interspersed with a network of urban roads.\n\nThe railway infrastructure serves as the central organizing element, with tracks radiating from the main station building into the surrounding urban fabric. The high density of built structures suggests a significant commercial or residential zone integrated with the transport network. The layout demonstrates a clear functional separation between the linear transport corridors and the block-based urban development adjacent to the station.",
+      "reasons": [
+        "冻结语义基础分为 0.4257"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4257."
+      ],
+      "evidence": [
+        {
+          "doc_id": "railwaystation_298.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat urban environment characterized predominantly by built-up areas. The terrain is level with no visible natural geographic entities such as mountains or water bodies. The landscape is densely developed with infrastructure and artificial surfaces, indicating a highly modified anthropogenic setting typical of a city center or major transport hub.\n\nA massive railway station complex dominates the center and lower-right portion of the image, featuring a large rectangular roof structure and an extensive array of parallel railway tracks extending towards the convergence area. Numerous trains are visible stationed on the tracks. Surrounding the transportation hub, particularly in the upper-left and right sections, are dense clusters of commercial buildings and residential blocks interspersed with a network of urban roads.\n\nThe railway infrastructure serves as the central organizing element, with tracks radiating from the main station building into the surrounding urban fabric. The high density of built structures suggests a significant commercial or residential zone integrated with the transport network. The layout demonstrates a clear functional separation between the linear transport corridors and the block-based urban development adjacent to the station.",
+          "score": 0.42568710446357727,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/549765f907cb9c555490-thumbnail.webp",
+      "preview": "assets/images/549765f907cb9c555490-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 7,
+      "image_name": "railwaystation_292.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4188823997974396,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4188823997974396
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "railway",
+          "residential_block",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment characterized by a mix of built-up areas, dense forest patches, and agricultural cropland. No major natural geographic entities like rivers or mountains are visible, indicating a low-relief terrestrial setting dominated by human land use and vegetation.\n\nA prominent railway line with an extensive white canopy structure traverses the upper section diagonally, accompanied by parallel road networks. In the lower-left quadrant, a cluster of residential blocks with reddish-brown roofs is visible, connected by local urban roads. The center features a large paved facility area, possibly a station yard or industrial lot, surrounded by green trees and bordered by cropland fields in the periphery.\n\nSpatially, the transportation infrastructure acts as a dividing line between the residential zone in the lower-left and the open agricultural lands in the upper-right. The railway station structure creates a distinct linear feature across the landscape. Dense tree cover provides a buffer between the built environment and the surrounding fields, illustrating a typical semi-rural interface where transport corridors intersect with settlement and farming areas.",
+      "reasons": [
+        "冻结语义基础分为 0.4189"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4189."
+      ],
+      "evidence": [
+        {
+          "doc_id": "railwaystation_292.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment characterized by a mix of built-up areas, dense forest patches, and agricultural cropland. No major natural geographic entities like rivers or mountains are visible, indicating a low-relief terrestrial setting dominated by human land use and vegetation.\n\nA prominent railway line with an extensive white canopy structure traverses the upper section diagonally, accompanied by parallel road networks. In the lower-left quadrant, a cluster of residential blocks with reddish-brown roofs is visible, connected by local urban roads. The center features a large paved facility area, possibly a station yard or industrial lot, surrounded by green trees and bordered by cropland fields in the periphery.\n\nSpatially, the transportation infrastructure acts as a dividing line between the residential zone in the lower-left and the open agricultural lands in the upper-right. The railway station structure creates a distinct linear feature across the landscape. Dense tree cover provides a buffer between the built environment and the surrounding fields, illustrating a typical semi-rural interface where transport corridors intersect with settlement and farming areas.",
+          "score": 0.4188823997974396,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "forest",
+        "cropland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/7bd1d7c77b50a17ed326-thumbnail.webp",
+      "preview": "assets/images/7bd1d7c77b50a17ed326-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 8,
+      "image_name": "railwaystation_297.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4186287522315979,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4186287522315979
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "railway",
+          "residential_block",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat coastal plain characterized by extensive built-up areas and a significant water body. A large railway complex dominates the central landscape, situated adjacent to a sea inlet or harbor visible in the lower-left quadrant. The terrain is level, supporting dense infrastructure development without visible elevation changes.\n\nA massive transportation hub occupies the center, featuring dozens of parallel railway tracks and platforms extending diagonally across the frame. To the upper-right and lower-left, dense residential blocks with terracotta roofs and urban roads form a compact urban fabric. The water body in the lower-left contains several small vessels, indicating active maritime use alongside the rail infrastructure.\n\nThe railway station acts as a central spine, separating the residential zones on the periphery from the waterfront. The track layout is highly organized and linear, contrasting with the irregular street patterns of the surrounding commercial and residential areas. The proximity of the rail network to the sea suggests a multimodal transport interface within this developed coastal environment.",
+      "reasons": [
+        "冻结语义基础分为 0.4186"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4186."
+      ],
+      "evidence": [
+        {
+          "doc_id": "railwaystation_297.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat coastal plain characterized by extensive built-up areas and a significant water body. A large railway complex dominates the central landscape, situated adjacent to a sea inlet or harbor visible in the lower-left quadrant. The terrain is level, supporting dense infrastructure development without visible elevation changes.\n\nA massive transportation hub occupies the center, featuring dozens of parallel railway tracks and platforms extending diagonally across the frame. To the upper-right and lower-left, dense residential blocks with terracotta roofs and urban roads form a compact urban fabric. The water body in the lower-left contains several small vessels, indicating active maritime use alongside the rail infrastructure.\n\nThe railway station acts as a central spine, separating the residential zones on the periphery from the waterfront. The track layout is highly organized and linear, contrasting with the irregular street patterns of the surrounding commercial and residential areas. The proximity of the rail network to the sea suggests a multimodal transport interface within this developed coastal environment.",
+          "score": 0.4186287522315979,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/9b5c88a9b84b5716a903-thumbnail.webp",
+      "preview": "assets/images/9b5c88a9b84b5716a903-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 9,
+      "image_name": "bridge_54.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4183619022369385,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4183619022369385
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "highway",
+          "railway"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide, jade-green river flowing horizontally across the center. The water body exhibits visible surface turbulence and currents. Built-up areas line the riverbanks on the left and right sides, characterized by paved surfaces and sparse vegetation strips adjacent to the water edge.\n\nTwo prominent parallel bridges span the river in the upper-central region of the image. The lower structure is a busy highway bridge carrying multiple lanes of vehicular traffic, including cars and trucks moving in both directions. Immediately adjacent and parallel to it is a railway bridge, distinguished by its segmented deck structure and lack of road vehicles. These transportation facilities connect the developed banks on either side of the river.\n\nThe spatial layout is defined by the perpendicular intersection of the linear transportation infrastructure with the horizontal river flow. The highway demonstrates high traffic density compared to the empty railway track. The bridges are aligned closely, forming a unified crossing corridor. The surrounding land cover transitions from the aquatic environment to artificial paved surfaces at the river margins.",
+      "reasons": [
+        "冻结语义基础分为 0.4184"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4184."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_54.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide, jade-green river flowing horizontally across the center. The water body exhibits visible surface turbulence and currents. Built-up areas line the riverbanks on the left and right sides, characterized by paved surfaces and sparse vegetation strips adjacent to the water edge.\n\nTwo prominent parallel bridges span the river in the upper-central region of the image. The lower structure is a busy highway bridge carrying multiple lanes of vehicular traffic, including cars and trucks moving in both directions. Immediately adjacent and parallel to it is a railway bridge, distinguished by its segmented deck structure and lack of road vehicles. These transportation facilities connect the developed banks on either side of the river.\n\nThe spatial layout is defined by the perpendicular intersection of the linear transportation infrastructure with the horizontal river flow. The highway demonstrates high traffic density compared to the empty railway track. The bridges are aligned closely, forming a unified crossing corridor. The surrounding land cover transitions from the aquatic environment to artificial paved surfaces at the river margins.",
+          "score": 0.4183619022369385,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/395ea228d87070f7aa70-thumbnail.webp",
+      "preview": "assets/images/395ea228d87070f7aa70-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "airport_6.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4115259051322937,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4115259051322937
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "airport",
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "apron",
+          "parking_lot",
+          "terminal",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by extensive built-up areas associated with aviation infrastructure. No natural geographic entities such as mountains or water bodies are visible within the frame, indicating a developed terrestrial setting focused on transportation facilities.\n\nA large, distinctive silver curved terminal building occupies the center-right portion of the image, featuring a complex roof structure. Adjacent to the terminal on the right is a concrete apron where approximately five aircraft are parked at gates. To the left of the terminal, a massive parking lot is densely packed with hundreds of vehicles, organized in long rows. Urban roads and access ramps curve along the left and bottom edges, connecting the parking facility to the terminal area.\n\nThe layout demonstrates a functional separation between airside operations on the right and landside vehicle storage on the left. The high density of cars in the parking lot suggests significant passenger throughput. The silver terminal acts as the central visual anchor, bridging the ground transportation network and the aircraft parking zones.",
+      "reasons": [
+        "冻结语义基础分为 0.4115"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4115."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_6.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by extensive built-up areas associated with aviation infrastructure. No natural geographic entities such as mountains or water bodies are visible within the frame, indicating a developed terrestrial setting focused on transportation facilities.\n\nA large, distinctive silver curved terminal building occupies the center-right portion of the image, featuring a complex roof structure. Adjacent to the terminal on the right is a concrete apron where approximately five aircraft are parked at gates. To the left of the terminal, a massive parking lot is densely packed with hundreds of vehicles, organized in long rows. Urban roads and access ramps curve along the left and bottom edges, connecting the parking facility to the terminal area.\n\nThe layout demonstrates a functional separation between airside operations on the right and landside vehicle storage on the left. The high density of cars in the parking lot suggests significant passenger throughput. The silver terminal acts as the central visual anchor, bridging the ground transportation network and the aircraft parking zones.",
+          "score": 0.4115259051322937,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/0eb104c2512e3fe7e8d5-thumbnail.webp",
+      "preview": "assets/images/0eb104c2512e3fe7e8d5-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}

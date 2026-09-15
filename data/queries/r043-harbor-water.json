@@ -5,7 +5,6 @@
   "official_query": "harbor surrounded by clear sea water",
   "query": "被清澈海水环绕的港湾",
   "en": "Harbor surrounded by clear sea water",
-  "elapsed_ms": 391.04,
   "parsed_query": {
     "environment": [
       "sea",
@@ -48,43 +47,22 @@
     "relation_lambda": 0.05
   },
   "candidate_recall": {
-    "structured": 22,
-    "dense": 451,
-    "union": 451,
-    "overlap": 22
-  },
-  "query_profile": {
-    "method": "semantic_base_plus_signed_evidence_v1",
-    "base": "semantic_cosine",
-    "lambdas": {
-      "structure": 0.05,
-      "relation": 0.05
-    },
-    "signals": {
-      "structured_constraint_count": 3,
-      "hard_area_count": 1,
-      "soft_area_count": 0,
-      "quantity_count": 0,
-      "relation_count": 1,
-      "unmapped_concept_count": 1,
-      "query_token_count": 6,
-      "raw_structure_signal": 3.4000000000000004,
-      "raw_semantic_signal": 1.9,
-      "raw_relation_signal": 3.0
-    },
-    "unknown_evidence_policy": "neutral",
-    "hard_constraint_policy": "verified_quantity_only"
+    "scope": "full_indexed_gallery"
   },
   "scoring_counts": {
-    "candidate_union": 451,
-    "eligible": 451,
-    "hard_rejected": 0,
     "returned": 10
   },
   "official_relevant_images": [
     "port_276.tif"
   ],
   "relevant_in_top_k": 1,
+  "selection_metrics": {
+    "precision_at_1": 1.0,
+    "recall_at_10": 1.0,
+    "reciprocal_rank": 1.0,
+    "average_precision_at_10": 1.0,
+    "ndcg_at_10": 1.0
+  },
   "strict_result_count": 10,
   "results": [
     {
@@ -116,12 +94,12 @@
       },
       "description": "The scene depicts a coastal harbor environment situated within a hilly terrain. The landscape is characterized by steep slopes covered in vegetation and built-up structures descending toward the sea. A large body of clear blue sea water dominates the right and upper portions of the image, contrasting with the darker tones of the landmass. White surf is visible along the outer coastline where waves break against the shore and protective structures.\n\nA prominent port facility occupies the central bay area, enclosed by a long, curved breakwater extending from the upper right toward the center. Inside the protected harbor basin, multiple wharves and piers extend into the water, accommodating numerous small to medium-sized ships docked along the quays. To the left of the harbor, a dense cluster of buildings with blue roofs indicates a residential or commercial settlement nestled against the hillside. A network of roads winds through this built-up area, connecting the settlement to the port infrastructure.\n\nSpatially, the breakwater acts as a primary barrier separating the calm inner harbor waters from the turbulent open sea. The port facilities are tightly integrated with the adjacent urban settlement on the left bank. The layout suggests a functional fishing or small cargo harbor protected from ocean swells. The density of vessels within the basin indicates active maritime usage, while the surrounding hills constrain the horizontal expansion of the built-up area.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5798"
+        "冻结语义基础分为 0.5798",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5798."
+        "Frozen semantic base score is 0.5798.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -130,7 +108,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal harbor environment situated within a hilly terrain. The landscape is characterized by steep slopes covered in vegetation and built-up structures descending toward the sea. A large body of clear blue sea water dominates the right and upper portions of the image, contrasting with the darker tones of the landmass. White surf is visible along the outer coastline where waves break against the shore and protective structures.\n\nA prominent port facility occupies the central bay area, enclosed by a long, curved breakwater extending from the upper right toward the center. Inside the protected harbor basin, multiple wharves and piers extend into the water, accommodating numerous small to medium-sized ships docked along the quays. To the left of the harbor, a dense cluster of buildings with blue roofs indicates a residential or commercial settlement nestled against the hillside. A network of roads winds through this built-up area, connecting the settlement to the port infrastructure.\n\nSpatially, the breakwater acts as a primary barrier separating the calm inner harbor waters from the turbulent open sea. The port facilities are tightly integrated with the adjacent urban settlement on the left bank. The layout suggests a functional fishing or small cargo harbor protected from ocean swells. The density of vessels within the basin indicates active maritime usage, while the surrounding hills constrain the horizontal expansion of the built-up area.",
           "score": 0.5798256397247314,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -149,9 +127,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/ab6ab39cf6167f9d1bb4-thumbnail.webp",
       "preview": "assets/images/ab6ab39cf6167f9d1bb4-preview.webp",
@@ -187,12 +182,12 @@
       },
       "description": "The scene depicts a coastal harbor environment situated on flat terrain, characterized by extensive water bodies and adjacent built-up areas. The natural geography is defined by the sea, which fills the majority of the frame with dark teal water, serving as the basin for maritime activities. The surrounding land appears level, consistent with a plain topography typical of port infrastructure zones.\n\nMultiple rows of small white ships are moored in organized clusters throughout the central and lower-left sections of the image, indicating a busy marina or port facility. Concrete wharves and piers extend into the water, creating distinct basins for vessel docking. A road traverses the upper portion of the scene, running parallel to the waterfront and connecting the land-based infrastructure. Additional built-up surfaces are visible along the periphery, supporting the port operations.\n\nSpatially, the vessels are densely packed within the protected harbor areas formed by the wharves. The road acts as a linear boundary separating the immediate waterfront from the inland facilities. The layout suggests a highly structured maritime zone where transportation networks integrate directly with docking infrastructure. The high density of anchored ships contrasts with the open water channels, highlighting the area's primary function as a hub for maritime transport and storage.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5474"
+        "冻结语义基础分为 0.5474",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5474."
+        "Frozen semantic base score is 0.5474.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -201,7 +196,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal harbor environment situated on flat terrain, characterized by extensive water bodies and adjacent built-up areas. The natural geography is defined by the sea, which fills the majority of the frame with dark teal water, serving as the basin for maritime activities. The surrounding land appears level, consistent with a plain topography typical of port infrastructure zones.\n\nMultiple rows of small white ships are moored in organized clusters throughout the central and lower-left sections of the image, indicating a busy marina or port facility. Concrete wharves and piers extend into the water, creating distinct basins for vessel docking. A road traverses the upper portion of the scene, running parallel to the waterfront and connecting the land-based infrastructure. Additional built-up surfaces are visible along the periphery, supporting the port operations.\n\nSpatially, the vessels are densely packed within the protected harbor areas formed by the wharves. The road acts as a linear boundary separating the immediate waterfront from the inland facilities. The layout suggests a highly structured maritime zone where transportation networks integrate directly with docking infrastructure. The high density of anchored ships contrasts with the open water channels, highlighting the area's primary function as a hub for maritime transport and storage.",
           "score": 0.5473772883415222,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -220,9 +215,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/e17e18162aa1852cc0a8-thumbnail.webp",
       "preview": "assets/images/e17e18162aa1852cc0a8-preview.webp",
@@ -256,12 +268,12 @@
       },
       "description": "The scene depicts a coastal marine environment characterized by a large expanse of dark green water, classified as Sea. The terrain is effectively flat (Plain), dominated by the water body which occupies the majority of the frame. A significant portion of the lower and central image is occupied by built-up infrastructure extending into the water, indicating a developed harbor area.\n\nA large port facility dominates the center and lower sections of the image, featuring an extensive network of wharves arranged in a dense, finger-pier configuration. Hundreds of small white ships are moored in organized rows along these piers, filling nearly every available berth. The layout suggests a high-capacity marina or yacht harbor rather than an industrial cargo terminal, with vessels tightly packed within the protected inner basin.\n\nSpatially, the port infrastructure forms a distinct geometric pattern against the organic texture of the sea. The wharves create a semi-enclosed basin, shielding the docked ships from open water. A single vessel is visible navigating the open water in the upper center, separate from the main cluster. The density of the moored ships is extremely high, covering almost the entire constructed area, while the surrounding water remains clear of other obstacles.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5269"
+        "冻结语义基础分为 0.5269",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5269."
+        "Frozen semantic base score is 0.5269.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -270,7 +282,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal marine environment characterized by a large expanse of dark green water, classified as Sea. The terrain is effectively flat (Plain), dominated by the water body which occupies the majority of the frame. A significant portion of the lower and central image is occupied by built-up infrastructure extending into the water, indicating a developed harbor area.\n\nA large port facility dominates the center and lower sections of the image, featuring an extensive network of wharves arranged in a dense, finger-pier configuration. Hundreds of small white ships are moored in organized rows along these piers, filling nearly every available berth. The layout suggests a high-capacity marina or yacht harbor rather than an industrial cargo terminal, with vessels tightly packed within the protected inner basin.\n\nSpatially, the port infrastructure forms a distinct geometric pattern against the organic texture of the sea. The wharves create a semi-enclosed basin, shielding the docked ships from open water. A single vessel is visible navigating the open water in the upper center, separate from the main cluster. The density of the moored ships is extremely high, covering almost the entire constructed area, while the surrounding water remains clear of other obstacles.",
           "score": 0.5268875360488892,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -289,9 +301,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/7f19de17f5f7cec57494-thumbnail.webp",
       "preview": "assets/images/7f19de17f5f7cec57494-preview.webp",
@@ -331,12 +360,12 @@
       },
       "description": "The scene depicts a flat coastal plain environment characterized by extensive built-up areas and a prominent water body connecting to the sea. The terrain is level with no significant elevation changes, supporting dense urban development and maritime infrastructure. A narrow harbor channel cuts through the landscape, bordered by land on both sides, while the open sea is visible in the lower-right corner.\n\nA port facility occupies the central waterway, featuring multiple wharves lining the banks where numerous small ships are moored. To the lower-left, a residential area consists of organized blocks of houses with red roofs, interspersed with green vegetation and local urban roads. In the upper section, larger industrial or commercial buildings with white and blue roofs are situated near the water's edge, indicating mixed land use along the waterfront.\n\nSpatially, the harbor acts as a central dividing feature, with bridges crossing the channel to connect the residential zones on the left with the facilities on the right. The road network integrates closely with the port infrastructure, providing access to the wharves. The density of moored vessels suggests active maritime usage, while the transition from the enclosed harbor to the open sea in the lower-right defines the coastal boundary of the scene.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5189"
+        "冻结语义基础分为 0.5189",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5189."
+        "Frozen semantic base score is 0.5189.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -345,7 +374,7 @@
           "relation": "",
           "evidence": "The scene depicts a flat coastal plain environment characterized by extensive built-up areas and a prominent water body connecting to the sea. The terrain is level with no significant elevation changes, supporting dense urban development and maritime infrastructure. A narrow harbor channel cuts through the landscape, bordered by land on both sides, while the open sea is visible in the lower-right corner.\n\nA port facility occupies the central waterway, featuring multiple wharves lining the banks where numerous small ships are moored. To the lower-left, a residential area consists of organized blocks of houses with red roofs, interspersed with green vegetation and local urban roads. In the upper section, larger industrial or commercial buildings with white and blue roofs are situated near the water's edge, indicating mixed land use along the waterfront.\n\nSpatially, the harbor acts as a central dividing feature, with bridges crossing the channel to connect the residential zones on the left with the facilities on the right. The road network integrates closely with the port infrastructure, providing access to the wharves. The density of moored vessels suggests active maritime usage, while the transition from the enclosed harbor to the open sea in the lower-right defines the coastal boundary of the scene.",
           "score": 0.5189402103424072,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -364,9 +393,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/ad0b7a50f5f7f1441942-thumbnail.webp",
       "preview": "assets/images/ad0b7a50f5f7f1441942-preview.webp",
@@ -404,12 +450,12 @@
       },
       "description": "The scene depicts a coastal environment characterized by flat terrain and a dense interface between built-up areas and the sea. The upper portion of the image is dominated by dark blue water, while the lower section features extensive urban development. A prominent curved breakwater structure encloses a sheltered harbor basin, separating the open sea from the inner docking area.\n\nWithin the protected harbor, numerous small to medium-sized vessels are moored in organized rows along multiple wharves. Two distinct breakwater segments define the port's perimeter, providing protection for the docked ships. Adjacent to the waterfront in the lower part of the image, a dense cluster of residential blocks and commercial buildings is visible, interspersed with a network of narrow urban roads that provide access to the shoreline facilities.\n\nSpatially, the port infrastructure acts as a transition zone between the marine environment and the terrestrial settlement. The breakwaters curve inward from the left and right, creating a semi-enclosed basin heavily populated with boats. The residential area extends directly from the port edge towards the bottom of the frame, indicating a high-density coastal community integrated with maritime activities.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5113"
+        "冻结语义基础分为 0.5113",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5113."
+        "Frozen semantic base score is 0.5113.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -418,7 +464,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal environment characterized by flat terrain and a dense interface between built-up areas and the sea. The upper portion of the image is dominated by dark blue water, while the lower section features extensive urban development. A prominent curved breakwater structure encloses a sheltered harbor basin, separating the open sea from the inner docking area.\n\nWithin the protected harbor, numerous small to medium-sized vessels are moored in organized rows along multiple wharves. Two distinct breakwater segments define the port's perimeter, providing protection for the docked ships. Adjacent to the waterfront in the lower part of the image, a dense cluster of residential blocks and commercial buildings is visible, interspersed with a network of narrow urban roads that provide access to the shoreline facilities.\n\nSpatially, the port infrastructure acts as a transition zone between the marine environment and the terrestrial settlement. The breakwaters curve inward from the left and right, creating a semi-enclosed basin heavily populated with boats. The residential area extends directly from the port edge towards the bottom of the frame, indicating a high-density coastal community integrated with maritime activities.",
           "score": 0.5113475322723389,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -437,9 +483,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/57b45efff126acea1a05-thumbnail.webp",
       "preview": "assets/images/57b45efff126acea1a05-preview.webp",
@@ -475,12 +538,12 @@
       },
       "description": "The scene depicts a flat coastal plain environment characterized by a large expanse of dark water body, identified as sea or harbor water, occupying the majority of the frame. The surrounding terrain is level, supporting built-up infrastructure along the waterfront. No significant natural relief is visible, confirming a plain topography typical of port districts.\n\nA prominent concrete wharf extends vertically through the center of the image, dividing the water into two distinct berthing areas. Two large cargo ships are moored alongside this central pier; the vessel on the left appears loaded with containers or deck cargo, while the ship on the right carries visible orange lifeboats or smaller craft on its deck. In the upper right corner, a paved road runs parallel to the waterfront, featuring parked vehicles and connecting to the port infrastructure.\n\nSpatially, the central wharf acts as the primary axis, organizing the maritime traffic into a symmetrical layout with vessels docked on both the left and right sides. The water surface is calm and dark, contrasting sharply with the light gray concrete of the pier and the industrial tones of the ships. The road network in the upper section suggests land-side connectivity, while the density of the docking arrangement indicates an active commercial port facility.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5072"
+        "冻结语义基础分为 0.5072",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5072."
+        "Frozen semantic base score is 0.5072.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -489,7 +552,7 @@
           "relation": "",
           "evidence": "The scene depicts a flat coastal plain environment characterized by a large expanse of dark water body, identified as sea or harbor water, occupying the majority of the frame. The surrounding terrain is level, supporting built-up infrastructure along the waterfront. No significant natural relief is visible, confirming a plain topography typical of port districts.\n\nA prominent concrete wharf extends vertically through the center of the image, dividing the water into two distinct berthing areas. Two large cargo ships are moored alongside this central pier; the vessel on the left appears loaded with containers or deck cargo, while the ship on the right carries visible orange lifeboats or smaller craft on its deck. In the upper right corner, a paved road runs parallel to the waterfront, featuring parked vehicles and connecting to the port infrastructure.\n\nSpatially, the central wharf acts as the primary axis, organizing the maritime traffic into a symmetrical layout with vessels docked on both the left and right sides. The water surface is calm and dark, contrasting sharply with the light gray concrete of the pier and the industrial tones of the ships. The road network in the upper section suggests land-side connectivity, while the density of the docking arrangement indicates an active commercial port facility.",
           "score": 0.507152795791626,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -508,9 +571,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/268473de0a283ece45ce-thumbnail.webp",
       "preview": "assets/images/268473de0a283ece45ce-preview.webp",
@@ -547,12 +627,12 @@
       },
       "description": "The scene depicts a coastal port environment situated on flat terrain, classified as Plain. The land cover consists primarily of Built-up Area along the coastline and a large Water Body representing the Sea. Stone breakwaters extend into the water to form a protected harbor basin, enclosing the maritime infrastructure within a calm aquatic setting.\n\nA Port area dominates the center and right side of the image, featuring prominent curved breakwaters constructed from rock. Inside the sheltered basin, numerous small white ships are moored along linear wharves. A single vessel is visible navigating the open water near the harbor entrance. On the left side, a Transportation network includes paved roads running parallel to the waterfront, connecting to adjacent built-up zones with visible parking areas and low-rise structures.\n\nSpatially, the artificial breakwaters create a distinct C-shaped enclosure that separates the inner harbor from the open sea. The road infrastructure on the left provides direct access to the port facilities and surrounding commercial or residential blocks. The layout demonstrates a high density of maritime activity within the protected zone, contrasting with the sparse traffic on the adjacent coastal roads.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5025"
+        "冻结语义基础分为 0.5025",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5025."
+        "Frozen semantic base score is 0.5025.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -561,7 +641,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal port environment situated on flat terrain, classified as Plain. The land cover consists primarily of Built-up Area along the coastline and a large Water Body representing the Sea. Stone breakwaters extend into the water to form a protected harbor basin, enclosing the maritime infrastructure within a calm aquatic setting.\n\nA Port area dominates the center and right side of the image, featuring prominent curved breakwaters constructed from rock. Inside the sheltered basin, numerous small white ships are moored along linear wharves. A single vessel is visible navigating the open water near the harbor entrance. On the left side, a Transportation network includes paved roads running parallel to the waterfront, connecting to adjacent built-up zones with visible parking areas and low-rise structures.\n\nSpatially, the artificial breakwaters create a distinct C-shaped enclosure that separates the inner harbor from the open sea. The road infrastructure on the left provides direct access to the port facilities and surrounding commercial or residential blocks. The layout demonstrates a high density of maritime activity within the protected zone, contrasting with the sparse traffic on the adjacent coastal roads.",
           "score": 0.502535343170166,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -580,9 +660,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/aa5a548a1415801c0a1a-thumbnail.webp",
       "preview": "assets/images/aa5a548a1415801c0a1a-preview.webp",
@@ -620,12 +717,12 @@
       },
       "description": "The scene depicts a coastal plain environment characterized by extensive built-up areas adjacent to a large body of sea water. The terrain is flat, supporting dense urban development and significant maritime infrastructure. The interface between the land and the sea is defined by engineered structures, with clear visibility of the water body occupying the central and left portions of the image.\n\nA major port facility dominates the center and left side, featuring multiple curved breakwaters that enclose sheltered basins. Numerous ships are moored in organized rows along the wharves within these protected harbors. To the right, a dense commercial and residential area is visible, consisting of tightly packed residential blocks and a grid of urban roads extending towards the coastline. The port infrastructure includes distinct piers and docking areas facilitating the high density of vessels.\n\nSpatially, the port acts as a buffer between the open sea on the left and the urban settlement on the right. The breakwaters create distinct enclosed zones for vessel storage, separating them from the main water body. The residential blocks are situated immediately adjacent to the port's eastern boundary, indicating a mixed-use coastal zone. The layout demonstrates a high-density integration of maritime transport facilities and urban living spaces.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.5017"
+        "冻结语义基础分为 0.5017",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.5017."
+        "Frozen semantic base score is 0.5017.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -634,7 +731,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal plain environment characterized by extensive built-up areas adjacent to a large body of sea water. The terrain is flat, supporting dense urban development and significant maritime infrastructure. The interface between the land and the sea is defined by engineered structures, with clear visibility of the water body occupying the central and left portions of the image.\n\nA major port facility dominates the center and left side, featuring multiple curved breakwaters that enclose sheltered basins. Numerous ships are moored in organized rows along the wharves within these protected harbors. To the right, a dense commercial and residential area is visible, consisting of tightly packed residential blocks and a grid of urban roads extending towards the coastline. The port infrastructure includes distinct piers and docking areas facilitating the high density of vessels.\n\nSpatially, the port acts as a buffer between the open sea on the left and the urban settlement on the right. The breakwaters create distinct enclosed zones for vessel storage, separating them from the main water body. The residential blocks are situated immediately adjacent to the port's eastern boundary, indicating a mixed-use coastal zone. The layout demonstrates a high-density integration of maritime transport facilities and urban living spaces.",
           "score": 0.5017271637916565,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -653,9 +750,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/747a5eb2ec78367833be-thumbnail.webp",
       "preview": "assets/images/747a5eb2ec78367833be-preview.webp",
@@ -689,12 +803,12 @@
       },
       "description": "The scene depicts a coastal port environment situated on flat terrain, classified as Plain. The dominant land cover consists of a large Water Body, specifically the Sea, which appears dark green in tone. Built-up Area elements are present in the form of extensive marine infrastructure occupying the central and lower portions of the image, contrasting with the surrounding water.\n\nThe primary key area is a Port facility characterized by a complex network of wharves arranged in a grid-like pattern across the center and right side of the image. Numerous ships are docked along these piers, appearing as small white rectangular objects aligned in dense rows. The layout suggests a high-capacity marina or commercial harbor with multiple berthing fingers extending into the water to maximize docking space.\n\nSpatially, the port infrastructure dominates the frame, with wharves extending from the lower-left towards the upper-right. The ships are tightly packed, indicating high utilization of the facility. A distinct breakwater or solid pier structure is visible in the lower-left corner, providing shelter. The deep color of the water surrounds the built structures, highlighting the interface between the maritime transport zone and the natural sea environment.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.4998"
+        "冻结语义基础分为 0.4998",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.4998."
+        "Frozen semantic base score is 0.4998.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -703,7 +817,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal port environment situated on flat terrain, classified as Plain. The dominant land cover consists of a large Water Body, specifically the Sea, which appears dark green in tone. Built-up Area elements are present in the form of extensive marine infrastructure occupying the central and lower portions of the image, contrasting with the surrounding water.\n\nThe primary key area is a Port facility characterized by a complex network of wharves arranged in a grid-like pattern across the center and right side of the image. Numerous ships are docked along these piers, appearing as small white rectangular objects aligned in dense rows. The layout suggests a high-capacity marina or commercial harbor with multiple berthing fingers extending into the water to maximize docking space.\n\nSpatially, the port infrastructure dominates the frame, with wharves extending from the lower-left towards the upper-right. The ships are tightly packed, indicating high utilization of the facility. A distinct breakwater or solid pier structure is visible in the lower-left corner, providing shelter. The deep color of the water surrounds the built structures, highlighting the interface between the maritime transport zone and the natural sea environment.",
           "score": 0.499750018119812,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -722,9 +836,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/7ebf1279cf301c952463-thumbnail.webp",
       "preview": "assets/images/7ebf1279cf301c952463-preview.webp",
@@ -761,12 +892,12 @@
       },
       "description": "The scene depicts a coastal port environment situated on flat terrain, characterized by extensive water bodies and adjacent built-up areas. The primary natural geographic entity is the sea, which fills the majority of the frame with dark green water. The surrounding land consists of developed infrastructure supporting maritime activities, with no significant elevation changes or natural vegetation visible in the immediate vicinity.\n\nA large marina complex dominates the left and central portions of the image, featuring numerous parallel wharves extending into the water. These facilities are densely packed with hundreds of small white ships and boats docked in organized rows. On the right side, additional pier structures accommodate more vessels. Adjacent to the waterfront on the lower right, there are residential blocks and paved parking lots serving the port area, indicating a mixed-use commercial and residential zone integrated with the harbor infrastructure.\n\nSpatially, the wharves are arranged in a regular, grid-like pattern perpendicular to the shoreline, maximizing docking capacity within the harbor basin. The density of vessels is extremely high, suggesting a busy recreational or commercial marina. The built-up area on the right acts as a boundary to the water, with parking lots positioned directly behind the docking facilities to support vessel access. The overall layout reflects a highly organized maritime facility designed for high-volume boat storage and maintenance.",
       "reasons": [
-        "v2 结构化证据命中：sea、water、port",
-        "Qwen 描述向量语义相似度为 0.4952"
+        "冻结语义基础分为 0.4952",
+        "3 项结构化证据提供正向增益"
       ],
       "reasons_en": [
-        "GeoIndex v2 structured evidence matched: sea, water, port.",
-        "Qwen description-vector semantic similarity is 0.4952."
+        "Frozen semantic base score is 0.4952.",
+        "3 structured evidence item(s) provide positive support."
       ],
       "evidence": [
         {
@@ -775,7 +906,7 @@
           "relation": "",
           "evidence": "The scene depicts a coastal port environment situated on flat terrain, characterized by extensive water bodies and adjacent built-up areas. The primary natural geographic entity is the sea, which fills the majority of the frame with dark green water. The surrounding land consists of developed infrastructure supporting maritime activities, with no significant elevation changes or natural vegetation visible in the immediate vicinity.\n\nA large marina complex dominates the left and central portions of the image, featuring numerous parallel wharves extending into the water. These facilities are densely packed with hundreds of small white ships and boats docked in organized rows. On the right side, additional pier structures accommodate more vessels. Adjacent to the waterfront on the lower right, there are residential blocks and paved parking lots serving the port area, indicating a mixed-use commercial and residential zone integrated with the harbor infrastructure.\n\nSpatially, the wharves are arranged in a regular, grid-like pattern perpendicular to the shoreline, maximizing docking capacity within the harbor basin. The density of vessels is extremely high, suggesting a busy recreational or commercial marina. The built-up area on the right acts as a boundary to the water, with parking lots positioned directly behind the docking facilities to support vessel access. The overall layout reflects a highly organized maritime facility designed for high-volume boat storage and maintenance.",
           "score": 0.49519944190979004,
-          "relation_score": null
+          "relation_score": 0.0
         }
       ],
       "strict_match": {
@@ -794,9 +925,26 @@
       ],
       "detections": {},
       "retrieval_sources": [
-        "structured",
-        "dense"
+        "frozen_evaluation"
       ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 3,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 8.26890205201342,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 8.26890205201342
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 1,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 1
+        }
+      },
       "effective_weights": {},
       "thumbnail": "assets/images/62bf675c4819add58f64-thumbnail.webp",
       "preview": "assets/images/62bf675c4819add58f64-preview.webp",

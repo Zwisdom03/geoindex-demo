@@ -1,0 +1,920 @@
+{
+  "id": "k003-blue-river",
+  "source_query_id": "K003",
+  "category": "keyword",
+  "official_query": "blue river",
+  "query": "蓝色河流",
+  "en": "Blue river",
+  "parsed_query": {
+    "environment": [
+      "river"
+    ],
+    "areas": [],
+    "area_constraints": [],
+    "facilities": [],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [
+      "blue"
+    ],
+    "semantic_text": "blue river"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "scope": "full_indexed_gallery"
+  },
+  "scoring_counts": {
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "bridge_45.tif",
+    "bridge_46.tif",
+    "river_325.tif"
+  ],
+  "relevant_in_top_k": 3,
+  "selection_metrics": {
+    "precision_at_1": 1.0,
+    "recall_at_10": 1.0,
+    "reciprocal_rank": 1.0,
+    "average_precision_at_10": 1.0,
+    "ndcg_at_10": 1.0
+  },
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "bridge_46.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4176821708679199,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4676821708679199
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide, light blue river flowing diagonally across the frame. The water body serves as the primary natural geographic entity, bordered by built-up areas and vegetation on the banks. The terrain is level with no visible elevation changes, supporting significant infrastructure development over the watercourse.\n\nA prominent multi-lane bridge spans the river from the upper-left to the lower-right, functioning as a critical transportation link. The bridge structure supports a wide road with visible lane markings and carries vehicular traffic, including several cars traversing the span. Small white structures, likely lighting or monitoring equipment, are positioned along the bridge edges. The road surface appears paved and well-maintained, connecting the land masses on either side of the river.\n\nSpatially, the bridge bisects the image, creating a strong diagonal vector against the horizontal flow of the river. Vehicles are distributed along the roadway, indicating active two-way traffic flow. The river occupies the majority of the background, while small patches of green vegetation and concrete embankments are visible at the extreme corners, framing the infrastructure within the natural water setting.",
+      "reasons": [
+        "冻结语义基础分为 0.4177",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4177.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_46.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide, light blue river flowing diagonally across the frame. The water body serves as the primary natural geographic entity, bordered by built-up areas and vegetation on the banks. The terrain is level with no visible elevation changes, supporting significant infrastructure development over the watercourse.\n\nA prominent multi-lane bridge spans the river from the upper-left to the lower-right, functioning as a critical transportation link. The bridge structure supports a wide road with visible lane markings and carries vehicular traffic, including several cars traversing the span. Small white structures, likely lighting or monitoring equipment, are positioned along the bridge edges. The road surface appears paved and well-maintained, connecting the land masses on either side of the river.\n\nSpatially, the bridge bisects the image, creating a strong diagonal vector against the horizontal flow of the river. Vehicles are distributed along the roadway, indicating active two-way traffic flow. The river occupies the majority of the background, while small patches of green vegetation and concrete embankments are visible at the extreme corners, framing the infrastructure within the natural water setting.",
+          "score": 0.4176821708679199,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/cd717386895e41f05658-thumbnail.webp",
+      "preview": "assets/images/cd717386895e41f05658-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 2,
+      "image_name": "bridge_45.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.41067492961883545,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.46067492961883544
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road",
+          "shipping_lane"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide, dark blue river flowing through the center. The surrounding land cover consists primarily of built-up areas along the banks and patches of green grassland. No significant elevation changes are visible, confirming the plain terrain type.\n\nA prominent curved bridge spans the river, connecting the left and right banks via a multi-lane road with visible vehicular traffic. Along the riverbanks, particularly on the lower-right and upper-left sides, numerous white boats are moored in organized rows, indicating active shipping lanes. A large white rectangular structure is situated on the left bank near the water's edge.\n\nThe bridge creates a distinct arc across the water, separating the upstream and downstream sections. The moored vessels line the edges of the river parallel to the flow, contrasting with the dynamic movement of vehicles on the bridge. The spatial arrangement highlights the integration of water transport infrastructure with road networks in this riverside setting.",
+      "reasons": [
+        "冻结语义基础分为 0.4107",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4107.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_45.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide, dark blue river flowing through the center. The surrounding land cover consists primarily of built-up areas along the banks and patches of green grassland. No significant elevation changes are visible, confirming the plain terrain type.\n\nA prominent curved bridge spans the river, connecting the left and right banks via a multi-lane road with visible vehicular traffic. Along the riverbanks, particularly on the lower-right and upper-left sides, numerous white boats are moored in organized rows, indicating active shipping lanes. A large white rectangular structure is situated on the left bank near the water's edge.\n\nThe bridge creates a distinct arc across the water, separating the upstream and downstream sections. The moored vessels line the edges of the river parallel to the flow, contrasting with the dynamic movement of vehicles on the bridge. The spatial arrangement highlights the integration of water transport infrastructure with road networks in this riverside setting.",
+          "score": 0.41067492961883545,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/6409d79a464e499d9622-thumbnail.webp",
+      "preview": "assets/images/6409d79a464e499d9622-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 3,
+      "image_name": "river_325.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.38155436515808105,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.43155436515808104
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The scene depicts a flat plain terrain dominated by a prominent, dark blue river meandering through the landscape. The surrounding land cover consists primarily of forest vegetation and patches of bare land along the riverbanks. No significant built-up areas or industrial facilities are visible in this natural setting.\n\n\nNo specific key areas such as agricultural land, storage zones, airports, ports, industrial zones, commercial/residential areas, utility infrastructure, or transportation networks are identified within the image frame. The area appears to be undeveloped natural land characterized by dense tree coverage and exposed soil near the water's edge.\n\n\nA large river bend occupies the central and lower portions of the image, creating a distinct oxbow-like shape. Forested areas flank both sides of the river channel, while lighter-toned bare land is visible on the inner bank of the curve. The spatial arrangement suggests a natural riparian environment with minimal human modification or infrastructure development.",
+      "reasons": [
+        "冻结语义基础分为 0.3816",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3816.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "river_325.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by a prominent, dark blue river meandering through the landscape. The surrounding land cover consists primarily of forest vegetation and patches of bare land along the riverbanks. No significant built-up areas or industrial facilities are visible in this natural setting.\n\n\nNo specific key areas such as agricultural land, storage zones, airports, ports, industrial zones, commercial/residential areas, utility infrastructure, or transportation networks are identified within the image frame. The area appears to be undeveloped natural land characterized by dense tree coverage and exposed soil near the water's edge.\n\n\nA large river bend occupies the central and lower portions of the image, creating a distinct oxbow-like shape. Forested areas flank both sides of the river channel, while lighter-toned bare land is visible on the inner bank of the curve. The spatial arrangement suggests a natural riparian environment with minimal human modification or infrastructure development.",
+          "score": 0.38155436515808105,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "forest",
+        "water",
+        "bare_land"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/309b4fe46fa0871ccc27-thumbnail.webp",
+      "preview": "assets/images/309b4fe46fa0871ccc27-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 4,
+      "image_name": "bridge_52.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3711196780204773,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4211196780204773
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "parking_lot",
+          "residential_block",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body is dark blue-green, flanked by built-up areas on both banks. Vegetation is sparse, limited to small patches along the riverbanks and within the residential zones. No elevated terrain features are visible, confirming the plain classification.\n\nA prominent gray bridge spans the river from the lower-left to the upper-right, carrying a two-lane road with yellow center markings. On the right bank, a cluster of residential blocks and commercial buildings is visible, accompanied by a paved parking lot containing several white vehicles. Urban roads connect these structures to the bridgehead. The left bank features smaller residential structures and access roads leading to the water's edge.\n\nThe bridge serves as the primary spatial connector between the two developed banks. The layout shows a clear separation between the natural river channel and the anthropogenic infrastructure. Traffic appears light, with only a few vehicles visible on the bridge and in the parking area. The density of construction is higher on the right side of the image compared to the left.",
+      "reasons": [
+        "冻结语义基础分为 0.3711",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3711.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_52.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body is dark blue-green, flanked by built-up areas on both banks. Vegetation is sparse, limited to small patches along the riverbanks and within the residential zones. No elevated terrain features are visible, confirming the plain classification.\n\nA prominent gray bridge spans the river from the lower-left to the upper-right, carrying a two-lane road with yellow center markings. On the right bank, a cluster of residential blocks and commercial buildings is visible, accompanied by a paved parking lot containing several white vehicles. Urban roads connect these structures to the bridgehead. The left bank features smaller residential structures and access roads leading to the water's edge.\n\nThe bridge serves as the primary spatial connector between the two developed banks. The layout shows a clear separation between the natural river channel and the anthropogenic infrastructure. Traffic appears light, with only a few vehicles visible on the bridge and in the parking area. The density of construction is higher on the right side of the image compared to the left.",
+          "score": 0.3711196780204773,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/2c6c6d187f9ef6398ff5-thumbnail.webp",
+      "preview": "assets/images/2c6c6d187f9ef6398ff5-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 5,
+      "image_name": "bridge_56.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3669877052307129,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4169877052307129
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide, turbid river flowing diagonally across the frame. The water body appears brown and sediment-heavy, bordered by narrow strips of green grassland and vegetation along both banks.\n\nA major transportation bridge spans the river from the lower-left to the upper-right, carrying dense rows of automobiles in orderly traffic. The bridge connects paved roads on either side, facilitating continuous vehicular movement across the waterway. A small white vessel is visible navigating the river near the center-right, distinct from the fixed infrastructure.\n\nThe linear bridge structure intersects the natural river flow, creating a focal point of human activity amidst the landscape. Vegetation lines the riverbanks symmetrically, framing the crossing. The high density of vehicles on the bridge contrasts with the open expanse of the brown water below.",
+      "reasons": [
+        "冻结语义基础分为 0.3670",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3670.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_56.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide, turbid river flowing diagonally across the frame. The water body appears brown and sediment-heavy, bordered by narrow strips of green grassland and vegetation along both banks.\n\nA major transportation bridge spans the river from the lower-left to the upper-right, carrying dense rows of automobiles in orderly traffic. The bridge connects paved roads on either side, facilitating continuous vehicular movement across the waterway. A small white vessel is visible navigating the river near the center-right, distinct from the fixed infrastructure.\n\nThe linear bridge structure intersects the natural river flow, creating a focal point of human activity amidst the landscape. Vegetation lines the riverbanks symmetrically, framing the crossing. The high density of vehicles on the bridge contrasts with the open expanse of the brown water below.",
+          "score": 0.3669877052307129,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/9ebdc1520059cc20bb12-thumbnail.webp",
+      "preview": "assets/images/9ebdc1520059cc20bb12-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 6,
+      "image_name": "bridge_42.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.36356496810913086,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.41356496810913085
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body appears dark blue, contrasting with narrow strips of green grassland visible along the riverbanks in the upper-right and lower-left corners. No significant elevation changes or mountainous terrain are present, indicating a low-lying geographical setting.\n\nA prominent transportation infrastructure feature is a large, straight bridge spanning the river from the lower-left to the upper-right. The bridge structure supports a multi-lane road surface, clearly visible as a light gray linear element crossing the water. Small vehicles can be observed on the roadway, confirming active traffic flow. The bridge connects the grassy banks on either side of the river, serving as a critical link in the local transport network.\n\nSpatially, the bridge bisects the image diagonally, creating a strong linear composition against the uniform texture of the water. The road alignment is straight and perpendicular to the river flow direction. The surrounding land cover is minimal, limited to the immediate riparian zones, emphasizing the dominance of the water body and the transportation corridor in this specific view.",
+      "reasons": [
+        "冻结语义基础分为 0.3636",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3636.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_42.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body appears dark blue, contrasting with narrow strips of green grassland visible along the riverbanks in the upper-right and lower-left corners. No significant elevation changes or mountainous terrain are present, indicating a low-lying geographical setting.\n\nA prominent transportation infrastructure feature is a large, straight bridge spanning the river from the lower-left to the upper-right. The bridge structure supports a multi-lane road surface, clearly visible as a light gray linear element crossing the water. Small vehicles can be observed on the roadway, confirming active traffic flow. The bridge connects the grassy banks on either side of the river, serving as a critical link in the local transport network.\n\nSpatially, the bridge bisects the image diagonally, creating a strong linear composition against the uniform texture of the water. The road alignment is straight and perpendicular to the river flow direction. The surrounding land cover is minimal, limited to the immediate riparian zones, emphasizing the dominance of the water body and the transportation corridor in this specific view.",
+          "score": 0.36356496810913086,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/78fdcc1453da91945bc4-thumbnail.webp",
+      "preview": "assets/images/78fdcc1453da91945bc4-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 7,
+      "image_name": "church_82.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3442438244819641,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.3942438244819641
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "commercial_building",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment characterized by dense built-up areas and a prominent water body. A river flows diagonally through the center of the image, separating distinct urban blocks. The surrounding terrain is entirely developed with no visible natural vegetation or agricultural land, indicating a mature urban setting.\n\nA large commercial building with a distinctive turquoise roof occupies the lower-left quadrant, adjacent to the riverbank. Across the water in the upper-right section, traditional structures with orange-tiled roofs are visible, consistent with residential or mixed-use zones. Paved urban roads line the riverbanks on both sides, facilitating local access. A bridge structure connects the two banks in the upper portion of the frame, linking the road networks.\n\nThe river acts as a central dividing feature, with infrastructure arranged linearly along its course. The spatial layout shows high-density development on both banks, connected by the bridge which serves as a critical transit point. The contrast between the modern turquoise roof and the older orange-roofed buildings suggests a mix of architectural eras within this riverside commercial and residential district.",
+      "reasons": [
+        "冻结语义基础分为 0.3442",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3442.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "church_82.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment characterized by dense built-up areas and a prominent water body. A river flows diagonally through the center of the image, separating distinct urban blocks. The surrounding terrain is entirely developed with no visible natural vegetation or agricultural land, indicating a mature urban setting.\n\nA large commercial building with a distinctive turquoise roof occupies the lower-left quadrant, adjacent to the riverbank. Across the water in the upper-right section, traditional structures with orange-tiled roofs are visible, consistent with residential or mixed-use zones. Paved urban roads line the riverbanks on both sides, facilitating local access. A bridge structure connects the two banks in the upper portion of the frame, linking the road networks.\n\nThe river acts as a central dividing feature, with infrastructure arranged linearly along its course. The spatial layout shows high-density development on both banks, connected by the bridge which serves as a critical transit point. The contrast between the modern turquoise roof and the older orange-roofed buildings suggests a mix of architectural eras within this riverside commercial and residential district.",
+          "score": 0.3442438244819641,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/f01d9a6613bb6649a0b9-thumbnail.webp",
+      "preview": "assets/images/f01d9a6613bb6649a0b9-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 8,
+      "image_name": "park_210.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.34254395961761475,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.39254395961761473
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "residential_block",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing vertically through the center. The water body is flanked by extensive green spaces characterized as grassland and parkland on both banks. Built-up areas are visible along the periphery, particularly on the right side, indicating a mix of natural and developed land cover types within a riparian setting.\n\nA prominent bridge spans the river in the lower central part of the image, connecting the opposing banks via a road network. On the right side, a dense cluster of residential blocks and urban roads forms a structured settlement pattern. The left side features winding paths and open grassy areas consistent with a park layout, while the upper right shows additional built structures adjacent to the green space.\n\nSpatially, the river acts as a central divider separating the recreational parkland on the left from the more intensive residential development on the right. The bridge serves as a critical connectivity node linking these distinct zones. The layout suggests an urban planning strategy that integrates green infrastructure directly alongside the water body, with transportation routes facilitating access across the natural barrier.",
+      "reasons": [
+        "冻结语义基础分为 0.3425",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3425.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "park_210.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing vertically through the center. The water body is flanked by extensive green spaces characterized as grassland and parkland on both banks. Built-up areas are visible along the periphery, particularly on the right side, indicating a mix of natural and developed land cover types within a riparian setting.\n\nA prominent bridge spans the river in the lower central part of the image, connecting the opposing banks via a road network. On the right side, a dense cluster of residential blocks and urban roads forms a structured settlement pattern. The left side features winding paths and open grassy areas consistent with a park layout, while the upper right shows additional built structures adjacent to the green space.\n\nSpatially, the river acts as a central divider separating the recreational parkland on the left from the more intensive residential development on the right. The bridge serves as a critical connectivity node linking these distinct zones. The layout suggests an urban planning strategy that integrates green infrastructure directly alongside the water body, with transportation routes facilitating access across the natural barrier.",
+          "score": 0.34254395961761475,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/2c142b71c61927f16b9a-thumbnail.webp",
+      "preview": "assets/images/2c142b71c61927f16b9a-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 9,
+      "image_name": "park_222.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.33153632283210754,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.38153632283210753
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "parking_lot",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment characterized by a mix of built-up infrastructure and natural water features. A winding river flows along the left side of the image, bordering a large recreational complex. The land cover consists primarily of built-up areas including sports facilities and roads, interspersed with patches of grassland and vegetation surrounding the water body.\n\nA prominent blue oval running track surrounds a green field in the center-right area, accompanied by adjacent rectangular blue courts. A vertical road runs along the right side of the image, connecting to a complex highway interchange visible in the upper-right corner. Several small buildings and parking areas are scattered near the sports facilities and along the riverbank on the left. A bridge structure is implied where the road network interacts with the water boundaries.\n\nThe spatial layout shows the recreational zone situated between the river on the left and the major transportation artery on the right. The river curves naturally around the western edge of the developed area. High-density road infrastructure dominates the eastern and northern periphery, while the central area remains open with low-density sports and leisure facilities. The scene illustrates a typical urban park setting integrated with regional transport networks.",
+      "reasons": [
+        "冻结语义基础分为 0.3315",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3315.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "park_222.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment characterized by a mix of built-up infrastructure and natural water features. A winding river flows along the left side of the image, bordering a large recreational complex. The land cover consists primarily of built-up areas including sports facilities and roads, interspersed with patches of grassland and vegetation surrounding the water body.\n\nA prominent blue oval running track surrounds a green field in the center-right area, accompanied by adjacent rectangular blue courts. A vertical road runs along the right side of the image, connecting to a complex highway interchange visible in the upper-right corner. Several small buildings and parking areas are scattered near the sports facilities and along the riverbank on the left. A bridge structure is implied where the road network interacts with the water boundaries.\n\nThe spatial layout shows the recreational zone situated between the river on the left and the major transportation artery on the right. The river curves naturally around the western edge of the developed area. High-density road infrastructure dominates the eastern and northern periphery, while the central area remains open with low-density sports and leisure facilities. The scene illustrates a typical urban park setting integrated with regional transport networks.",
+          "score": 0.33153632283210754,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/191b3ccc2f000b5ed9eb-thumbnail.webp",
+      "preview": "assets/images/191b3ccc2f000b5ed9eb-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "river_332.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.32800400257110596,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.37800400257110595
+      },
+      "matched": {
+        "keywords": [
+          "river"
+        ],
+        "relations": [],
+        "area_categories": [
+          "agricultural_area",
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "field",
+          "residential_block"
+        ]
+      },
+      "description": "The scene depicts a mountainous terrain characterized by steep, vegetated slopes surrounding a central river valley. A prominent river winds through the landscape, forming a distinct bend that encloses a peninsula-like landform. The land cover within this enclosed area is a mix of built-up structures and agricultural fields, contrasting with the natural vegetation on the surrounding elevated terrain.\n\nOn the peninsula formed by the river bend, there is a dense cluster of buildings, many featuring distinctive blue roofs, indicative of a commercial or residential settlement. These structures are concentrated in the center and upper-right portions of the enclosed area. Adjacent to the built-up zone, particularly in the lower-left and along the riverbank, are organized rectangular plots of cropland, appearing as brownish fields likely prepared for cultivation or recently harvested.\n\nThe spatial layout shows the settlement and agricultural land tightly constrained by the meandering river, which acts as a natural boundary on three sides. The river appears wide and dark, suggesting significant depth or flow. The relationship between the built environment and the agricultural plots suggests a rural or semi-rural community utilizing the flat alluvial land within the mountain valley for both habitation and farming.",
+      "reasons": [
+        "冻结语义基础分为 0.3280",
+        "1 项结构化证据提供正向增益"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3280.",
+        "1 structured evidence item(s) provide positive support."
+      ],
+      "evidence": [
+        {
+          "doc_id": "river_332.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a mountainous terrain characterized by steep, vegetated slopes surrounding a central river valley. A prominent river winds through the landscape, forming a distinct bend that encloses a peninsula-like landform. The land cover within this enclosed area is a mix of built-up structures and agricultural fields, contrasting with the natural vegetation on the surrounding elevated terrain.\n\nOn the peninsula formed by the river bend, there is a dense cluster of buildings, many featuring distinctive blue roofs, indicative of a commercial or residential settlement. These structures are concentrated in the center and upper-right portions of the enclosed area. Adjacent to the built-up zone, particularly in the lower-left and along the riverbank, are organized rectangular plots of cropland, appearing as brownish fields likely prepared for cultivation or recently harvested.\n\nThe spatial layout shows the settlement and agricultural land tightly constrained by the meandering river, which acts as a natural boundary on three sides. The river appears wide and dark, suggesting significant depth or flow. The relationship between the built environment and the agricultural plots suggests a rural or semi-rural community utilizing the flat alluvial land within the mountain valley for both habitation and farming.",
+          "score": 0.32800400257110596,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "mountain",
+      "land_cover": [
+        "built_up",
+        "water",
+        "cropland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 1,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 2.5115792320016754,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 2.5115792320016754
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/bf4a6d50bca7e8aee900-thumbnail.webp",
+      "preview": "assets/images/bf4a6d50bca7e8aee900-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}

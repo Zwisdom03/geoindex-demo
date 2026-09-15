@@ -1,0 +1,790 @@
+{
+  "id": "m006-desert-sand",
+  "source_query_id": "M006",
+  "category": "multi_constraint",
+  "official_query": "desert with sand",
+  "query": "沙质荒漠",
+  "en": "Desert with sand",
+  "parsed_query": {
+    "environment": [],
+    "areas": [],
+    "area_constraints": [],
+    "facilities": [],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [
+      "desert",
+      "sand"
+    ],
+    "semantic_text": "desert with sand"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "scope": "full_indexed_gallery"
+  },
+  "scoring_counts": {
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "desert_117.tif",
+    "desert_121.tif",
+    "desert_123.tif"
+  ],
+  "relevant_in_top_k": 3,
+  "selection_metrics": {
+    "precision_at_1": 1.0,
+    "recall_at_10": 1.0,
+    "reciprocal_rank": 1.0,
+    "average_precision_at_10": 1.0,
+    "ndcg_at_10": 1.0
+  },
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "desert_121.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.43998557329177856,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.43998557329177856
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The image depicts a vast expanse of arid terrain characterized by uniform sandy surfaces. The landscape is classified as Bare Land under a Plain terrain type, featuring distinct orange and yellow hues typical of desert environments. No vegetation, water bodies, or significant topographic relief such as mountains are visible in the scene.\n\nNo anthropogenic key areas or facility conditions are present within the frame. The scene lacks infrastructure such as roads, buildings, agricultural fields, or utility structures. The area is entirely devoid of human settlement or industrial activity, consisting solely of natural geological formations.\n\nThe spatial composition is dominated by repetitive, wave-like sand ripples extending across the entire field of view. These textured patterns create a homogeneous visual rhythm without distinct focal points or boundaries. The uniformity of the surface suggests an open, unobstructed desert environment with consistent wind-driven sediment deposition.",
+      "reasons": [
+        "冻结语义基础分为 0.4400"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4400."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_121.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a vast expanse of arid terrain characterized by uniform sandy surfaces. The landscape is classified as Bare Land under a Plain terrain type, featuring distinct orange and yellow hues typical of desert environments. No vegetation, water bodies, or significant topographic relief such as mountains are visible in the scene.\n\nNo anthropogenic key areas or facility conditions are present within the frame. The scene lacks infrastructure such as roads, buildings, agricultural fields, or utility structures. The area is entirely devoid of human settlement or industrial activity, consisting solely of natural geological formations.\n\nThe spatial composition is dominated by repetitive, wave-like sand ripples extending across the entire field of view. These textured patterns create a homogeneous visual rhythm without distinct focal points or boundaries. The uniformity of the surface suggests an open, unobstructed desert environment with consistent wind-driven sediment deposition.",
+          "score": 0.43998557329177856,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/bcd5b7f228e8f7b76d38-thumbnail.webp",
+      "preview": "assets/images/bcd5b7f228e8f7b76d38-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 2,
+      "image_name": "desert_123.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.42637425661087036,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.42637425661087036
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The scene depicts a flat plain terrain characterized entirely by bare land. The surface consists of heterogeneous yellow desert sand with an extremely uneven texture. No natural geographic entities such as rivers, lakes, or mountains are visible within the frame.\n\n\nNo key areas or facility conditions are present in this image. The landscape is devoid of agricultural land, storage areas, airports, ports, industrial zones, commercial or residential structures, utility infrastructure, and transportation networks. There are no visible buildings, roads, or vegetation.\n\n\nThe spatial composition is dominated by irregular sand layers and dune-like formations across the entire field of view. The texture varies from smooth patches to rough, rippled areas, indicating wind-blown sediment patterns. The scene represents a desolate environment with no human activity or artificial structures observable.",
+      "reasons": [
+        "冻结语义基础分为 0.4264"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.4264."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_123.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized entirely by bare land. The surface consists of heterogeneous yellow desert sand with an extremely uneven texture. No natural geographic entities such as rivers, lakes, or mountains are visible within the frame.\n\n\nNo key areas or facility conditions are present in this image. The landscape is devoid of agricultural land, storage areas, airports, ports, industrial zones, commercial or residential structures, utility infrastructure, and transportation networks. There are no visible buildings, roads, or vegetation.\n\n\nThe spatial composition is dominated by irregular sand layers and dune-like formations across the entire field of view. The texture varies from smooth patches to rough, rippled areas, indicating wind-blown sediment patterns. The scene represents a desolate environment with no human activity or artificial structures observable.",
+          "score": 0.42637425661087036,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/8273f2e625e621be1311-thumbnail.webp",
+      "preview": "assets/images/8273f2e625e621be1311-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 3,
+      "image_name": "desert_117.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3994731307029724,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3994731307029724
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The scene depicts a flat plain terrain characterized entirely by bare land. The surface consists of extensive sand formations with no visible vegetation, water bodies, or built-up structures. The environment represents an arid desert landscape dominated by aeolian processes.\n\nNo key areas or facility conditions are present in this image. The visual field is devoid of agricultural land, storage areas, airports, ports, industrial zones, commercial or residential buildings, utility infrastructure, or transportation networks. There are no observable man-made features or distinct functional zones.\n\nThe spatial layout is defined by a uniform distribution of sand ripples across the entire frame. These textured patterns create a repetitive, wave-like morphology extending from edge to edge without interruption. The scene exhibits high homogeneity with no variation in land use or density of objects.",
+      "reasons": [
+        "冻结语义基础分为 0.3995"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3995."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_117.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized entirely by bare land. The surface consists of extensive sand formations with no visible vegetation, water bodies, or built-up structures. The environment represents an arid desert landscape dominated by aeolian processes.\n\nNo key areas or facility conditions are present in this image. The visual field is devoid of agricultural land, storage areas, airports, ports, industrial zones, commercial or residential buildings, utility infrastructure, or transportation networks. There are no observable man-made features or distinct functional zones.\n\nThe spatial layout is defined by a uniform distribution of sand ripples across the entire frame. These textured patterns create a repetitive, wave-like morphology extending from edge to edge without interruption. The scene exhibits high homogeneity with no variation in land use or density of objects.",
+          "score": 0.3994731307029724,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/42f9022adc02637ff187-thumbnail.webp",
+      "preview": "assets/images/42f9022adc02637ff187-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 4,
+      "image_name": "desert_115.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3980998992919922,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3980998992919922
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The scene depicts a vast arid plain characterized by extensive bare land with undulating sandy textures and pale beige tones. A distinct body of water, identified as a lake, is situated in the lower-right quadrant, exhibiting a deep teal coloration that contrasts sharply with the surrounding dry terrain. The landscape appears flat and devoid of significant vegetation or topographic relief.\n\nNo anthropogenic key areas such as agricultural land, industrial zones, or transportation infrastructure are visible within the frame. The primary visual elements consist of the natural geological formations and the isolated water body. Faint linear patterns resembling wood grain or wind ripples traverse the desert surface, particularly noticeable in the central and upper regions, indicating aeolian processes shaping the bare land.\n\nSpatially, the lake occupies a peripheral position in the lower right, while the majority of the image is dominated by the continuous expanse of desert. The relationship between the water and the land is one of isolation, with no visible connecting channels or human modifications. The scene represents a pristine natural environment where the interaction between wind-blown sand and standing water defines the visual composition.",
+      "reasons": [
+        "冻结语义基础分为 0.3981"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3981."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_115.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a vast arid plain characterized by extensive bare land with undulating sandy textures and pale beige tones. A distinct body of water, identified as a lake, is situated in the lower-right quadrant, exhibiting a deep teal coloration that contrasts sharply with the surrounding dry terrain. The landscape appears flat and devoid of significant vegetation or topographic relief.\n\nNo anthropogenic key areas such as agricultural land, industrial zones, or transportation infrastructure are visible within the frame. The primary visual elements consist of the natural geological formations and the isolated water body. Faint linear patterns resembling wood grain or wind ripples traverse the desert surface, particularly noticeable in the central and upper regions, indicating aeolian processes shaping the bare land.\n\nSpatially, the lake occupies a peripheral position in the lower right, while the majority of the image is dominated by the continuous expanse of desert. The relationship between the water and the land is one of isolation, with no visible connecting channels or human modifications. The scene represents a pristine natural environment where the interaction between wind-blown sand and standing water defines the visual composition.",
+          "score": 0.3980998992919922,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land",
+        "water"
+      ],
+      "natural_entities": [
+        "lake"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/df4f9b192f83e1817a7f-thumbnail.webp",
+      "preview": "assets/images/df4f9b192f83e1817a7f-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 5,
+      "image_name": "desert_119.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3952291011810303,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3952291011810303
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The image depicts a vast expanse of arid terrain characterized by flat topography and uniform beige coloration. The land cover is exclusively Bare Land, featuring subtle textural variations and faint linear patterns consistent with wind-blown sand or dry sediment deposits. No vegetation, water bodies, or distinct natural geographic entities such as mountains or rivers are visible in this desolate landscape.\n\nNo anthropogenic key areas or facility conditions are present within the scene. The visual evidence consists entirely of natural desert features, including irregular light-toned streaks and darker patches scattered across the center and lower sections. There are no built-up areas, transportation networks, agricultural lands, or industrial structures observable in any part of the image.\n\nSpatially, the scene is homogeneous with low contrast between the sandy surface and the faint geological traces. The curved marks and crooked traces mentioned in auxiliary data appear as minor surface textures rather than distinct infrastructure. The overall layout suggests an uninhabited remote desert environment with no discernible human activity or organized spatial planning.",
+      "reasons": [
+        "冻结语义基础分为 0.3952"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3952."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_119.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a vast expanse of arid terrain characterized by flat topography and uniform beige coloration. The land cover is exclusively Bare Land, featuring subtle textural variations and faint linear patterns consistent with wind-blown sand or dry sediment deposits. No vegetation, water bodies, or distinct natural geographic entities such as mountains or rivers are visible in this desolate landscape.\n\nNo anthropogenic key areas or facility conditions are present within the scene. The visual evidence consists entirely of natural desert features, including irregular light-toned streaks and darker patches scattered across the center and lower sections. There are no built-up areas, transportation networks, agricultural lands, or industrial structures observable in any part of the image.\n\nSpatially, the scene is homogeneous with low contrast between the sandy surface and the faint geological traces. The curved marks and crooked traces mentioned in auxiliary data appear as minor surface textures rather than distinct infrastructure. The overall layout suggests an uninhabited remote desert environment with no discernible human activity or organized spatial planning.",
+          "score": 0.3952291011810303,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/a04418cbfc78ce06f2c2-thumbnail.webp",
+      "preview": "assets/images/a04418cbfc78ce06f2c2-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 6,
+      "image_name": "desert_114.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3811151087284088,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3811151087284088
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The scene depicts a vast arid plain characterized by extensive bare land coverage. The terrain is flat with no visible relief features such as mountains or plateaus. The surface consists of heterogeneous desert materials, displaying distinct diagonal banding patterns where lighter orange sandy stretches alternate with darker, rocky substrates.\n\nNo anthropogenic key areas, facilities, or infrastructure are visible within the frame. The landscape is entirely natural and undeveloped, lacking any signs of agricultural land, transportation networks, industrial zones, or residential settlements. The visual content is restricted to geological and geomorphological features typical of a desert environment.\n\nSpatially, the image is dominated by parallel linear textures running diagonally from the upper-left to the lower-right. These stripes represent variations in sediment composition, likely wind-blown sand sheets overlying older alluvial or bedrock surfaces. The distribution of these features is uniform across the scene, indicating a consistent aeolian process shaping the local geography without human intervention.",
+      "reasons": [
+        "冻结语义基础分为 0.3811"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3811."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_114.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a vast arid plain characterized by extensive bare land coverage. The terrain is flat with no visible relief features such as mountains or plateaus. The surface consists of heterogeneous desert materials, displaying distinct diagonal banding patterns where lighter orange sandy stretches alternate with darker, rocky substrates.\n\nNo anthropogenic key areas, facilities, or infrastructure are visible within the frame. The landscape is entirely natural and undeveloped, lacking any signs of agricultural land, transportation networks, industrial zones, or residential settlements. The visual content is restricted to geological and geomorphological features typical of a desert environment.\n\nSpatially, the image is dominated by parallel linear textures running diagonally from the upper-left to the lower-right. These stripes represent variations in sediment composition, likely wind-blown sand sheets overlying older alluvial or bedrock surfaces. The distribution of these features is uniform across the scene, indicating a consistent aeolian process shaping the local geography without human intervention.",
+          "score": 0.3811151087284088,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/afb17f4e5b2f0ada8e2b-thumbnail.webp",
+      "preview": "assets/images/afb17f4e5b2f0ada8e2b-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 7,
+      "image_name": "desert_120.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3658066987991333,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3658066987991333
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The image depicts a flat, arid landscape characterized by extensive bare land coverage. The terrain is uniform and lacks significant relief, consistent with a desert plain environment. No natural geographic entities such as water bodies or mountains are visible within the frame.\n\nNo distinct key areas or man-made facilities are present in this scene. The area is devoid of agricultural land, industrial zones, transportation infrastructure, or residential structures. The surface consists entirely of natural sediment without observable built-up features or utility infrastructure.\n\nThe visual texture is defined by subtle, parallel diagonal stripes running across the pale yellow surface, likely representing wind-formed sand ripples or dune patterns. These fine linear features create a repetitive, homogeneous pattern throughout the image. The scene exhibits high spatial uniformity with no variation in land use or object density.",
+      "reasons": [
+        "冻结语义基础分为 0.3658"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3658."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_120.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a flat, arid landscape characterized by extensive bare land coverage. The terrain is uniform and lacks significant relief, consistent with a desert plain environment. No natural geographic entities such as water bodies or mountains are visible within the frame.\n\nNo distinct key areas or man-made facilities are present in this scene. The area is devoid of agricultural land, industrial zones, transportation infrastructure, or residential structures. The surface consists entirely of natural sediment without observable built-up features or utility infrastructure.\n\nThe visual texture is defined by subtle, parallel diagonal stripes running across the pale yellow surface, likely representing wind-formed sand ripples or dune patterns. These fine linear features create a repetitive, homogeneous pattern throughout the image. The scene exhibits high spatial uniformity with no variation in land use or object density.",
+          "score": 0.3658066987991333,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/62e02b16f8d463cf3333-thumbnail.webp",
+      "preview": "assets/images/62e02b16f8d463cf3333-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 8,
+      "image_name": "desert_112.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.36031830310821533,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.36031830310821533
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The scene depicts a vast, flat plain characterized entirely by bare land. The terrain is uniform and devoid of significant relief, presenting a continuous expanse of beige desert surface that extends across the entire field of view without interruption.\n\nNo key areas or facility conditions are present in this image. The landscape lacks any built-up structures, agricultural fields, transportation networks, or utility infrastructure. There are no visible warehouses, roads, bridges, or industrial zones within the frame.\n\nThe spatial composition is homogeneous, with the barren ground stretching uniformly from the upper to the lower parts of the image. Faint textural variations suggest wind-blown sand patterns or subtle topographic undulations, but no distinct objects or boundaries break the monotony of the desolate environment.",
+      "reasons": [
+        "冻结语义基础分为 0.3603"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3603."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_112.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a vast, flat plain characterized entirely by bare land. The terrain is uniform and devoid of significant relief, presenting a continuous expanse of beige desert surface that extends across the entire field of view without interruption.\n\nNo key areas or facility conditions are present in this image. The landscape lacks any built-up structures, agricultural fields, transportation networks, or utility infrastructure. There are no visible warehouses, roads, bridges, or industrial zones within the frame.\n\nThe spatial composition is homogeneous, with the barren ground stretching uniformly from the upper to the lower parts of the image. Faint textural variations suggest wind-blown sand patterns or subtle topographic undulations, but no distinct objects or boundaries break the monotony of the desolate environment.",
+          "score": 0.36031830310821533,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/bf858ba715dc8a90f1ff-thumbnail.webp",
+      "preview": "assets/images/bf858ba715dc8a90f1ff-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 9,
+      "image_name": "desert_122.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.35556191205978394,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.35556191205978394
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The image depicts a flat desert plain characterized by extensive bare land cover. The terrain is uniform and devoid of vegetation, water bodies, or significant topographic relief, presenting a continuous expanse of loose soil typical of arid environments.\n\nNo key areas or man-made facilities are visible within the scene. The entire frame consists solely of natural ground surface with subtle textural variations caused by wind patterns, lacking any infrastructure such as roads, buildings, or agricultural features.\n\nThe spatial layout is homogeneous with no distinct objects or boundaries to define specific zones. The absence of shadows or elevation changes confirms the flatness of the terrain, while the consistent coloration indicates a dry, unvegetated landscape extending across the full extent of the image.",
+      "reasons": [
+        "冻结语义基础分为 0.3556"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3556."
+      ],
+      "evidence": [
+        {
+          "doc_id": "desert_122.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The image depicts a flat desert plain characterized by extensive bare land cover. The terrain is uniform and devoid of vegetation, water bodies, or significant topographic relief, presenting a continuous expanse of loose soil typical of arid environments.\n\nNo key areas or man-made facilities are visible within the scene. The entire frame consists solely of natural ground surface with subtle textural variations caused by wind patterns, lacking any infrastructure such as roads, buildings, or agricultural features.\n\nThe spatial layout is homogeneous with no distinct objects or boundaries to define specific zones. The absence of shadows or elevation changes confirms the flatness of the terrain, while the consistent coloration indicates a dry, unvegetated landscape extending across the full extent of the image.",
+          "score": 0.35556191205978394,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/acbfab85da3ab48c5d81-thumbnail.webp",
+      "preview": "assets/images/acbfab85da3ab48c5d81-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "beach_36.tif",
+      "confidence": "weak",
+      "scores": {
+        "semantic_base": 0.30569589138031006,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.30569589138031006
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [],
+        "facilities": []
+      },
+      "description": "The scene depicts a coastal plain environment characterized by a sandy shoreline adjacent to the sea. The terrain is flat, consisting primarily of bare land in the form of a beach and a water body representing the ocean. No significant topographic relief or vegetation is visible in this immediate coastal zone.\n\nNo distinct key areas such as ports, industrial zones, or transportation infrastructure are present in the image. The area is utilized for recreational purposes, evidenced by a high density of small objects resembling beach umbrellas and towels scattered across the sand. Numerous individuals are visible on the beach and swimming in the water, but no built-up facilities or permanent structures define the land use.\n\nSpatially, the bare land occupies the lower-left portion of the image, transitioning diagonally to the sea in the upper-right. The distribution of recreational items is dense near the water's edge and becomes sparser towards the inland boundary. The interface between the sand and the green-hued water is irregular, indicating natural wave action rather than engineered port infrastructure.",
+      "reasons": [
+        "冻结语义基础分为 0.3057"
+      ],
+      "reasons_en": [
+        "Frozen semantic base score is 0.3057."
+      ],
+      "evidence": [
+        {
+          "doc_id": "beach_36.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a coastal plain environment characterized by a sandy shoreline adjacent to the sea. The terrain is flat, consisting primarily of bare land in the form of a beach and a water body representing the ocean. No significant topographic relief or vegetation is visible in this immediate coastal zone.\n\nNo distinct key areas such as ports, industrial zones, or transportation infrastructure are present in the image. The area is utilized for recreational purposes, evidenced by a high density of small objects resembling beach umbrellas and towels scattered across the sand. Numerous individuals are visible on the beach and swimming in the water, but no built-up facilities or permanent structures define the land use.\n\nSpatially, the bare land occupies the lower-left portion of the image, transitioning diagonally to the sea in the upper-right. The distribution of recreational items is dense near the water's edge and becomes sparser towards the inland boundary. The interface between the sand and the green-hued water is irregular, indicating natural wave action rather than engineered port infrastructure.",
+          "score": 0.30569589138031006,
+          "relation_score": 0.0
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "frozen_evaluation"
+      ],
+      "evidence_audit": {
+        "structure": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "normalization_mass": 0
+        },
+        "relation": {
+          "supported": 0,
+          "contradicted": 0,
+          "unknown": 0,
+          "support_mass": 0.0,
+          "contradiction_mass": 0.0,
+          "condition_count": 0
+        }
+      },
+      "effective_weights": {},
+      "thumbnail": "assets/images/4bccef6e72c2f6605d35-thumbnail.webp",
+      "preview": "assets/images/4bccef6e72c2f6605d35-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}
