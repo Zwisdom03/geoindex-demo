@@ -15,10 +15,9 @@
   const score = value => Number(value || 0).toFixed(4);
   const words = {
     eyebrow:['REMOTE-SENSING RETRIEVAL','遥感影像检索'],
-    title:['Choose an official RSITMD query.','选择 RSITMD 官方查询'],
-    intro:['Explore eight high-performing frozen results, with two official queries from each RSITMD benchmark type.','展示 8 条高质量冻结结果，每类 RSITMD 基准查询精选 2 条。'],
+    title:['RSITMD Example Queries','RSITMD示例查询'],
     selectLabel:['Retrieval query','检索词条'],placeholder:['Select a query…','请选择检索词条…'],confirm:['View results','确认并查看结果'],
-    precomputed:['GeoIndex v2 · RSITMD-Lite v1.0 · Frozen results','GeoIndex v2 · RSITMD-Lite v1.0 · 冻结结果'],
+    precomputed:['GeoIndex · RSITMD · Example Results','GeoIndex · RSITMD · 示例结果'],
     footer:['RSITMD benchmark retrieval, with evidence.','RSITMD 基准检索与证据展示'],
     back:['Choose another query','返回选择词条'],resultsLabel:['RETRIEVAL RESULTS','检索结果'],
     resultNote:['Frozen GeoIndex v2 Top-10 results. Scores are ranking signals, not probabilities.','GeoIndex v2 冻结 Top-10 结果。评分用于排序，不代表概率。']
