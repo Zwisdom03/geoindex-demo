@@ -1,0 +1,768 @@
+{
+  "id": "r014-parking-street",
+  "source_query_id": "R014",
+  "category": "spatial_relation",
+  "official_query": "parking lot next to street",
+  "query": "街道旁的停车场",
+  "en": "Parking lot next to street",
+  "elapsed_ms": 402.88,
+  "parsed_query": {
+    "environment": [],
+    "areas": [],
+    "area_constraints": [],
+    "facilities": [
+      "parking_lot",
+      "road"
+    ],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [
+      {
+        "subject": "parking_lot",
+        "predicate": "beside",
+        "object": "road"
+      }
+    ],
+    "unmapped_concepts": [],
+    "semantic_text": "parking lot next to street"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "structured": 336,
+    "dense": 451,
+    "union": 451,
+    "overlap": 336
+  },
+  "query_profile": {
+    "method": "semantic_base_plus_signed_evidence_v1",
+    "base": "semantic_cosine",
+    "lambdas": {
+      "structure": 0.05,
+      "relation": 0.05
+    },
+    "signals": {
+      "structured_constraint_count": 2,
+      "hard_area_count": 0,
+      "soft_area_count": 0,
+      "quantity_count": 0,
+      "relation_count": 1,
+      "unmapped_concept_count": 0,
+      "query_token_count": 5,
+      "raw_structure_signal": 2.6,
+      "raw_semantic_signal": 0.7,
+      "raw_relation_signal": 3.0
+    },
+    "unknown_evidence_policy": "neutral",
+    "hard_constraint_policy": "verified_quantity_only"
+  },
+  "scoring_counts": {
+    "candidate_union": 451,
+    "eligible": 451,
+    "hard_rejected": 0,
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "parking_224.tif"
+  ],
+  "relevant_in_top_k": 1,
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "pond_265.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4993039667606354,
+        "structure_delta": 1.0,
+        "relation_delta": 0.859,
+        "final": 0.5922539667606355
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [
+          "parking_lot beside road"
+        ],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a large, dark water body identified as a lake in the center. Dense forest vegetation lines the northern and southern banks of the lake, creating a natural boundary. The lower section features built-up areas with paved surfaces adjacent to the water's edge.\n\nA multi-lane road runs horizontally across the bottom of the image, serving as a primary transportation artery. In the lower-right corner, a defined parking lot is visible containing numerous parked vehicles arranged in rows. Another smaller water body or pond appears in the upper-left corner, partially obscured by the surrounding tree line.\n\nThe layout shows a clear separation between the natural water features and the anthropogenic infrastructure at the bottom. The road acts as a linear divider between the lake's southern bank and the developed area. The parking lot is situated directly beside the road, indicating accessibility to the waterfront region.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "v2 关系证据命中：parking_lot beside road",
+        "Qwen 描述向量语义相似度为 0.4993"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "GeoIndex v2 relation evidence matched: parking_lot beside road.",
+        "Qwen description-vector semantic similarity is 0.4993."
+      ],
+      "evidence": [
+        {
+          "doc_id": "pond_265.tif::relation",
+          "doc_type": "description_relation",
+          "relation": "parking_lot beside road",
+          "evidence": "The parking lot is situated directly beside the road, indicating accessibility to the waterfront region.",
+          "score": 0.859,
+          "relation_score": 0.859
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "forest",
+        "built_up"
+      ],
+      "natural_entities": [
+        "lake"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/2859536c404df902032c-thumbnail.webp",
+      "preview": "assets/images/2859536c404df902032c-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 2,
+      "image_name": "parking_232.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4931420385837555,
+        "structure_delta": 1.0,
+        "relation_delta": 0.886,
+        "final": 0.5874420385837555
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [
+          "parking_lot beside road"
+        ],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat, paved environment classified as Built-up Area on Plain terrain. No natural geographic entities such as water bodies or vegetation are visible in the immediate vicinity. The surface consists entirely of asphalt and concrete infrastructure typical of urban or commercial zones.\n\nA large outdoor parking lot occupies the central and left portions of the image, featuring marked stalls containing approximately 20 parked vehicles of various colors including white, black, red, and blue. An urban road runs vertically along the right side of the frame, separating the main parking area from adjacent paved surfaces. The layout includes clearly defined parking bays and driving lanes.\n\nThe parking lot is situated directly adjacent to the roadway, facilitating vehicle access. The density of parked cars is moderate, with several empty spaces visible in the upper-right and lower-right sections. The spatial arrangement suggests a functional commercial or public parking facility integrated into a developed built-up area.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "v2 关系证据命中：parking_lot beside road",
+        "Qwen 描述向量语义相似度为 0.4931"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "GeoIndex v2 relation evidence matched: parking_lot beside road.",
+        "Qwen description-vector semantic similarity is 0.4931."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_232.tif::relation",
+          "doc_type": "description_relation",
+          "relation": "parking_lot beside road",
+          "evidence": "The parking lot is situated directly adjacent to the roadway, facilitating vehicle access.",
+          "score": 0.886,
+          "relation_score": 0.886
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/6318f0600183d4847197-thumbnail.webp",
+      "preview": "assets/images/6318f0600183d4847197-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 3,
+      "image_name": "parking_224.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4732109308242798,
+        "structure_delta": 1.0,
+        "relation_delta": 0.886,
+        "final": 0.5675109308242798
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [
+          "parking_lot beside road"
+        ],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat, paved environment classified as Built-up Area on Plain terrain. The surface is dominated by impervious materials, specifically asphalt or concrete, forming a structured layout for vehicular storage and movement. No natural geographic entities such as water bodies or vegetation are visible in the immediate vicinity.\n\nA large, rectangular parking lot occupies the central and lower portions of the image, densely populated with numerous parked vehicles arranged in organized rows. An urban road runs horizontally across the upper section of the frame, separating the main parking area from the background. The facility conditions include clearly marked parking spaces and active vehicle presence, indicating a functional commercial or public access zone.\n\nSpatially, the parking lot is situated adjacent to the road, with vehicles oriented perpendicular to the driving lanes. The density of cars is high throughout the lot, suggesting peak usage or limited availability. The layout is strictly geometric, with straight lines defining the parking aisles and boundaries. The scene lacks vertical structures like high-rise buildings within the frame, focusing entirely on the ground-level transportation infrastructure.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "v2 关系证据命中：parking_lot beside road",
+        "Qwen 描述向量语义相似度为 0.4732"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "GeoIndex v2 relation evidence matched: parking_lot beside road.",
+        "Qwen description-vector semantic similarity is 0.4732."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_224.tif::relation",
+          "doc_type": "description_relation",
+          "relation": "parking_lot beside road",
+          "evidence": "Spatially, the parking lot is situated adjacent to the road, with vehicles oriented perpendicular to the driving lanes.",
+          "score": 0.886,
+          "relation_score": 0.886
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/40a672039e4a2fca3418-thumbnail.webp",
+      "preview": "assets/images/40a672039e4a2fca3418-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 4,
+      "image_name": "park_216.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4959656596183777,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5459656596183777
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat coastal plain characterized by a large recreational park area adjacent to the sea. The landscape is dominated by grassland interspersed with irregular water bodies and patches of built-up surfaces. To the right, the dark blue expanse of the sea borders the land, while the central area features manicured green spaces and sand traps typical of a golf course or public park.\n\nA prominent commercial or residential facility is visible in the lower-left corner, consisting of a large parking lot filled with numerous vehicles. This area connects to a network of urban roads that traverse the scene, including a major roadway running along the bottom edge and another curving around the park's perimeter. Several small white structures, likely maintenance buildings or shelters, are scattered throughout the green space near the water features.\n\nSpatially, the park occupies the center and upper portions of the image, acting as a buffer between the dense parking infrastructure on the left and the maritime boundary on the right. The layout suggests a planned recreational zone integrated with transportation access points. The proximity of the parking lot to the green space indicates high accessibility, while the distinct separation from the sea highlights the managed nature of the coastline in this sector.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "Qwen 描述向量语义相似度为 0.4960"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "Qwen description-vector semantic similarity is 0.4960."
+      ],
+      "evidence": [
+        {
+          "doc_id": "park_216.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat coastal plain characterized by a large recreational park area adjacent to the sea. The landscape is dominated by grassland interspersed with irregular water bodies and patches of built-up surfaces. To the right, the dark blue expanse of the sea borders the land, while the central area features manicured green spaces and sand traps typical of a golf course or public park.\n\nA prominent commercial or residential facility is visible in the lower-left corner, consisting of a large parking lot filled with numerous vehicles. This area connects to a network of urban roads that traverse the scene, including a major roadway running along the bottom edge and another curving around the park's perimeter. Several small white structures, likely maintenance buildings or shelters, are scattered throughout the green space near the water features.\n\nSpatially, the park occupies the center and upper portions of the image, acting as a buffer between the dense parking infrastructure on the left and the maritime boundary on the right. The layout suggests a planned recreational zone integrated with transportation access points. The proximity of the parking lot to the green space indicates high accessibility, while the distinct separation from the sea highlights the managed nature of the coastline in this sector.",
+          "score": 0.4959656596183777,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/5db524d4b86c3c5c431c-thumbnail.webp",
+      "preview": "assets/images/5db524d4b86c3c5c431c-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 5,
+      "image_name": "parking_229.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.49087947607040405,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5408794760704041
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by built-up area land cover. The environment is characterized by extensive paved surfaces and organized vehicular infrastructure, with no visible natural geographic entities such as mountains or water bodies in the immediate vicinity.\n\nA large parking lot occupies the central and upper portions of the image, containing numerous vehicles arranged in marked rows. Adjacent to the parking facility, specifically along the lower-right edge, a wide road runs parallel to the lot boundary. The parking area features clearly defined spaces and small landscaped islands with vegetation separating vehicle clusters.\n\nSpatially, the road serves as a perimeter boundary for the commercial parking zone located in the lower-right quadrant. The layout demonstrates high-density vehicular storage typical of urban commercial facilities. The relationship between the transportation network and the parking infrastructure indicates a functional access route supporting the adjacent land use.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "Qwen 描述向量语义相似度为 0.4909"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "Qwen description-vector semantic similarity is 0.4909."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_229.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by built-up area land cover. The environment is characterized by extensive paved surfaces and organized vehicular infrastructure, with no visible natural geographic entities such as mountains or water bodies in the immediate vicinity.\n\nA large parking lot occupies the central and upper portions of the image, containing numerous vehicles arranged in marked rows. Adjacent to the parking facility, specifically along the lower-right edge, a wide road runs parallel to the lot boundary. The parking area features clearly defined spaces and small landscaped islands with vegetation separating vehicle clusters.\n\nSpatially, the road serves as a perimeter boundary for the commercial parking zone located in the lower-right quadrant. The layout demonstrates high-density vehicular storage typical of urban commercial facilities. The relationship between the transportation network and the parking infrastructure indicates a functional access route supporting the adjacent land use.",
+          "score": 0.49087947607040405,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/cfa2f0c427b75df816a3-thumbnail.webp",
+      "preview": "assets/images/cfa2f0c427b75df816a3-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 6,
+      "image_name": "square_378.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.4864570200443268,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5364570200443268
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment characterized by a mix of built-up infrastructure and manicured grassland. A prominent geometric park layout dominates the center, featuring radial pathways and circular plazas surrounded by green lawns. The terrain is level with no visible natural geographic entities like mountains or water bodies, indicating an urban or suburban setting.\n\nA wide paved road runs vertically through the center-right of the image, flanked by rows of trees. To the left, a large ornamental park area displays a sunburst pattern of walkways on grass. In the lower-left and bottom-center sections, designated parking areas are visible, densely populated with numerous parked vehicles. Small residential or commercial structures appear in the extreme lower-left corner, adjacent to the parking zones.\n\nThe spatial arrangement shows a clear separation between the recreational green space on the left and the transportation corridor on the right. The parking lots are situated along the periphery of the park and near the road intersections, facilitating access. The density of vehicles suggests active usage of the adjacent facilities. The overall layout reflects planned urban landscaping integrated with vehicular infrastructure.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "Qwen 描述向量语义相似度为 0.4865"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "Qwen description-vector semantic similarity is 0.4865."
+      ],
+      "evidence": [
+        {
+          "doc_id": "square_378.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment characterized by a mix of built-up infrastructure and manicured grassland. A prominent geometric park layout dominates the center, featuring radial pathways and circular plazas surrounded by green lawns. The terrain is level with no visible natural geographic entities like mountains or water bodies, indicating an urban or suburban setting.\n\nA wide paved road runs vertically through the center-right of the image, flanked by rows of trees. To the left, a large ornamental park area displays a sunburst pattern of walkways on grass. In the lower-left and bottom-center sections, designated parking areas are visible, densely populated with numerous parked vehicles. Small residential or commercial structures appear in the extreme lower-left corner, adjacent to the parking zones.\n\nThe spatial arrangement shows a clear separation between the recreational green space on the left and the transportation corridor on the right. The parking lots are situated along the periphery of the park and near the road intersections, facilitating access. The density of vehicles suggests active usage of the adjacent facilities. The overall layout reflects planned urban landscaping integrated with vehicular infrastructure.",
+          "score": 0.4864570200443268,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/ea96cd3204b1a31a0ff5-thumbnail.webp",
+      "preview": "assets/images/ea96cd3204b1a31a0ff5-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 7,
+      "image_name": "parking_231.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.48220568895339966,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5322056889533997
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat Plain terrain characterized predominantly by Built-up Area land cover. The environment consists of paved surfaces and developed infrastructure with no visible natural geographic entities such as mountains, rivers, or vegetation. The setting represents a typical urban or suburban hardscape dominated by concrete and asphalt surfaces.\n\nA large Commercial/Residential Area occupies the central and lower portions of the image, featuring an extensive parking lot facility. Numerous vehicles are arranged in orderly rows across multiple designated parking zones, indicating high utilization. An urban road runs horizontally along the upper section of the frame, separating the parking area from adjacent building structures visible at the top edge. The layout includes clearly marked parking bays filled with cars of various colors.\n\nSpatially, the parking lot is organized in a grid-like pattern with vehicles parked perpendicular to the driving lanes. The density of vehicles is high, covering most available spaces in the central rows. The urban road at the top serves as a boundary for the facility, while the lower section shows continued parking infrastructure extending towards the image edge. The arrangement suggests a structured commercial or public access zone designed for high-volume vehicle storage.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "Qwen 描述向量语义相似度为 0.4822"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "Qwen description-vector semantic similarity is 0.4822."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_231.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat Plain terrain characterized predominantly by Built-up Area land cover. The environment consists of paved surfaces and developed infrastructure with no visible natural geographic entities such as mountains, rivers, or vegetation. The setting represents a typical urban or suburban hardscape dominated by concrete and asphalt surfaces.\n\nA large Commercial/Residential Area occupies the central and lower portions of the image, featuring an extensive parking lot facility. Numerous vehicles are arranged in orderly rows across multiple designated parking zones, indicating high utilization. An urban road runs horizontally along the upper section of the frame, separating the parking area from adjacent building structures visible at the top edge. The layout includes clearly marked parking bays filled with cars of various colors.\n\nSpatially, the parking lot is organized in a grid-like pattern with vehicles parked perpendicular to the driving lanes. The density of vehicles is high, covering most available spaces in the central rows. The urban road at the top serves as a boundary for the facility, while the lower section shows continued parking infrastructure extending towards the image edge. The arrangement suggests a structured commercial or public access zone designed for high-volume vehicle storage.",
+          "score": 0.48220568895339966,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/76852a14d4d7a3b17645-thumbnail.webp",
+      "preview": "assets/images/76852a14d4d7a3b17645-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 8,
+      "image_name": "parking_226.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.46020299196243286,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5102029919624329
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by built-up area land cover. The environment is characterized by extensive paved surfaces and organized vehicular infrastructure, with no visible natural geographic entities such as water bodies or mountains. The setting appears to be a developed urban or suburban zone focused on vehicle storage and transit.\n\nA large commercial or residential parking lot occupies the center and right side of the image, containing hundreds of vehicles arranged in dense, parallel rows. To the left, a network of urban roads and access lanes curves around the perimeter, connecting to a smaller adjacent lot and building structures. The facility conditions are defined by high-density parking lots and paved urban roads facilitating vehicle movement.\n\nSpatially, the main parking area is bounded by curvilinear roads on the left and bottom edges. The layout exhibits a high degree of organization with clearly marked parking stalls. Vehicle density is highest in the central block, while the lower-left section shows lighter usage with scattered cars. The scene demonstrates a functional relationship between the circulation roads and the static storage areas.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "Qwen 描述向量语义相似度为 0.4602"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "Qwen description-vector semantic similarity is 0.4602."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_226.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by built-up area land cover. The environment is characterized by extensive paved surfaces and organized vehicular infrastructure, with no visible natural geographic entities such as water bodies or mountains. The setting appears to be a developed urban or suburban zone focused on vehicle storage and transit.\n\nA large commercial or residential parking lot occupies the center and right side of the image, containing hundreds of vehicles arranged in dense, parallel rows. To the left, a network of urban roads and access lanes curves around the perimeter, connecting to a smaller adjacent lot and building structures. The facility conditions are defined by high-density parking lots and paved urban roads facilitating vehicle movement.\n\nSpatially, the main parking area is bounded by curvilinear roads on the left and bottom edges. The layout exhibits a high degree of organization with clearly marked parking stalls. Vehicle density is highest in the central block, while the lower-left section shows lighter usage with scattered cars. The scene demonstrates a functional relationship between the circulation roads and the static storage areas.",
+          "score": 0.46020299196243286,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/ace06b6483f0c9ab4204-thumbnail.webp",
+      "preview": "assets/images/ace06b6483f0c9ab4204-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 9,
+      "image_name": "parking_228.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4446871280670166,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4946871280670166
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat, paved urban environment classified as Built-up Area on Plain terrain. The landscape is dominated by impervious surfaces, including asphalt parking areas and building rooftops, with no visible natural geographic entities or vegetation cover.\n\nA large Commercial/Residential Area occupies the center and right side of the image, featuring an extensive parking lot with marked stalls containing approximately 50 vehicles of various colors. A commercial building with a beige roof is situated in the upper-left corner, adjacent to the parking zone. An urban road runs vertically along the left edge, lined with additional parked cars and bordered by building structures.\n\nThe layout demonstrates a high-density functional arrangement where the parking lot serves as the central element, flanked by commercial infrastructure. Vehicles are organized in orderly rows within the designated spaces, while others line the roadside on the left. The scene reflects a typical developed land use pattern with clear separation between vehicular storage areas and building footprints.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "Qwen 描述向量语义相似度为 0.4447"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "Qwen description-vector semantic similarity is 0.4447."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_228.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat, paved urban environment classified as Built-up Area on Plain terrain. The landscape is dominated by impervious surfaces, including asphalt parking areas and building rooftops, with no visible natural geographic entities or vegetation cover.\n\nA large Commercial/Residential Area occupies the center and right side of the image, featuring an extensive parking lot with marked stalls containing approximately 50 vehicles of various colors. A commercial building with a beige roof is situated in the upper-left corner, adjacent to the parking zone. An urban road runs vertically along the left edge, lined with additional parked cars and bordered by building structures.\n\nThe layout demonstrates a high-density functional arrangement where the parking lot serves as the central element, flanked by commercial infrastructure. Vehicles are organized in orderly rows within the designated spaces, while others line the roadside on the left. The scene reflects a typical developed land use pattern with clear separation between vehicular storage areas and building footprints.",
+          "score": 0.4446871280670166,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/d89604a0da750019d96d-thumbnail.webp",
+      "preview": "assets/images/d89604a0da750019d96d-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "parking_233.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.43799424171447754,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.48799424171447753
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot",
+          "road"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat, paved environment classified as Built-up Area on Plain terrain. The surface consists primarily of asphalt and concrete infrastructure designed for vehicular storage and movement, with no visible natural geographic entities such as rivers or mountains. A small landscaped island with vegetation is situated centrally within the paved expanse.\n\nThe dominant feature is a large parking lot occupying the majority of the image, containing numerous vehicles parked in organized rows. Cars are arranged in both transverse and longitudinal orientations across the central and left sections. Urban roads and driving lanes separate the parking blocks, facilitating access. A few vacant spaces are visible among the densely packed vehicles, particularly in the lower-left quadrant.\n\nSpatially, the parking layout is structured with distinct aisles dividing vehicle clusters. The central median contains a small green space surrounded by parking spots on all sides. Vehicle density is high throughout the scene, indicating active usage. The arrangement suggests a commercial or public facility context, with clear demarcation between driving lanes and stationary parking zones.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot、road",
+        "Qwen 描述向量语义相似度为 0.4380"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot, road.",
+        "Qwen description-vector semantic similarity is 0.4380."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_233.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat, paved environment classified as Built-up Area on Plain terrain. The surface consists primarily of asphalt and concrete infrastructure designed for vehicular storage and movement, with no visible natural geographic entities such as rivers or mountains. A small landscaped island with vegetation is situated centrally within the paved expanse.\n\nThe dominant feature is a large parking lot occupying the majority of the image, containing numerous vehicles parked in organized rows. Cars are arranged in both transverse and longitudinal orientations across the central and left sections. Urban roads and driving lanes separate the parking blocks, facilitating access. A few vacant spaces are visible among the densely packed vehicles, particularly in the lower-left quadrant.\n\nSpatially, the parking layout is structured with distinct aisles dividing vehicle clusters. The central median contains a small green space surrounded by parking spots on all sides. Vehicle density is high throughout the scene, indicating active usage. The arrangement suggests a commercial or public facility context, with clear demarcation between driving lanes and stationary parking zones.",
+          "score": 0.43799424171447754,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/91b01564314c51518394-thumbnail.webp",
+      "preview": "assets/images/91b01564314c51518394-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}

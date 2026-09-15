@@ -1,0 +1,767 @@
+{
+  "id": "k085-bridge",
+  "source_query_id": "K085",
+  "category": "keyword",
+  "official_query": "bridge",
+  "query": "桥梁",
+  "en": "Bridge",
+  "elapsed_ms": 367.73,
+  "parsed_query": {
+    "environment": [],
+    "areas": [],
+    "area_constraints": [],
+    "facilities": [
+      "bridge"
+    ],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [],
+    "semantic_text": "bridge"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "structured": 49,
+    "dense": 451,
+    "union": 451,
+    "overlap": 49
+  },
+  "query_profile": {
+    "method": "semantic_base_plus_signed_evidence_v1",
+    "base": "semantic_cosine",
+    "lambdas": {
+      "structure": 0.05,
+      "relation": 0.05
+    },
+    "signals": {
+      "structured_constraint_count": 1,
+      "hard_area_count": 0,
+      "soft_area_count": 0,
+      "quantity_count": 0,
+      "relation_count": 0,
+      "unmapped_concept_count": 0,
+      "query_token_count": 1,
+      "raw_structure_signal": 1.8,
+      "raw_semantic_signal": 0.7,
+      "raw_relation_signal": 0.0
+    },
+    "unknown_evidence_policy": "neutral",
+    "hard_constraint_policy": "verified_quantity_only"
+  },
+  "scoring_counts": {
+    "candidate_union": 451,
+    "eligible": 451,
+    "hard_rejected": 0,
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "bridge_47.tif",
+    "bridge_49.tif",
+    "bridge_50.tif",
+    "bridge_51.tif",
+    "bridge_53.tif",
+    "viaduct_429.tif",
+    "viaduct_430.tif",
+    "viaduct_439.tif",
+    "viaduct_446.tif"
+  ],
+  "relevant_in_top_k": 3,
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "bridge_44.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4358479976654053,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.48584799766540526
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body is flanked by linear vegetated banks and built-up areas on the periphery. A narrow bridge structure spans the river, connecting the opposing banks amidst the green vegetation belts.\n\nA transportation network is visible in the center, featuring a narrow bridge crossing the river channel. Roads run parallel to the riverbanks on both the left and right sides of the image. The bridge connects these road segments, facilitating movement across the water. Vegetation lines the river edges, separating the water from the adjacent paved surfaces.\n\nSpatially, the river divides the scene into upper-left and lower-right sections. The bridge acts as a central connector intersecting the water flow. Shadows cast by the bridge indicate its elevation above the water surface. The layout suggests a controlled waterway with maintained banks and integrated road infrastructure for local transit.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.4358"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.4358."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_44.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body is flanked by linear vegetated banks and built-up areas on the periphery. A narrow bridge structure spans the river, connecting the opposing banks amidst the green vegetation belts.\n\nA transportation network is visible in the center, featuring a narrow bridge crossing the river channel. Roads run parallel to the riverbanks on both the left and right sides of the image. The bridge connects these road segments, facilitating movement across the water. Vegetation lines the river edges, separating the water from the adjacent paved surfaces.\n\nSpatially, the river divides the scene into upper-left and lower-right sections. The bridge acts as a central connector intersecting the water flow. Shadows cast by the bridge indicate its elevation above the water surface. The layout suggests a controlled waterway with maintained banks and integrated road infrastructure for local transit.",
+          "score": 0.4358479976654053,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/f70954f72681a8050b19-thumbnail.webp",
+      "preview": "assets/images/f70954f72681a8050b19-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 2,
+      "image_name": "bridge_46.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.42709052562713623,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4770905256271362
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide, light blue river flowing diagonally across the frame. The water body serves as the primary natural geographic entity, bordered by built-up areas and vegetation on the banks. The terrain is level with no visible elevation changes, supporting significant infrastructure development over the watercourse.\n\nA prominent multi-lane bridge spans the river from the upper-left to the lower-right, functioning as a critical transportation link. The bridge structure supports a wide road with visible lane markings and carries vehicular traffic, including several cars traversing the span. Small white structures, likely lighting or monitoring equipment, are positioned along the bridge edges. The road surface appears paved and well-maintained, connecting the land masses on either side of the river.\n\nSpatially, the bridge bisects the image, creating a strong diagonal vector against the horizontal flow of the river. Vehicles are distributed along the roadway, indicating active two-way traffic flow. The river occupies the majority of the background, while small patches of green vegetation and concrete embankments are visible at the extreme corners, framing the infrastructure within the natural water setting.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.4271"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.4271."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_46.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide, light blue river flowing diagonally across the frame. The water body serves as the primary natural geographic entity, bordered by built-up areas and vegetation on the banks. The terrain is level with no visible elevation changes, supporting significant infrastructure development over the watercourse.\n\nA prominent multi-lane bridge spans the river from the upper-left to the lower-right, functioning as a critical transportation link. The bridge structure supports a wide road with visible lane markings and carries vehicular traffic, including several cars traversing the span. Small white structures, likely lighting or monitoring equipment, are positioned along the bridge edges. The road surface appears paved and well-maintained, connecting the land masses on either side of the river.\n\nSpatially, the bridge bisects the image, creating a strong diagonal vector against the horizontal flow of the river. Vehicles are distributed along the roadway, indicating active two-way traffic flow. The river occupies the majority of the background, while small patches of green vegetation and concrete embankments are visible at the extreme corners, framing the infrastructure within the natural water setting.",
+          "score": 0.42709052562713623,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/cd717386895e41f05658-thumbnail.webp",
+      "preview": "assets/images/cd717386895e41f05658-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 3,
+      "image_name": "bridge_56.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4249681234359741,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4749681234359741
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide, turbid river flowing diagonally across the frame. The water body appears brown and sediment-heavy, bordered by narrow strips of green grassland and vegetation along both banks.\n\nA major transportation bridge spans the river from the lower-left to the upper-right, carrying dense rows of automobiles in orderly traffic. The bridge connects paved roads on either side, facilitating continuous vehicular movement across the waterway. A small white vessel is visible navigating the river near the center-right, distinct from the fixed infrastructure.\n\nThe linear bridge structure intersects the natural river flow, creating a focal point of human activity amidst the landscape. Vegetation lines the riverbanks symmetrically, framing the crossing. The high density of vehicles on the bridge contrasts with the open expanse of the brown water below.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.4250"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.4250."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_56.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide, turbid river flowing diagonally across the frame. The water body appears brown and sediment-heavy, bordered by narrow strips of green grassland and vegetation along both banks.\n\nA major transportation bridge spans the river from the lower-left to the upper-right, carrying dense rows of automobiles in orderly traffic. The bridge connects paved roads on either side, facilitating continuous vehicular movement across the waterway. A small white vessel is visible navigating the river near the center-right, distinct from the fixed infrastructure.\n\nThe linear bridge structure intersects the natural river flow, creating a focal point of human activity amidst the landscape. Vegetation lines the riverbanks symmetrically, framing the crossing. The high density of vehicles on the bridge contrasts with the open expanse of the brown water below.",
+          "score": 0.4249681234359741,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/9ebdc1520059cc20bb12-thumbnail.webp",
+      "preview": "assets/images/9ebdc1520059cc20bb12-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 4,
+      "image_name": "bridge_55.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4193881154060364,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.46938811540603637
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "highway"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river with greenish water flowing through the center. Grassy banks and small vegetated islands line the watercourse, creating a natural riparian landscape. The terrain is level with no significant elevation changes, characterized primarily by the interaction between the water body and the surrounding grassland vegetation.\n\nA prominent curved highway bridge spans the river, connecting the upper and lower sections of the image. The transportation infrastructure features a multi-lane road surface that arcs gracefully over the water and a central island. Several vehicles are visible traveling along the bridge, indicating active traffic flow. The bridge structure serves as the primary built element in an otherwise natural setting, crossing directly over the river channel.\n\nSpatially, the bridge acts as a central dividing line, separating the river into distinct upstream and downstream segments while linking the grassy banks on either side. The curvature of the road suggests a designed route to navigate the specific geography of the river bend and island. The contrast between the engineered concrete structure and the organic shapes of the water and vegetation defines the visual composition of the scene.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.4194"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.4194."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_55.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river with greenish water flowing through the center. Grassy banks and small vegetated islands line the watercourse, creating a natural riparian landscape. The terrain is level with no significant elevation changes, characterized primarily by the interaction between the water body and the surrounding grassland vegetation.\n\nA prominent curved highway bridge spans the river, connecting the upper and lower sections of the image. The transportation infrastructure features a multi-lane road surface that arcs gracefully over the water and a central island. Several vehicles are visible traveling along the bridge, indicating active traffic flow. The bridge structure serves as the primary built element in an otherwise natural setting, crossing directly over the river channel.\n\nSpatially, the bridge acts as a central dividing line, separating the river into distinct upstream and downstream segments while linking the grassy banks on either side. The curvature of the road suggests a designed route to navigate the specific geography of the river bend and island. The contrast between the engineered concrete structure and the organic shapes of the water and vegetation defines the visual composition of the scene.",
+          "score": 0.4193881154060364,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/478ed3a86e7504dbb4ca-thumbnail.webp",
+      "preview": "assets/images/478ed3a86e7504dbb4ca-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 5,
+      "image_name": "bridge_51.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3854975700378418,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4354975700378418
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "residential_block",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body exhibits a textured surface, suggesting flow or current. Built-up areas are visible along the riverbanks, particularly in the lower section, indicating human settlement adjacent to the natural geographic entity.\n\nA prominent bridge structure spans the river in the center, connecting road networks on opposite banks. Several vehicles are visible traversing the bridge and the intersecting urban roads. In the lower-left corner, a cluster of residential blocks with distinct rooftops and surrounding vegetation forms a small settlement. Paved surfaces and parking areas are evident near the residential zone.\n\nThe bridge serves as the primary spatial connector, linking the transportation infrastructure on the upper right bank to the residential area in the lower left. The road network extends from the bridge head into the built-up zone, facilitating access. The layout demonstrates a typical riverside settlement pattern where transportation infrastructure integrates directly with local residential land use.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.3855"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.3855."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_51.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body exhibits a textured surface, suggesting flow or current. Built-up areas are visible along the riverbanks, particularly in the lower section, indicating human settlement adjacent to the natural geographic entity.\n\nA prominent bridge structure spans the river in the center, connecting road networks on opposite banks. Several vehicles are visible traversing the bridge and the intersecting urban roads. In the lower-left corner, a cluster of residential blocks with distinct rooftops and surrounding vegetation forms a small settlement. Paved surfaces and parking areas are evident near the residential zone.\n\nThe bridge serves as the primary spatial connector, linking the transportation infrastructure on the upper right bank to the residential area in the lower left. The road network extends from the bridge head into the built-up zone, facilitating access. The layout demonstrates a typical riverside settlement pattern where transportation infrastructure integrates directly with local residential land use.",
+          "score": 0.3854975700378418,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/6ca21dca8691bf6fa96a-thumbnail.webp",
+      "preview": "assets/images/6ca21dca8691bf6fa96a-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 6,
+      "image_name": "bridge_42.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.38409268856048584,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.43409268856048583
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body appears dark blue, contrasting with narrow strips of green grassland visible along the riverbanks in the upper-right and lower-left corners. No significant elevation changes or mountainous terrain are present, indicating a low-lying geographical setting.\n\nA prominent transportation infrastructure feature is a large, straight bridge spanning the river from the lower-left to the upper-right. The bridge structure supports a multi-lane road surface, clearly visible as a light gray linear element crossing the water. Small vehicles can be observed on the roadway, confirming active traffic flow. The bridge connects the grassy banks on either side of the river, serving as a critical link in the local transport network.\n\nSpatially, the bridge bisects the image diagonally, creating a strong linear composition against the uniform texture of the water. The road alignment is straight and perpendicular to the river flow direction. The surrounding land cover is minimal, limited to the immediate riparian zones, emphasizing the dominance of the water body and the transportation corridor in this specific view.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.3841"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.3841."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_42.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body appears dark blue, contrasting with narrow strips of green grassland visible along the riverbanks in the upper-right and lower-left corners. No significant elevation changes or mountainous terrain are present, indicating a low-lying geographical setting.\n\nA prominent transportation infrastructure feature is a large, straight bridge spanning the river from the lower-left to the upper-right. The bridge structure supports a multi-lane road surface, clearly visible as a light gray linear element crossing the water. Small vehicles can be observed on the roadway, confirming active traffic flow. The bridge connects the grassy banks on either side of the river, serving as a critical link in the local transport network.\n\nSpatially, the bridge bisects the image diagonally, creating a strong linear composition against the uniform texture of the water. The road alignment is straight and perpendicular to the river flow direction. The surrounding land cover is minimal, limited to the immediate riparian zones, emphasizing the dominance of the water body and the transportation corridor in this specific view.",
+          "score": 0.38409268856048584,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "grassland"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/78fdcc1453da91945bc4-thumbnail.webp",
+      "preview": "assets/images/78fdcc1453da91945bc4-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 7,
+      "image_name": "bridge_48.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3789031505584717,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.42890315055847167
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body occupies the majority of the central and lower regions, appearing turbid and expansive. Built-up areas are visible along the riverbanks in the upper-left and lower-right corners, characterized by paved surfaces and infrastructure. No significant elevation changes or mountainous terrain are present.\n\nA prominent twin-tower cable-stayed bridge spans the river, connecting the upper-left bank to the lower-right side. The bridge features two distinct circular pylons and supports a multi-lane roadway. Approaching roads and highway interchanges are visible on both banks, facilitating traffic flow onto the bridge structure. The transportation infrastructure is the primary artificial feature, integrating seamlessly with the natural water course.\n\nSpatially, the bridge acts as the central linear element dividing the water body. The road networks on either side exhibit curved geometries leading toward the bridgeheads. The layout suggests a major transportation corridor crossing a significant natural barrier. The density of built-up land is concentrated at the connection points, while the surrounding area remains largely open water.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.3789"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.3789."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_48.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body occupies the majority of the central and lower regions, appearing turbid and expansive. Built-up areas are visible along the riverbanks in the upper-left and lower-right corners, characterized by paved surfaces and infrastructure. No significant elevation changes or mountainous terrain are present.\n\nA prominent twin-tower cable-stayed bridge spans the river, connecting the upper-left bank to the lower-right side. The bridge features two distinct circular pylons and supports a multi-lane roadway. Approaching roads and highway interchanges are visible on both banks, facilitating traffic flow onto the bridge structure. The transportation infrastructure is the primary artificial feature, integrating seamlessly with the natural water course.\n\nSpatially, the bridge acts as the central linear element dividing the water body. The road networks on either side exhibit curved geometries leading toward the bridgeheads. The layout suggests a major transportation corridor crossing a significant natural barrier. The density of built-up land is concentrated at the connection points, while the surrounding area remains largely open water.",
+          "score": 0.3789031505584717,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/e8f6ee8a3d60a9c35f47-thumbnail.webp",
+      "preview": "assets/images/e8f6ee8a3d60a9c35f47-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 8,
+      "image_name": "bridge_50.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.36932963132858276,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.41932963132858275
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment characterized by a wide river flowing diagonally across the frame. The water body appears murky green, bordered by patches of dense green grassland and vegetation in the upper-left and lower-right corners. No significant elevation changes or mountainous features are visible, confirming a low-relief terrain type dominated by natural hydrological and vegetative elements.\n\nA prominent steel truss bridge spans the river, connecting the opposing banks and serving as the primary transportation infrastructure. The bridge structure features a distinct lattice framework casting sharp shadows onto the water surface below. A paved road runs along the bridge deck, accommodating vehicular traffic. Approximately three white cars are visible traversing the bridge, indicating active usage of this transport link. The facility is strictly functional, lacking adjacent commercial or residential development in the immediate vicinity.\n\nSpatially, the bridge creates a strong diagonal vector from the upper-left to the lower-right, bisecting the river. The vehicles are distributed along the roadway, with one near the upper entry and two positioned centrally on the span. The surrounding grassland provides a natural buffer on the banks, contrasting with the industrial geometry of the bridge. The scene represents a isolated crossing point where transportation infrastructure intersects a natural riverine landscape without extensive urbanization.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.3693"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.3693."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_50.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment characterized by a wide river flowing diagonally across the frame. The water body appears murky green, bordered by patches of dense green grassland and vegetation in the upper-left and lower-right corners. No significant elevation changes or mountainous features are visible, confirming a low-relief terrain type dominated by natural hydrological and vegetative elements.\n\nA prominent steel truss bridge spans the river, connecting the opposing banks and serving as the primary transportation infrastructure. The bridge structure features a distinct lattice framework casting sharp shadows onto the water surface below. A paved road runs along the bridge deck, accommodating vehicular traffic. Approximately three white cars are visible traversing the bridge, indicating active usage of this transport link. The facility is strictly functional, lacking adjacent commercial or residential development in the immediate vicinity.\n\nSpatially, the bridge creates a strong diagonal vector from the upper-left to the lower-right, bisecting the river. The vehicles are distributed along the roadway, with one near the upper entry and two positioned centrally on the span. The surrounding grassland provides a natural buffer on the banks, contrasting with the industrial geometry of the bridge. The scene represents a isolated crossing point where transportation infrastructure intersects a natural riverine landscape without extensive urbanization.",
+          "score": 0.36932963132858276,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "water"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/2f29dfe3f74dfa51c543-thumbnail.webp",
+      "preview": "assets/images/2f29dfe3f74dfa51c543-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 9,
+      "image_name": "bridge_52.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3637371063232422,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.4137371063232422
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge",
+          "parking_lot",
+          "residential_block",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body is dark blue-green, flanked by built-up areas on both banks. Vegetation is sparse, limited to small patches along the riverbanks and within the residential zones. No elevated terrain features are visible, confirming the plain classification.\n\nA prominent gray bridge spans the river from the lower-left to the upper-right, carrying a two-lane road with yellow center markings. On the right bank, a cluster of residential blocks and commercial buildings is visible, accompanied by a paved parking lot containing several white vehicles. Urban roads connect these structures to the bridgehead. The left bank features smaller residential structures and access roads leading to the water's edge.\n\nThe bridge serves as the primary spatial connector between the two developed banks. The layout shows a clear separation between the natural river channel and the anthropogenic infrastructure. Traffic appears light, with only a few vehicles visible on the bridge and in the parking area. The density of construction is higher on the right side of the image compared to the left.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.3637"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.3637."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_52.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing diagonally across the frame. The water body is dark blue-green, flanked by built-up areas on both banks. Vegetation is sparse, limited to small patches along the riverbanks and within the residential zones. No elevated terrain features are visible, confirming the plain classification.\n\nA prominent gray bridge spans the river from the lower-left to the upper-right, carrying a two-lane road with yellow center markings. On the right bank, a cluster of residential blocks and commercial buildings is visible, accompanied by a paved parking lot containing several white vehicles. Urban roads connect these structures to the bridgehead. The left bank features smaller residential structures and access roads leading to the water's edge.\n\nThe bridge serves as the primary spatial connector between the two developed banks. The layout shows a clear separation between the natural river channel and the anthropogenic infrastructure. Traffic appears light, with only a few vehicles visible on the bridge and in the parking area. The density of construction is higher on the right side of the image compared to the left.",
+          "score": 0.3637371063232422,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/2c6c6d187f9ef6398ff5-thumbnail.webp",
+      "preview": "assets/images/2c6c6d187f9ef6398ff5-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "bridge_53.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.36192888021469116,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.41192888021469115
+      },
+      "matched": {
+        "keywords": [
+          "bridge"
+        ],
+        "relations": [],
+        "area_categories": [
+          "transportation_area"
+        ],
+        "facilities": [
+          "bridge"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by a wide river flowing horizontally across the frame. The water body appears dark and calm, bordered by built-up areas on the left bank and natural earth banks on the right. No significant elevation changes or mountainous terrain are visible in this riparian setting.\n\nA prominent white iron truss bridge spans the river in the upper-middle section, connecting the developed left side to the opposite bank. The bridge structure is linear and distinct against the dark water. In the lower center of the image, a single small boat is visible moving through the water, leaving a clear white wake behind it, indicating active navigation.\n\nSpatially, the bridge acts as a horizontal divider in the upper third of the image, while the vessel occupies the open water in the lower central region. The built-up area on the left suggests urban infrastructure adjacent to the waterway. The movement of the boat contrasts with the static nature of the bridge and the surrounding riverbanks.",
+      "reasons": [
+        "v2 结构化证据命中：bridge",
+        "Qwen 描述向量语义相似度为 0.3619"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: bridge.",
+        "Qwen description-vector semantic similarity is 0.3619."
+      ],
+      "evidence": [
+        {
+          "doc_id": "bridge_53.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by a wide river flowing horizontally across the frame. The water body appears dark and calm, bordered by built-up areas on the left bank and natural earth banks on the right. No significant elevation changes or mountainous terrain are visible in this riparian setting.\n\nA prominent white iron truss bridge spans the river in the upper-middle section, connecting the developed left side to the opposite bank. The bridge structure is linear and distinct against the dark water. In the lower center of the image, a single small boat is visible moving through the water, leaving a clear white wake behind it, indicating active navigation.\n\nSpatially, the bridge acts as a horizontal divider in the upper third of the image, while the vessel occupies the open water in the lower central region. The built-up area on the left suggests urban infrastructure adjacent to the waterway. The movement of the boat contrasts with the static nature of the bridge and the surrounding riverbanks.",
+          "score": 0.36192888021469116,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "water",
+        "built_up"
+      ],
+      "natural_entities": [
+        "river"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/2f52ea2aeafa45486b79-thumbnail.webp",
+      "preview": "assets/images/2f52ea2aeafa45486b79-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "id": "m024-resort-pool",
+  "source_query_id": "M024",
+  "category": "multi_constraint",
+  "official_query": "resort with swimming pool",
+  "query": "带游泳池的度假区",
+  "en": "Resort with swimming pool",
+  "elapsed_ms": 296.13,
+  "parsed_query": {
+    "environment": [],
+    "areas": [],
+    "area_constraints": [],
+    "facilities": [],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [],
+    "semantic_text": "resort with swimming pool"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "structured": 0,
+    "dense": 451,
+    "union": 451,
+    "overlap": 0
+  },
+  "query_profile": {
+    "method": "semantic_base_plus_signed_evidence_v1",
+    "base": "semantic_cosine",
+    "lambdas": {
+      "structure": 0.05,
+      "relation": 0.05
+    },
+    "signals": {
+      "structured_constraint_count": 0,
+      "hard_area_count": 0,
+      "soft_area_count": 0,
+      "quantity_count": 0,
+      "relation_count": 0,
+      "unmapped_concept_count": 0,
+      "query_token_count": 4,
+      "raw_structure_signal": 0.2,
+      "raw_semantic_signal": 2.2,
+      "raw_relation_signal": 0.0
+    },
+    "unknown_evidence_policy": "neutral",
+    "hard_constraint_policy": "verified_quantity_only"
+  },
+  "scoring_counts": {
+    "candidate_union": 451,
+    "eligible": 451,
+    "hard_rejected": 0,
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "resort_304.tif",
+    "resort_312.tif",
+    "resort_313.tif",
+    "resort_317.tif"
+  ],
+  "relevant_in_top_k": 4,
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "resort_304.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.44940629601478577,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.44940629601478577
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a coastal resort complex situated on flat plain terrain adjacent to the sea. The land cover is dominated by built-up areas comprising dense infrastructure and landscaping, interspersed with numerous artificial water bodies including swimming pools and ornamental ponds. The lower-left section features the shoreline where ocean waves meet the beach, establishing a clear interface between the developed zone and the natural marine environment.\n\nA large commercial and residential area occupies the center and right side of the image, characterized by clusters of low-rise buildings with red and white roofs arranged around circular courtyards. Multiple bright blue swimming pools of varying shapes are distributed throughout the facility, particularly concentrated in the central courtyard and lower-right sections. Paved urban roads and parking lots connect the structures, while dark green vegetation provides separation between the built environment and the water features.\n\nSpatially, the resort layout follows a curvilinear design that parallels the coastline visible in the lower-left quadrant. The density of buildings decreases towards the periphery, transitioning into open green spaces and water features near the beach access points. The arrangement suggests a high-density leisure destination where architectural elements are integrated with hydrological features, creating a distinct pattern of blue pools against the grey and red tones of the built infrastructure.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4494"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4494."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_304.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a coastal resort complex situated on flat plain terrain adjacent to the sea. The land cover is dominated by built-up areas comprising dense infrastructure and landscaping, interspersed with numerous artificial water bodies including swimming pools and ornamental ponds. The lower-left section features the shoreline where ocean waves meet the beach, establishing a clear interface between the developed zone and the natural marine environment.\n\nA large commercial and residential area occupies the center and right side of the image, characterized by clusters of low-rise buildings with red and white roofs arranged around circular courtyards. Multiple bright blue swimming pools of varying shapes are distributed throughout the facility, particularly concentrated in the central courtyard and lower-right sections. Paved urban roads and parking lots connect the structures, while dark green vegetation provides separation between the built environment and the water features.\n\nSpatially, the resort layout follows a curvilinear design that parallels the coastline visible in the lower-left quadrant. The density of buildings decreases towards the periphery, transitioning into open green spaces and water features near the beach access points. The arrangement suggests a high-density leisure destination where architectural elements are integrated with hydrological features, creating a distinct pattern of blue pools against the grey and red tones of the built infrastructure.",
+          "score": 0.44940629601478577,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/00313d04a42c36e11288-thumbnail.webp",
+      "preview": "assets/images/00313d04a42c36e11288-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 2,
+      "image_name": "resort_313.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.432631254196167,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.432631254196167
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "high_rise_building",
+          "parking_lot",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a flat coastal plain characterized by dense built-up areas and adjacent sea waters. The terrain is level, supporting a mix of commercial resort infrastructure and vegetation. Patches of blue water bodies, identified as swimming pools, are interspersed among the structures, while the lower-left corner shows the edge of the sea coastline.\n\nA prominent high-rise building dominates the right side of the image, featuring a rooftop garden and adjacent parking facilities. In the center and lower-right sections, multiple swimming pools with distinct blue hues are visible, surrounded by palm trees and low-rise white structures. A curved road runs along the upper edge of the scene, providing access to the developed area.\n\nSpatially, the high-rise structure acts as a vertical anchor on the right, contrasting with the lower residential blocks and pool complexes in the center. The road network defines the northern boundary of the immediate resort zone. The layout suggests a organized coastal development where recreational water features are integrated directly with accommodation blocks and transport links.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4326"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4326."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_313.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat coastal plain characterized by dense built-up areas and adjacent sea waters. The terrain is level, supporting a mix of commercial resort infrastructure and vegetation. Patches of blue water bodies, identified as swimming pools, are interspersed among the structures, while the lower-left corner shows the edge of the sea coastline.\n\nA prominent high-rise building dominates the right side of the image, featuring a rooftop garden and adjacent parking facilities. In the center and lower-right sections, multiple swimming pools with distinct blue hues are visible, surrounded by palm trees and low-rise white structures. A curved road runs along the upper edge of the scene, providing access to the developed area.\n\nSpatially, the high-rise structure acts as a vertical anchor on the right, contrasting with the lower residential blocks and pool complexes in the center. The road network defines the northern boundary of the immediate resort zone. The layout suggests a organized coastal development where recreational water features are integrated directly with accommodation blocks and transport links.",
+          "score": 0.432631254196167,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/a25970411feec670da39-thumbnail.webp",
+      "preview": "assets/images/a25970411feec670da39-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 3,
+      "image_name": "resort_315.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3784046173095703,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3784046173095703
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by built-up areas consisting of resort infrastructure and paved surfaces. Patches of bare land surround the developed zone, particularly visible in the upper-right and lower sections. No natural geographic entities such as rivers or mountains are present within the frame.\n\nA large commercial complex occupies the left and center, featuring distinctive zigzag-shaped buildings with orange roofs arranged around a central courtyard containing blue swimming pools. To the right, an extensive parking lot is visible, populated with numerous parked vehicles organized in marked rows. A tennis court is situated in the upper-right corner adjacent to the parking area.\n\nThe layout demonstrates a structured resort design where the zigzag building ring encloses the recreational water features. The parking lot runs parallel to the main building complex on the right side, separated by internal access roads. The density of vehicles suggests active usage, while the surrounding bare land indicates a semi-arid or undeveloped perimeter context.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3784"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3784."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_315.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by built-up areas consisting of resort infrastructure and paved surfaces. Patches of bare land surround the developed zone, particularly visible in the upper-right and lower sections. No natural geographic entities such as rivers or mountains are present within the frame.\n\nA large commercial complex occupies the left and center, featuring distinctive zigzag-shaped buildings with orange roofs arranged around a central courtyard containing blue swimming pools. To the right, an extensive parking lot is visible, populated with numerous parked vehicles organized in marked rows. A tennis court is situated in the upper-right corner adjacent to the parking area.\n\nThe layout demonstrates a structured resort design where the zigzag building ring encloses the recreational water features. The parking lot runs parallel to the main building complex on the right side, separated by internal access roads. The density of vehicles suggests active usage, while the surrounding bare land indicates a semi-arid or undeveloped perimeter context.",
+          "score": 0.3784046173095703,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/cea3084eb53c083a38c3-thumbnail.webp",
+      "preview": "assets/images/cea3084eb53c083a38c3-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 4,
+      "image_name": "resort_317.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3757564127445221,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3757564127445221
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by developed built-up areas and patches of grassland. No major natural geographic entities such as rivers or mountains are visible within the frame. The environment appears to be a managed recreational or resort facility situated on level ground, surrounded by sparse vegetation and paved surfaces.\n\nIn the center of the image, three distinct rectangular blue swimming pools are arranged in parallel, separated by narrow walkways lined with small palm trees. To the left, a large white commercial building with a flat roof occupies the upper-left quadrant, featuring visible rooftop mechanical units. Adjacent to the pools on the right is a paved area functioning as a parking lot or plaza, populated with scattered coconut trees casting shadows.\n\nThe layout demonstrates a structured spatial relationship where the large building borders the pool complex on the left side. The three pools are aligned vertically in the image center, creating a symmetrical pattern. Shadows from the palm trees indicate sunlight direction across the paved surfaces. The lower part of the image transitions into a mix of bare earth and grassland, contrasting with the organized infrastructure above.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3758"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3758."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_317.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by developed built-up areas and patches of grassland. No major natural geographic entities such as rivers or mountains are visible within the frame. The environment appears to be a managed recreational or resort facility situated on level ground, surrounded by sparse vegetation and paved surfaces.\n\nIn the center of the image, three distinct rectangular blue swimming pools are arranged in parallel, separated by narrow walkways lined with small palm trees. To the left, a large white commercial building with a flat roof occupies the upper-left quadrant, featuring visible rooftop mechanical units. Adjacent to the pools on the right is a paved area functioning as a parking lot or plaza, populated with scattered coconut trees casting shadows.\n\nThe layout demonstrates a structured spatial relationship where the large building borders the pool complex on the left side. The three pools are aligned vertically in the image center, creating a symmetrical pattern. Shadows from the palm trees indicate sunlight direction across the paved surfaces. The lower part of the image transitions into a mix of bare earth and grassland, contrasting with the organized infrastructure above.",
+          "score": 0.3757564127445221,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/08103da73b473e68da57-thumbnail.webp",
+      "preview": "assets/images/08103da73b473e68da57-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 5,
+      "image_name": "park_217.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.3597811460494995,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3597811460494995
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by extensive bare land surrounding a developed recreational complex. Distinct patches of green grassland and artificial water bodies contrast sharply with the arid, sandy terrain. The landscape is characterized by low relief and sparse natural vegetation outside the managed facility boundaries.\n\nA Commercial/Residential Area occupies the center, featuring several white commercial buildings arranged around landscaped grounds. Prominent facility conditions include large, irregular blue swimming pools and circular plaza structures in the lower-center. Manicured lawns and paved parking lots are visible adjacent to the structures, primarily in the upper-right and central zones, forming a cohesive resort-style layout.\n\nSpatially, the built-up facilities are clustered centrally, isolated by a vast expanse of bare land that fills the periphery. The layout exhibits geometric precision with curved pathways connecting the pools and buildings. High-contrast boundaries exist between the vibrant blue water, green turf, and beige desert soil, highlighting the artificial nature of the development within the natural arid setting.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3598"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3598."
+      ],
+      "evidence": [
+        {
+          "doc_id": "park_217.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by extensive bare land surrounding a developed recreational complex. Distinct patches of green grassland and artificial water bodies contrast sharply with the arid, sandy terrain. The landscape is characterized by low relief and sparse natural vegetation outside the managed facility boundaries.\n\nA Commercial/Residential Area occupies the center, featuring several white commercial buildings arranged around landscaped grounds. Prominent facility conditions include large, irregular blue swimming pools and circular plaza structures in the lower-center. Manicured lawns and paved parking lots are visible adjacent to the structures, primarily in the upper-right and central zones, forming a cohesive resort-style layout.\n\nSpatially, the built-up facilities are clustered centrally, isolated by a vast expanse of bare land that fills the periphery. The layout exhibits geometric precision with curved pathways connecting the pools and buildings. High-contrast boundaries exist between the vibrant blue water, green turf, and beige desert soil, highlighting the artificial nature of the development within the natural arid setting.",
+          "score": 0.3597811460494995,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "bare_land",
+        "grassland",
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/525d6222aef1a5b24a76-thumbnail.webp",
+      "preview": "assets/images/525d6222aef1a5b24a76-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 6,
+      "image_name": "resort_314.tif",
+      "confidence": "weak",
+      "scores": {
+        "semantic_base": 0.3478882908821106,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3478882908821106
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat Plain terrain dominated by Built-up Area land cover. No natural geographic entities such as rivers or mountains are visible within the frame. The environment is characterized by a dense, developed urban block featuring a large central facility surrounded by infrastructure.\n\nA Commercial/Residential Area occupies the center, identified as a resort complex with distinctive red-roofed buildings arranged around two blue swimming pools and palm trees. This facility is encircled by a network of Urban Roads visible along the upper, lower, and side perimeters. Several vehicles are present in Parking Lots and on the streets, confirming the crowded nature of the surrounding transport network.\n\nSpatially, the resort complex forms a compact, enclosed layout in the image center, sharply contrasting with the linear road grid bounding it. The high density of built structures and paved surfaces indicates intensive land use. The arrangement suggests a dedicated hospitality zone integrated into a busy urban street system, with vehicular activity concentrated on the perimeter roads.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3479"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3479."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_314.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat Plain terrain dominated by Built-up Area land cover. No natural geographic entities such as rivers or mountains are visible within the frame. The environment is characterized by a dense, developed urban block featuring a large central facility surrounded by infrastructure.\n\nA Commercial/Residential Area occupies the center, identified as a resort complex with distinctive red-roofed buildings arranged around two blue swimming pools and palm trees. This facility is encircled by a network of Urban Roads visible along the upper, lower, and side perimeters. Several vehicles are present in Parking Lots and on the streets, confirming the crowded nature of the surrounding transport network.\n\nSpatially, the resort complex forms a compact, enclosed layout in the image center, sharply contrasting with the linear road grid bounding it. The high density of built structures and paved surfaces indicates intensive land use. The arrangement suggests a dedicated hospitality zone integrated into a busy urban street system, with vehicular activity concentrated on the perimeter roads.",
+          "score": 0.3478882908821106,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/22395fbdfb3fd8bb96e7-thumbnail.webp",
+      "preview": "assets/images/22395fbdfb3fd8bb96e7-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 7,
+      "image_name": "resort_312.tif",
+      "confidence": "weak",
+      "scores": {
+        "semantic_base": 0.3459876775741577,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3459876775741577
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by built-up structures and surrounding bare land. The environment consists of a large rectangular building complex with red rooftops situated on sandy ground, lacking visible natural geographic entities like rivers or mountains in the immediate vicinity.\n\nThe central key area is a commercial building complex featuring two distinct outdoor swimming pools located within an inner courtyard. One pool is rectangular and blue, while the other has an irregular organic shape. The facility includes extensive parking lots visible on the right side and lower-left corner, containing numerous parked vehicles. A white canopy structure is present in the lower-left section of the courtyard.\n\nSpatially, the building forms a closed perimeter around the recreational amenities. The complex is bordered by unpaved sandy areas and sparse vegetation on the periphery. Vehicles are organized in rows within the designated parking zones adjacent to the main structure. The layout suggests a resort or club facility integrated into a semi-arid or coastal plain setting.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3460"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3460."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_312.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by built-up structures and surrounding bare land. The environment consists of a large rectangular building complex with red rooftops situated on sandy ground, lacking visible natural geographic entities like rivers or mountains in the immediate vicinity.\n\nThe central key area is a commercial building complex featuring two distinct outdoor swimming pools located within an inner courtyard. One pool is rectangular and blue, while the other has an irregular organic shape. The facility includes extensive parking lots visible on the right side and lower-left corner, containing numerous parked vehicles. A white canopy structure is present in the lower-left section of the courtyard.\n\nSpatially, the building forms a closed perimeter around the recreational amenities. The complex is bordered by unpaved sandy areas and sparse vegetation on the periphery. Vehicles are organized in rows within the designated parking zones adjacent to the main structure. The layout suggests a resort or club facility integrated into a semi-arid or coastal plain setting.",
+          "score": 0.3459876775741577,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/dcfb5f1b01a5b6aa308b-thumbnail.webp",
+      "preview": "assets/images/dcfb5f1b01a5b6aa308b-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 8,
+      "image_name": "sparseresidential_354.tif",
+      "confidence": "weak",
+      "scores": {
+        "semantic_base": 0.3457486629486084,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3457486629486084
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "residential_block",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by extensive grassland cover. Scattered clusters of trees and forest patches are distributed across the landscape, providing vegetative texture. Several small water bodies, identified as lakes or ponds, are visible amidst the green vegetation, contributing to the natural geographic context of this rural setting.\n\nA residential area is situated in the upper-right quadrant, featuring a large building with a dark roof and an adjacent smaller structure. A distinct blue swimming pool is located near the center-left, serving as a recreational facility within the property. Paved urban roads wind through the scene, connecting the structures and traversing the lawn areas. A parking area is visible near the main residence, indicating vehicle access.\n\nSpatially, the road network curves from the lower-left towards the upper-right, linking the isolated residential cluster to the broader landscape. The swimming pool acts as a central visual anchor between the built structures and the open grassy fields. The layout suggests a low-density suburban or rural estate configuration, where man-made facilities are integrated into the natural grassland and tree-covered terrain.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3457"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3457."
+      ],
+      "evidence": [
+        {
+          "doc_id": "sparseresidential_354.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by extensive grassland cover. Scattered clusters of trees and forest patches are distributed across the landscape, providing vegetative texture. Several small water bodies, identified as lakes or ponds, are visible amidst the green vegetation, contributing to the natural geographic context of this rural setting.\n\nA residential area is situated in the upper-right quadrant, featuring a large building with a dark roof and an adjacent smaller structure. A distinct blue swimming pool is located near the center-left, serving as a recreational facility within the property. Paved urban roads wind through the scene, connecting the structures and traversing the lawn areas. A parking area is visible near the main residence, indicating vehicle access.\n\nSpatially, the road network curves from the lower-left towards the upper-right, linking the isolated residential cluster to the broader landscape. The swimming pool acts as a central visual anchor between the built structures and the open grassy fields. The layout suggests a low-density suburban or rural estate configuration, where man-made facilities are integrated into the natural grassland and tree-covered terrain.",
+          "score": 0.3457486629486084,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "forest",
+        "water"
+      ],
+      "natural_entities": [
+        "lake"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/19c6fbf15f68c397da44-thumbnail.webp",
+      "preview": "assets/images/19c6fbf15f68c397da44-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 9,
+      "image_name": "resort_311.tif",
+      "confidence": "weak",
+      "scores": {
+        "semantic_base": 0.3388611674308777,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.3388611674308777
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot",
+          "road"
+        ]
+      },
+      "description": "The scene depicts a coastal plain environment characterized by a mix of built-up areas and natural water bodies. The right side of the image is dominated by the Sea, featuring a curved sandy shoreline. The left and central portions consist of developed land with dense vegetation interspersed among structures. The terrain is flat, consistent with a coastal setting, supporting extensive infrastructure adjacent to the water.\n\nA large Commercial/Residential Area occupies the left and center, functioning as an outdoor resort complex. This zone contains multiple white commercial buildings with irregular footprints and several blue swimming pools visible in the courtyards. Dense trees and shrubbery surround the structures, providing landscaping. On the far right, along the beach, numerous small objects indicate parking lots or recreational setups. A network of roads connects the buildings and provides access to the coastline, weaving through the green spaces.\n\nSpatially, the built environment is concentrated on the left, transitioning into a vegetated buffer before reaching the sandy beach on the right. The layout suggests a planned resort design where infrastructure is integrated with natural elements. The road network facilitates movement between the accommodation blocks and the seaside area. The density of the buildings decreases towards the coast, prioritizing open space and beach access. The clear distinction between the constructed resort area and the natural sea boundary defines the scene's organization.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3389"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3389."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_311.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a coastal plain environment characterized by a mix of built-up areas and natural water bodies. The right side of the image is dominated by the Sea, featuring a curved sandy shoreline. The left and central portions consist of developed land with dense vegetation interspersed among structures. The terrain is flat, consistent with a coastal setting, supporting extensive infrastructure adjacent to the water.\n\nA large Commercial/Residential Area occupies the left and center, functioning as an outdoor resort complex. This zone contains multiple white commercial buildings with irregular footprints and several blue swimming pools visible in the courtyards. Dense trees and shrubbery surround the structures, providing landscaping. On the far right, along the beach, numerous small objects indicate parking lots or recreational setups. A network of roads connects the buildings and provides access to the coastline, weaving through the green spaces.\n\nSpatially, the built environment is concentrated on the left, transitioning into a vegetated buffer before reaching the sandy beach on the right. The layout suggests a planned resort design where infrastructure is integrated with natural elements. The road network facilitates movement between the accommodation blocks and the seaside area. The density of the buildings decreases towards the coast, prioritizing open space and beach access. The clear distinction between the constructed resort area and the natural sea boundary defines the scene's organization.",
+          "score": 0.3388611674308777,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "water"
+      ],
+      "natural_entities": [
+        "sea"
+      ],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/2b601ca2902433a393cd-thumbnail.webp",
+      "preview": "assets/images/2b601ca2902433a393cd-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "resort_310.tif",
+      "confidence": "weak",
+      "scores": {
+        "semantic_base": 0.33651018142700195,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.33651018142700195
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "residential_block",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by a mix of built-up structures and vegetated open spaces. The land cover is dominated by built-up areas comprising resort facilities, interspersed with grassland patches and distinct blue water bodies. No major natural geographic entities like mountains or rivers are visible in this localized view.\n\nA commercial and residential area occupies the central and upper portions of the image, featuring numerous low-rise residential blocks arranged in a scattered layout typical of a resort. Urban roads connect these structures, forming a network throughout the site. Several parking lots with visible vehicles are situated near the buildings in the upper-left and center. Two prominent swimming pools appear in the lower-center, surrounded by paved decks.\n\nThe spatial arrangement shows a low-density development pattern where built structures are integrated with green spaces. The road network provides access to individual housing units and communal facilities like the pools. The layout suggests a leisure-oriented environment rather than high-density urban housing, with significant open grassy areas separating the built elements.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.3365"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.3365."
+      ],
+      "evidence": [
+        {
+          "doc_id": "resort_310.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by a mix of built-up structures and vegetated open spaces. The land cover is dominated by built-up areas comprising resort facilities, interspersed with grassland patches and distinct blue water bodies. No major natural geographic entities like mountains or rivers are visible in this localized view.\n\nA commercial and residential area occupies the central and upper portions of the image, featuring numerous low-rise residential blocks arranged in a scattered layout typical of a resort. Urban roads connect these structures, forming a network throughout the site. Several parking lots with visible vehicles are situated near the buildings in the upper-left and center. Two prominent swimming pools appear in the lower-center, surrounded by paved decks.\n\nThe spatial arrangement shows a low-density development pattern where built structures are integrated with green spaces. The road network provides access to individual housing units and communal facilities like the pools. The layout suggests a leisure-oriented environment rather than high-density urban housing, with significant open grassy areas separating the built elements.",
+          "score": 0.33651018142700195,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland",
+        "water"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/37992fcab62a0383c1f3-thumbnail.webp",
+      "preview": "assets/images/37992fcab62a0383c1f3-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}

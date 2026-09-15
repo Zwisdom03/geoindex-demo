@@ -15,15 +15,15 @@
   const score = value => Number(value || 0).toFixed(4);
   const words = {
     eyebrow:['REMOTE-SENSING RETRIEVAL','遥感影像检索'],
-    title:['Choose a scene to explore.','选择检索词条'],
-    intro:['Select a query, then view its saved retrieval results.','从下拉栏选择一个词条，确认后查看对应的影像结果。'],
+    title:['Choose an official RSITMD query.','选择 RSITMD 官方查询'],
+    intro:['Explore frozen GeoIndex v2 results for four RSITMD benchmark query types.','从四类 RSITMD 基准查询中选择一项，查看 GeoIndex v2 冻结检索结果。'],
     selectLabel:['Retrieval query','检索词条'],placeholder:['Select a query…','请选择检索词条…'],confirm:['View results','确认并查看结果'],
-    precomputed:['GeoIndex v2 · LRS-GRO · Precomputed','GeoIndex v2 · LRS-GRO · 预计算结果'],
-    footer:['Remote-sensing retrieval, with evidence.','遥感影像检索与证据展示'],
+    precomputed:['GeoIndex v2 · RSITMD-Lite v1.0 · Frozen results','GeoIndex v2 · RSITMD-Lite v1.0 · 冻结结果'],
+    footer:['RSITMD benchmark retrieval, with evidence.','RSITMD 基准检索与证据展示'],
     back:['Choose another query','返回选择词条'],resultsLabel:['RETRIEVAL RESULTS','检索结果'],
-    resultNote:['GeoIndex v2 results in retrieval order. Scores are ranking signals, not probabilities.','GeoIndex v2 结果按检索顺序展示。评分用于排序，不代表概率。']
+    resultNote:['Frozen GeoIndex v2 Top-10 results. Scores are ranking signals, not probabilities.','GeoIndex v2 冻结 Top-10 结果。评分用于排序，不代表概率。']
   };
-  const categories = {entity:['Entities','实体'],combination:['Combinations','实体组合'],spatial:['Spatial relations','空间关系'],activity:['Activities','动态活动'],quantity:['Quantity','数量意图']};
+  const categories = {keyword:['Keyword','关键词'],multi_constraint:['Multi-constraint','多约束'],spatial_relation:['Spatial relation','空间关系'],natural_language:['Natural language','自然语言']};
   const scoreNames = {final:['Final ranking','最终排序'],semantic:['Semantic','语义'],semantic_base:['Semantic base','语义基础分'],structure:['Structure','结构'],structure_delta:['Structure evidence','结构证据增量'],relation:['Relation','关系'],relation_delta:['Relation evidence','关系证据增量'],keyword:['Keyword','关键词'],category:['Category','类别'],evidence_layer:['Evidence layer','证据层'],scene:['Scene context','场景上下文'],quantity:['Quantity','数量']};
 
   function homeUrl() {
@@ -62,7 +62,7 @@
   function renderResults() {
     $('back-link').href = homeUrl();
     $('result-note').hidden = !current;
-    $('query-original').hidden = !current || lang === 'zh';
+    $('query-original').hidden = !current || !current.official_query;
     if (!current) {
       $('query-title').textContent = choose(['Choose a query first','请先选择检索词条']);
       $('query-original').textContent = '';
@@ -71,7 +71,7 @@
       return;
     }
     $('query-title').textContent = titleFor(current);
-    $('query-original').textContent = `Original query: ${current.query}`;
+    $('query-original').textContent = choose([`Official query ${current.source_query_id}: ${current.official_query}`,`官方查询 ${current.source_query_id}：${current.official_query}`]);
     $('results-status').textContent = choose([`${current.results.length} saved results · Select an image for details`,`${current.results.length} 条预计算结果 · 点击影像查看详情`]);
     $('result-grid').innerHTML = current.results.map(r=>`<article class="result-card"><button type="button" class="image-button" data-image="${esc(r.image_name)}" aria-label="${esc(choose(['View details for ','查看影像详情：'])+r.image_name)}"><img src="${esc(r.thumbnail)}" alt="${esc(r.image_name)}" loading="lazy" width="640" height="640"><span class="rank">#${r.rank}</span></button><div class="card-content"><div class="card-heading"><h2>${esc(r.image_name)}</h2><span class="score" title="${esc(String(r.scores.final))}"><span class="score-label">${choose(['Score','评分'])}</span><span class="score-number">${score(r.scores.final)}</span></span></div><p class="card-description">${esc(r.description)}</p><button type="button" class="detail-button" data-image="${esc(r.image_name)}">${choose(['View details','查看详情'])} →</button></div></article>`).join('');
   }

@@ -1,0 +1,759 @@
+{
+  "id": "m001-airport-parking",
+  "source_query_id": "M001",
+  "category": "multi_constraint",
+  "official_query": "airport with parking lot",
+  "query": "带停车场的机场",
+  "en": "Airport with parking lot",
+  "elapsed_ms": 332.94,
+  "parsed_query": {
+    "environment": [],
+    "areas": [
+      "airport"
+    ],
+    "area_constraints": [
+      {
+        "value": "airport",
+        "source": "exact",
+        "confidence": 1.0,
+        "hard": true
+      }
+    ],
+    "facilities": [
+      "parking_lot"
+    ],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [],
+    "semantic_text": "airport with parking lot"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "structured": 12,
+    "dense": 451,
+    "union": 451,
+    "overlap": 12
+  },
+  "query_profile": {
+    "method": "semantic_base_plus_signed_evidence_v1",
+    "base": "semantic_cosine",
+    "lambdas": {
+      "structure": 0.05,
+      "relation": 0.05
+    },
+    "signals": {
+      "structured_constraint_count": 2,
+      "hard_area_count": 1,
+      "soft_area_count": 0,
+      "quantity_count": 0,
+      "relation_count": 0,
+      "unmapped_concept_count": 0,
+      "query_token_count": 4,
+      "raw_structure_signal": 2.6,
+      "raw_semantic_signal": 0.7,
+      "raw_relation_signal": 0.0
+    },
+    "unknown_evidence_policy": "neutral",
+    "hard_constraint_policy": "verified_quantity_only"
+  },
+  "scoring_counts": {
+    "candidate_union": 451,
+    "eligible": 451,
+    "hard_rejected": 0,
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "airport_2.tif",
+    "airport_6.tif",
+    "airport_9.tif"
+  ],
+  "relevant_in_top_k": 3,
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "airport_6.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5524858832359314,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.6024858832359314
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "parking_lot"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport",
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "apron",
+          "parking_lot",
+          "terminal",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment dominated by extensive built-up areas associated with aviation infrastructure. No natural geographic entities such as mountains or water bodies are visible within the frame, indicating a developed terrestrial setting focused on transportation facilities.\n\nA large, distinctive silver curved terminal building occupies the center-right portion of the image, featuring a complex roof structure. Adjacent to the terminal on the right is a concrete apron where approximately five aircraft are parked at gates. To the left of the terminal, a massive parking lot is densely packed with hundreds of vehicles, organized in long rows. Urban roads and access ramps curve along the left and bottom edges, connecting the parking facility to the terminal area.\n\nThe layout demonstrates a functional separation between airside operations on the right and landside vehicle storage on the left. The high density of cars in the parking lot suggests significant passenger throughput. The silver terminal acts as the central visual anchor, bridging the ground transportation network and the aircraft parking zones.",
+      "reasons": [
+        "v2 结构化证据命中：airport、parking_lot",
+        "Qwen 描述向量语义相似度为 0.5525"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport, parking_lot.",
+        "Qwen description-vector semantic similarity is 0.5525."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_6.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment dominated by extensive built-up areas associated with aviation infrastructure. No natural geographic entities such as mountains or water bodies are visible within the frame, indicating a developed terrestrial setting focused on transportation facilities.\n\nA large, distinctive silver curved terminal building occupies the center-right portion of the image, featuring a complex roof structure. Adjacent to the terminal on the right is a concrete apron where approximately five aircraft are parked at gates. To the left of the terminal, a massive parking lot is densely packed with hundreds of vehicles, organized in long rows. Urban roads and access ramps curve along the left and bottom edges, connecting the parking facility to the terminal area.\n\nThe layout demonstrates a functional separation between airside operations on the right and landside vehicle storage on the left. The high density of cars in the parking lot suggests significant passenger throughput. The silver terminal acts as the central visual anchor, bridging the ground transportation network and the aircraft parking zones.",
+          "score": 0.5524858832359314,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/0eb104c2512e3fe7e8d5-thumbnail.webp",
+      "preview": "assets/images/0eb104c2512e3fe7e8d5-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 2,
+      "image_name": "airport_7.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5561747550964355,
+        "structure_delta": 0.6843864606658928,
+        "relation_delta": 0.0,
+        "final": 0.5903940781297302
+      },
+      "matched": {
+        "keywords": [
+          "airport"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport",
+          "transportation_area"
+        ],
+        "facilities": [
+          "apron",
+          "highway",
+          "road",
+          "terminal"
+        ]
+      },
+      "description": "The scene depicts a flat plain environment characterized primarily by built-up infrastructure and patches of grassland. The terrain is level with no significant elevation changes, supporting extensive paved surfaces typical of an airfield. No natural geographic entities such as rivers or mountains are visible within the frame.\n\nAn airport facility dominates the central and lower portions of the image, featuring a large concrete apron where four aircraft are parked. A long, rectangular gray terminal building runs vertically along the right side of the apron, adjacent to two of the planes. In the upper part of the image, a multi-lane highway traverses horizontally, accompanied by smaller access roads connecting to the airfield infrastructure.\n\nSpatially, the airport apron occupies the majority of the central view, bordered by the terminal building on the right and open tarmac on the left. The highway in the upper section is separated from the airfield by a strip of grassy vegetation. The aircraft are distributed across the apron, with two positioned near the terminal and two located further out on the open ground, indicating active parking zones.",
+      "reasons": [
+        "v2 结构化证据命中：airport",
+        "Qwen 描述向量语义相似度为 0.5562"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport.",
+        "Qwen description-vector semantic similarity is 0.5562."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_7.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain environment characterized primarily by built-up infrastructure and patches of grassland. The terrain is level with no significant elevation changes, supporting extensive paved surfaces typical of an airfield. No natural geographic entities such as rivers or mountains are visible within the frame.\n\nAn airport facility dominates the central and lower portions of the image, featuring a large concrete apron where four aircraft are parked. A long, rectangular gray terminal building runs vertically along the right side of the apron, adjacent to two of the planes. In the upper part of the image, a multi-lane highway traverses horizontally, accompanied by smaller access roads connecting to the airfield infrastructure.\n\nSpatially, the airport apron occupies the majority of the central view, bordered by the terminal building on the right and open tarmac on the left. The highway in the upper section is separated from the airfield by a strip of grassy vegetation. The aircraft are distributed across the apron, with two positioned near the terminal and two located further out on the open ground, indicating active parking zones.",
+          "score": 0.5561747550964355,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/7cb3be9bac9e2f425420-thumbnail.webp",
+      "preview": "assets/images/7cb3be9bac9e2f425420-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 3,
+      "image_name": "airport_12.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5428178906440735,
+        "structure_delta": 0.6843864606658928,
+        "relation_delta": 0.0,
+        "final": 0.5770372136773682
+      },
+      "matched": {
+        "keywords": [
+          "airport"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport"
+        ],
+        "facilities": [
+          "apron",
+          "runway",
+          "taxiway",
+          "terminal"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by airport infrastructure and paved surfaces. Land cover consists primarily of built-up areas including concrete aprons and runways, interspersed with patches of grassland in the upper left and lower left sections. No natural geographic entities such as rivers or mountains are visible within the frame.\n\nA major airport facility occupies the center and right side of the image, featuring a distinctive terminal building with a green triangular grid roof structure in the lower-right quadrant. Multiple aircraft are parked at gates adjacent to this terminal and scattered across the central apron area. A network of taxiways connects the terminal to a runway visible along the left edge of the image. Approximately ten to fifteen aircraft are visible in various parking positions.\n\nSpatially, the terminal building anchors the lower-right corner, with aircraft radiating outward towards the center. The runway runs vertically along the left boundary, separated from the main apron by grassy medians. The layout demonstrates a standard hub-and-spoke configuration with clear separation between active airside zones and the terminal structure. The density of parked aircraft is highest near the terminal building.",
+      "reasons": [
+        "v2 结构化证据命中：airport",
+        "Qwen 描述向量语义相似度为 0.5428"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport.",
+        "Qwen description-vector semantic similarity is 0.5428."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_12.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by airport infrastructure and paved surfaces. Land cover consists primarily of built-up areas including concrete aprons and runways, interspersed with patches of grassland in the upper left and lower left sections. No natural geographic entities such as rivers or mountains are visible within the frame.\n\nA major airport facility occupies the center and right side of the image, featuring a distinctive terminal building with a green triangular grid roof structure in the lower-right quadrant. Multiple aircraft are parked at gates adjacent to this terminal and scattered across the central apron area. A network of taxiways connects the terminal to a runway visible along the left edge of the image. Approximately ten to fifteen aircraft are visible in various parking positions.\n\nSpatially, the terminal building anchors the lower-right corner, with aircraft radiating outward towards the center. The runway runs vertically along the left boundary, separated from the main apron by grassy medians. The layout demonstrates a standard hub-and-spoke configuration with clear separation between active airside zones and the terminal structure. The density of parked aircraft is highest near the terminal building.",
+          "score": 0.5428178906440735,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/3fe70164188b95c1a6c0-thumbnail.webp",
+      "preview": "assets/images/3fe70164188b95c1a6c0-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 4,
+      "image_name": "airport_2.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5075838565826416,
+        "structure_delta": 1.0,
+        "relation_delta": 0.0,
+        "final": 0.5575838565826416
+      },
+      "matched": {
+        "keywords": [
+          "airport",
+          "parking_lot"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport",
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "apron",
+          "commercial_building",
+          "parking_lot",
+          "runway",
+          "taxiway",
+          "terminal"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up infrastructure associated with aviation operations. Patches of grassland are visible along the periphery, particularly on the right side, contrasting with the concrete surfaces. No natural geographic entities such as rivers or mountains are present in the immediate vicinity.\n\nA large airport complex occupies the central and right portions of the image, featuring parallel runways, taxiways, and expansive aprons. Numerous white aircraft are parked at gates connected to a prominent terminal building with a blue roof in the lower center. To the left, a cluster of commercial buildings and organized parking lots supports ground operations, adjacent to the airside facilities.\n\nThe layout demonstrates a clear functional separation between the airside operational zone on the right and the landside support area on the left. The terminal building acts as a central node connecting the parking aprons to the ground transportation network. High-density aircraft parking is observed near the terminal, while the runways extend vertically through the frame, indicating active air traffic capacity.",
+      "reasons": [
+        "v2 结构化证据命中：airport、parking_lot",
+        "Qwen 描述向量语义相似度为 0.5076"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport, parking_lot.",
+        "Qwen description-vector semantic similarity is 0.5076."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_2.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up infrastructure associated with aviation operations. Patches of grassland are visible along the periphery, particularly on the right side, contrasting with the concrete surfaces. No natural geographic entities such as rivers or mountains are present in the immediate vicinity.\n\nA large airport complex occupies the central and right portions of the image, featuring parallel runways, taxiways, and expansive aprons. Numerous white aircraft are parked at gates connected to a prominent terminal building with a blue roof in the lower center. To the left, a cluster of commercial buildings and organized parking lots supports ground operations, adjacent to the airside facilities.\n\nThe layout demonstrates a clear functional separation between the airside operational zone on the right and the landside support area on the left. The terminal building acts as a central node connecting the parking aprons to the ground transportation network. High-density aircraft parking is observed near the terminal, while the runways extend vertically through the frame, indicating active air traffic capacity.",
+          "score": 0.5075838565826416,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/71676ebc4f53e9492c32-thumbnail.webp",
+      "preview": "assets/images/71676ebc4f53e9492c32-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 5,
+      "image_name": "airport_5.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5132160186767578,
+        "structure_delta": 0.6843864606658928,
+        "relation_delta": 0.0,
+        "final": 0.5474353417100525
+      },
+      "matched": {
+        "keywords": [
+          "airport"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport"
+        ],
+        "facilities": [
+          "apron",
+          "runway",
+          "taxiway",
+          "terminal"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up areas characteristic of a major aviation hub. The landscape is entirely paved with concrete and asphalt surfaces, lacking significant natural vegetation or water bodies. This artificial environment supports complex air traffic infrastructure situated on level ground.\n\nA large Y-shaped terminal building occupies the upper-right section, featuring multiple finger piers extending into the apron. Numerous aircraft are parked orderly at gates along these piers and on remote stands. Several parallel runways and an intricate network of taxiways traverse the center and lower-left portions of the image, connecting the terminal to the airfield. Additional support buildings are visible in the lower-right corner.\n\nThe layout demonstrates a high-density configuration where the terminal structure acts as a central node for aircraft parking. Taxiways form a grid-like pattern facilitating movement between runways and the apron. The scene exhibits organized spatial planning with clear separation between active flight zones and static parking areas, highlighting the scale of operations.",
+      "reasons": [
+        "v2 结构化证据命中：airport",
+        "Qwen 描述向量语义相似度为 0.5132"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport.",
+        "Qwen description-vector semantic similarity is 0.5132."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_5.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up areas characteristic of a major aviation hub. The landscape is entirely paved with concrete and asphalt surfaces, lacking significant natural vegetation or water bodies. This artificial environment supports complex air traffic infrastructure situated on level ground.\n\nA large Y-shaped terminal building occupies the upper-right section, featuring multiple finger piers extending into the apron. Numerous aircraft are parked orderly at gates along these piers and on remote stands. Several parallel runways and an intricate network of taxiways traverse the center and lower-left portions of the image, connecting the terminal to the airfield. Additional support buildings are visible in the lower-right corner.\n\nThe layout demonstrates a high-density configuration where the terminal structure acts as a central node for aircraft parking. Taxiways form a grid-like pattern facilitating movement between runways and the apron. The scene exhibits organized spatial planning with clear separation between active flight zones and static parking areas, highlighting the scale of operations.",
+          "score": 0.5132160186767578,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/96ee772dfb8c3dc4fb87-thumbnail.webp",
+      "preview": "assets/images/96ee772dfb8c3dc4fb87-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 6,
+      "image_name": "airport_9.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.512700080871582,
+        "structure_delta": 0.6843864606658928,
+        "relation_delta": 0.0,
+        "final": 0.5469194039048767
+      },
+      "matched": {
+        "keywords": [
+          "airport"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport"
+        ],
+        "facilities": [
+          "apron",
+          "runway",
+          "terminal"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain dominated by extensive built-up areas characteristic of aviation infrastructure. No natural geographic entities such as mountains or water bodies are visible within the frame, indicating a developed land surface dedicated to transportation facilities.\n\nA large airport complex occupies the central and upper portions of the image, featuring a distinctive Z-shaped terminal building situated on a vast concrete apron. Numerous aircraft are parked at boarding gates along the terminal and in remote stands on the right side. Runways and taxiways surround the apron area, facilitating air traffic movement, while additional support structures are visible in the upper-right corner.\n\nThe layout demonstrates a high-density arrangement of aviation assets, with the terminal building acting as the central hub connecting multiple parking positions. Aircraft are distributed systematically across the apron, suggesting active operational status. The surrounding paved surfaces form a continuous network linking the terminal to the broader runway system, emphasizing the functional integration of the facility.",
+      "reasons": [
+        "v2 结构化证据命中：airport",
+        "Qwen 描述向量语义相似度为 0.5127"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport.",
+        "Qwen description-vector semantic similarity is 0.5127."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_9.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain dominated by extensive built-up areas characteristic of aviation infrastructure. No natural geographic entities such as mountains or water bodies are visible within the frame, indicating a developed land surface dedicated to transportation facilities.\n\nA large airport complex occupies the central and upper portions of the image, featuring a distinctive Z-shaped terminal building situated on a vast concrete apron. Numerous aircraft are parked at boarding gates along the terminal and in remote stands on the right side. Runways and taxiways surround the apron area, facilitating air traffic movement, while additional support structures are visible in the upper-right corner.\n\nThe layout demonstrates a high-density arrangement of aviation assets, with the terminal building acting as the central hub connecting multiple parking positions. Aircraft are distributed systematically across the apron, suggesting active operational status. The surrounding paved surfaces form a continuous network linking the terminal to the broader runway system, emphasizing the functional integration of the facility.",
+          "score": 0.512700080871582,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/9ac2b6d998841cae1e1d-thumbnail.webp",
+      "preview": "assets/images/9ac2b6d998841cae1e1d-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 7,
+      "image_name": "airport_448.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5113874673843384,
+        "structure_delta": 0.6843864606658928,
+        "relation_delta": 0.0,
+        "final": 0.545606790417633
+      },
+      "matched": {
+        "keywords": [
+          "airport"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport"
+        ],
+        "facilities": [
+          "apron"
+        ]
+      },
+      "description": "The scene depicts a flat, paved airport environment characterized by extensive concrete surfaces typical of an airfield apron. The terrain is uniformly level with no visible natural geographic entities or vegetation, consisting entirely of artificial infrastructure designed for aviation operations.\n\nIn the center of the image, a large white aircraft is parked on the apron, serving as the primary focal point. Surrounding the aircraft are approximately ten ground support vehicles, including baggage carts and service trucks, arranged closely around the fuselage and wings. These facilities indicate active ground handling operations taking place on the tarmac.\n\nThe spatial layout shows the aircraft positioned centrally with support vehicles distributed radially around it, suggesting a turnaround or servicing phase. The high density of ground equipment relative to the single aircraft highlights a concentrated operational zone within the broader airport infrastructure.",
+      "reasons": [
+        "v2 结构化证据命中：airport",
+        "Qwen 描述向量语义相似度为 0.5114"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport.",
+        "Qwen description-vector semantic similarity is 0.5114."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_448.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat, paved airport environment characterized by extensive concrete surfaces typical of an airfield apron. The terrain is uniformly level with no visible natural geographic entities or vegetation, consisting entirely of artificial infrastructure designed for aviation operations.\n\nIn the center of the image, a large white aircraft is parked on the apron, serving as the primary focal point. Surrounding the aircraft are approximately ten ground support vehicles, including baggage carts and service trucks, arranged closely around the fuselage and wings. These facilities indicate active ground handling operations taking place on the tarmac.\n\nThe spatial layout shows the aircraft positioned centrally with support vehicles distributed radially around it, suggesting a turnaround or servicing phase. The high density of ground equipment relative to the single aircraft highlights a concentrated operational zone within the broader airport infrastructure.",
+          "score": 0.5113874673843384,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/07a54bb6985c8e2e1293-thumbnail.webp",
+      "preview": "assets/images/07a54bb6985c8e2e1293-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 8,
+      "image_name": "parking_232.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5227348804473877,
+        "structure_delta": 0.3156135393341072,
+        "relation_delta": 0.0,
+        "final": 0.5385155574140931
+      },
+      "matched": {
+        "keywords": [
+          "parking_lot"
+        ],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat, paved environment classified as Built-up Area on Plain terrain. No natural geographic entities such as water bodies or vegetation are visible in the immediate vicinity. The surface consists entirely of asphalt and concrete infrastructure typical of urban or commercial zones.\n\nA large outdoor parking lot occupies the central and left portions of the image, featuring marked stalls containing approximately 20 parked vehicles of various colors including white, black, red, and blue. An urban road runs vertically along the right side of the frame, separating the main parking area from adjacent paved surfaces. The layout includes clearly defined parking bays and driving lanes.\n\nThe parking lot is situated directly adjacent to the roadway, facilitating vehicle access. The density of parked cars is moderate, with several empty spaces visible in the upper-right and lower-right sections. The spatial arrangement suggests a functional commercial or public parking facility integrated into a developed built-up area.",
+      "reasons": [
+        "v2 结构化证据命中：parking_lot",
+        "Qwen 描述向量语义相似度为 0.5227"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: parking_lot.",
+        "Qwen description-vector semantic similarity is 0.5227."
+      ],
+      "evidence": [
+        {
+          "doc_id": "parking_232.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat, paved environment classified as Built-up Area on Plain terrain. No natural geographic entities such as water bodies or vegetation are visible in the immediate vicinity. The surface consists entirely of asphalt and concrete infrastructure typical of urban or commercial zones.\n\nA large outdoor parking lot occupies the central and left portions of the image, featuring marked stalls containing approximately 20 parked vehicles of various colors including white, black, red, and blue. An urban road runs vertically along the right side of the frame, separating the main parking area from adjacent paved surfaces. The layout includes clearly defined parking bays and driving lanes.\n\nThe parking lot is situated directly adjacent to the roadway, facilitating vehicle access. The density of parked cars is moderate, with several empty spaces visible in the upper-right and lower-right sections. The spatial arrangement suggests a functional commercial or public parking facility integrated into a developed built-up area.",
+          "score": 0.5227348804473877,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/6318f0600183d4847197-thumbnail.webp",
+      "preview": "assets/images/6318f0600183d4847197-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 9,
+      "image_name": "airport_3.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.500420868396759,
+        "structure_delta": 0.6843864606658928,
+        "relation_delta": 0.0,
+        "final": 0.5346401914300537
+      },
+      "matched": {
+        "keywords": [
+          "airport"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport"
+        ],
+        "facilities": [
+          "apron",
+          "runway",
+          "taxiway",
+          "terminal"
+        ]
+      },
+      "description": "The scene depicts a large-scale airport facility situated on flat plain terrain. The land cover is predominantly built-up area consisting of extensive concrete airside infrastructure, interspersed with patches of bare land or sparse vegetation in the interstitial zones between paved surfaces. No natural geographic entities such as water bodies or mountains are visible within the frame.\n\nThe right side of the image features three distinct terminal buildings with characteristic circular or radial architectural designs, connected by a central linear structure. Numerous aircraft are parked at gates along the aprons adjacent to these terminals. The left side and center are dominated by a complex network of parallel runways and intersecting taxiways, forming a grid-like pattern typical of major aviation hubs.\n\nSpatially, the terminal cluster is concentrated on the right, while the airfield movement areas extend across the left and lower sections. The layout demonstrates high-density infrastructure with clear separation between static parking zones and active taxiing routes. The uniform grey tone of the pavement contrasts with the lighter brown ground, highlighting the extensive scale of the constructed environment.",
+      "reasons": [
+        "v2 结构化证据命中：airport",
+        "Qwen 描述向量语义相似度为 0.5004"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport.",
+        "Qwen description-vector semantic similarity is 0.5004."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_3.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a large-scale airport facility situated on flat plain terrain. The land cover is predominantly built-up area consisting of extensive concrete airside infrastructure, interspersed with patches of bare land or sparse vegetation in the interstitial zones between paved surfaces. No natural geographic entities such as water bodies or mountains are visible within the frame.\n\nThe right side of the image features three distinct terminal buildings with characteristic circular or radial architectural designs, connected by a central linear structure. Numerous aircraft are parked at gates along the aprons adjacent to these terminals. The left side and center are dominated by a complex network of parallel runways and intersecting taxiways, forming a grid-like pattern typical of major aviation hubs.\n\nSpatially, the terminal cluster is concentrated on the right, while the airfield movement areas extend across the left and lower sections. The layout demonstrates high-density infrastructure with clear separation between static parking zones and active taxiing routes. The uniform grey tone of the pavement contrasts with the lighter brown ground, highlighting the extensive scale of the constructed environment.",
+          "score": 0.500420868396759,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "bare_land"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/cd3fbc08af26b9941ecf-thumbnail.webp",
+      "preview": "assets/images/cd3fbc08af26b9941ecf-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    },
+    {
+      "rank": 10,
+      "image_name": "airport_4.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.49333152174949646,
+        "structure_delta": 0.6843864606658928,
+        "relation_delta": 0.0,
+        "final": 0.5275508447827911
+      },
+      "matched": {
+        "keywords": [
+          "airport"
+        ],
+        "relations": [],
+        "area_categories": [
+          "airport"
+        ],
+        "facilities": [
+          "apron",
+          "runway",
+          "taxiway",
+          "terminal"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by extensive airport infrastructure and interspersed grassland areas. The landscape is dominated by gray paved surfaces including runways, taxiways, and aprons, contrasted with patches of green and yellowish vegetation typical of airfield surroundings. No significant natural geographic entities like mountains or water bodies are visible in the immediate vicinity.\n\nIn the upper-left quadrant, a large terminal building complex features multiple finger piers extending into the apron area. Numerous aircraft are parked at gates along these piers and on the adjacent tarmac. A network of taxiways connects the terminal area to the main runways located in the lower and central parts of the image. Several gray buildings, likely hangars or support facilities, are situated in the upper-right section near the airside operations zone.\n\nThe layout exhibits a hierarchical organization with the terminal serving as the primary hub in the upper-left, radiating connectivity via taxiways to the runway system below. Aircraft are concentrated near the terminal gates, indicating active passenger operations. The spatial arrangement separates airside movement areas from landside support structures, with grassy medians providing safety buffers between paved surfaces. The density of parked planes suggests a busy commercial aviation facility.",
+      "reasons": [
+        "v2 结构化证据命中：airport",
+        "Qwen 描述向量语义相似度为 0.4933"
+      ],
+      "reasons_en": [
+        "GeoIndex v2 structured evidence matched: airport.",
+        "Qwen description-vector semantic similarity is 0.4933."
+      ],
+      "evidence": [
+        {
+          "doc_id": "airport_4.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by extensive airport infrastructure and interspersed grassland areas. The landscape is dominated by gray paved surfaces including runways, taxiways, and aprons, contrasted with patches of green and yellowish vegetation typical of airfield surroundings. No significant natural geographic entities like mountains or water bodies are visible in the immediate vicinity.\n\nIn the upper-left quadrant, a large terminal building complex features multiple finger piers extending into the apron area. Numerous aircraft are parked at gates along these piers and on the adjacent tarmac. A network of taxiways connects the terminal area to the main runways located in the lower and central parts of the image. Several gray buildings, likely hangars or support facilities, are situated in the upper-right section near the airside operations zone.\n\nThe layout exhibits a hierarchical organization with the terminal serving as the primary hub in the upper-left, radiating connectivity via taxiways to the runway system below. Aircraft are concentrated near the terminal gates, indicating active passenger operations. The spatial arrangement separates airside movement areas from landside support structures, with grassy medians providing safety buffers between paved surfaces. The density of parked planes suggests a busy commercial aviation facility.",
+          "score": 0.49333152174949646,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "structured",
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/9ce7171782dc4d2f218c-thumbnail.webp",
+      "preview": "assets/images/9ce7171782dc4d2f218c-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}

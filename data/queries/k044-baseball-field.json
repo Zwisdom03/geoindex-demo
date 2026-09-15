@@ -1,0 +1,694 @@
+{
+  "id": "k044-baseball-field",
+  "source_query_id": "K044",
+  "category": "keyword",
+  "official_query": "baseball field",
+  "query": "棒球场",
+  "en": "Baseball field",
+  "elapsed_ms": 822.79,
+  "parsed_query": {
+    "environment": [],
+    "areas": [],
+    "area_constraints": [],
+    "facilities": [],
+    "objects": [],
+    "attributes": [],
+    "quantities": [],
+    "relations": [],
+    "unmapped_concepts": [],
+    "semantic_text": "baseball field"
+  },
+  "parameters": {
+    "top_k": 10,
+    "structured_top_k": 451,
+    "dense_top_k": 451,
+    "enforce_hard_constraints": true,
+    "fusion_mode": "signed_evidence",
+    "structure_lambda": 0.05,
+    "relation_lambda": 0.05
+  },
+  "candidate_recall": {
+    "structured": 0,
+    "dense": 451,
+    "union": 451,
+    "overlap": 0
+  },
+  "query_profile": {
+    "method": "semantic_base_plus_signed_evidence_v1",
+    "base": "semantic_cosine",
+    "lambdas": {
+      "structure": 0.05,
+      "relation": 0.05
+    },
+    "signals": {
+      "structured_constraint_count": 0,
+      "hard_area_count": 0,
+      "soft_area_count": 0,
+      "quantity_count": 0,
+      "relation_count": 0,
+      "unmapped_concept_count": 0,
+      "query_token_count": 2,
+      "raw_structure_signal": 0.2,
+      "raw_semantic_signal": 2.2,
+      "raw_relation_signal": 0.0
+    },
+    "unknown_evidence_policy": "neutral",
+    "hard_constraint_policy": "verified_quantity_only"
+  },
+  "scoring_counts": {
+    "candidate_union": 451,
+    "eligible": 451,
+    "hard_rejected": 0,
+    "returned": 10
+  },
+  "official_relevant_images": [
+    "baseballfield_18.tif",
+    "baseballfield_19.tif",
+    "baseballfield_20.tif",
+    "baseballfield_21.tif",
+    "baseballfield_22.tif",
+    "baseballfield_23.tif",
+    "baseballfield_24.tif",
+    "baseballfield_25.tif",
+    "baseballfield_26.tif"
+  ],
+  "relevant_in_top_k": 9,
+  "strict_result_count": 10,
+  "results": [
+    {
+      "rank": 1,
+      "image_name": "baseballfield_22.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5334529876708984,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.5334529876708984
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot",
+          "road"
+        ]
+      },
+      "description": "The scene is situated on a flat plain characterized by a mix of manicured grassland and built-up surfaces. The primary land cover consists of a large green recreational field bordered by paved infrastructure and sparse vegetation. No natural geographic entities such as rivers or mountains are visible in the immediate vicinity.\n\nA fan-shaped baseball field dominates the center and upper-right portion of the image, featuring a distinct dirt infield and grassy outfield. Two roads intersect at the lower-left corner, forming a boundary for the sports facility. Adjacent to the road intersection in the lower-left, a dihedral commercial building with a boomerang-like footprint is visible, accompanied by a small parking lot containing several vehicles and a cluster of trees.\n\nThe baseball field is spatially enclosed by the road network on the left and bottom edges, creating a defined corner lot layout. The dihedral building sits immediately adjacent to the road junction, separated from the field by a narrow buffer zone. The layout suggests a planned urban or suburban recreational zone where transportation infrastructure delineates the boundaries of the open green space.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.5335"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.5335."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_22.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a flat plain characterized by a mix of manicured grassland and built-up surfaces. The primary land cover consists of a large green recreational field bordered by paved infrastructure and sparse vegetation. No natural geographic entities such as rivers or mountains are visible in the immediate vicinity.\n\nA fan-shaped baseball field dominates the center and upper-right portion of the image, featuring a distinct dirt infield and grassy outfield. Two roads intersect at the lower-left corner, forming a boundary for the sports facility. Adjacent to the road intersection in the lower-left, a dihedral commercial building with a boomerang-like footprint is visible, accompanied by a small parking lot containing several vehicles and a cluster of trees.\n\nThe baseball field is spatially enclosed by the road network on the left and bottom edges, creating a defined corner lot layout. The dihedral building sits immediately adjacent to the road junction, separated from the field by a narrow buffer zone. The layout suggests a planned urban or suburban recreational zone where transportation infrastructure delineates the boundaries of the open green space.",
+          "score": 0.5334529876708984,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/18fc0b044a9169339b8e-thumbnail.webp",
+      "preview": "assets/images/18fc0b044a9169339b8e-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 2,
+      "image_name": "baseballfield_18.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5302697420120239,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.5302697420120239
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "residential_block",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by a mix of manicured grassland and built-up areas. The landscape is dominated by a large recreational sports field featuring distinct green turf and brown dirt surfaces, surrounded by sparse vegetation and isolated structures. No major natural geographic entities such as rivers or mountains are visible in the immediate vicinity.\n\nA prominent baseball field occupies the central and left portions of the image, displaying a standard diamond layout with a tan infield and green outfield. To the right of the field, a residential block is visible, featuring a house with a distinctive blue roof and an adjacent white structure. These buildings are situated next to the sports facility, separated by a narrow strip of green plants and trees. Small paved urban roads or driveways connect these structures along the periphery of the scene.\n\nSpatially, the baseball field serves as the primary land use element, extending from the lower-left toward the upper-center. The residential structures are clustered in the upper-right quadrant, creating a clear boundary between the recreational zone and the living area. The layout suggests a suburban or semi-rural setting where community sports facilities are integrated directly with housing. The density of construction is low, with significant open space maintained for the athletic field.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.5303"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.5303."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_18.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by a mix of manicured grassland and built-up areas. The landscape is dominated by a large recreational sports field featuring distinct green turf and brown dirt surfaces, surrounded by sparse vegetation and isolated structures. No major natural geographic entities such as rivers or mountains are visible in the immediate vicinity.\n\nA prominent baseball field occupies the central and left portions of the image, displaying a standard diamond layout with a tan infield and green outfield. To the right of the field, a residential block is visible, featuring a house with a distinctive blue roof and an adjacent white structure. These buildings are situated next to the sports facility, separated by a narrow strip of green plants and trees. Small paved urban roads or driveways connect these structures along the periphery of the scene.\n\nSpatially, the baseball field serves as the primary land use element, extending from the lower-left toward the upper-center. The residential structures are clustered in the upper-right quadrant, creating a clear boundary between the recreational zone and the living area. The layout suggests a suburban or semi-rural setting where community sports facilities are integrated directly with housing. The density of construction is low, with significant open space maintained for the athletic field.",
+          "score": 0.5302697420120239,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/e9596cc48a54d359bba4-thumbnail.webp",
+      "preview": "assets/images/e9596cc48a54d359bba4-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 3,
+      "image_name": "baseballfield_21.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5254483222961426,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.5254483222961426
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized primarily by extensive grassland cover. A distinct fan-shaped sports field is situated centrally on the lawn, featuring a reddish-brown dirt infield and base paths contrasting with the surrounding green vegetation. No natural geographic entities such as rivers or mountains are visible in this localized view.\n\nA Commercial/Residential Area is identified along the left edge of the image, containing a paved urban road running vertically and an adjacent parking lot with marked spaces. Several tall lamp posts cast long shadows across the grassy field, indicating their presence alongside the recreational facility. The baseball diamond itself occupies the lower-left to central portion of the frame, defined by its specific geometric layout.\n\nSpatially, the paved infrastructure is strictly confined to the left boundary, separating the developed zone from the open recreational space. The lighting suggests a low sun angle, creating prominent linear shadow patterns that traverse the field from left to right. The layout demonstrates a clear zoning separation between the hard-surfaced utility areas and the soft-surface athletic grounds.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.5254"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.5254."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_21.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized primarily by extensive grassland cover. A distinct fan-shaped sports field is situated centrally on the lawn, featuring a reddish-brown dirt infield and base paths contrasting with the surrounding green vegetation. No natural geographic entities such as rivers or mountains are visible in this localized view.\n\nA Commercial/Residential Area is identified along the left edge of the image, containing a paved urban road running vertically and an adjacent parking lot with marked spaces. Several tall lamp posts cast long shadows across the grassy field, indicating their presence alongside the recreational facility. The baseball diamond itself occupies the lower-left to central portion of the frame, defined by its specific geometric layout.\n\nSpatially, the paved infrastructure is strictly confined to the left boundary, separating the developed zone from the open recreational space. The lighting suggests a low sun angle, creating prominent linear shadow patterns that traverse the field from left to right. The layout demonstrates a clear zoning separation between the hard-surfaced utility areas and the soft-surface athletic grounds.",
+          "score": 0.5254483222961426,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/b99ebc1dafb54768bc30-thumbnail.webp",
+      "preview": "assets/images/b99ebc1dafb54768bc30-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 4,
+      "image_name": "baseballfield_24.tif",
+      "confidence": "strong",
+      "scores": {
+        "semantic_base": 0.5070711970329285,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.5070711970329285
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by extensive grassland cover interspersed with built-up recreational infrastructure. The environment is dominated by a large sports complex situated on level ground, lacking significant natural geographic entities such as mountains or water bodies within the immediate frame.\n\nFive distinct baseball fields with orange-brown clay infields are arranged across the central and right portions of the image, surrounded by green turf. In the upper-left quadrant, a large paved parking lot serves the facility, adjacent to several low-rise support buildings and smaller auxiliary courts. Additional parking areas and access roads line the right and lower perimeters of the complex.\n\nThe layout exhibits a structured recreational zoning pattern where the five diamond-shaped fields occupy the majority of the central grassy area. The parking lots are strategically positioned near the upper-left entrance and along the eastern boundary to facilitate vehicle access. The high density of sports facilities relative to the surrounding vegetation indicates a dedicated municipal or institutional athletic park.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.5071"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.5071."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_24.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by extensive grassland cover interspersed with built-up recreational infrastructure. The environment is dominated by a large sports complex situated on level ground, lacking significant natural geographic entities such as mountains or water bodies within the immediate frame.\n\nFive distinct baseball fields with orange-brown clay infields are arranged across the central and right portions of the image, surrounded by green turf. In the upper-left quadrant, a large paved parking lot serves the facility, adjacent to several low-rise support buildings and smaller auxiliary courts. Additional parking areas and access roads line the right and lower perimeters of the complex.\n\nThe layout exhibits a structured recreational zoning pattern where the five diamond-shaped fields occupy the majority of the central grassy area. The parking lots are strategically positioned near the upper-left entrance and along the eastern boundary to facilitate vehicle access. The high density of sports facilities relative to the surrounding vegetation indicates a dedicated municipal or institutional athletic park.",
+          "score": 0.5070711970329285,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/bc206321cd251652e2c1-thumbnail.webp",
+      "preview": "assets/images/bc206321cd251652e2c1-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 5,
+      "image_name": "baseballfield_23.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.49866533279418945,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.49866533279418945
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot"
+        ]
+      },
+      "description": "The scene depicts a flat plain terrain characterized by extensive grassland coverage used for recreational sports. Dense forest vegetation borders the upper, left, and right perimeters of the image, enclosing the central open space. A small section of built-up area is visible in the lower-right corner, contrasting with the dominant green vegetation.\n\nTwo baseball fields occupy the central and lower-left portions of the image, featuring distinct dirt infields and grassy outfields without a dividing line between them. In the lower-right quadrant, a paved parking lot contains approximately eight visible vehicles arranged in rows. Adjacent to the parking area in the extreme lower-right corner, partial outlines of tennis courts are visible.\n\nThe sports facilities are spatially organized within a clearing surrounded by tree lines, creating a defined recreational zone. The parking lot serves as an access point in the lower-right, directly connecting to the field area via internal pathways. The layout suggests a community park setting where vehicular access is segregated from the playing fields by the surrounding vegetation buffer.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4987"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4987."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_23.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene depicts a flat plain terrain characterized by extensive grassland coverage used for recreational sports. Dense forest vegetation borders the upper, left, and right perimeters of the image, enclosing the central open space. A small section of built-up area is visible in the lower-right corner, contrasting with the dominant green vegetation.\n\nTwo baseball fields occupy the central and lower-left portions of the image, featuring distinct dirt infields and grassy outfields without a dividing line between them. In the lower-right quadrant, a paved parking lot contains approximately eight visible vehicles arranged in rows. Adjacent to the parking area in the extreme lower-right corner, partial outlines of tennis courts are visible.\n\nThe sports facilities are spatially organized within a clearing surrounded by tree lines, creating a defined recreational zone. The parking lot serves as an access point in the lower-right, directly connecting to the field area via internal pathways. The layout suggests a community park setting where vehicular access is segregated from the playing fields by the surrounding vegetation buffer.",
+          "score": 0.49866533279418945,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "forest",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/f1a22f2f519ea7e380e4-thumbnail.webp",
+      "preview": "assets/images/f1a22f2f519ea7e380e4-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 6,
+      "image_name": "baseballfield_19.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.489685595035553,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.489685595035553
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene is situated on a flat Plain terrain, characterized primarily by extensive Grassland cover utilized for recreational sports facilities. Patches of Built-up Area are visible along the periphery, indicating a developed suburban or park setting. No major natural geographic entities such as rivers or mountains are present within the immediate frame.\n\nThe central area features a large grassy field marked with white lines for football or soccer, flanked by two distinct reddish-brown dirt infields typical of baseball diamonds located in the upper-right and lower-left corners. Surrounding the sports grounds, particularly along the top and bottom edges, are paved urban roads and small parking lots serving the facility. A few scattered structures and trees line the boundaries of the green space.\n\nSpatially, the sports fields dominate the center of the image, arranged side-by-side to maximize land use efficiency. The baseball diamonds are positioned diagonally opposite each other relative to the central football pitch. The surrounding infrastructure forms a clear boundary between the recreational zone and the adjacent residential or commercial areas, with vehicle access points visible at the margins.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4897"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4897."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_19.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a flat Plain terrain, characterized primarily by extensive Grassland cover utilized for recreational sports facilities. Patches of Built-up Area are visible along the periphery, indicating a developed suburban or park setting. No major natural geographic entities such as rivers or mountains are present within the immediate frame.\n\nThe central area features a large grassy field marked with white lines for football or soccer, flanked by two distinct reddish-brown dirt infields typical of baseball diamonds located in the upper-right and lower-left corners. Surrounding the sports grounds, particularly along the top and bottom edges, are paved urban roads and small parking lots serving the facility. A few scattered structures and trees line the boundaries of the green space.\n\nSpatially, the sports fields dominate the center of the image, arranged side-by-side to maximize land use efficiency. The baseball diamonds are positioned diagonally opposite each other relative to the central football pitch. The surrounding infrastructure forms a clear boundary between the recreational zone and the adjacent residential or commercial areas, with vehicle access points visible at the margins.",
+          "score": 0.489685595035553,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/f0d8b7d77fa09bbe8fec-thumbnail.webp",
+      "preview": "assets/images/f0d8b7d77fa09bbe8fec-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 7,
+      "image_name": "baseballfield_20.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4875045120716095,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4875045120716095
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene is situated on a plain terrain characterized by extensive grassland cover interspersed with built-up recreational facilities. The environment lacks significant natural geographic entities like rivers or mountains, presenting a flat landscape dominated by manicured green spaces and associated infrastructure.\n\nThree distinct baseball fields of varying sizes are arranged in a radial pattern around a central hub. This central area contains small buildings and paved surfaces functioning as parking lots and support facilities. A continuous gray path encircles the entire complex, connecting the fields and serving as a perimeter road. The fields feature characteristic diamond-shaped dirt infields surrounded by grass outfields.\n\nThe layout exhibits a high degree of symmetry with the three fields radiating from the center. The encircling path defines the boundary between the sports complex and the surrounding vegetation. Dense tree lines or shrubbery border the outer edges of the facility, particularly visible in the lower-left and right sections. The spatial arrangement suggests a dedicated sports park design optimized for multiple simultaneous activities.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4875"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4875."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_20.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a plain terrain characterized by extensive grassland cover interspersed with built-up recreational facilities. The environment lacks significant natural geographic entities like rivers or mountains, presenting a flat landscape dominated by manicured green spaces and associated infrastructure.\n\nThree distinct baseball fields of varying sizes are arranged in a radial pattern around a central hub. This central area contains small buildings and paved surfaces functioning as parking lots and support facilities. A continuous gray path encircles the entire complex, connecting the fields and serving as a perimeter road. The fields feature characteristic diamond-shaped dirt infields surrounded by grass outfields.\n\nThe layout exhibits a high degree of symmetry with the three fields radiating from the center. The encircling path defines the boundary between the sports complex and the surrounding vegetation. Dense tree lines or shrubbery border the outer edges of the facility, particularly visible in the lower-left and right sections. The spatial arrangement suggests a dedicated sports park design optimized for multiple simultaneous activities.",
+          "score": 0.4875045120716095,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/b2610ee57a96edfa23c5-thumbnail.webp",
+      "preview": "assets/images/b2610ee57a96edfa23c5-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 8,
+      "image_name": "baseballfield_26.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4679810404777527,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4679810404777527
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "urban_road"
+        ]
+      },
+      "description": "The scene is situated on a flat plain characterized by extensive grassland cover used for recreational sports facilities. The upper portion of the image is dominated by a large green field, while the lower section features constructed hard surfaces. No natural geographic entities such as rivers or mountains are visible in this developed landscape.\n\nA baseball field occupies the upper center, featuring a distinct dirt infield and grassy outfield. Directly adjacent to the south, six tennis courts are arranged in a linear row with red surfacing and white markings. A small gray building structure is located next to the baseball field on the right side. Paved urban roads and parking areas border the facility complex along the bottom and right edges.\n\nThe sports facilities are densely clustered, with the tennis courts running parallel to the lower boundary of the baseball field. The layout suggests a dedicated recreational zone with clear separation between the playing fields and the surrounding access roads. Vegetation is limited to the maintained turf of the fields and a few isolated trees near the building structures.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4680"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4680."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_26.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a flat plain characterized by extensive grassland cover used for recreational sports facilities. The upper portion of the image is dominated by a large green field, while the lower section features constructed hard surfaces. No natural geographic entities such as rivers or mountains are visible in this developed landscape.\n\nA baseball field occupies the upper center, featuring a distinct dirt infield and grassy outfield. Directly adjacent to the south, six tennis courts are arranged in a linear row with red surfacing and white markings. A small gray building structure is located next to the baseball field on the right side. Paved urban roads and parking areas border the facility complex along the bottom and right edges.\n\nThe sports facilities are densely clustered, with the tennis courts running parallel to the lower boundary of the baseball field. The layout suggests a dedicated recreational zone with clear separation between the playing fields and the surrounding access roads. Vegetation is limited to the maintained turf of the fields and a few isolated trees near the building structures.",
+          "score": 0.4679810404777527,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/bda4725016b848260231-thumbnail.webp",
+      "preview": "assets/images/bda4725016b848260231-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 9,
+      "image_name": "baseballfield_25.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.4616784155368805,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.4616784155368805
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "parking_lot",
+          "road"
+        ]
+      },
+      "description": "The scene is situated on a flat plain characterized primarily by extensive grassland cover. The landscape features a large, manicured green lawn area serving as the base for recreational facilities. There are no significant natural geographic entities such as rivers or mountains visible in the immediate vicinity, presenting a uniform terrestrial environment dominated by vegetated surfaces and constructed infrastructure.\n\nA distinctive circular arrangement of four baseball fields occupies the center of the image, separated by intersecting roads that divide the lawn into quadrants. Two larger fields are positioned in the upper half, while two slightly smaller fields are located in the lower half, all featuring brown dirt infields. A parking lot containing several vehicles is visible in the lower-left corner, adjacent to a winding road that provides access to the site. Small structures, likely dugouts or restrooms, are clustered at the central intersection of the fields.\n\nThe layout exhibits high geometric symmetry with the crossing roads forming a cross shape that organizes the sports complex. The transportation network integrates directly with the recreational zones, facilitating access from the periphery. The density of the built environment is low, with the majority of the surface area dedicated to open grassy spaces. The spatial relationship between the parking area and the fields suggests a functional design prioritizing pedestrian access across the lawns.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4617"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4617."
+      ],
+      "evidence": [
+        {
+          "doc_id": "baseballfield_25.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a flat plain characterized primarily by extensive grassland cover. The landscape features a large, manicured green lawn area serving as the base for recreational facilities. There are no significant natural geographic entities such as rivers or mountains visible in the immediate vicinity, presenting a uniform terrestrial environment dominated by vegetated surfaces and constructed infrastructure.\n\nA distinctive circular arrangement of four baseball fields occupies the center of the image, separated by intersecting roads that divide the lawn into quadrants. Two larger fields are positioned in the upper half, while two slightly smaller fields are located in the lower half, all featuring brown dirt infields. A parking lot containing several vehicles is visible in the lower-left corner, adjacent to a winding road that provides access to the site. Small structures, likely dugouts or restrooms, are clustered at the central intersection of the fields.\n\nThe layout exhibits high geometric symmetry with the crossing roads forming a cross shape that organizes the sports complex. The transportation network integrates directly with the recreational zones, facilitating access from the periphery. The density of the built environment is low, with the majority of the surface area dedicated to open grassy spaces. The spatial relationship between the parking area and the fields suggests a functional design prioritizing pedestrian access across the lawns.",
+          "score": 0.4616784155368805,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "grassland",
+        "built_up"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/56ce5afc7ef37f964226-thumbnail.webp",
+      "preview": "assets/images/56ce5afc7ef37f964226-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": true
+    },
+    {
+      "rank": 10,
+      "image_name": "stadium_392.tif",
+      "confidence": "medium",
+      "scores": {
+        "semantic_base": 0.42908763885498047,
+        "structure_delta": 0.0,
+        "relation_delta": 0.0,
+        "final": 0.42908763885498047
+      },
+      "matched": {
+        "keywords": [],
+        "relations": [],
+        "area_categories": [
+          "commercial_residential_area",
+          "transportation_area"
+        ],
+        "facilities": [
+          "commercial_building",
+          "parking_lot",
+          "road",
+          "urban_road"
+        ]
+      },
+      "description": "The scene is situated on a Plain terrain, characterized primarily by Built-up Area infrastructure surrounding a central Grassland sports field. The environment is dominated by a large stadium complex with extensive concrete structures and paved surfaces, bordered by patches of vegetation and trees in the upper-right corner. No major natural geographic entities like rivers or mountains are visible within the immediate frame.\n\nA prominent Commercial/Residential Area facility, specifically a large stadium, occupies the center, featuring blue and gray bleachers on three sides with roofing and open tiered seating on the fourth. Adjacent to the stadium structure are urban roads and parking lots containing several vehicles, visible in the lower-left and upper-left sections. The central grass field is clearly marked for football, surrounded by the dense built environment of the stands and access ways.\n\nSpatially, the stadium forms a rectangular enclosure around the green pitch, with road networks wrapping around the lower and left perimeters. The layout indicates a dedicated sports zone integrated into an urban setting, with high-density construction contrasting against the manicured turf. Traffic flow appears organized along the perimeter roads, while the interior remains pedestrian-focused, highlighting the functional separation between the venue and surrounding transport infrastructure.",
+      "reasons": [
+        "Qwen 描述向量语义相似度为 0.4291"
+      ],
+      "reasons_en": [
+        "Qwen description-vector semantic similarity is 0.4291."
+      ],
+      "evidence": [
+        {
+          "doc_id": "stadium_392.tif::description",
+          "doc_type": "description",
+          "relation": "",
+          "evidence": "The scene is situated on a Plain terrain, characterized primarily by Built-up Area infrastructure surrounding a central Grassland sports field. The environment is dominated by a large stadium complex with extensive concrete structures and paved surfaces, bordered by patches of vegetation and trees in the upper-right corner. No major natural geographic entities like rivers or mountains are visible within the immediate frame.\n\nA prominent Commercial/Residential Area facility, specifically a large stadium, occupies the center, featuring blue and gray bleachers on three sides with roofing and open tiered seating on the fourth. Adjacent to the stadium structure are urban roads and parking lots containing several vehicles, visible in the lower-left and upper-left sections. The central grass field is clearly marked for football, surrounded by the dense built environment of the stands and access ways.\n\nSpatially, the stadium forms a rectangular enclosure around the green pitch, with road networks wrapping around the lower and left perimeters. The layout indicates a dedicated sports zone integrated into an urban setting, with high-density construction contrasting against the manicured turf. Traffic flow appears organized along the perimeter roads, while the interior remains pedestrian-focused, highlighting the functional separation between the venue and surrounding transport infrastructure.",
+          "score": 0.42908763885498047,
+          "relation_score": null
+        }
+      ],
+      "strict_match": {
+        "passed": true,
+        "missing_entities": [],
+        "missing_relations": [],
+        "score_reasons": []
+      },
+      "terrain": "plain",
+      "land_cover": [
+        "built_up",
+        "grassland"
+      ],
+      "natural_entities": [],
+      "detections": {},
+      "retrieval_sources": [
+        "dense"
+      ],
+      "effective_weights": {},
+      "thumbnail": "assets/images/4ee14b576e667df20975-thumbnail.webp",
+      "preview": "assets/images/4ee14b576e667df20975-preview.webp",
+      "width": 256,
+      "height": 256,
+      "official_qrels_relevant": false
+    }
+  ]
+}
